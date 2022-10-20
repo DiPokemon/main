@@ -125,7 +125,7 @@
                     <div class="choice-block__button"><a class="choice-block__href" href="#">О компании</a></div>
                   </div>
                   <div class="choice-block__img">
-                    <img src="img/unsplash_DUmFLtMeAbQ.jpg" alt="img">
+                    <img src="<?php echo get_template_directory_uri()?>/static/img/unsplash_DUmFLtMeAbQ.jpg" alt="img">
                   </div>
                 </div>
               </div>
@@ -141,19 +141,19 @@
 
                   <div class="slider_wrapper cases_slider">
                     <div class="cases-block__slide case_slide">
-                      <img src="img/slider.jpg" alt="slider">
+                      <img src="<?php echo get_template_directory_uri()?>/static/img/slider.jpg" alt="slider">
                     </div>
 
                     <div class="cases-block__slide case_slide">
-                      <img src="img/slider.jpg" alt="slider">
+                      <img src="<?php echo get_template_directory_uri()?>/static/img/slider.jpg" alt="slider">
                     </div>
 
                     <div class="cases-block__slide case_slide">
-                      <img src="img/slider.jpg" alt="slider">
+                      <img src="<?php echo get_template_directory_uri()?>/static/img/slider.jpg" alt="slider">
                     </div>
 
                     <div class="cases-block__slide case_slide">
-                      <img src="img/slider.jpg" alt="slider">
+                      <img src="<?php echo get_template_directory_uri()?>/static/img/slider.jpg" alt="slider">
                     </div>
 
                   </div>
@@ -164,7 +164,7 @@
             
             <section class="page__reviews-block reviews">
               <div class="background-reviews">
-                <img class="triple-stars" src="img/triple_stars.svg" alt="stars">
+                <img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="stars">
               </div>
             <div class="reviews-block__container _container">
                 <div class="reviews_gradient_bg">
@@ -297,25 +297,6 @@
               </div>
             </section>
 
-            <script type="text/javascript" src="slick/slick.min.js"></script>
-            <script>
-            $(document).ready(function () {
-                $('.reviews_slider').slick({
-                dots: true,
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                adaptiveHeight: true
-                });
-
-                $('.cases_slider').slick({
-                dots: true,
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                adaptiveHeight: true
-                });
-            });
             
-            </script>
+            
 <?php get_footer(); ?>

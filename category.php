@@ -13,28 +13,40 @@
                         <div class="services-block__body">
                             <div class="services-block__grid">
                                 <?php
-                                    // получаем информацию о запрашиваемом объекте, у нас это категория:
-                                    $queried_object = get_queried_object(); 
-                                    // следующая строчка полезна при работе с произвольными таксономиями:
-                                    // $taxonomy = $queried_object->taxonomy; // в нашем случае 'category'
-                                    // получаем дочерние категории:
-                                    $child_cats = get_categories(array(
-                                    'taxonomy' => 'category',
-                                    'child_of' => $queried_object->term_id
-                                    ));
-                                    if(count($child_cats)){  
-                                    // выводим ссылки на дочерние категории:
-                                    foreach ($child_cats as $key => $cat) { ?>
-                                        <div class="services-block__item">
-                                            <div class="services-block__text">
-                                                <a href="<?php echo get_category_link($cat->cat_ID);?>"><?php echo $cat->name; ?></a>
-                                            </div>
-                                            <div class="services-block__img"><img src="/static/img/Frame 1.svg" alt="img"></div>
-                                        </div>                                                                               
-                                        <?php 
-                                        }
-                                    }
+                                    $category = get_queried_object();
+                                    $query = new WP_Query(
+                                        array(
+                                            'post_type'      => 'post', 
+                                            'post_status'    => 'publish', 
+                                            'posts_per_page' => 9, 
+                                            'cat'            => $category->cat_ID
+                                        )
+                                    );
+
+                                if ($query->have_posts()) {
                                 ?>
+                                
+                                <?php 
+                                    while ($query->have_posts()) {
+                                        $query->the_post(); 
+                                        if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
+                                            $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
+                                        else
+                                            $post_thumbnail_url = get_the_post_thumbnail_url();
+                                        ?>
+                                         <a class="services-block__item" href="<?php the_permalink(); ?>">
+                                            <div class="services-block__text"><?php the_title(); ?></div>
+                                            <div class="services-block__img"><img src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="img"></div>
+                                        </a>  
+                                        <?php 
+                                    }
+                                    ?>	
+                                
+                                    <?php 
+                                }	
+                                ?>        
+
+                                
 
                                 <!--        
                                 <div class="services-block__item">

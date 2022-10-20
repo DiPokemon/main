@@ -6,36 +6,19 @@
 <title><?php bloginfo('name'); ?></title>
 <meta name="description" content="<?php bloginfo('description'); ?>">
 
-<?php
-    if( !is_admin()){
-        // jquery
-        wp_deregister_script('jquery');
-        wp_register_script('jquery', get_template_directory_uri()."/static/jquery/js/jquery-3.1.1.js", false, '3.1.1');
-        wp_enqueue_script('jquery');
-    }
+<?php wp_head();?>
 
-    // style
-    //wp_enqueue_style('style-zero.css', get_template_directory_uri()."/static/css/style-zero.css");
-    //wp_enqueue_style('style.css', get_template_directory_uri()."/static/css/style.css");
-    //wp_enqueue_style('style-adaptive.css', get_template_directory_uri()."/static/css/style-adaptive.css");
-    
-    // js
-    wp_enqueue_script('script.js', get_template_directory_uri()."/static/js/script.js");
-
-    wp_head();
-?>
-
-<div class="background-main1"></div>
-    <div class="background-main2"></div>
+    <!-- <div class="background-main1"></div> -->
+    <!-- <div class="background-main2"></div> -->
     <!-- <div class="background-main3"></div> -->
-    <div class="background-reviews">
+    <!-- <div class="background-reviews">
       <img class="background-reviews__Star1" src="img/Soft Star1.png" alt="img">
       <img class="background-reviews__Star2" src="img/Soft Star2.png" alt="img">
       <img class="background-reviews__Star3" src="img/Soft Star3.png" alt="img">
     </div>
      <div class="background-choice__left">
       <img class="background-choice__leftImg" src="img/LightningLeft.png" alt="img">
-    </div>
+    </div> -->
     <!--<div class="background-choice__right">
       <img src="img/LightningRight.png" alt="img">
     </div> -->

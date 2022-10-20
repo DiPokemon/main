@@ -12,10 +12,36 @@ function topland_load_styles()
   wp_enqueue_style('style-zero', get_template_directory_uri().'/static/css/style-zero.css');
   wp_enqueue_style('style', get_template_directory_uri().'/static/css/style.css');
   wp_enqueue_style('style-adaptive', get_template_directory_uri().'/static/css/style-adaptive.css');
+  wp_enqueue_style('slick', get_template_directory_uri().'/static/js/slick/slick.css');
+  wp_enqueue_style('slick', get_template_directory_uri().'/static/js/slick/slick-theme.css');
   //wp_enqueue_style('style', get_stylesheet_uri());
+};
+ 
+add_action('wp_enqueue_scripts', 'topland_load_styles', 10);
+
+/* Load Scripts */
+function topland_load_scripts()
+{
+  
+  wp_enqueue_script('script', get_template_directory_uri() . '/static/js/script.js', array(), NULL, true);
+  wp_deregister_script( 'jquery' );
+  wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.6.1.slim.min.js', array(), NULL, false);
+  wp_enqueue_script( 'jquery' );
+  wp_enqueue_script('slick', get_template_directory_uri() . '/static/js/slick/slick.min.js', array(), NULL, true);
+  wp_enqueue_script('init_main_slider', get_template_directory_uri().'/static/js/init_main_slider.js', array(), NULL, true);
 }
  
-add_action('wp_enqueue_scripts', 'topland_load_styles');
+add_action('wp_enqueue_scripts', 'topland_load_scripts', 10);
+
+//инициализация слайдера только на главной
+add_action( 'template_redirect', 'init_slider_script' );
+ 
+function init_slider_script() {
+  if ( is_page_template('index.php') ) {
+    wp_enqueue_script( 'init_main_slider', get_template_directory_uri().'/static/js/init_main_slider.js', array( 'jquery' ), false, true );
+  }
+};
+
 
 //загрузка SVG
 add_filter( 'upload_mimes', 'svg_upload_allow' );
@@ -25,7 +51,7 @@ function svg_upload_allow( $mimes ) {
 	$mimes['svg']  = 'image/svg+xml';
 
 	return $mimes;
-}
+};
 
 add_filter( 'wp_check_filetype_and_ext', 'fix_svg_mime_type', 10, 5 );
 
@@ -59,7 +85,7 @@ function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
 	}
 
 	return $data;
-}
+};
 
 add_filter( 'wp_prepare_attachment_for_js', 'show_svg_in_media_library' );
 
@@ -75,13 +101,14 @@ function show_svg_in_media_library( $response ) {
 	}
 
 	return $response;
-}
+};
 
 
 
 
 // Добавить поддержку миниатюр
 add_theme_support('post-thumbnails');
+set_post_thumbnail_size(150, 150, false);
 
 
 

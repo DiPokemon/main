@@ -606,10 +606,11 @@ body {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
-  min-height: 127px;
+  min-height: 100px;
   background: #1f0c37;
   box-shadow: inset 0px -1px 3px 0px #573c7a;
   border-radius: 3px;
+  align-items: center;
   /* margin-top: 23px; */
 }
 .services-block__text {
@@ -1089,8 +1090,8 @@ body {
 }
 
 .services-block__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -1117,6 +1118,7 @@ body {
 }
 
 .service-article_text {
+  font-family: "Inter";
   color: var(--article-text-color);
   font-weight: 400;
   font-size: 16px;

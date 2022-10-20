@@ -5,9 +5,6 @@
                     <h1 class="page-header__title"><?php single_cat_title(); ?></h1>
                 </section>
 
-
-                        
-
                 <section class="page__services-block services">
                     <div class="services-block__container _container">
                         <div class="services-block__body">
@@ -29,35 +26,12 @@
                                             <div class="services-block__text">
                                                 <a href="<?php echo get_category_link($cat->cat_ID);?>"><?php echo $cat->name; ?></a>
                                             </div>
-                                            <div class="services-block__img"><img src="/static/img/Frame 1.svg" alt="img"></div>
+                                            <div class="services-block__img"><img src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="img"></div>
                                         </div>                                                                               
                                         <?php 
                                         }
                                     }
-                                ?>
-
-                                <!--        
-                                <div class="services-block__item">
-                                    <div class="services-block__text">SEO продвижение</div>
-                                    <div class="services-block__img"><img src="/static/img/Frame 1.svg" alt="img"></div>
-                                </div>
-                                <div class="services-block__item">
-                                    <div class="services-block__text">Создание сайтов</div>
-                                    <div class="services-block__img"><img src="img/Frame 1.svg" alt="img"></div>
-                                </div>
-                                <div class="services-block__item">
-                                    <div class="services-block__text">Контекстная реклама</div>
-                                    <div class="services-block__img"><img src="img/Frame 1.svg" alt="img"></div>
-                                </div>
-                                <div class="services-block__item">
-                                    <div class="services-block__text">Техническая поддержка</div>
-                                    <div class="services-block__img"><img src="img/Frame 1.svg" alt="img"></div>
-                                </div>
-                                <div class="services-block__item">
-                                    <div class="services-block__text">ГЕО-сервисы</div>
-                                    <div class="services-block__img"><img src="img/Frame 1.svg" alt="img"></div>
-                                </div>
-                                -->
+                                ?>                                
                             </div>
                         </div>
                     </div>
