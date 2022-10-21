@@ -8,21 +8,7 @@
 
 <?php wp_head();?>
 
-    <!-- <div class="background-main1"></div> -->
-    <!-- <div class="background-main2"></div> -->
-    <!-- <div class="background-main3"></div> -->
-    <!-- <div class="background-reviews">
-      <img class="background-reviews__Star1" src="img/Soft Star1.png" alt="img">
-      <img class="background-reviews__Star2" src="img/Soft Star2.png" alt="img">
-      <img class="background-reviews__Star3" src="img/Soft Star3.png" alt="img">
-    </div>
-     <div class="background-choice__left">
-      <img class="background-choice__leftImg" src="img/LightningLeft.png" alt="img">
-    </div> -->
-    <!--<div class="background-choice__right">
-      <img src="img/LightningRight.png" alt="img">
-    </div> -->
-    <div class="wrapper">
+      <div class="wrapper">
       
       <header class="header">
         <div class="header__container _container">
