@@ -170,25 +170,6 @@
                               </div>                              
                           </a>
                       <?php endwhile; wp_reset_query(); ?>  
-
-
-
-                    <!-- <div class="cases-block__slide case_slide">
-                      <img src="<?php echo get_template_directory_uri()?>/static/img/slider.jpg" alt="slider">
-                    </div>
-
-                    <div class="cases-block__slide case_slide">
-                      <img src="<?php echo get_template_directory_uri()?>/static/img/slider.jpg" alt="slider">
-                    </div>
-
-                    <div class="cases-block__slide case_slide">
-                      <img src="<?php echo get_template_directory_uri()?>/static/img/slider.jpg" alt="slider">
-                    </div>
-
-                    <div class="cases-block__slide case_slide">
-                      <img src="<?php echo get_template_directory_uri()?>/static/img/slider.jpg" alt="slider">
-                    </div> -->
-
                   </div>
 
                 </div>
