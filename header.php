@@ -26,9 +26,10 @@
                 wp_nav_menu($args);
             ?>
         <div class="header__logo">
-            <?php the_custom_logo() ?>
+         <?php the_custom_logo()?>
+            
         </div>
-
+       
           <div class="header__location">
             <div class="header__location_img"><img src="<?php echo get_template_directory_uri()?>/static/img/location.svg" alt="location"/></div>
             <div class="header__location_text">Ростов-на-Дону</div>
