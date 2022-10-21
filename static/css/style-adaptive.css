@@ -14,10 +14,36 @@
 }
 
 /*---------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------header------------------------------------*/
+@media(max-width:1015px) {
+    .header__container._container {
+        width: 99vw;
+    }
+    .logo_text{
+        font-size: 18px
+    }
+    .menu__list{
+        gap: 15px;
+    }
+}
+
+@media(max-width:831px) {
+    .logo_text {
+        display: none;
+    }
+}
+
+@media(max-width:768px) {
+    .logo_text {
+        display: none;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------page-header------------------------------------*/
 
 @media(max-width:768px) {
-.page-header {
+    .page-header {
         color: var(--main-white-color);
         font-family: 'Inter';
         margin-bottom: 28px;

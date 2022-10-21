@@ -165,10 +165,10 @@
                                 <img src="<?= $post_thumbnail_url ?>" alt="<?php the_title() ?>">
                                 <div class="case_slide_title">
                                   <h3 class="case_slide__title_h3"><?php the_title() ?></h3>
-                                </div>
-                                
+                                </div>                                
                               </div>                              
                           </a>
+
                       <?php endwhile; wp_reset_query(); ?>  
                   </div>
 

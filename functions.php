@@ -40,7 +40,7 @@ function init_slider_script() {
   if ( is_page_template('index.php') ) {
     wp_enqueue_script( 'init_main_slider', get_template_directory_uri().'/static/js/init_main_slider.js', array( 'jquery' ), false, true );
   }
-};
+}
 
 
 //загрузка SVG
@@ -51,7 +51,7 @@ function svg_upload_allow( $mimes ) {
 	$mimes['svg']  = 'image/svg+xml';
 
 	return $mimes;
-};
+}
 
 add_filter( 'wp_check_filetype_and_ext', 'fix_svg_mime_type', 10, 5 );
 
@@ -85,7 +85,7 @@ function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
 	}
 
 	return $data;
-};
+}
 
 add_filter( 'wp_prepare_attachment_for_js', 'show_svg_in_media_library' );
 
@@ -101,7 +101,7 @@ function show_svg_in_media_library( $response ) {
 	}
 
 	return $response;
-};
+}
 
 
 
