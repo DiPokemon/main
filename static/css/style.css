@@ -353,9 +353,12 @@ body {
 }
 .main-block__body {
   /* border: 1px solid black; */
+  position: relative;
   display: flex;
 }
 .main-content {
+  position: relative;
+  z-index: 30;
   display: flex;
   flex-direction: column;
   min-width: 524px;
@@ -726,6 +729,9 @@ body {
   height: 350px;
   object-fit: cover;
   border-radius: 5px;
+}
+.cases-block__title {
+  margin-top: 185px;
 }
 .cases-block__title_h2 {
   margin-bottom: 50px;
