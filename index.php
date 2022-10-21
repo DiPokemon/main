@@ -135,12 +135,45 @@
               <div class="cases-block__container _container">
                 <div class="cases-block__body">
                   <div class="cases-block__title">
-                    <div class="cases-block__subtitle toplend">TOP LAND</div>
                     <h2 class="_h2 cases-block__title_h2"> Свежие кейсы студии</h2>
                   </div>
 
                   <div class="slider_wrapper cases_slider">
-                    <div class="cases-block__slide case_slide">
+                      <?php $length_cases = 0 ?>
+                      <?php
+                          // Взять первые 3 новости для горизонтальной ленты
+                          $args_for_cases = [
+                              'posts_per_page' => 9,
+                              'category_name'  => 'cases',
+                              'offset'         => 0,
+                          ];
+
+                          $query_cases = new WP_Query( $args_for_cases );
+
+                          while ($query_cases->have_posts()) :
+                              $query_cases->the_post();
+                              $length_cases++;
+
+                              if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
+                                  $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
+                              else
+                                  $post_thumbnail_url = get_the_post_thumbnail_url();
+
+                      ?>
+                          <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
+                              <div class="case_slide_wrapper">
+                                <img src="<?= $post_thumbnail_url ?>" alt="<?php the_title() ?>">
+                                <div class="case_slide_title">
+                                  <h3 class="case_slide__title_h3"><?php the_title() ?></h3>
+                                </div>
+                                
+                              </div>                              
+                          </a>
+                      <?php endwhile; wp_reset_query(); ?>  
+
+
+
+                    <!-- <div class="cases-block__slide case_slide">
                       <img src="<?php echo get_template_directory_uri()?>/static/img/slider.jpg" alt="slider">
                     </div>
 
@@ -154,7 +187,7 @@
 
                     <div class="cases-block__slide case_slide">
                       <img src="<?php echo get_template_directory_uri()?>/static/img/slider.jpg" alt="slider">
-                    </div>
+                    </div> -->
 
                   </div>
 
@@ -177,7 +210,6 @@
 
                 <div class="reviews-block__body">
                   <div class="reviews-block__title">
-                    <div class="reviews-block__subtitle toplend">TOP LAND</div>
                     <h2 class="_h2 reviews-block__title_h2">Отзывы клиентов</h2>
                   </div>
 
@@ -192,7 +224,7 @@
                     </div>
 
                     <div class="reviews-block__slide reviews-slide">
-                      <div class="reviews-slide__text1">123213 Работаем с компанией Topland 1,5 года.
+                      <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года.
                         Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
                         грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
                       <div class="reviews-slide__text2">Вячеслав Шарыпкин</div>
