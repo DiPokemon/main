@@ -1,0 +1,32 @@
+.gto {
+  clear: both;
+  height: auto;
+  overflow: hidden;
+}
+.gto__documents {
+  list-style: none;
+  padding-left: 50px;
+}
+.gto__documents__item {
+  display: block;
+  padding: 20px 0;
+  font-size: 1.5em;
+}
+.gto__documents__item:link {
+  text-decoration: none;
+}
+.gto__documents__item:hover {
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  .gto {
+    padding: 0 10px;
+  }
+  .gto__documents {
+    padding-left: 15px;
+  }
+  .gto__documents__item {
+    padding: 10px 0;
+    font-size: 1em;
+  }
+}
