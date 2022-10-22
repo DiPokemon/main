@@ -38,8 +38,8 @@
           <div class="header__hrVert"></div>
 
           <div class="header__contact">
-            <div class="header__contact_telefon">+7 993 453-63-07</div>
-            <div class="header_contact_href"><a href="https://wa.me/79934536307">Написать в What’sApp</a></div>
+            <div class="header__contact_telefon"><a href="tel:+79934536307">+7 993 453-63-07</div>
+            <div class="header_contact_href"><a class="header__link" href="https://wa.me/79934536307">Написать в What’sApp</a></div>
           </div>
           
         </div>
