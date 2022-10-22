@@ -117,9 +117,9 @@
                   
                     <div class="choice-block__subtitle">Миссия нашей компании-это дать сильный старт Вашему бизнесу<br>и сохранить занимаемые за вами позиции.</div>
                     <ul class="choice-block__list">
-                      <li class="choice-block__el">По показателю SEO выводим клиентов на 70-90% в ТОП-10.</li><br>
-                      <li class="choice-block__el">Способствуем расширению сферы деятельности партнеров, благодаря правильной маркетинговой стратегии.</li><br>
-                      <li class="choice-block__el">Выводим Landing-page в ТОП-3 и улучшаем конверсионные показатели до 240%.</li><br>
+                      <li class="choice-block__el">По показателю SEO выводим клиентов на 70-90% в ТОП-10.</li>
+                      <li class="choice-block__el">Способствуем расширению сферы деятельности партнеров, благодаря правильной маркетинговой стратегии.</li>
+                      <li class="choice-block__el">Выводим Landing-page в ТОП-3 и улучшаем конверсионные показатели до 240%.</li>
                       <li class="choice-block__el">Повышаем продажи партнерских товаров и услуг в среднем в 3 раза.</li>  
                     </ul>
                     <div class="choice-block__button"><a class="choice-block__href" href="#">О компании</a></div>
@@ -163,8 +163,8 @@
                           <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
                               <div class="case_slide_wrapper">
                                 <img src="<?= $post_thumbnail_url ?>" alt="<?php the_title() ?>">
-                                <div class="case_slide_title">
-                                  <h3 class="case_slide__title_h3"><?php the_title() ?></h3>
+                                <div class="case_slide_title_wrapper">
+                                  <h3 class="case_slide__title"><?php the_title() ?></h3>
                                 </div>                                
                               </div>                              
                           </a>
