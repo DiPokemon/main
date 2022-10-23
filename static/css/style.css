@@ -1,3 +1,7 @@
+.main-block__container{
+  display:none
+}
+
 :root {
   --main-white-color: #f7f2ff;
   /*основной "белый" цвет, используется почти во всех текстах*/
@@ -127,13 +131,27 @@ body {
 }
 
 /*-----------------------------------------------header----------------------------------------*/
+.header__container._container{
+  width:100%
+}
 
 .header__container {
-  display: flex;
+  z-index: 30;
+  position: fixed;
+  /*display: flex;*/
   min-height: 68px;
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center;
+  justify-content: space-between; */
   background: #1a0930;
+  width: 100%;
+  max-width:100%
+}
+.header_wrapper{
+  margin: 0 auto;
+  max-width: 1138px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header__menu {
   display: flex;
@@ -263,7 +281,9 @@ body {
   border: none;
   border-top: 1px solid #3f3354;
 }
-
+.header__burger{
+  display: none;
+}
 /*---------------------------------------------------------------------------------------*/
 /*------------------------------------page__main-block-----------------------------------*/
 
