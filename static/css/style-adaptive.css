@@ -286,11 +286,6 @@
 /*----------------------------------------------------category-list----------------------------------*/
 
 @media(max-width: 768px) {
-    .services-block__grid {
-        /* display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px; */
-    }
     .category-list_service-selection {
         margin: 50px 0px
     }
@@ -301,11 +296,6 @@
 }   
 
 @media(max-width: 460px) {
-    .services-block__grid {
-        /* display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px; */
-    }
     .services-block__item{
         width: 100%
     }
