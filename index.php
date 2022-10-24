@@ -138,38 +138,48 @@
                     <h2 class="_h2 cases-block__title_h2"> Свежие кейсы студии</h2>
                   </div>
 
-                  <div class="slider_wrapper cases_slider">
-                      <?php $length_cases = 0 ?>
-                      <?php
-                          // Взять первые 3 новости для горизонтальной ленты
-                          $args_for_cases = [
-                              'posts_per_page' => 9,
-                              'category_name'  => 'cases',
-                              'offset'         => 0,
-                          ];
+                  <div class="slider_wrapper">
 
-                          $query_cases = new WP_Query( $args_for_cases );
+                      <div class="cases_slider">
 
-                          while ($query_cases->have_posts()) :
-                              $query_cases->the_post();
-                              $length_cases++;
+                        <?php $length_cases = 0 ?>
+                        <?php
+                            // Взять первые 3 новости для горизонтальной ленты
+                            $args_for_cases = [
+                                'posts_per_page' => 9,
+                                'category_name'  => 'cases',
+                                'offset'         => 0,
+                            ];
 
-                              if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
-                                  $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
-                              else
-                                  $post_thumbnail_url = get_the_post_thumbnail_url();
+                            $query_cases = new WP_Query( $args_for_cases );
 
-                      ?>
-                          <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
-                              <div class="case_slide_wrapper">
-                                <img src="<?= $post_thumbnail_url ?>" alt="<?php the_title() ?>">
-                                <div class="case_slide_title_wrapper">
-                                  <h3 class="case_slide__title"><?php the_title() ?></h3>
-                                </div>                                
-                              </div>                              
-                          </a>
+                            while ($query_cases->have_posts()) :
+                                $query_cases->the_post();
+                                $length_cases++;
 
-                      <?php endwhile; wp_reset_query(); ?>  
+                                if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
+                                    $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
+                                else
+                                    $post_thumbnail_url = get_the_post_thumbnail_url();
+
+                        ?>
+                            <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
+                                <div class="case_slide_wrapper">
+                                  <img src="<?= $post_thumbnail_url ?>" alt="<?php the_title() ?>">
+                                  <div class="case_slide_title_wrapper">
+                                    <h3 class="case_slide__title"><?php the_title() ?></h3>
+                                  </div>                                
+                                </div>                              
+                            </a>
+
+                        <?php endwhile; wp_reset_query(); ?>  
+
+                      </div>
+                      <div class="slider-controls">
+                        <button type="button" class="slide-m-prev">prev</button>
+                        <div class="slide-m-dots"></div>
+                        <button type="button" class="slide-m-next">next</button>
+                      </div>
                   </div>
 
                 </div>
@@ -180,39 +190,37 @@
               <div class="background-reviews">
                 <img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="stars">
               </div>
-            <div class="reviews-block__container _container">
-                <div class="reviews_gradient_bg">
-
-                </div>
-
-                <div class="triple_stars revies_triple_stars">
-                  
-                </div>
-
+              <div class="reviews-block__container _container">
+                <div class="reviews_gradient_bg"></div>
+                <div class="triple_stars revies_triple_stars"></div>
                 <div class="reviews-block__body">
                   <div class="reviews-block__title">
                     <h2 class="_h2 reviews-block__title_h2">Отзывы клиентов</h2>
                   </div>
                   <div class="main_block__wrapper">
-                    <div class="slider_wrapper reviews_slider">
-
-                      <div class="reviews-block__slide reviews-slide">
-                        <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года. 
-                          Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
-                          грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
-                        <div class="reviews-slide__text2">Вячеслав Шарыпкин1111</div>
-                        <div class="reviews-slide__text3">Директор Trax.su</div>
+                    <div class="slider_wrapper">
+                      <div class="reviews_slider">
+                        <div class="reviews-block__slide reviews-slide">
+                          <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года. 
+                            Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
+                            грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
+                          <div class="reviews-slide__text2">Вячеслав Шарыпкин1111</div>
+                          <div class="reviews-slide__text3">Директор Trax.su</div>
+                        </div>
+                        <div class="reviews-block__slide reviews-slide">
+                          <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года.
+                            Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
+                            грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
+                          <div class="reviews-slide__text2">Вячеслав Шарыпкин222</div>
+                          <div class="reviews-slide__text3">Директор Trax.su</div>
+                        </div>
                       </div>
-
-                      <div class="reviews-block__slide reviews-slide">
-                        <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года.
-                          Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
-                          грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
-                        <div class="reviews-slide__text2">Вячеслав Шарыпкин222</div>
-                        <div class="reviews-slide__text3">Директор Trax.su</div>
+                      <div class="slider-controls">
+                        <button type="button" class="slide-m-prev">prev</button>
+                        <div class="slide-m-dots"></div>
+                        <button type="button" class="slide-m-next">next</button>
                       </div>
-
-                    </div>
+                    </div> 
                   </div>
                 </div>
               </div>

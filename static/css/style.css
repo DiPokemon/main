@@ -467,6 +467,15 @@ main.page{
   line-height: 135%;
   color: #ffffff;
 }
+.slide-m-dots .slick-dots{
+  position:static
+}
+.slider-controls{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
 /*---------------------------------------------------------------------------------------------*/
 /*----------------------------------------services---------------------------------------------*/

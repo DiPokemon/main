@@ -61,7 +61,6 @@ function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
 	if( $dosvg ){
 		// разрешим
 		if( current_user_can('manage_options') ){
-
 			$data['ext']  = 'svg';
 			$data['type'] = 'image/svg+xml';
 		}
