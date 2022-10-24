@@ -28,6 +28,9 @@ body {
   background: #1a0930;
   z-index: 3;
 }
+main.page{
+  margin-top: 68px;
+}
 .background-main1 {
   position: absolute;
   z-index: 1;
@@ -288,9 +291,9 @@ body {
 }
 /*---------------------------------------------------------------------------------------*/
 /*------------------------------------page__main-block-----------------------------------*/
-.main-block__container._container{
+/* .main-block__container._container{
   margin-top: 68px
-}
+} */
 .page__main-block {
   position: relative;
 }
