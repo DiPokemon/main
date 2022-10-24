@@ -1023,6 +1023,7 @@ body {
 .footer__body {
   padding: 40px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .footer_left-side,

@@ -319,3 +319,30 @@
     }
 }
 
+/*---------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------footer----------------------------------*/
+@media(max-width:768px){
+    .footer__navigation{
+        order: 1;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--article-text-color);
+    }
+    .footer_left-side,
+    .footer_right-side{
+        order: 2;
+        width: 45%;
+        padding-top: 10px
+    }
+}
+
+@media(max-width: 460px) {
+    .menu-footer__list{
+        gap: 11px
+    }
+    .menu-footer__link {
+        font-size:15px
+    }
+}
+
