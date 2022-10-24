@@ -129,7 +129,7 @@
         align-items: flex-start;
         justify-content: center;
         transition: all 0.3s ease 0s;
-        background-color: #1a0930f7;
+        background-color: #1a0930d6;
         backdrop-filter: blur(5px);
         text-transform: uppercase;
     }
@@ -291,14 +291,12 @@
         grid-template-columns: 1fr 1fr;
         gap: 20px; */
     }
-
     .category-list_service-selection {
         margin: 50px 0px
     }
-
     .category-list_description {
         font-size: 16px;
-        margin-bottom: 100px;
+        margin-bottom: 100px
     }
 }   
 
