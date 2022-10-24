@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="_container">
                 <section class="page-header">
-                    <div class="page-header__breadcrumbs">Главная / Услуги / SEO</div>
+                    <?php if ( function_exists( 'topland_breadcrumbs' ) ) topland_breadcrumbs(); ?>  
                     <h1 class="page-header__title"><?php single_cat_title(); ?></h1>
                 </section>
 
