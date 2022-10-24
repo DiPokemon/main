@@ -15,8 +15,7 @@ function topland_load_styles()
   wp_enqueue_style('slick', get_template_directory_uri().'/static/js/slick/slick.css');
   wp_enqueue_style('slick-theme', get_template_directory_uri().'/static/js/slick/slick-theme.css');
   //wp_enqueue_style('style', get_stylesheet_uri());
-};
- 
+}; 
 add_action('wp_enqueue_scripts', 'topland_load_styles', 10);
 
 /* Load Scripts */
@@ -29,35 +28,27 @@ function topland_load_scripts()
   wp_enqueue_script( 'jquery' );
   wp_enqueue_script('slick', get_template_directory_uri() . '/static/js/slick/slick.min.js', array(), NULL, true);
   wp_enqueue_script('init_main_slider', get_template_directory_uri().'/static/js/init_main_slider.js', array(), NULL, true);
-}
- 
+} 
 add_action('wp_enqueue_scripts', 'topland_load_scripts', 10);
 
 //инициализация слайдера только на главной
-add_action( 'template_redirect', 'init_slider_script' );
- 
 function init_slider_script() {
   if ( is_page_template('index.php') ) {
     wp_enqueue_script( 'init_main_slider', get_template_directory_uri().'/static/js/init_main_slider.js', array( 'jquery' ), false, true );
   }
 }
+add_action( 'template_redirect', 'init_slider_script' );
 
-
-//загрузка SVG
+// загрузка SVG в медиабиблиотеку
 add_filter( 'upload_mimes', 'svg_upload_allow' );
-
 # Добавляет SVG в список разрешенных для загрузки файлов.
 function svg_upload_allow( $mimes ) {
 	$mimes['svg']  = 'image/svg+xml';
-
 	return $mimes;
 }
-
 add_filter( 'wp_check_filetype_and_ext', 'fix_svg_mime_type', 10, 5 );
-
 # Исправление MIME типа для SVG файлов.
 function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
-
 	// WP 5.1 +
 	if( version_compare( $GLOBALS['wp_version'], '5.1.0', '>=' ) ){
 		$dosvg = in_array( $real_mime, [ 'image/svg', 'image/svg+xml' ] );
@@ -65,11 +56,9 @@ function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
 	else {
 		$dosvg = ( '.svg' === strtolower( substr( $filename, -4 ) ) );
 	}
-
 	// mime тип был обнулен, поправим его
 	// а также проверим право пользователя
 	if( $dosvg ){
-
 		// разрешим
 		if( current_user_can('manage_options') ){
 
@@ -81,41 +70,30 @@ function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
 			$data['ext']  = false;
 			$data['type'] = false;
 		}
-
 	}
-
 	return $data;
 }
-
 add_filter( 'wp_prepare_attachment_for_js', 'show_svg_in_media_library' );
-
 # Формирует данные для отображения SVG как изображения в медиабиблиотеке.
 function show_svg_in_media_library( $response ) {
-
 	if ( $response['mime'] === 'image/svg+xml' ) {
-
 		// С выводом названия файла
 		$response['image'] = [
 			'src' => $response['url'],
 		];
 	}
-
 	return $response;
 }
-
-
-
+// конец загрузки SVG в медиабиблиотеку
 
 // Добавить поддержку миниатюр
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(150, 150, false);
 
-
-
 // Зарегистрировать меню 
 register_nav_menus([
-    'main_menu' => 'Основное меню',
-    'footer_menu' => 'Подвал меню'
+    'main_menu' => 'Main menu',
+    'footer_menu' => 'Footer menu'
 ]);
 
 //добавление класса к li в меню
@@ -143,13 +121,10 @@ function change_logo_class( $html ) {
     return $html;
 };
 
-
-
 // Вывод анонса с заданным количеством слов
 function new_excerpt_length($length) {
-  return 25;
+  return 10;
 }
-
 add_filter('excerpt_length', 'new_excerpt_length');
 
 // Удаление конструкции [...] в конце
@@ -164,13 +139,10 @@ function single_category($single) {
 
         if (file_exists($slugPath)) return $slugPath;
         elseif (file_exists($termIDPath)) return $termIDPath;
-    }
- 
+    } 
     return $single;
 }
 add_filter('single_template', 'single_category');
-
-
 
 // Переопределить шаблон для wp pagination
 // CHECK: admin
@@ -192,8 +164,6 @@ function theme_navigation_template( $template, $class ) {
     ';
 }
 
-
-
 // Добавляем url pagination в category-news.php
 // Источник: http://stackoverflow.com/questions/21195780/adding-an-offset-to-a-category-loop-in-wordpress
 add_action( 'pre_get_posts', 'theme_pre_get_posts' );
@@ -207,8 +177,6 @@ function theme_pre_get_posts( $query ) {
     }
     return $query;
 }
-
-
 
 // Добавить новые типы для медиа-файлов
 // add_filter('upload_mimes', 'custom_upload_mimes');
@@ -246,7 +214,6 @@ function theme_pre_get_posts( $query ) {
  * лицензия: MIT
 */
 function topland_breadcrumbs() {
-
 	/* === ОПЦИИ === */
 	$text['home']     = 'Главная'; // текст ссылки "Главная"
 	$text['category'] = '%s'; // текст для страницы рубрики
@@ -256,19 +223,16 @@ function topland_breadcrumbs() {
 	$text['404']      = 'Ошибка 404'; // текст для страницы 404
 	$text['page']     = 'Страница %s'; // текст 'Страница N'
 	$text['cpage']    = 'Страница комментариев %s'; // текст 'Страница комментариев N'
-
 	$wrap_before    = '<div class="page-header__breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">'; // открывающий тег обертки
 	$wrap_after     = '</div><!-- .breadcrumbs -->'; // закрывающий тег обертки
 	$sep            = '<span class="breadcrumbs__separator"> / </span>'; // разделитель между "крошками"
 	$before         = '<span class="breadcrumbs__current">'; // тег перед текущей "крошкой"
 	$after          = '</span>'; // тег после текущей "крошки"
-
 	$show_on_home   = 0; // 1 - показывать "хлебные крошки" на главной странице, 0 - не показывать
 	$show_home_link = 1; // 1 - показывать ссылку "Главная", 0 - не показывать
 	$show_current   = 1; // 1 - показывать название текущей страницы, 0 - не показывать
 	$show_last_sep  = 1; // 1 - показывать последний разделитель, когда название текущей страницы не отображается, 0 - не показывать
 	/* === КОНЕЦ ОПЦИЙ === */
-
 	global $post;
 	$home_url       = home_url('/');
 	$link           = '<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">';
@@ -279,20 +243,14 @@ function topland_breadcrumbs() {
 	$home_link      = sprintf( $link, $home_url, $text['home'], 1 );
 
 	if ( is_home() || is_front_page() ) {
-
 		if ( $show_on_home ) echo $wrap_before . $home_link . $wrap_after;
-
 	} else {
-
 		$position = 0;
-
 		echo $wrap_before;
-
 		if ( $show_home_link ) {
 			$position += 1;
 			echo $home_link;
 		}
-
 		if ( is_category() ) {
 			$parents = get_ancestors( get_query_var('cat'), 'category' );
 			foreach ( array_reverse( $parents ) as $cat ) {
@@ -311,7 +269,6 @@ function topland_breadcrumbs() {
 					echo $before . sprintf( $text['category'], single_cat_title( '', false ) ) . $after;
 				} elseif ( $show_last_sep ) echo $sep;
 			}
-
 		} elseif ( is_search() ) {
 			if ( get_query_var( 'paged' ) ) {
 				$position += 1;
@@ -324,19 +281,16 @@ function topland_breadcrumbs() {
 					echo $before . sprintf( $text['search'], get_search_query() ) . $after;
 				} elseif ( $show_last_sep ) echo $sep;
 			}
-
 		} elseif ( is_year() ) {
 			if ( $show_home_link && $show_current ) echo $sep;
 			if ( $show_current ) echo $before . get_the_time('Y') . $after;
 			elseif ( $show_home_link && $show_last_sep ) echo $sep;
-
 		} elseif ( is_month() ) {
 			if ( $show_home_link ) echo $sep;
 			$position += 1;
 			echo sprintf( $link, get_year_link( get_the_time('Y') ), get_the_time('Y'), $position );
 			if ( $show_current ) echo $sep . $before . get_the_time('F') . $after;
 			elseif ( $show_last_sep ) echo $sep;
-
 		} elseif ( is_day() ) {
 			if ( $show_home_link ) echo $sep;
 			$position += 1;
@@ -345,7 +299,6 @@ function topland_breadcrumbs() {
 			echo sprintf( $link, get_month_link( get_the_time('Y'), get_the_time('m') ), get_the_time('F'), $position );
 			if ( $show_current ) echo $sep . $before . get_the_time('d') . $after;
 			elseif ( $show_last_sep ) echo $sep;
-
 		} elseif ( is_single() && ! is_attachment() ) {
 			if ( get_post_type() != 'post' ) {
 				$position += 1;
@@ -373,7 +326,6 @@ function topland_breadcrumbs() {
 					elseif ( $show_last_sep ) echo $sep;
 				}
 			}
-
 		} elseif ( is_post_type_archive() ) {
 			$post_type = get_post_type_object( get_post_type() );
 			if ( get_query_var( 'paged' ) ) {
@@ -386,7 +338,6 @@ function topland_breadcrumbs() {
 				if ( $show_current ) echo $before . $post_type->label . $after;
 				elseif ( $show_home_link && $show_last_sep ) echo $sep;
 			}
-
 		} elseif ( is_attachment() ) {
 			$parent = get_post( $parent_id );
 			$cat = get_the_category( $parent->ID ); $catID = $cat[0]->cat_ID;
@@ -402,12 +353,10 @@ function topland_breadcrumbs() {
 			echo $sep . sprintf( $link, get_permalink( $parent ), $parent->post_title, $position );
 			if ( $show_current ) echo $sep . $before . get_the_title() . $after;
 			elseif ( $show_last_sep ) echo $sep;
-
 		} elseif ( is_page() && ! $parent_id ) {
 			if ( $show_home_link && $show_current ) echo $sep;
 			if ( $show_current ) echo $before . get_the_title() . $after;
 			elseif ( $show_home_link && $show_last_sep ) echo $sep;
-
 		} elseif ( is_page() && $parent_id ) {
 			$parents = get_post_ancestors( get_the_ID() );
 			foreach ( array_reverse( $parents ) as $pageID ) {
@@ -417,7 +366,6 @@ function topland_breadcrumbs() {
 			}
 			if ( $show_current ) echo $sep . $before . get_the_title() . $after;
 			elseif ( $show_last_sep ) echo $sep;
-
 		} elseif ( is_tag() ) {
 			if ( get_query_var( 'paged' ) ) {
 				$position += 1;
@@ -429,7 +377,6 @@ function topland_breadcrumbs() {
 				if ( $show_current ) echo $before . sprintf( $text['tag'], single_tag_title( '', false ) ) . $after;
 				elseif ( $show_home_link && $show_last_sep ) echo $sep;
 			}
-
 		} elseif ( is_author() ) {
 			$author = get_userdata( get_query_var( 'author' ) );
 			if ( get_query_var( 'paged' ) ) {
@@ -441,18 +388,14 @@ function topland_breadcrumbs() {
 				if ( $show_current ) echo $before . sprintf( $text['author'], $author->display_name ) . $after;
 				elseif ( $show_home_link && $show_last_sep ) echo $sep;
 			}
-
 		} elseif ( is_404() ) {
 			if ( $show_home_link && $show_current ) echo $sep;
 			if ( $show_current ) echo $before . $text['404'] . $after;
 			elseif ( $show_last_sep ) echo $sep;
-
 		} elseif ( has_post_format() && ! is_singular() ) {
 			if ( $show_home_link && $show_current ) echo $sep;
 			echo get_post_format_string( get_post_format() );
 		}
-
 		echo $wrap_after;
-
 	}
 } 

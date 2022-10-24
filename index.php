@@ -193,27 +193,27 @@
                   <div class="reviews-block__title">
                     <h2 class="_h2 reviews-block__title_h2">Отзывы клиентов</h2>
                   </div>
+                  <div class="main_block__wrapper">
+                    <div class="slider_wrapper reviews_slider">
 
-                  <div class="slider_wrapper reviews_slider">
+                      <div class="reviews-block__slide reviews-slide">
+                        <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года. 
+                          Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
+                          грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
+                        <div class="reviews-slide__text2">Вячеслав Шарыпкин1111</div>
+                        <div class="reviews-slide__text3">Директор Trax.su</div>
+                      </div>
 
-                    <div class="reviews-block__slide reviews-slide">
-                      <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года. 
-                        Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
-                        грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
-                      <div class="reviews-slide__text2">Вячеслав Шарыпкин</div>
-                      <div class="reviews-slide__text3">Директор Trax.su</div>
+                      <div class="reviews-block__slide reviews-slide">
+                        <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года.
+                          Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
+                          грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
+                        <div class="reviews-slide__text2">Вячеслав Шарыпкин222</div>
+                        <div class="reviews-slide__text3">Директор Trax.su</div>
+                      </div>
+
                     </div>
-
-                    <div class="reviews-block__slide reviews-slide">
-                      <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года.
-                        Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
-                        грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
-                      <div class="reviews-slide__text2">Вячеслав Шарыпкин</div>
-                      <div class="reviews-slide__text3">Директор Trax.su</div>
-                    </div>
-
                   </div>
-                  
                 </div>
               </div>
             </section>
@@ -284,27 +284,27 @@
                   <div class="question__title">
                     <h2 class="_h2 question__title_h2">Вопрос/Ответ</h2>
                   </div>
-                  
-                  <div class="accordion faq_accordion" id="faq_accordion">
-                    <div class="accordion__item close">
-                      <div class="accordion__item_header">
-                        Заголовок 1 <span>+</span>
+                  <div class="main_block__wrapper">
+                    <div class="accordion faq_accordion" id="faq_accordion">
+                      <div class="accordion__item close">
+                        <div class="accordion__item_header">
+                          Заголовок 1 <span>+</span>
+                        </div>
+                        <div class="accordion__item_body">
+                          Содержимое 1
+                        </div>
                       </div>
-                      <div class="accordion__item_body">
-                        Содержимое 1
-                      </div>
-                    </div>
 
-                    <div class="accordion__item close">
-                      <div class="accordion__item_header">
-                        Заголовок 2 <span>+</span>
-                      </div>
-                      <div class="accordion__item_body">
-                        Содержимое 2
+                      <div class="accordion__item close">
+                        <div class="accordion__item_header">
+                          Заголовок 2 <span>+</span>
+                        </div>
+                        <div class="accordion__item_body">
+                          Содержимое 2
+                        </div>
                       </div>
                     </div>
                   </div>
-                  
 
                 </div>
               </div>
