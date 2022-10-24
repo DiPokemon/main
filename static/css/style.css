@@ -1,6 +1,4 @@
-.main-block__container{
-  display:none
-}
+
 
 :root {
   --main-white-color: #f7f2ff;
@@ -32,7 +30,7 @@ body {
 }
 .background-main1 {
   position: absolute;
-  z-index: 4;
+  z-index: 1;
   width: 975px;
   height: 634.06px;
   left: -500px;
@@ -47,7 +45,7 @@ body {
 }
 .background-main2 {
   position: absolute;
-  z-index: 5;
+  z-index: 2;
   width: 407px;
   height: 568.01px;
   left: 255.44px;
@@ -73,7 +71,7 @@ body {
     );
   filter: blur(400px);
   transform: rotate(-20.01deg);
-  z-index: 6;
+  z-index: 3;
 }
 .background-reviews {
   position: absolute;
@@ -153,6 +151,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .header__menu {
   display: flex;
   align-items: center;
@@ -235,7 +234,7 @@ body {
   line-height: 19px;
   text-align: right;
   color: var(--main-white-color);
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 .header__hrVert {
   border-left: 1px solid #3f3354;
@@ -246,7 +245,7 @@ body {
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  padding-left: 20px;
+  /* padding-left: 20px; */
 }
 .header__contact_telefon {
   font-family: "Inter";
@@ -256,6 +255,9 @@ body {
   line-height: 19px;
   text-align: right;
   color: var(--main-white-color);
+}
+.header__contact_telefon-mob{
+  display:none
 }
 .header_contact_href {
   font-family: "Inter";
@@ -286,7 +288,9 @@ body {
 }
 /*---------------------------------------------------------------------------------------*/
 /*------------------------------------page__main-block-----------------------------------*/
-
+.main-block__container._container{
+  margin-top: 68px
+}
 .page__main-block {
   position: relative;
 }
@@ -296,7 +300,7 @@ body {
 }
 .main-content {
   position: relative;
-  z-index: 30;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   min-width: 524px;
@@ -463,7 +467,7 @@ body {
 .page__services-block {
   position: relative;
     background: #1a0930;
-    z-index: 25;
+    z-index: 4;
 }
 .services-block__title_h2 {
   padding-top: 127px;
@@ -580,7 +584,7 @@ body {
 }
 .choice-block__img {
   position: relative;
-    z-index: 30;
+    z-index: 1;
 }
 .choice-block__img img {
   border-radius: 5px;
