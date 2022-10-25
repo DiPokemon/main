@@ -158,7 +158,13 @@
 
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------page-header------------------------------------*/
-
+@media(max-width:1130px) {
+    .main-block__body {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+      }
+}
 @media(max-width:768px) {
     .page-header {
         color: var(--main-white-color);
