@@ -1,11 +1,13 @@
 <?php get_header(); ?>
 
             <section class="page__main-block main">
-              <div class="background-main1"></div>
-              <div class="background-main2"></div>
-              <div class="background-main3"></div>
+            <div class="background-main1"></div>
+            
               <div class="main-block__container _container">
                     <div class="main-block__body">
+                    
+                    <div class="background-main2"></div>
+                    <div class="background-main3"></div>
                         <div class="main-content">
                         
                                       <h1 class="main-title">Создание сайтов и SEO продвижение</h1>
@@ -109,9 +111,10 @@
             </section> 
             
             <section class="page__choice-block choice">
-            <div class="background-choice"></div>  
+              
             <div class="choice-block__container _container">
                 <div class="choice-block__body">
+                <div class="background-choice"></div>
                   <div class="choice-block__text">
                     <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2">Почему выбирают<br>нашу компанию</h2></div>
                   
@@ -187,13 +190,14 @@
             </section>
             
             <section class="page__reviews-block reviews">
-              <div class="background-reviews">
+              <!-- <div class="background-reviews">
                 <img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="stars">
-              </div>
+              </div> -->
               <div class="reviews-block__container _container">
-                <div class="reviews_gradient_bg"></div>
-                <div class="triple_stars revies_triple_stars"></div>
+                
                 <div class="reviews-block__body">
+                <div class="reviews_gradient_bg"></div>
+                <div class="triple_stars revies_triple_stars"><img src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
                   <div class="reviews-block__title">
                     <h2 class="_h2 reviews-block__title_h2">Отзывы клиентов</h2>
                   </div>
@@ -291,6 +295,8 @@
             <section class="page__question question">
               <div class="question__container _container">
                 <div class="question__body">
+                  <div class="question-triple_stars_left"><img src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
+                  <div class="question-triple_stars_right"><img src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
                   <div class="question__title">
                     <h2 class="_h2 question__title_h2">Вопрос/Ответ</h2>
                   </div>

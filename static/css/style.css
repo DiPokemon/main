@@ -34,51 +34,8 @@ a:active {
 main.page{
   margin-top: 68px;
 }
-.background-main1 {
-  position: absolute;
-  z-index: 1;
-  width: 975px;
-  height: 634.06px;
-  left: -500px;
-  top: 147px;
-  background: radial-gradient(
-    58.88% 126.25% at 51.53% 47.82%,
-    #5d21c0 0%,
-    rgba(193, 17, 255, 0) 100%
-  );
-  filter: blur(128px);
-  transform: rotate(42.7deg);
-}
-.background-main2 {
-  position: absolute;
-  z-index: 2;
-  width: 407px;
-  height: 568.01px;
-  left: 255.44px;
-  top: 481px;
-  background: radial-gradient(
-    58.88% 126.25% at 51.53% 47.82%,
-    #aa75a5 0%,
-    rgba(193, 17, 255, 0) 100%
-  );
-  transform: rotate(33.87deg);
-  filter: blur(146px);
-}
-.background-main3 {
-  position: absolute;
-  width: 700.02px;
-  height: 568.01px;
-  left: 536px;
-  top: 500.11px;
-  background: radial-gradient(
-      58.88% 126.25% at 51.53% 47.82%,
-      #28025a 0%,
-      rgba(193, 17, 255, 0) 100%
-    );
-  filter: blur(400px);
-  transform: rotate(-20.01deg);
-  z-index: 3;
-}
+
+
 .background-reviews {
   position: absolute;
   width: 449.03px;
@@ -97,20 +54,7 @@ main.page{
   position: absolute;
   z-index: 40;
 }
-.background-choice {
-  position: absolute;
-  width: 571.09px;
-  height: 397.36px;
-  left: 955px;
-  background: radial-gradient(
-    51.61% 115.36% at 67.24% 51.72%,
-    rgba(73, 0, 107, 0.396) 0%,
-    rgba(255, 31, 233, 0.4) 57.07%,
-    rgba(222, 129, 255, 0.4) 100%
-    );
-  filter: blur(100px);
-  transform: rotate(-36.12deg);
-}
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -300,9 +244,55 @@ main.page{
 .page__main-block {
   position: relative;
 }
+.background-main1 {
+  position: absolute;
+  /* z-index: 1; */
+  width: 975px;
+  height: 634.06px;
+  left: -400px;
+  top: 147px;
+  background: radial-gradient(
+    58.88% 126.25% at 51.53% 47.82%,
+    #5d21c0 0%,
+    rgba(193, 17, 255, 0) 100%
+  );
+  filter: blur(128px);
+  transform: rotate(42.7deg);
+}
+.background-main2 {
+  position: absolute;
+  z-index: 5;
+  width: 407px;
+  height: 568.01px;
+  left: 255.44px;
+  top: 481px;
+  background: radial-gradient(
+    58.88% 126.25% at 51.53% 47.82%,
+    #aa75a5 0%,
+    rgba(193, 17, 255, 0) 100%
+  );
+  transform: rotate(33.87deg);
+  filter: blur(146px);
+}
 .main-block__body {
   position: relative;
   display: flex;
+}
+
+.background-main3 {
+  position: absolute;
+  width: 630.02px;
+  height: 568.01px;
+  left: 536px;
+  top: 500.11px;
+  background: radial-gradient(
+      58.88% 126.25% at 51.53% 47.82%,
+      #28025a 0%,
+      rgba(193, 17, 255, 0) 100%
+    );
+  filter: blur(400px);
+  transform: rotate(-20.01deg);
+  z-index: 3;
 }
 .main_block__wrapper{
   max-width: 657px;
@@ -502,7 +492,7 @@ main.page{
 .page__services-block {
   position: relative;
     background: #1a0930;
-    z-index: 4;
+    z-index: 10;
 }
 .services-block__title_h2 {
   padding-top: 127px;
@@ -570,8 +560,19 @@ main.page{
   margin-top: 158px;
 }
 .choice-block__body {
+  position: relative;
   display: flex;
   justify-content: space-between;
+}
+.background-choice {
+  position: absolute;
+  width: 380.09px;
+  height: 270.36px;
+  right: -130px;
+  top: 100px;
+  background: radial-gradient( 51.61% 115.36% at 67.24% 51.72%, rgba(73, 0, 107, 0.396) 0%, rgba(255, 31, 233, 0.4) 57.07%, rgba(222, 129, 255, 0.4) 100% );
+  filter: blur(100px);
+  transform: rotate(-80.12deg);
 }
 .choice-block__text {
   display: flex;
@@ -632,6 +633,9 @@ main.page{
 .cases-block__container{
   max-width: 90vw;
 }
+.cases-block__body {
+  margin-bottom: 123px;
+}
 .case_slide_wrapper {
   position:relative;
   margin: 0 10px;
@@ -688,6 +692,22 @@ main.page{
   position: relative;
   z-index: 3;
   margin-bottom: 164px;
+}
+.reviews_gradient_bg {
+  position: absolute;
+  width: 449.03px;
+height: 367.72px;
+left: 0.4px;
+top: 0.7px;
+
+background: radial-gradient(50.09% 124.66% at 65.27% 55.89%, rgba(73, 0, 107, 0.396) 0%, rgba(255, 31, 233, 0.4) 57.07%, rgba(222, 129, 255, 0.4) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+filter: blur(100px);
+transform: rotate(-36.12deg);
+}
+.triple_stars {
+  position: absolute;
+  z-index: 5;
+  top: 80px;
 }
 .reviews-block__title_h2 {
   margin-top: 9px;
@@ -857,6 +877,17 @@ z-index: 1;
   flex-direction: column;
   align-items: center; */
   margin-bottom: 187px;
+  position: relative;
+}
+.question-triple_stars_left {
+  position: absolute;
+  
+
+}
+.question-triple_stars_right {
+  position: absolute;
+  right: 0.1px;
+  bottom: 0.1px;
 }
 .question__title {
   margin-top: 94px;
