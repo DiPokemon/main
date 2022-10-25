@@ -685,6 +685,8 @@ main.page{
   position: relative;
 }
 .reviews-block__body {
+  position: relative;
+  z-index: 3;
   margin-bottom: 164px;
 }
 .reviews-block__title_h2 {
@@ -738,9 +740,27 @@ main.page{
   border-radius: 5px;
 }
 .service-selection__body {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.service-selection__lightning_small {
+position: absolute;
+/* width: 87.89px; */
+/* height: 158.35px; */
+left: 1010px;
+top: -40.75px;
+z-index: 1;
+
+/* background: #E0A100; */
+/* transform: rotate(-15deg); */
+}
+.service-selection__lightning_big {
+position: absolute;
+left: 10px;
+top: 70px;
+z-index: 1;
 }
 .service-selection__title {
   margin-top: 51px;
