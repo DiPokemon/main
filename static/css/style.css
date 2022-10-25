@@ -28,6 +28,9 @@ body {
   background: #1a0930;
   z-index: 3;
 }
+a:active {
+  color: var(--article-text-color)
+}
 main.page{
   margin-top: 68px;
 }
@@ -913,9 +916,9 @@ main.page{
 .breadcrumbs__current{
   color: var(--main-white-color)
 }
-.page-header__breadcrumbs a:active{
+/* .page-header__breadcrumbs a:active{
   color: var(--article-text-color)
-}
+} */
 .page-header__title {
   font-size: 40px;
   font-weight: 500;
@@ -1013,6 +1016,18 @@ main.page{
   font-family: "Open Sans";
 }
 
+.blog-block__grid .blog-block__item .blog-block__text {
+  padding: 41px 0px 42px 34px;
+}
+
+.blog-block__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.blog-block__grid .articles__item{
+  width: 100%
+}
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------blog-article-----------------------------------*/
 
