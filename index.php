@@ -176,9 +176,9 @@
 
                       </div>
                       <div class="slider-controls">
-                        <button type="button" class="slide-m-prev">prev</button>
+                        <button type="button" class="slide-m-prev"></button>
                         <div class="slide-m-dots"></div>
-                        <button type="button" class="slide-m-next">next</button>
+                        <button type="button" class="slide-m-next"></button>
                       </div>
                   </div>
 
@@ -216,9 +216,9 @@
                         </div>
                       </div>
                       <div class="slider-controls">
-                        <button type="button" class="slide-m-prev">prev</button>
-                        <div class="slide-m-dots"></div>
-                        <button type="button" class="slide-m-next">next</button>
+                        <button type="button" class="reviews_slide-m-prev slide-m-prev"></button>
+                        <div class="reviews_slide-m-dots slide-m-dots"></div>
+                        <button type="button" class="reviews_slide-m-next slide-m-next"></button>
                       </div>
                     </div> 
                   </div>

@@ -467,14 +467,30 @@ main.page{
   line-height: 135%;
   color: #ffffff;
 }
-.slide-m-dots .slick-dots{
-  position:static
+.slide-m-dots .slick-dots
+{
+  position:static;
+  display: flex;
 }
 .slider-controls{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+.slide-m-next:before{
+  content: url("../img/arrow_r.svg")
+}
+.slide-m-prev:before {
+  content: url("../img/arrow_l.svg")
+}
+.slide-m-next,
+.slide-m-prev{
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
 }
 
 /*---------------------------------------------------------------------------------------------*/
