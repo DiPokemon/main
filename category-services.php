@@ -5,6 +5,123 @@
                     <h1 class="page-header__title"><?php single_cat_title(); ?></h1>
                 </section>
 
+                <section class="page__service-offer">
+                    <div class="offer_block-wrapper">
+                        <div class="offer_block-text">
+                            ТЕКСТ
+                        </div>
+                        <div class="offer_block-form">
+                            ФОРМА
+                        </div>
+                    </div>
+
+                    <div class="cases-block__container">
+                        <div class="cases-block__body">
+                        <div class="cases-block__title">
+                            <h2 class="_h2 cases-block__title_h2">Кейсы</h2>
+                        </div>
+
+                        <div class="slider_wrapper">
+
+                            <div class="cases_slider">
+
+                                <?php $length_cases = 0 ?>
+                                <?php
+                                    // Взять первые 3 новости для горизонтальной ленты
+                                    $args_for_cases = [
+                                        'posts_per_page' => 9,
+                                        'category_name'  => 'cases',
+                                        'offset'         => 0,
+                                    ];
+
+                                    $query_cases = new WP_Query( $args_for_cases );
+
+                                    while ($query_cases->have_posts()) :
+                                        $query_cases->the_post();
+                                        $length_cases++;
+
+                                        if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
+                                            $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
+                                        else
+                                            $post_thumbnail_url = get_the_post_thumbnail_url();
+
+                                ?>
+                                    <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
+                                        <div class="case_slide_wrapper">
+                                        <img src="<?= $post_thumbnail_url ?>" alt="<?php the_title() ?>">
+                                        <div class="case_slide_title_wrapper">
+                                            <h3 class="case_slide__title"><?php the_title() ?></h3>
+                                        </div>                                
+                                        </div>                              
+                                    </a>
+
+                                <?php endwhile; wp_reset_query(); ?>  
+
+                            </div>
+                            <div class="slider-controls">
+                                <button type="button" class="slide-m-prev"></button>
+                                <div class="slide-m-dots"></div>
+                                <button type="button" class="slide-m-next"></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="offer_block-wrapper">
+                        <div class="offer_block-tariff">
+                            <h3 class="tariff_title">Тариф 1</h3>  
+                            <p class="tariff_desc">Для того-то</p>  
+                            <p class="tariff_price">от <span>999 999</span> ₽</p>
+                            <div class="tariff_list">
+                                <ul>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                </ul>                                
+                            </div>
+                            <a href="#" class="btn order_btn">Заказать</a>
+                        </div>
+                        <div class="offer_block-tariff">
+                            <h3 class="tariff_title">Тариф 1</h3>  
+                            <p class="tariff_desc">Для того-то</p>  
+                            <p class="tariff_price">от <span>999 999</span> ₽</p>
+                            <div class="tariff_list">
+                                <ul>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                </ul>                                
+                            </div>
+                            <a href="#" class="btn order_btn">Заказать</a>   
+                        </div>
+                        <div class="offer_block-tariff">
+                            <h3 class="tariff_title">Тариф 1</h3>  
+                            <p class="tariff_desc">Для того-то</p>  
+                            <p class="tariff_price">от <span>999 999</span> ₽</p>
+                            <div class="tariff_list">
+                                <ul>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                    <li>Пункт</li>
+                                </ul>                                
+                            </div>
+                            <a href="#" class="btn order_btn">Заказать</a>       
+                        </div>
+                    </div>
+                </section>
+
                 <section class="page__services-block services">
                     <div class="services-block__container _container">
                         <div class="services-block__body">

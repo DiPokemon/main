@@ -33,12 +33,12 @@ function topland_load_scripts()
 add_action('wp_enqueue_scripts', 'topland_load_scripts', 10);
 
 //инициализация слайдера только на главной
-function init_slider_script() {
-  if ( is_page_template('index.php') ) {
-    wp_enqueue_script( 'init_main_slider', get_template_directory_uri().'/static/js/init_main_slider.js', array( 'jquery' ), false, true );
-  }
-}
-add_action( 'template_redirect', 'init_slider_script' );
+// function init_slider_script() {
+//   if ( is_page_template('index.php') ) {
+//     wp_enqueue_script( 'init_main_slider', get_template_directory_uri().'/static/js/init_main_slider.js', array( 'jquery' ), false, true );
+//   }
+// }
+// add_action( 'template_redirect', 'init_slider_script' );
 
 // загрузка SVG в медиабиблиотеку
 add_filter( 'upload_mimes', 'svg_upload_allow' );
