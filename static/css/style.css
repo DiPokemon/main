@@ -524,6 +524,7 @@ main.page{
 }
 .services-block__item {
   width: 32.15%;
+  padding: 30px;
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
@@ -534,14 +535,14 @@ main.page{
   align-items: center;
 }
 .services-block__text {
-  padding: 50px 0 55px 34px;
+  /* padding: 50px 0 55px 34px; */
   font-family: "Inter";
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
 }
 .services-block__img {
-  padding: 44px 30px 37px 0;
+  /* padding: 44px 30px 37px 0; */
 }
 .serveces-item1 {
   width: 32.15%;

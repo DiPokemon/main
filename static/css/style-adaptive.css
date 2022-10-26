@@ -292,6 +292,15 @@
         grid-template-columns: 1fr;
         padding-left: 40px;
     }
+    .services-block__item{
+        width:100%;
+        min-height: 70px;
+        padding: 0 20px
+    }
+}
+
+@media(max-width:600px){
+
 }
 
 @media(max-width:527px){
