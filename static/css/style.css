@@ -350,9 +350,12 @@ main.page{
   font-size: 16px;
   line-height: 24px;
   color: var(--main-white-color);
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
-.main-button {
-  /* margin-bottom: 197px; */
+.main-subtitle__item:first-child span{
+  display: none;
 }
 .main-button_href {
   font-family: "Open Sans";
@@ -1137,6 +1140,9 @@ p.tariff_price {
   color: var(--main-white-color);
   border: 1px solid #f7f2ff;
   border-radius: 5px;
+}
+.btn{
+  display: block;
 }
 .btn a {
   font-family: "Open Sans";

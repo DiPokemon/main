@@ -9,11 +9,11 @@
                           <div class="main-content_wrapper">
                             <h1 class="main-title">Создание сайтов и SEO продвижение</h1>    
                             <div class="main-subtitle">
-                              <div class="main-subtitle__item">Техническая поддержка</div>
-                              <div class="main-subtitle__item"><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></div>
-                              <div class="main-subtitle__item">Копирайт</div>
-                              <div class="main-subtitle__item"><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></div>
-                              <div class="main-subtitle__item">Контекстная реклама</div>
+                              <div class="main-subtitle__item"><span><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Техническая поддержка</div>
+                              
+                              <div class="main-subtitle__item"><span><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Копирайт</div>
+                              
+                              <div class="main-subtitle__item"><span><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Контекстная реклама</div>
                             </div>
                             <a href="#" class="btn main-button_href" >Задайте вопрос в What’sApp</a>
                           </div>
