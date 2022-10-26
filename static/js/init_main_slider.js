@@ -2,11 +2,13 @@ $(document).ready(function () {
     $('.slider_wrapper').each(function (index, sliderWrap) {
         var $slider_reviews = $(sliderWrap).find('.reviews_slider');
         var $slider_cases = $(sliderWrap).find('.cases_slider');
+        var $main_slider = $(sliderWrap).find('.main-slider');
         var $next = $(sliderWrap).find('.slide-m-next');
         var $prev = $(sliderWrap).find('.slide-m-prev');
         var $dots = $(sliderWrap).find('.slide-m-dots');        
 
         $slider_reviews.slick({
+            autoplay: true,
             dots: true,
             nextArrow: $next,
             prevArrow: $prev,
@@ -15,8 +17,17 @@ $(document).ready(function () {
             slidesToShow: 1,
             slidesToScroll: 1          
         });
+
+        $main_slider.slick({   
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+        });
         
         $slider_cases.slick({
+            autoplay: true,
             dots: true,
             nextArrow: $next,
             prevArrow: $prev,
