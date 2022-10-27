@@ -301,7 +301,7 @@
                     
                     <div class="accordion__item close">
                         <div class="accordion__item_header">
-                        Чем ваша компания лучше других? <span>+</span>
+                        Чем ваша компания лучше других? <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
                         <div class="accordion__item_body">
                         Основатели компании изначально были техническими специалистами, 
@@ -315,7 +315,7 @@
                       <div class="accordion__item close">
                         <div class="accordion__item_header">
                         Я знаю более раскрученные компании. Они сделают <br> дешевле. 
-                        Зачем мне переплачивать? <span>+</span>
+                        Зачем мне переплачивать? <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
                         <div class="accordion__item_body">
                         Чего Вы хотите? За что Вы готовы платить? За работу или результат? 
@@ -327,7 +327,7 @@
 
                       <div class="accordion__item close">
                         <div class="accordion__item_header">
-                        Почему так мало кейсов, которые можете показать? <span>+</span>
+                        Почему так мало кейсов, которые можете показать? <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
                         <div class="accordion__item_body">
                         Основатели компании длительное время работали в найме, затем на фрилансе, 
@@ -340,7 +340,7 @@
 
                       <div class="accordion__item close">
                         <div class="accordion__item_header">
-                        Почему мы сами еще не в ТОПе? <span>+</span>
+                        Почему мы сами еще не в ТОПе? <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
                         <div class="accordion__item_body">
                         Недавно мы начали заниматься своим сайтом. 
