@@ -947,6 +947,10 @@ z-index: 1;
   /* margin-top: 94px; */
   margin-bottom: 47px;
 }
+.Vector1 {
+  width: 10px;
+  height: 19px;
+}
 .question__block {
   max-width: 692px;
   display: flex;
@@ -968,6 +972,7 @@ z-index: 1;
 }
 .accordion__item.open{
   border: 1px solid var(--article-text-color);
+  
 }
 .accordion__item_header {
   display: flex;
