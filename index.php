@@ -73,102 +73,47 @@
                       </div>  
                     </div>
                   </div>
-                  <!-- <div class="main-3columns">
-                      <div class="main-3columns__item item1">
-                          <div class="main-3colums__text1">Повышаем продажи партнерских товаров и услуг в среднем в 3 раза</div>
-                      </div>
-                      <div class="main-3columns__item item2">
-                          <div class="main-3columns__img"><img src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
-                          <div class="main-3columns__text2">7 лет работаем<br>в интернет-маркетинге</div>
-                      </div>
-                      <div class="main-3columns__item item3">
-                          <div class="main-3columns__img"><img src="<?php echo get_template_directory_uri()?>/static/img/Stairs 1.svg" alt="img"></div>
-                          <div class="main-3columns__text3">Продвигаем сайты с технически<br>сложными тематиками</div>
-                      </div>
-                    </div> -->
-
                 </div>
-              </div>      
-    
-              
-            </section>
-
-            <!-- <section class="page__main-background">
-                <div class="_container">
-                  <div class="main-3columns">
-                      <div class="main-3columns__item item1">
-                          <div class="main-3colums__text1">Повышаем продажи партнерских товаров и услуг в среднем в 3 раза</div>
-                      </div>
-                      <div class="main-3columns__item item2">
-                          <div class="main-3columns__img"><img src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
-                            <div class="main-3columns__text2">7 лет работаем<br>в интернет-маркетинге</div>
-                      </div>
-                      <div class="main-3columns__item item3">
-                          <div class="main-3columns__img"><img src="<?php echo get_template_directory_uri()?>/static/img/Stairs 1.svg" alt="img"></div>
-                          <div class="main-3columns__text3">Продвигаем сайты с технически<br>сложными тематиками</div>
-                      </div>
-                    </div>
-                </div>
-              </section>  -->
+              </div>  
+            </section>            
 
             <section class="page__services-block services">
               <div class="services-block__container _container">
                 <div class="services-block__body">
-                  
-                    <!--<div class="services-block__subtitle toplend">TOP LAND</div>-->
-                    <h2 class="_h2 services-block__title_h2"> Наши услуги</h2>
-                  
+                  <h2 class="_h2 services-block__title_h2 section_title"> Наши услуги</h2>
                   <div class="services-block__columns">
                     <?php
-                      $categories = get_categories( [
-                        'taxonomy'     => 'category',                        
-                        'parent'       => '3',
-                        'orderby'      => 'name',
-                        'order'        => 'ASC',
-                        'hide_empty'   => 1,
-                        'hierarchical' => 1,
-                        'number'       => 0,
-                      ] );
-
-
-                    ?>
-
-                    <?php
                       $args = array(              
-                            'taxonomy'      => 'category',            
-                            'orderby'       => 'name',
-                            'order'         => 'ASC',
-                            'hide_empty'    => true,
-                            'parent'        => '3',                        
-                            'update_term_meta_cache' => true, // подгружать метаданные в кэш
-                          );
-
-                          $term_query = new WP_Term_Query( $args );
-
-                          foreach( $term_query->get_terms() as $term ){                            
-                          ?>
-                           
+                          'taxonomy'      => 'category',            
+                          'orderby'       => 'name',
+                          'order'         => 'ASC',
+                          'hide_empty'    => true,
+                          'parent'        => '3',                        
+                          'update_term_meta_cache' => true, // подгружать метаданные в кэш
+                        );
+                      $term_query = new WP_Term_Query( $args );
+                        foreach( $term_query->get_terms() as $term ){                            
+                          ?>                           
                           <a class="services-block__item" href="/<?php echo $term->taxonomy?>/<?php echo $term->slug?>">
                             <div class="services-block__text"><?php echo $term->name?></div>
                             <div class="services-block__img"><img src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="img"></div>
                           </a>
                           <?php                          
-                          }
+                        }
                     ?> 
-                    </div>   
+                  </div>   
                 </div> 
-
               </div>
             </section> 
             
-            <section class="page__choice-block choice">
-              
-            <div class="choice-block__container _container">
-                <div class="choice-block__body">
-                <div class="background-choice"></div>
+            <section class="page__choice-block choice">  
+              <!-- <div class="background-choice"></div>             -->
+              <div class="background-choice-img"></div>
+              <div class="choice-block__container _container">
+                <div class="choice-block__body">                
                   <div class="choice-block__text">
-                    <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2">Почему выбирают<br>нашу компанию</h2></div>
-                  
+                    <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2 section_title">Почему выбирают<br>нашу компанию</h2></div>   
+                    <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2-mobile section_title ">Почему выбирают нашу компанию</h2></div>                 
                     <div class="choice-block__subtitle">Миссия нашей компании-это дать сильный старт Вашему бизнесу<br>и сохранить занимаемые за вами позиции.</div>
                     <ul class="choice-block__list">
                       <li class="choice-block__el">По показателю SEO выводим клиентов на 70-90% в ТОП-10.</li>
@@ -189,7 +134,7 @@
               <div class="cases-block__container _container">
                 <div class="cases-block__body">
                   <div class="cases-block__title">
-                    <h2 class="_h2 cases-block__title_h2"> Свежие кейсы студии</h2>
+                    <h2 class="_h2 cases-block__title_h2 section_title">Свежие кейсы студии</h2>
                   </div>
 
                   <div class="slider_wrapper">
@@ -241,14 +186,12 @@
             </section>
             
             <section class="page__reviews-block reviews">
-        
-              <div class="reviews-block__container _container">
-                
-                <div class="reviews-block__body">
-                <div class="reviews_gradient_bg"></div>
+              <div class="reviews_gradient_bg-img"></div>
+              <div class="reviews-block__container _container">                
+                <div class="reviews-block__body">                
                 <div class="triple_stars revies_triple_stars"><img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
                   <div class="reviews-block__title">
-                    <h2 class="_h2 reviews-block__title_h2">Отзывы клиентов</h2>
+                    <h2 class="_h2 reviews-block__title_h2 section_title">Отзывы клиентов</h2>
                   </div>
                   <div class="main_block__wrapper">
                     <div class="slider_wrapper">
@@ -285,7 +228,7 @@
                   <div class="service-selection__lightning_small"><img src="<?php echo get_template_directory_uri()?>/static/img/lightning_small.svg" alt="img"></div>
                   <div class="service-selection__lightning_big"><img src="<?php echo get_template_directory_uri()?>/static/img/lightning_big.svg" alt="img"></div>
                   <div class="service-selection__title">
-                    <h2 class="_h2 service-selection__title_h2">Не знаете какую услугу выбрать?</h2>
+                    <h2 class="_h2 service-selection__title_h2 section_title">Не знаете какую услугу выбрать?</h2>
                   </div>
                   <div class="service-selection__subtitle toplend">Напишите нам. Мы подскажем какая услуга принесет вашей компании больше прибыли</div>
                   <div class="service-selection__button">
@@ -299,7 +242,7 @@
               <div class="useful-articles__container _container">
                 <div class="useful-articles__body">
                   <div class="useful-articles__title">
-                    <h2 class="_h2 useful-articles__title_h2">Полезные статьи</h2>
+                    <h2 class="_h2 useful-articles__title_h2 section_title">Полезные статьи</h2>
                   </div>
                   <div class="useful-articles__columns articles">
                     <?php $length = 0 ?>
@@ -347,7 +290,7 @@
                   <div class="question-triple_stars_left"><img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
                   <div class="question-triple_stars_right"><img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
                   <div class="question__title">
-                    <h2 class="_h2 question__title_h2">Вопрос/Ответ</h2>
+                    <h2 class="_h2 question__title_h2 section_title">Вопрос/Ответ</h2>
                   </div>
                   <div class="main_block__wrapper">
                     <div class="accordion faq_accordion" id="faq_accordion">
@@ -411,7 +354,5 @@
                 </div>
               </div>
             </section>
-
-            
             
 <?php get_footer(); ?>
