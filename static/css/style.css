@@ -246,6 +246,40 @@ main.page{
 }
 /*---------------------------------------------------------------------------------------*/
 /*------------------------------------page__main-block-----------------------------------*/
+.main-background1-img {
+  position: absolute;
+  width: 50vw;
+  height: 1043px;
+  background-image: url(../img/main-bg-1.png);
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  /* background-size: cover; */
+  z-index: 1;
+}
+.main-background2-img {
+  position: absolute;
+  width: 1426px;
+  height: 1402px;
+  background-image: url(../img/main-bg-2.png);
+  background-repeat: no-repeat;
+  left: 115px;
+  top: 114px;
+  /* background-size: cover; */
+  z-index: 2;
+}
+.main-background3-img {
+  position: absolute;
+  width: 2000px;
+  height: 1500px;
+  background-image: url(../img/main-bg-3.png);
+  background-repeat: no-repeat;
+  right: -567px;
+  top: 93px;
+  /* background-size: cover; */
+  z-index: 3;
+}
+
  .main-block__container._container{
   /* height: calc(100vh - 70px); */
   display: flex;
