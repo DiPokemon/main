@@ -1,10 +1,13 @@
 <?php get_header(); ?>
             <section class="page__main-block main">
-            <div class="background-main1"></div>            
+            <div class="main-background1-img"></div>
+            <div class="main-background2-img"></div>
+            <div class="main-background3-img"></div>
+            <!-- <div class="background-main1"></div>             -->
               <div class="main-block__container _container">
                     <div class="main-block__body">                    
-                    <div class="background-main2"></div>
-                    <div class="background-main3"></div>
+                    <!-- <div class="background-main2"></div>
+                    <div class="background-main3"></div> -->
                         <div class="main-content">
                           <div class="main-content_wrapper">
                             <h1 class="main-title">Создание сайтов и SEO продвижение</h1>    
@@ -354,5 +357,5 @@
                 </div>
               </div>
             </section>
-            
+
 <?php get_footer(); ?>
