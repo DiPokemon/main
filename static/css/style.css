@@ -248,13 +248,12 @@ main.page{
 /*------------------------------------page__main-block-----------------------------------*/
 .main-background1-img {
   position: absolute;
-  width: 50vw;
-  height: 1043px;
+  width: 1650px;
+  height: 1600px;
   background-image: url(../img/main-bg-1.png);
   background-repeat: no-repeat;
-  left: 0;
-  top: 0;
-  /* background-size: cover; */
+  left: -487px;
+  top: -604px;
   z-index: 1;
 }
 .main-background2-img {
@@ -265,7 +264,6 @@ main.page{
   background-repeat: no-repeat;
   left: 115px;
   top: 114px;
-  /* background-size: cover; */
   z-index: 2;
 }
 .main-background3-img {
@@ -276,14 +274,13 @@ main.page{
   background-repeat: no-repeat;
   right: -567px;
   top: 93px;
-  /* background-size: cover; */
   z-index: 3;
 }
 
  .main-block__container._container{
-  /* height: calc(100vh - 70px); */
   display: flex;
   align-items: center;  
+  z-index: 4;
 } 
 .page__main-block {
   padding-top: 100px;
