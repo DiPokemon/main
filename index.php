@@ -241,14 +241,12 @@
             </section>
             
             <section class="page__reviews-block reviews">
-              <!-- <div class="background-reviews">
-                <img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="stars">
-              </div> -->
+        
               <div class="reviews-block__container _container">
                 
                 <div class="reviews-block__body">
                 <div class="reviews_gradient_bg"></div>
-                <div class="triple_stars revies_triple_stars"><img src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
+                <div class="triple_stars revies_triple_stars"><img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
                   <div class="reviews-block__title">
                     <h2 class="_h2 reviews-block__title_h2">Отзывы клиентов</h2>
                   </div>
@@ -346,30 +344,67 @@
             <section class="page__question question">
               <div class="question__container _container">
                 <div class="question__body">
-                  <div class="question-triple_stars_left"><img src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
-                  <div class="question-triple_stars_right"><img src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
+                  <div class="question-triple_stars_left"><img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
+                  <div class="question-triple_stars_right"><img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
                   <div class="question__title">
                     <h2 class="_h2 question__title_h2">Вопрос/Ответ</h2>
                   </div>
                   <div class="main_block__wrapper">
                     <div class="accordion faq_accordion" id="faq_accordion">
-                      <div class="accordion__item close">
+                      
+                    
+                    <div class="accordion__item close">
                         <div class="accordion__item_header">
-                          Заголовок 1 <span>+</span>
+                        Чем ваша компания лучше других? <span>+</span>
                         </div>
                         <div class="accordion__item_body">
-                          Содержимое 1
+                        Основатели компании изначально были техническими специалистами, 
+                        благодаря этому у компании есть четкая идеология работы с проектами. 
+                        Мы не обещаем золотых гор, только реальные цифры и факты
+                        </div>
+                      </div>
+
+
+
+                      <div class="accordion__item close">
+                        <div class="accordion__item_header">
+                        Я знаю более раскрученные компании. Они сделают <br> дешевле. 
+                        Зачем мне переплачивать? <span>+</span>
+                        </div>
+                        <div class="accordion__item_body">
+                        Чего Вы хотите? За что Вы готовы платить? За работу или результат? 
+                        Можно взять 10 000 рублей за работу, которая стоит 30 000.
+                         Заплатив 10 000 – Вы их просто выкинете. 
+                         Заплатив 30 000 – Вы отдадите их за конкретные цели и результаты. Так что нужно Вам?
                         </div>
                       </div>
 
                       <div class="accordion__item close">
                         <div class="accordion__item_header">
-                          Заголовок 2 <span>+</span>
+                        Почему так мало кейсов, которые можете показать? <span>+</span>
                         </div>
                         <div class="accordion__item_body">
-                          Содержимое 2
+                        Основатели компании длительное время работали в найме, затем на фрилансе, 
+                        затем по подряду с более крупными компаниями. 
+                        Именно поэтому большинство проектов относятся к чужим компаниям. 
+                        Зато работали над ними именно мы. Мы были внутренним механизмом других компаний. 
+                        Так что важнее? Обертка или содержание!?
                         </div>
                       </div>
+
+                      <div class="accordion__item close">
+                        <div class="accordion__item_header">
+                        Почему мы сами еще не в ТОПе? <span>+</span>
+                        </div>
+                        <div class="accordion__item_body">
+                        Недавно мы начали заниматься своим сайтом. 
+                        Так как ранее работали только в субподряде и по сарафанке, 
+                        необходимости разработки и продвижения качественного сайта не было. 
+                        Да и некогда было. В связи с расширением, появился отдел внутреннего маркетинга, 
+                        который в данный момент и занимается данным вопросом.
+                        </div>
+                      </div>
+
                     </div>
                   </div>
 
