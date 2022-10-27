@@ -88,6 +88,7 @@ function show_svg_in_media_library( $response ) {
 
 // Добавить поддержку миниатюр
 add_theme_support('post-thumbnails');
+
 // set_post_thumbnail_size(150, 150, false);
 
 // Зарегистрировать меню 
