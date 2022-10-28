@@ -9,9 +9,9 @@
                             <div class="main-content_wrapper">
                               <h1 class="main-title">Создание сайтов и SEO продвижение</h1>    
                               <div class="main-subtitle">
-                                <div class="main-subtitle__item"><span><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Техническая поддержка</div>                              
-                                <div class="main-subtitle__item"><span><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Копирайт</div>                              
-                                <div class="main-subtitle__item"><span><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Контекстная реклама</div>
+                                <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Техническая поддержка</div>                              
+                                <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Копирайт</div>                              
+                                <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Контекстная реклама</div>
                               </div>
                               <a href="#" class="btn main-button_href" >Задайте вопрос в What’sApp</a>
                             </div>
@@ -23,13 +23,13 @@
                                 <div class="main-image__text_subtitle">Выводим сайты клиентов в топ-10</div>
                               </div>                            
                               <div class="main-image__el">
-                                <img src="<?php echo get_template_directory_uri()?>/static/img/img2.png" alt="img">
+                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/img2.png" alt="img">
                               </div>
                               <div class="main-image__el">
-                                <img src="<?php echo get_template_directory_uri()?>/static/img/img3.png" alt="img">
+                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/img3.png" alt="img">
                               </div>
                               <div class="main-image__el">
-                                <img src="<?php echo get_template_directory_uri()?>/static/img/img4.png" alt="img">
+                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/img4.png" alt="img">
                               </div>
                             </div>  
                           </div>
@@ -39,11 +39,11 @@
                   <div class="_container">
                     <div class="main-3columns">
                       <div class="main-3columns__item">
-                          <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
+                          <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
                           <div class="main-3colums__item_text">Повышаем продажи<br> партнерских товаров<br> и услуг в среднем в 3 раза</div>
                       </div>
                       <div class="main-3columns__item">
-                          <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
+                          <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
                           <div class="main-3colums__item_text">7 лет работаем<br> в интернет-маркетинге</div>
                       </div>
                       <div class="main-3columns__item">
@@ -54,15 +54,15 @@
                     <div class="main-3columns_mobile slider_wrapper">
                       <div class="main-slider">
                         <div class="main-3columns__item">
-                            <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
+                            <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
                             <div class="main-3colums__item_text">Повышаем продажи партнерских товаров и услуг в среднем в 3 раза</div>
                         </div>
                         <div class="main-3columns__item">
-                            <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
+                            <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
                             <div class="main-3colums__item_text">7 лет работаем в интернет-маркетинге</div>
                         </div>
                         <div class="main-3columns__item">
-                            <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Stairs 1.svg" alt="img"></div>
+                            <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Stairs 1.svg" alt="img"></div>
                             <div class="main-3colums__item_text">Продвигаем сайты с технически сложными тематиками</div>
                         </div>  
                       </div>
@@ -90,7 +90,7 @@
                           ?>                           
                           <a class="services-block__item" href="/<?php echo $term->taxonomy?>/<?php echo $term->slug?>">
                             <div class="services-block__text"><?php echo $term->name?></div>
-                            <div class="services-block__img"><img src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="img"></div>
+                            <div class="services-block__img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="img"></div>
                           </a>
                           <?php                          
                         }
@@ -117,7 +117,7 @@
                     <div class="choice-block__button"><a class="choice-block__href" href="#">О компании</a></div>
                   </div>
                   <div class="choice-block__img">
-                    <img src="<?php echo get_template_directory_uri()?>/static/img/unsplash_DUmFLtMeAbQ.jpg" alt="img">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/unsplash_DUmFLtMeAbQ.jpg" alt="img">
                   </div>
                 </div>
               </div>
@@ -149,7 +149,7 @@
                         ?>
                             <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
                                 <div class="case_slide_wrapper">
-                                  <img src="<?= $post_thumbnail_url ?>" alt="<?php the_title() ?>">
+                                  <img loading="lazy" src="<?= $post_thumbnail_url ?>" alt="<?php the_title() ?>">
                                   <div class="case_slide_title_wrapper">
                                     <h3 class="case_slide__title"><?php the_title() ?></h3>
                                   </div>                                
@@ -171,7 +171,7 @@
               <div class="reviews_gradient_bg-img"></div>
               <div class="reviews-block__container _container">                
                 <div class="reviews-block__body">                
-                <div class="triple_stars revies_triple_stars"><img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
+                <div class="triple_stars revies_triple_stars"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
                   <div class="reviews-block__title">
                     <h2 class="_h2 reviews-block__title_h2 section_title">Отзывы клиентов</h2>
                   </div>
@@ -229,8 +229,8 @@
             <section class="page__service-selection service-selection">
               <div class="service-selection__container _container">
                 <div class="service-selection__body">
-                  <div class="service-selection__lightning_small"><img src="<?php echo get_template_directory_uri()?>/static/img/lightning_small.svg" alt="img"></div>
-                  <div class="service-selection__lightning_big"><img src="<?php echo get_template_directory_uri()?>/static/img/lightning_big.svg" alt="img"></div>
+                  <div class="service-selection__lightning_small"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/lightning_small.svg" alt="img"></div>
+                  <div class="service-selection__lightning_big"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/lightning_big.svg" alt="img"></div>
                   <div class="service-selection__title">
                     <h2 class="_h2 service-selection__title_h2 section_title">Не знаете какую услугу выбрать?</h2>
                   </div>
@@ -266,7 +266,7 @@
                                 $post_thumbnail_url = get_the_post_thumbnail_url();
                     ?>
                         <a class="articles__item" href="<?php the_permalink() ?>">
-                            <div class="articles__img"><img src="<?= $post_thumbnail_url ?>" title="<?php the_title() ?>" alt="img"></div>
+                            <div class="articles__img"><img loading="lazy" src="<?= $post_thumbnail_url ?>" title="<?php the_title() ?>" alt="img"></div>
                             <div class="articles__title"><h3 class="articles__title_h3"><?php the_title() ?></h3></div>
                             <div class="articles__text"><?php the_excerpt() ?></div>
                         </a>
@@ -283,8 +283,8 @@
             <section class="page__question question">
               <div class="question__container _container">
                 <div class="question__body">
-                  <div class="question-triple_stars_left"><img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
-                  <div class="question-triple_stars_right"><img class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
+                  <div class="question-triple_stars_left"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
+                  <div class="question-triple_stars_right"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
                   <div class="question__title">
                     <h2 class="_h2 question__title_h2 section_title">Вопрос/Ответ</h2>
                   </div>
@@ -292,7 +292,7 @@
                     <div itemscope itemtype="https://schema.org/FAQPage" class="accordion faq_accordion" id="faq_accordion">
                       <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
-                        <span itemprop="name">Чем ваша компания лучше других?</span> <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
+                        <span itemprop="name">Чем ваша компания лучше других?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
                         <span itemprop="text">Основатели компании изначально были техническими специалистами, 
@@ -303,7 +303,7 @@
                       <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
                         <span itemprop="name">Я знаю более раскрученные компании. Они сделают <br> дешевле. 
-                        Зачем мне переплачивать?</span> <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
+                        Зачем мне переплачивать?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
                         <span itemprop="text">Чего Вы хотите? За что Вы готовы платить? За работу или результат? 
@@ -314,7 +314,7 @@
                       </div>
                       <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
-                        <span itemprop="name">Почему так мало кейсов, которые можете показать?</span> <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
+                        <span itemprop="name">Почему так мало кейсов, которые можете показать?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
                         <span itemprop="text">Основатели компании длительное время работали в найме, затем на фрилансе, 
@@ -326,7 +326,7 @@
                       </div>
                       <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
-                        <span itemprop="name">Почему мы сами еще не в ТОПе?</span> <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
+                        <span itemprop="name">Почему мы сами еще не в ТОПе?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
                         <span itemprop="text">Недавно мы начали заниматься своим сайтом. 

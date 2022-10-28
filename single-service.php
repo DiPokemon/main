@@ -11,7 +11,7 @@
             <section  class="page__service-article">
                 <div class="service-article__container _container">
                     <div class="service-article__body <?php post_class(); ?>">
-                        <img itemprop="image" class="service-article_img" src="<?php the_post_thumbnail_url() ?>">
+                        <img loading="lazy" itemprop="image" class="service-article_img" src="<?php the_post_thumbnail_url() ?>">
                         <div itemprop="description" class="service-article_text">
                             <?php the_content(); ?>
                         </div>

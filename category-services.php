@@ -48,7 +48,7 @@
                                 ?>
                                     <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
                                         <div class="case_slide_wrapper">
-                                        <img src="<?= $post_thumbnail_url ?>" alt="<?php the_title() ?>">
+                                        <img loading="lazy" src="<?= $post_thumbnail_url ?>" alt="<?php the_title() ?>">
                                         <div class="case_slide_title_wrapper">
                                             <h3 class="case_slide__title"><?php the_title() ?></h3>
                                         </div>                                
@@ -143,7 +143,7 @@
                                             <div class="services-block__text">
                                                 <a href="<?php echo get_category_link($cat->cat_ID);?>"><?php echo $cat->name; ?></a>
                                             </div>
-                                            <div class="services-block__img"><img src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="img"></div>
+                                            <div class="services-block__img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="img"></div>
                                         </div>                                                                               
                                         <?php 
                                         }

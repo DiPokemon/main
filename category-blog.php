@@ -32,7 +32,7 @@
                                             $post_thumbnail_url = get_the_post_thumbnail_url();
                                         ?>
                                         <a class="articles__item" href="<?php the_permalink() ?>">
-                                            <div class="articles__img"><img src="<?= $post_thumbnail_url ?>" title="<?php the_title() ?>" alt="img"></div>
+                                            <div class="articles__img"><img loading="lazy" src="<?= $post_thumbnail_url ?>" title="<?php the_title() ?>" alt="img"></div>
                                             <div class="articles__title"><h3 class="articles__title_h3"><?php the_title() ?></h3></div>
                                             <div class="articles__text"><?php the_excerpt() ?></div>
                                         </a>
