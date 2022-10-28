@@ -31,7 +31,7 @@
                 'itemtype'  => 'http://schema.org/SiteNavigationElement',
               ),     
               'items_wrap'  => '<ul itemprop="about" itemscope="" itemtype="http://schema.org/ItemList" id="%1$s" class="%2$s">%3$s</ul>',
-              echo          => false,               
+              'echo'          => false,               
             );
             $temp_menu = wp_nav_menu($args);
             $temp_menu = str_replace("<a", "<a itemprop='url' ", $temp_menu);
