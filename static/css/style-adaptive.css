@@ -243,6 +243,10 @@
 }
 
 @media(max-width:768px){
+    .main-background2-img,
+    .main-background3-img{
+        display:none
+    }
     .main-3columns{
         display: none;
     }
