@@ -24,7 +24,12 @@
               'fallback_cb'     => 'wp_page_menu',            
               'link_class'     => 'menu__link',           
               'theme_location'  => 'main_menu',
-              'add_li_class'    => 'menu__item'                      
+              'add_li_class'    => 'menu__item',
+              'container_atts'  => array(
+                'role'      => 'navigation',
+                'itemscope' => 'itemscope',
+                'itemtype'  => 'http://schema.org/SiteNavigationElement',
+              )                      
             );
             wp_nav_menu($args);
           ?>
