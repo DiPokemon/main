@@ -30,7 +30,7 @@
                 'itemscope' => 'itemscope',
                 'itemtype'  => 'http://schema.org/SiteNavigationElement',
               ),     
-              'items_wrap'  => 'itemprop="about" itemscope="" itemtype="http://schema.org/ItemList"'               
+              'items_wrap'  => '<ul itemprop="about" itemscope="" itemtype="http://schema.org/ItemList" id="%1$s" class="%2$s">%3$s</ul>'               
             );
             wp_nav_menu($args);
           ?>
