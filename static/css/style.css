@@ -28,7 +28,7 @@ body {
   background: #1a0930;
   z-index: 3;
 }
-section{
+section:not(.page-header){
   padding: 75px 0px
 }
 a,
@@ -1081,9 +1081,9 @@ z-index: 1;
   flex-wrap: wrap;
   gap: 20px;
 }
-.category-list_service-selection {
+/* .category-list_service-selection {
   margin: 70px 0px;
-}
+} */
 .category-list_description {
   font-family: "Inter";
   font-weight: 400;

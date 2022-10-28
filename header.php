@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-
-<meta charset="<?php bloginfo('charset'); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-
-<title><?php bloginfo('name'); ?></title>
-<meta name="description" content="<?php bloginfo('description'); ?>">
-
-<?php wp_head();?>
-
+<html lang="ru">
+<head itemscope itemtype="http://schema.org/WPHeader">
+  <base href="https://topland-rnd.ru">
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <title itemprop="headline"><?php bloginfo('name'); ?></title>
+  <meta itemprop="description"name="description" content="<?php bloginfo('description'); ?>">
+  <?php wp_head();?>
+</head>
+<body>
       <div class="wrapper">
       
       <header class="header">
@@ -24,9 +25,12 @@
                       'fallback_cb'     => 'wp_page_menu',            
                       'link_class'     => 'menu__link',           
                       'theme_location'  => 'main_menu',
-                      'add_li_class'    => 'menu__item'
+                      'add_li_class'    => 'menu__item',
+                      'echo' 			  => false,
+                      'items_wrap' 	  => '<ul id="%1$s" class="%2$s" itemscope itemtype="http://www.schema.org/SiteNavigationElement">%3$s</ul>',
                   );
                   wp_nav_menu($args);
+
               ?>
           <div class="header__logo">
               <div class="logo_img"><?php the_custom_logo() ?></div>

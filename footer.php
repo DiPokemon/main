@@ -1,14 +1,14 @@
     </main>
 
-    <footer class="footer">
-        <div class="footer__container _container">
+    <footer itemscope itemtype="http://schema.org/WPFooter" class="footer">
+        <div itemscope itemtype="http://schema.org/Organization" class="footer__container _container">
           <div class="footer__body">
             <div class="footer_left-side">
               <div class="footer__logo">
                 <div class="logo_img"><?php the_custom_logo() ?></div>
-                <div class="logo_text">top land</div>  
+                <div itemprop="name" class="logo_text">TopLand</div>  
               </div>
-              <div class="footer__adress">Ростов-на-Дону,<br> ул. Стабильная 9</div>  
+              <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="footer__adress"><span itemprop="addressLocality">Ростов-на-Дону</span>,<br><span itemprop="streetAddress"> ул. Стабильная</span> 9</div>  
             </div>
 
             <div class="footer__navigation">
@@ -29,12 +29,12 @@
               <div class="footer__contact footer-contact">
                 <div class="footer_tel-list">
                   <div class="footer-contact__title">Контакты:</div>
-                  <div class="footer-contact__tel"><p><a class="footer__link" href="tel:+79934536307">+7 993 453-63-07</a></p>
-                                                  <p><a class="footer__link" href="tel:+79934556307">+7 993 455-63-07</a></p>
-                                                  <p><a class="footer__link" href="tel:+79614236307">+7 961 423-63-07</a></p>
+                  <div class="footer-contact__tel"><p><a itemprop="telephone" class="footer__link" href="tel:+79934536307">+7 993 453-63-07</a></p>
+                                                  <p><a itemprop="telephone" class="footer__link" href="tel:+79934556307">+7 993 455-63-07</a></p>
+                                                  <p><a itemprop="telephone" class="footer__link" href="tel:+79614236307">+7 961 423-63-07</a></p>
                   </div>
                 </div>  
-                <div class="footer-contact__email"><a class="footer__link" href="mailto:sales@topland-rnd.ru">sales@topland-rnd.ru</a></div>  
+                <div class="footer-contact__email"><a itemprop="email" class="footer__link" href="mailto:sales@topland-rnd.ru">sales@topland-rnd.ru</a></div>  
               </div>
             </div>            
           </div>
