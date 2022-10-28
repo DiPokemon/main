@@ -25,9 +25,8 @@
                       'fallback_cb'     => 'wp_page_menu',            
                       'link_class'     => 'menu__link',           
                       'theme_location'  => 'main_menu',
-                      'add_li_class'    => 'menu__item',
-                      'echo' 			  => false,
-                      'items_wrap' 	  => '<ul id="%1$s" class="%2$s" itemscope itemtype="http://www.schema.org/SiteNavigationElement">%3$s</ul>',
+                      'add_li_class'    => 'menu__item'
+                      
                   );
                   wp_nav_menu($args);
 
