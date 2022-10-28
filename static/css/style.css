@@ -581,9 +581,7 @@ main.page{
   line-height: 22px;
   color: #ffffff;
 }
-.services-block__img {
-  /* padding: 44px 30px 37px 0; */
-}
+
 .serveces-item1 {
   width: 32.15%;
 }
@@ -697,9 +695,7 @@ main.page{
 .cases-block__container{
   max-width: 90vw;
 }
-.cases-block__body {
-  /* margin-bottom: 123px; */
-}
+
 .case_slide_wrapper {
   position:relative;
   margin: 0 10px;
@@ -735,9 +731,7 @@ main.page{
   object-fit: cover;
   border-radius: 5px;
 }
-.cases-block__title {
-  /* margin-top: 185px; */
-}
+
 .cases-block__title_h2 {
   margin-bottom: 50px;
 }
