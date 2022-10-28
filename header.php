@@ -27,7 +27,7 @@
               'add_li_class'    => 'menu__item',
               'container_atts'  => array(
                 'role'      => 'navigation',
-                'itemscope' => 'itemscope',
+                'itemscope' => '',
                 'itemtype'  => 'http://schema.org/SiteNavigationElement',
               ),     
               'items_wrap'  => '<ul itemprop="about" itemscope="" itemtype="http://schema.org/ItemList" id="%1$s" class="%2$s">%3$s</ul>',
@@ -36,6 +36,7 @@
             $temp_menu = wp_nav_menu($args);
             $temp_menu = str_replace('<a', '<a itemprop="url" ', $temp_menu);
             $temp_menu = str_replace('<li', '<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList" ', $temp_menu);
+            $temp_menu = str_replace('<ul class="sub-menu"', '<ul class="sub-menu" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"', $temp_menu);
             preg_match_all("~<a (.*?)>(.*)</a>~", $temp_menu, $matchesz);
             foreach($matchesz[0] as $value){
               if(strpos($value, "<span") === false){
