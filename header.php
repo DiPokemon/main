@@ -29,7 +29,8 @@
                 'role'      => 'navigation',
                 'itemscope' => 'itemscope',
                 'itemtype'  => 'http://schema.org/SiteNavigationElement',
-              )                      
+              ),     
+              'items_wrap'  => 'itemprop="about" itemscope="" itemtype="http://schema.org/ItemList"'               
             );
             wp_nav_menu($args);
           ?>
