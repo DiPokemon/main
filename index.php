@@ -318,58 +318,58 @@
                     <h2 class="_h2 question__title_h2 section_title">Вопрос/Ответ</h2>
                   </div>
                   <div class="main_block__wrapper">
-                    <div class="accordion faq_accordion" id="faq_accordion">
+                    <div itemscope itemtype="https://schema.org/FAQPage" class="accordion faq_accordion" id="faq_accordion">
                       
                     
-                    <div class="accordion__item close">
+                      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
-                        Чем ваша компания лучше других? <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
+                        <span itemprop="name">Чем ваша компания лучше других?</span> <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
-                        <div class="accordion__item_body">
-                        Основатели компании изначально были техническими специалистами, 
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
+                        <span itemprop="text">Основатели компании изначально были техническими специалистами, 
                         благодаря этому у компании есть четкая идеология работы с проектами. 
-                        Мы не обещаем золотых гор, только реальные цифры и факты
+                        Мы не обещаем золотых гор, только реальные цифры и факты</span>
                         </div>
                       </div>
 
 
 
-                      <div class="accordion__item close">
+                      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
-                        Я знаю более раскрученные компании. Они сделают <br> дешевле. 
-                        Зачем мне переплачивать? <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
+                        <span itemprop="name">Я знаю более раскрученные компании. Они сделают <br> дешевле. 
+                        Зачем мне переплачивать?</span> <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
-                        <div class="accordion__item_body">
-                        Чего Вы хотите? За что Вы готовы платить? За работу или результат? 
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
+                        <span itemprop="text">Чего Вы хотите? За что Вы готовы платить? За работу или результат? 
                         Можно взять 10 000 рублей за работу, которая стоит 30 000.
                          Заплатив 10 000 – Вы их просто выкинете. 
-                         Заплатив 30 000 – Вы отдадите их за конкретные цели и результаты. Так что нужно Вам?
+                         Заплатив 30 000 – Вы отдадите их за конкретные цели и результаты. Так что нужно Вам?</span>
                         </div>
                       </div>
 
-                      <div class="accordion__item close">
+                      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
-                        Почему так мало кейсов, которые можете показать? <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
+                        <span itemprop="name">Почему так мало кейсов, которые можете показать?</span> <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
-                        <div class="accordion__item_body">
-                        Основатели компании длительное время работали в найме, затем на фрилансе, 
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
+                        <span itemprop="text">Основатели компании длительное время работали в найме, затем на фрилансе, 
                         затем по подряду с более крупными компаниями. 
                         Именно поэтому большинство проектов относятся к чужим компаниям. 
                         Зато работали над ними именно мы. Мы были внутренним механизмом других компаний. 
-                        Так что важнее? Обертка или содержание!?
+                        Так что важнее? Обертка или содержание!?</span>
                         </div>
                       </div>
 
-                      <div class="accordion__item close">
+                      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
-                        Почему мы сами еще не в ТОПе? <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
+                        <span itemprop="name">Почему мы сами еще не в ТОПе?</span> <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
-                        <div class="accordion__item_body">
-                        Недавно мы начали заниматься своим сайтом. 
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
+                        <span itemprop="text">Недавно мы начали заниматься своим сайтом. 
                         Так как ранее работали только в субподряде и по сарафанке, 
                         необходимости разработки и продвижения качественного сайта не было. 
                         Да и некогда было. В связи с расширением, появился отдел внутреннего маркетинга, 
-                        который в данный момент и занимается данным вопросом.
+                        который в данный момент и занимается данным вопросом.</span>
                         </div>
                       </div>
 
