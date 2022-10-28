@@ -424,3 +424,48 @@ function topland_breadcrumbs() {
 		echo $wrap_after;
 	}
 } 
+
+// подключаем функцию активации мета блока (service_price)
+add_action('add_meta_boxes', 'topland_service_price', 1);
+
+function topland_service_price() {
+	add_meta_box( 'service_price', 'Цена услуги', 'service_price_box_func', 'post', 'normal', 'high'  );
+}
+
+
+// код блока
+function service_price_box_func( $post ){
+	?>
+	<p style="display:flex;">
+		<label><input placeholder="Нижняя цена" type="number" min="0" name="price[low_price]" value="<?php echo get_post_meta($post->ID, 'low_price', 1); ?>" /></label>
+		<!-- <label><input placeholder="Верхняя цена" type="number" min="0" name="price[high_price]" value="<?php echo get_post_meta($post->ID, 'high_price', 1); ?>" /></label> -->
+	</p>
+	<input type="hidden" name="service_price_nonce" value="<?php echo wp_create_nonce(__FILE__); ?>" />
+	<?php
+}
+
+// включаем обновление полей при сохранении
+add_action( 'save_post', 'topland_service_price_update', 0 );
+
+## Сохраняем данные, при сохранении поста
+function topland_service_price_update( $post_id ){
+	// базовая проверка
+	if (
+		   empty( $_POST['price'] )
+		|| ! wp_verify_nonce( $_POST['service_price_nonce'], __FILE__ )
+		|| wp_is_post_autosave( $post_id )
+		|| wp_is_post_revision( $post_id )
+	)
+		return false;
+
+	// Все ОК! Теперь, нужно сохранить/удалить данные
+	$_POST['price'] = array_map( 'sanitize_text_field', $_POST['price'] ); // чистим все данные от пробелов по краям
+	foreach( $_POST['price'] as $key => $value ){
+		if( empty($value) ){
+			delete_post_meta( $post_id, $key ); // удаляем поле если значение пустое
+			continue;
+		}
+		update_post_meta( $post_id, $key, $value ); // add_post_meta() работает автоматически
+	}
+	return $post_id;
+}

@@ -2,17 +2,17 @@
 
 <?php while (have_posts()) : the_post(); ?>
 
-<div class="_container">
+        <div itemscope itemtype="http://schema.org/Product" class="_container">
             <section class="page-header">
                 <?php if ( function_exists( 'topland_breadcrumbs' ) ) topland_breadcrumbs(); ?>  
-                <h1 class="page-header__title"><?php the_title(); ?></h1>
+                <h1 itemprop="name" class="page-header__title"><?php the_title(); ?></h1>
             </section>
 
-            <section class="page__service-article">
+            <section  class="page__service-article">
                 <div class="service-article__container _container">
                     <div class="service-article__body <?php post_class(); ?>">
-                        <img class="service-article_img" src="<?php the_post_thumbnail_url() ?>">
-                        <div class="service-article_text">
+                        <img itemprop="image" class="service-article_img" src="<?php the_post_thumbnail_url() ?>">
+                        <div itemprop="description" class="service-article_text">
                             <?php the_content(); ?>
                         </div>
                     </div>
@@ -33,6 +33,12 @@
                     </div>
                 </div>
             </section>
+
+            <!-- SchemaOrg -->
+            <div itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+                <meta content="<?php echo get_post_meta($post->ID, 'low_price', 1); ?>" itemprop="lowPrice"/>
+                <meta content="RUR" itemprop="priceCurrency"/>
+            </div>
         </div>
 
 <?php endwhile; ?>
