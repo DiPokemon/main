@@ -28,7 +28,7 @@ body {
   background: #1a0930;
   z-index: 3;
 }
-section:not(.page-header){
+section{
   padding: 75px 0px
 }
 a,
@@ -1048,6 +1048,7 @@ z-index: 1;
   color: var(--main-white-color);
   font-family: "Inter";
   margin-bottom: 48px;
+  padding: 0
 }
 .page-header__breadcrumbs {
   margin: 25px 0px;
