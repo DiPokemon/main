@@ -38,7 +38,9 @@ a:visited{
 main.page{
   margin-top: 68px;
 }
-
+.d-none{
+  display: none;
+}
 
 .background-reviews {
   position: absolute;
