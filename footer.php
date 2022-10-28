@@ -1,5 +1,4 @@
-    </main>
-
+</main>
     <footer itemscope itemtype="http://schema.org/WPFooter" class="footer">
         <div itemscope itemtype="http://schema.org/Organization" class="footer__container _container">
           <div class="footer__body">
@@ -12,6 +11,7 @@
             </div>
 
             <div class="footer__navigation">
+
                 <?php
                     wp_nav_menu( array(
                         'container'       => 'nav',          
@@ -23,15 +23,16 @@
                         'add_li_class'    => 'menu-footer__item'               
                     ) );
                 ?>
-            </div>
-            
+                
+            </div>            
             <div class="footer_right-side">
               <div class="footer__contact footer-contact">
                 <div class="footer_tel-list">
                   <div class="footer-contact__title">Контакты:</div>
-                  <div class="footer-contact__tel"><p><a itemprop="telephone" class="footer__link" href="tel:+79934536307">+7 993 453-63-07</a></p>
-                                                  <p><a itemprop="telephone" class="footer__link" href="tel:+79934556307">+7 993 455-63-07</a></p>
-                                                  <p><a itemprop="telephone" class="footer__link" href="tel:+79614236307">+7 961 423-63-07</a></p>
+                  <div class="footer-contact__tel">
+                    <p><a itemprop="telephone" class="footer__link" href="tel:+79934536307">+7 993 453-63-07</a></p>
+                    <p><a itemprop="telephone" class="footer__link" href="tel:+79934556307">+7 993 455-63-07</a></p>
+                    <p><a itemprop="telephone" class="footer__link" href="tel:+79614236307">+7 961 423-63-07</a></p>
                   </div>
                 </div>  
                 <div class="footer-contact__email"><a itemprop="email" class="footer__link" href="mailto:sales@topland-rnd.ru">sales@topland-rnd.ru</a></div>  
@@ -41,7 +42,6 @@
         </div>
     </footer>   
  </div>
-
 <script src="js/script.js"></script> 
 </body>
 </html>

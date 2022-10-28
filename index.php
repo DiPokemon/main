@@ -1,84 +1,75 @@
 <?php get_header(); ?>
             <section class="page__main-block main">
-            <div class="main-background1-img"></div>
-            <div class="main-background2-img"></div>
-            <div class="main-background3-img"></div>
-            <!-- <div class="background-main1"></div>             -->
-              <div class="main-block__container _container">
-                    <div class="main-block__body">                    
-                    <!-- <div class="background-main2"></div>
-                    <div class="background-main3"></div> -->
-                        <div class="main-content">
-                          <div class="main-content_wrapper">
-                            <h1 class="main-title">Создание сайтов и SEO продвижение</h1>    
-                            <div class="main-subtitle">
-                              <div class="main-subtitle__item"><span><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Техническая поддержка</div>
-                              
-                              <div class="main-subtitle__item"><span><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Копирайт</div>
-                              
-                              <div class="main-subtitle__item"><span><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Контекстная реклама</div>
+              <div class="main-background1-img"></div>
+              <div class="main-background2-img"></div>
+              <div class="main-background3-img"></div>                        
+                <div class="main-block__container _container">
+                      <div class="main-block__body"> 
+                          <div class="main-content">
+                            <div class="main-content_wrapper">
+                              <h1 class="main-title">Создание сайтов и SEO продвижение</h1>    
+                              <div class="main-subtitle">
+                                <div class="main-subtitle__item"><span><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Техническая поддержка</div>                              
+                                <div class="main-subtitle__item"><span><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Копирайт</div>                              
+                                <div class="main-subtitle__item"><span><img src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Контекстная реклама</div>
+                              </div>
+                              <a href="#" class="btn main-button_href" >Задайте вопрос в What’sApp</a>
                             </div>
-                            <a href="#" class="btn main-button_href" >Задайте вопрос в What’sApp</a>
                           </div>
-                        </div>
-
-                        <div class="main-image">
-                          <div class="main-image_grid">
-                            <div class="main-image__el">
-                              <div class="main-image__text_title">+70%</div>
-                              <div class="main-image__text_subtitle">Выводим сайты клиентов в топ-10</div>
-                            </div>                            
-                            <div class="main-image__el">
-                              <img src="<?php echo get_template_directory_uri()?>/static/img/img2.png" alt="img">
-                            </div>
-                            <div class="main-image__el">
-                              <img src="<?php echo get_template_directory_uri()?>/static/img/img3.png" alt="img">
-                            </div>
-                            <div class="main-image__el">
-                              <img src="<?php echo get_template_directory_uri()?>/static/img/img4.png" alt="img">
-                            </div>
-                          </div>  
-                        </div>
-                    </div>
-              </div>
-
-              <div class="main-background">
-                <div class="_container">
-
-                  <div class="main-3columns">
-                    <div class="main-3columns__item">
-                        <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
-                        <div class="main-3colums__item_text">Повышаем продажи<br> партнерских товаров<br> и услуг в среднем в 3 раза</div>
-                    </div>
-                    <div class="main-3columns__item">
-                        <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
-                        <div class="main-3colums__item_text">7 лет работаем<br> в интернет-маркетинге</div>
-                    </div>
-                    <div class="main-3columns__item">
-                        <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Stairs 1.svg" alt="img"></div>
-                        <div class="main-3colums__item_text">Продвигаем сайты с технически<br> сложными тематиками</div>
-                    </div>                  
-                  </div>
-
-                  <div class="main-3columns_mobile slider_wrapper">
-                    <div class="main-slider">
+                          <div class="main-image">
+                            <div class="main-image_grid">
+                              <div class="main-image__el">
+                                <div class="main-image__text_title">+70%</div>
+                                <div class="main-image__text_subtitle">Выводим сайты клиентов в топ-10</div>
+                              </div>                            
+                              <div class="main-image__el">
+                                <img src="<?php echo get_template_directory_uri()?>/static/img/img2.png" alt="img">
+                              </div>
+                              <div class="main-image__el">
+                                <img src="<?php echo get_template_directory_uri()?>/static/img/img3.png" alt="img">
+                              </div>
+                              <div class="main-image__el">
+                                <img src="<?php echo get_template_directory_uri()?>/static/img/img4.png" alt="img">
+                              </div>
+                            </div>  
+                          </div>
+                      </div>
+                </div>
+                <div class="main-background">
+                  <div class="_container">
+                    <div class="main-3columns">
                       <div class="main-3columns__item">
                           <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
-                          <div class="main-3colums__item_text">Повышаем продажи партнерских товаров и услуг в среднем в 3 раза</div>
+                          <div class="main-3colums__item_text">Повышаем продажи<br> партнерских товаров<br> и услуг в среднем в 3 раза</div>
                       </div>
                       <div class="main-3columns__item">
                           <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
-                          <div class="main-3colums__item_text">7 лет работаем в интернет-маркетинге</div>
+                          <div class="main-3colums__item_text">7 лет работаем<br> в интернет-маркетинге</div>
                       </div>
                       <div class="main-3columns__item">
                           <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Stairs 1.svg" alt="img"></div>
-                          <div class="main-3colums__item_text">Продвигаем сайты с технически сложными тематиками</div>
-                      </div>  
+                          <div class="main-3colums__item_text">Продвигаем сайты с технически<br> сложными тематиками</div>
+                      </div>                  
+                    </div>
+                    <div class="main-3columns_mobile slider_wrapper">
+                      <div class="main-slider">
+                        <div class="main-3columns__item">
+                            <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
+                            <div class="main-3colums__item_text">Повышаем продажи партнерских товаров и услуг в среднем в 3 раза</div>
+                        </div>
+                        <div class="main-3columns__item">
+                            <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
+                            <div class="main-3colums__item_text">7 лет работаем в интернет-маркетинге</div>
+                        </div>
+                        <div class="main-3columns__item">
+                            <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Stairs 1.svg" alt="img"></div>
+                            <div class="main-3colums__item_text">Продвигаем сайты с технически сложными тематиками</div>
+                        </div>  
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>  
-            </section>            
+                </div>  
+            </section>                                
 
             <section class="page__services-block services">
               <div class="services-block__container _container">
@@ -92,7 +83,7 @@
                           'order'         => 'ASC',
                           'hide_empty'    => true,
                           'parent'        => '3',                        
-                          'update_term_meta_cache' => true, // подгружать метаданные в кэш
+                          'update_term_meta_cache' => true,
                         );
                       $term_query = new WP_Term_Query( $args );
                         foreach( $term_query->get_terms() as $term ){                            
@@ -109,8 +100,7 @@
               </div>
             </section> 
             
-            <section class="page__choice-block choice">  
-              <!-- <div class="background-choice"></div>             -->
+            <section class="page__choice-block choice"> 
               <div class="background-choice-img"></div>
               <div class="choice-block__container _container">
                 <div class="choice-block__body">                
@@ -139,31 +129,23 @@
                   <div class="cases-block__title">
                     <h2 class="_h2 cases-block__title_h2 section_title">Свежие кейсы студии</h2>
                   </div>
-
                   <div class="slider_wrapper">
-
                       <div class="cases_slider">
-
                         <?php $length_cases = 0 ?>
-                        <?php
-                            // Взять первые 3 новости для горизонтальной ленты
+                        <?php                            
                             $args_for_cases = [
                                 'posts_per_page' => 9,
                                 'category_name'  => 'cases',
                                 'offset'         => 0,
                             ];
-
                             $query_cases = new WP_Query( $args_for_cases );
-
                             while ($query_cases->have_posts()) :
                                 $query_cases->the_post();
                                 $length_cases++;
-
                                 if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
                                     $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
                                 else
                                     $post_thumbnail_url = get_the_post_thumbnail_url();
-
                         ?>
                             <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
                                 <div class="case_slide_wrapper">
@@ -173,9 +155,7 @@
                                   </div>                                
                                 </div>                              
                             </a>
-
                         <?php endwhile; wp_reset_query(); ?>  
-
                       </div>
                       <div class="slider-controls">
                         <button type="button" class="slide-m-prev"></button>
@@ -183,7 +163,6 @@
                         <button type="button" class="slide-m-next"></button>
                       </div>
                   </div>
-
                 </div>
               </div>
             </section>
@@ -272,24 +251,19 @@
                   <div class="useful-articles__columns articles">
                     <?php $length = 0 ?>
                     <?php
-                        // Взять первые 3 новости для горизонтальной ленты
                         $args_for_horz_news = [
                             'posts_per_page' => 3,
                             'category_name'  => 'blog',
                             'offset'         => 0,
                         ];
-
                         $query = new WP_Query( $args_for_horz_news );
-
                         while ($query->have_posts()) :
                             $query->the_post();
                             $length++;
-
                             if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
                                 $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
                             else
                                 $post_thumbnail_url = get_the_post_thumbnail_url();
-
                     ?>
                         <a class="articles__item" href="<?php the_permalink() ?>">
                             <div class="articles__img"><img src="<?= $post_thumbnail_url ?>" title="<?php the_title() ?>" alt="img"></div>
@@ -298,9 +272,6 @@
                         </a>
                     <?php
                         endwhile;
-
-                        // Аннулирует данные последнего запроса, созданного для использования в произвольном Цикле WordPress.
-                        // (Функция должна вызываться сразу после произвольного цикла).
                         wp_reset_query();
                     ?>  
                   </div>
@@ -319,8 +290,6 @@
                   </div>
                   <div class="main_block__wrapper">
                     <div itemscope itemtype="https://schema.org/FAQPage" class="accordion faq_accordion" id="faq_accordion">
-                      
-                    
                       <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
                         <span itemprop="name">Чем ваша компания лучше других?</span> <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
@@ -331,9 +300,6 @@
                         Мы не обещаем золотых гор, только реальные цифры и факты</span>
                         </div>
                       </div>
-
-
-
                       <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
                         <span itemprop="name">Я знаю более раскрученные компании. Они сделают <br> дешевле. 
@@ -346,7 +312,6 @@
                          Заплатив 30 000 – Вы отдадите их за конкретные цели и результаты. Так что нужно Вам?</span>
                         </div>
                       </div>
-
                       <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
                         <span itemprop="name">Почему так мало кейсов, которые можете показать?</span> <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
@@ -359,7 +324,6 @@
                         Так что важнее? Обертка или содержание!?</span>
                         </div>
                       </div>
-
                       <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
                         <span itemprop="name">Почему мы сами еще не в ТОПе?</span> <img class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
@@ -372,12 +336,10 @@
                         который в данный момент и занимается данным вопросом.</span>
                         </div>
                       </div>
-
                     </div>
                   </div>
 
                 </div>
               </div>
             </section>
-
 <?php get_footer(); ?>

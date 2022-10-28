@@ -697,7 +697,6 @@ main.page{
 .cases-block__container{
   max-width: 90vw;
 }
-
 .case_slide_wrapper {
   position:relative;
   margin: 0 10px;
@@ -766,7 +765,7 @@ main.page{
 
 .reviews_gradient_bg-img{
   position: absolute;
-  top: -118px;
+  top: -75px;
   width: 100vw;
   height: 851px;
   background-image: url(../img/bg-reviews.png);
@@ -1016,10 +1015,10 @@ z-index: 1;
   line-height: 21px;
 
 }
-.accordion__item_header span {
+/* .accordion__item_header span {
   float: right;
   font-size: 25px;
-}
+} */
 .close .accordion__item_body {
   height: 0px;
   transition: height 1s ease-out;
@@ -1038,7 +1037,6 @@ z-index: 1;
   box-sizing: border-box;
   color: var(--article-text-color);
   font-family: 'Inter';
-  
 }
 
 /*---------------------------------------------------------------------------------------------------*/
@@ -1056,18 +1054,13 @@ z-index: 1;
   font-weight: 400;
   color: var(--article-text-color)
 }
-
 .page-header__breadcrumbs a:active,
 .page-header__breadcrumbs a:visited {
   color: var(--article-text-color)
 }
-
 .breadcrumbs__current{
   color: var(--main-white-color)
 }
-/* .page-header__breadcrumbs a:active{
-  color: var(--article-text-color)
-} */
 .page-header__title {
   font-size: 40px;
   font-weight: 500;
@@ -1084,9 +1077,6 @@ z-index: 1;
   flex-wrap: wrap;
   gap: 20px;
 }
-/* .category-list_service-selection {
-  margin: 70px 0px;
-} */
 .category-list_description {
   font-family: "Inter";
   font-weight: 400;
@@ -1129,7 +1119,6 @@ z-index: 1;
 p.tariff_price {
   font-size: 14px;
 }
-
 .tariff_price span {
   font-size: 20px;
   font-weight: 600;
@@ -1154,6 +1143,7 @@ p.tariff_price {
   background: #1a093079;
   box-shadow: 0px 0px 5px #3f3354;
 }
+
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------article-page-----------------------------------*/
 
