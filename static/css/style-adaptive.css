@@ -459,7 +459,14 @@
 
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------category-list----------------------------------*/
-
+@media (max-width: 768px) {
+    .service-selection__lightning_left {
+        display: none;
+    }
+    .service-selection__lightning_right {
+        display: none;
+    }
+}
 @media(max-width: 768px) {
     .category-list_service-selection {
         margin: 50px 0px
