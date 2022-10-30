@@ -1343,16 +1343,14 @@ section.page__contacts-map{
   background-image: url(/wp-content/uploads/2021/11/map-new.png);
   background-position: center center
 }
-
-[class*=ymaps-2][class*="-controls-pane"],
-[class*=ymaps-2][class*="-map-copyrights-promo"] {
-  display: none;
+.map-widget-layout-view__controls {
+  display: none /* скрывать контроллеры яндекс карты */
 }
 
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------form-----------------------------------------*/
 .wpcf7-form{
-  padding: 0 20px
+  padding: 20px 
 }
 .wpcf7-form input,
 .wpcf7-form textarea {
