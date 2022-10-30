@@ -297,22 +297,23 @@
               <div class="question__container _container">
                 <div class="question__body">
                   <div class="question-triple_stars_left"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
-                  <div class="question-triple_stars_right"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
-                  <div class="question__title">
-                    <h2 class="_h2 question__title_h2 section_title">Вопрос/Ответ</h2>
-                  </div>
-                  <div class="main_block__wrapper">
-                    <div itemscope itemtype="https://schema.org/FAQPage" class="accordion faq_accordion" id="faq_accordion">
-                      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
-                        <div class="accordion__item_header">
-                        <span itemprop="name">Чем ваша компания лучше других?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
-                        <span itemprop="text">Основатели компании изначально были техническими специалистами, 
-                        благодаря этому у компании есть четкая идеология работы с проектами. 
-                        Мы не обещаем золотых гор, только реальные цифры и факты</span>
-                        </div>
-                      </div>
+                  
+                  <div class="question-content">
+                     <div class="question__title">
+                       <h2 class="_h2 question__title_h2 section_title">Вопрос/Ответ</h2>
+                     </div>
+                     <div class="main_block__wrapper">
+                       <div itemscope itemtype="https://schema.org/FAQPage" class="accordion faq_accordion" id="faq_accordion">
+                         <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
+                           <div class="accordion__item_header">
+                           <span itemprop="name">Чем ваша компания лучше других?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
+                           </div>
+                           <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
+                           <span itemprop="text">Основатели компании изначально были техническими специалистами, 
+                           благодаря этому у компании есть четкая идеология работы с проектами. 
+                           Мы не обещаем золотых гор, только реальные цифры и факты</span>
+                           </div>
+                         </div>
                       <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
                         <span itemprop="name">Я знаю более раскрученные компании. Они сделают <br> дешевле. 
@@ -351,7 +352,8 @@
                       </div>
                     </div>
                   </div>
-
+                      </div>
+                      <div class="question-triple_stars_right"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
                 </div>
               </div>
             </section>

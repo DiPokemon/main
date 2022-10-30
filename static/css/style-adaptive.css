@@ -301,7 +301,10 @@
         display: block;
     }
     .service-selection__lightning_left,
-    .service-selection__lightning_right {
+    .service-selection__lightning_right,
+    .question-triple_stars_left,
+    .question-triple_stars_right
+     {
         display: none;
     }    
     .service-selection__content{

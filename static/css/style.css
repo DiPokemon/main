@@ -967,25 +967,37 @@ margin-right: 30px;
 
 /*------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------page__question----------------------------------*/
+.question {
+  margin-bottom: 112px;
+}
 
 .question__body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /* align-items: center;  */
   /* margin-bottom: 187px; */
-  position: relative;
+  /* position: relative; */
+  width: 100%;
+  justify-content: space-between;
+}
+.question-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .question-triple_stars_left {
-  position: absolute;
-  left: 0px;
-  bottom: -30px;
-  
+  /* position: absolute; */
+  /* left: 0px; */
+  /* bottom: -30px; */
+  align-self: flex-end;
+ flex-shrink: 3; 
 
 }
 .question-triple_stars_right {
-  position: absolute;
-  right: 0px;
-  top: 70px;
+  /* position: absolute; */
+  /* right: 0px; */
+  /* top: 70px; */
+  flex-shrink: 3;
 }
 .question__title {
   /* margin-top: 94px; */
@@ -1389,6 +1401,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   background: #200e38;
   font-family: "Inter";
   font-weight: 400;
+  /* margin-top: 112px; */
 }
 .footer__body {
   padding: 40px 0;
