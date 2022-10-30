@@ -157,17 +157,24 @@
                     </div>
                 </section>
             
-                <section class="category-list_service-selection">
+                <section class="page__service-selection service-selection">
                     <div class="service-selection__container _container">
-                        <div class="service-selection__body">
-                            <div class="service-selection__title">
-                                <h2 class="_h2 service-selection__title_h2">Не знаете какую услугу выбрать?</h2>
+                        <div class="service-selection__body">                        
+                            <div class="service-selection__lightning_left">
+                                <img class="lightning_left" loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_left.svg" alt="lightning left">
                             </div>
-                            <div class="service-selection__subtitle toplend">Напишите нам. Мы подскажем какая услуга
-                                принесет вашей компании больше прибыли</div>
-                            <div class="service-selection__button">
-                                <a class="service-selection__href" href="#">Написать в What’sApp</a>
+                            <div class="service-selection__content">         
+                                <div class="service-selection__title">
+                                    <h2 class="_h2 service-selection__title_h2 section_title">Не знаете какую услугу выбрать?</h2>
+                                </div>
+                                <div class="service-selection__subtitle toplend">Напишите нам. Мы подскажем какая услуга принесет вашей компании больше прибыли</div>
+                                <div class="service-selection__button">
+                                    <a class="service-selection__href" href="https://wa.me/79934536307">Написать в What’sApp</a>
+                                </div>
                             </div>
+                            <div class="service-selection__lightning_right">
+                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_right.svg" alt="lightning right">
+                            </div>                        
                         </div>
                     </div>
                 </section>
