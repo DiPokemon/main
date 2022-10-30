@@ -1063,7 +1063,7 @@ margin-right: 30px;
 .page-header {
   color: var(--main-white-color);
   font-family: "Inter";
-  padding-top: 25px
+  padding: 25px 0 0 0
 }
 .page-header__breadcrumbs {
   margin: 25px 0px;
@@ -1328,6 +1328,18 @@ p.tariff_price {
 .page__contacts_map-wrapper .map,
 .page__contacts_map-wrapper .form{
   width: 50%
+}
+
+.map {
+  height: 500px;
+  padding: 0;
+  background-image: url(/wp-content/uploads/2021/11/map-new.png);
+  background-position: center center
+}
+
+[class*=ymaps-2][class*="-controls-pane"],
+[class*=ymaps-2][class*="-map-copyrights-promo"] {
+  display: none;
 }
 
 /*---------------------------------------------------------------------------------------------------*/
