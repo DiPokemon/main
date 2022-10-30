@@ -152,7 +152,7 @@
                         ?>
                             <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
                                 <div class="case_slide_wrapper">
-                                  <img loading="lazy" src="<?= $post_thumbnail_url ?>" alt="<?php $image_alt ?>">
+                                  <img loading="lazy" src="<?= $post_thumbnail_url ?>" alt="<?php echo $image_alt ?>" title="<?php echo $image_title ?>">
                                   <div class="case_slide_title_wrapper">
                                     <h3 class="case_slide__title"><?php the_title() ?></h3>
                                   </div>                                
