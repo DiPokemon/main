@@ -1378,8 +1378,12 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   color: white;
   text-transform: uppercase;
 }
-
-
+.form_title{
+  text-transform: uppercase;
+}
+.form_text{
+  color: var(--article-text-color)
+}
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------footer-----------------------------------------*/
 
