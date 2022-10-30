@@ -39,30 +39,30 @@
                   <div class="_container">
                     <div class="main-3columns">
                       <div class="main-3columns__item">
-                          <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
+                          <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="Повышение продаж"></div>
                           <div class="main-3colums__item_text">Повышаем продажи<br> партнерских товаров<br> и услуг в среднем в 3 раза</div>
                       </div>
                       <div class="main-3columns__item">
-                          <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
+                          <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="Веб студия в Ростове-на-Дону"></div>
                           <div class="main-3colums__item_text">7 лет работаем<br> в интернет-маркетинге</div>
                       </div>
                       <div class="main-3columns__item">
-                          <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Stairs 1.svg" alt="img"></div>
+                          <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Stairs 1.svg" alt="SEO Продвижение сайтов"></div>
                           <div class="main-3colums__item_text">Продвигаем сайты с технически<br> сложными тематиками</div>
                       </div>                  
                     </div>
                     <div class="main-3columns_mobile slider_wrapper">
                       <div class="main-slider">
                         <div class="main-3columns__item">
-                            <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
+                            <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="Повышение продаж"></div>
                             <div class="main-3colums__item_text">Повышаем продажи партнерских товаров и услуг в среднем в 3 раза</div>
                         </div>
                         <div class="main-3columns__item">
-                            <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="img"></div>
+                            <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="Веб студия в Ростове-на-Дону"></div>
                             <div class="main-3colums__item_text">7 лет работаем в интернет-маркетинге</div>
                         </div>
                         <div class="main-3columns__item">
-                            <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Stairs 1.svg" alt="img"></div>
+                            <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Stairs 1.svg" alt="SEO Продвижение сайтов"></div>
                             <div class="main-3colums__item_text">Продвигаем сайты с технически сложными тематиками</div>
                         </div>  
                       </div>
@@ -90,7 +90,7 @@
                           ?>                           
                           <a class="services-block__item" href="/<?php echo $term->taxonomy?>/<?php echo $term->slug?>">
                             <div class="services-block__text"><?php echo $term->name?></div>
-                            <div class="services-block__img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="img"></div>
+                            <div class="services-block__img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="<?php echo $term->name?>"></div>
                           </a>
                           <?php                          
                         }
@@ -117,7 +117,7 @@
                     <div class="choice-block__button"><a class="choice-block__href" href="#">О компании</a></div>
                   </div>
                   <div class="choice-block__img">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/unsplash_DUmFLtMeAbQ.jpg" alt="img">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/unsplash_DUmFLtMeAbQ.jpg" alt="Разработка и СЕО продвижение сайтов в Ростове-на-Дону">
                   </div>
                 </div>
               </div>
@@ -146,10 +146,13 @@
                                     $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
                                 else
                                     $post_thumbnail_url = get_the_post_thumbnail_url();
+                                $image_id = get_post_thumbnail_id();
+                                $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+                                $image_title = get_the_title($image_id);
                         ?>
                             <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
                                 <div class="case_slide_wrapper">
-                                  <img loading="lazy" src="<?= $post_thumbnail_url ?>" alt="<?php the_title() ?>">
+                                  <img loading="lazy" src="<?= $post_thumbnail_url ?>" alt="<?php $image_alt ?>">
                                   <div class="case_slide_title_wrapper">
                                     <h3 class="case_slide__title"><?php the_title() ?></h3>
                                   </div>                                
