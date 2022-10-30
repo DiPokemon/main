@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 
-<?php while (have_posts()) : the_post(); ?>
+<?php while (have_posts()) : the_post(); 
+    $image_id = get_post_thumbnail_id();
+    $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+    $image_title = get_the_title($image_id);
+?>
 
         <div itemscope itemtype="http://schema.org/Product" class="_container">
             <section class="page-header">
@@ -11,7 +15,7 @@
             <section  class="page__service-article">
                 <div class="service-article__container _container">
                     <div class="service-article__body <?php post_class(); ?>">
-                        <img loading="lazy" itemprop="image" class="service-article_img" src="<?php the_post_thumbnail_url() ?>">
+                        <img loading="lazy" itemprop="image" class="service-article_img" src="<?php the_post_thumbnail_url() ?>" alt="<?php echo $image_alt ?>" title="<?php echo $image_title ?>">
                         <div itemprop="description" class="service-article_text">
                             <?php the_content(); ?>
                         </div>
