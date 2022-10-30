@@ -229,7 +229,9 @@ main.page{
   text-decoration-line: underline;
   color: var(--article-text-color);
 }
-.header__link{
+.header__link,
+.header__link:active,
+.header__link:visited{
   color: var(--article-text-color);
 }
 .header__element {
@@ -1343,9 +1345,6 @@ section.page__contacts-map{
   background-image: url(/wp-content/uploads/2021/11/map-new.png);
   background-position: center center
 }
-.map-widget-layout-view__controls {
-  display: none /* скрывать контроллеры яндекс карты */
-}
 
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------form-----------------------------------------*/
@@ -1454,4 +1453,24 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 }
 .footer__link{
   color: var(--article-text-color);
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------404-----------------------------------------*/
+.page-404{
+  height: calc(100vh - 270px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.title_404 {
+  font-size: 150px;
+  font-weight: 600;
+  color: var(--article-text-color);
+}
+.text_404{
+  font-weight: 400;
+  color: var(--article-text-color);
+  text-align: center;
 }
