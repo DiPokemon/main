@@ -1320,16 +1320,23 @@ p.tariff_price {
 .page__contacts_text p {
   margin-bottom: 20px;
 }
-
+section.page__contacts-map{
+  padding: 0 0 50px 0
+}
 .page__contacts_map-wrapper{
   display: flex;
 }
-
+.page__contacts_map-wrapper .map{
+  border-radius:5px;
+  box-shadow: 0px 0px 5px var(--main-white-color);
+}
 .page__contacts_map-wrapper .map,
 .page__contacts_map-wrapper .form{
   width: 50%
 }
-
+.page__contacts_map-wrapper .form{
+  padding: 0 20px;
+}
 .map {
   height: 500px;
   padding: 0;
@@ -1345,7 +1352,7 @@ p.tariff_price {
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------form-----------------------------------------*/
 .wpcf7-form{
-  padding: 20px
+  padding: 0 20px
 }
 .wpcf7-form input,
 .wpcf7-form textarea {
@@ -1366,6 +1373,12 @@ p.tariff_price {
   text-transform: uppercase;
   font-family: "Inter";
 }
+input.wpcf7-form-control.has-spinner.wpcf7-submit {
+  background-color: #a769f7;
+  color: white;
+  text-transform: uppercase;
+}
+
 
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------footer-----------------------------------------*/
