@@ -3,6 +3,12 @@
 // Удаляем category из УРЛа категорий (лучше No Category Base (WPML))
 // add_filter('category_link', create_function('$a', 'return str_replace("category/", "", $a);'), 9999);
 
+function remove_block_library_css()
+{
+	wp_dequeue_style( 'wp-block-library' );
+}
+	add_action( 'wp_enqueue_scripts', 'remove_block_library_css' );
+
 //включаем поддержку кастомного лога из настроек
 add_theme_support( 'custom-logo' );
 
