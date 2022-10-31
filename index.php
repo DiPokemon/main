@@ -82,7 +82,7 @@
                           'orderby'       => 'name',
                           'order'         => 'ASC',
                           'hide_empty'    => true,
-                          'parent'        => '3',                        
+                          'parent'        => '59',                        
                           'update_term_meta_cache' => true,
                         );
                       $term_query = new WP_Term_Query( $args );
