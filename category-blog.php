@@ -19,11 +19,7 @@
                                             'cat'            => $category->cat_ID
                                         )
                                     );
-
-                                if ($query->have_posts()) {
-                                ?>
-                                
-                                <?php 
+                                if ($query->have_posts()) {                                
                                     while ($query->have_posts()) {
                                         $query->the_post(); 
                                         if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
@@ -38,13 +34,10 @@
                                             <div class="articles__img"><img loading="lazy" src="<?= $post_thumbnail_url ?>" alt="<?php echo $image_alt ?>" title="<?php echo $image_title ?>"></div>
                                             <div class="articles__title"><h3 class="articles__title_h3"><?php the_title() ?></h3></div>
                                             <div class="articles__text"><?php the_excerpt() ?></div>
-                                        </a>
-                                         
+                                        </a>                                         
                                         <?php 
-                                    }
-                                    ?>	
-                                    
-                                    <?php 
+                                    endwhile; wp_reset_query();   
+                                    }                                    
                                 }	
                                 ?>  
                                 
