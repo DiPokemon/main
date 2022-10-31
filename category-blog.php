@@ -17,7 +17,7 @@
                                             'post_status'    => 'publish', 
                                             'posts_per_page' => 3, 
                                             'cat'            => 23,
-                                            'paged' => 1,
+                                            // 'paged' => 1,
                                         )
                                     );
                                     if ($query->have_posts()) {                                

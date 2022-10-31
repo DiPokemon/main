@@ -8,7 +8,7 @@ $('#load-more').on('click', function () {
         dataType: 'json',
         data: {
             action: 'load_more',
-            paged: currentPage,
+            paged,
         },
         success: function (res) {
             if (paged >= res.max) {
