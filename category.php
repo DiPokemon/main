@@ -3,10 +3,7 @@
                 <section class="page-header">
                     <?php if ( function_exists( 'topland_breadcrumbs' ) ) topland_breadcrumbs(); ?>  
                     <h1 class="page-header__title"><?php single_cat_title(); ?></h1>
-                </section>
-
-
-                        
+                </section>                        
 
                 <section class="page__services-block services">
                     <div class="services-block__container _container">
@@ -22,10 +19,8 @@
                                             'cat'            => $category->cat_ID
                                         )
                                     );
-
                                 if ($query->have_posts()) {
-                                ?>
-                                
+                                ?>                                
                                 <?php 
                                     while ($query->have_posts()) {
                                         $query->the_post(); 
@@ -40,8 +35,7 @@
                                         </a>  
                                         <?php 
                                     }
-                                    ?>	
-                                
+                                    ?>	                                
                                     <?php 
                                 }	
                                 ?> 
@@ -79,6 +73,4 @@
                 </section>
 
             </div>
-
-
 <?php get_footer(); ?>

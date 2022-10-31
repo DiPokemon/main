@@ -13,7 +13,7 @@
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Копирайт</div>                              
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span> Контекстная реклама</div>
                               </div>
-                              <a href="#" class="btn main-button_href" >Задайте вопрос в What’sApp</a>
+                              <a href="https://wa.me/79934536307" class="btn main-button_href" >Задайте вопрос в What’sApp</a>
                             </div>
                           </div>
                           <div class="main-image">
@@ -114,7 +114,7 @@
                       <li class="choice-block__el">Выводим Landing-page в ТОП-3 и улучшаем конверсионные показатели до 240%.</li>
                       <li class="choice-block__el">Повышаем продажи партнерских товаров и услуг в среднем в 3 раза.</li>  
                     </ul>
-                    <div class="choice-block__button"><a class="choice-block__href" href="#">О компании</a></div>
+                    <div class="choice-block__button"><a class="choice-block__href" href="/contacts">О компании</a></div>
                   </div>
                   <div class="choice-block__img">
                     <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/unsplash_DUmFLtMeAbQ.jpg" alt="Разработка и СЕО продвижение сайтов в Ростове-на-Дону">
@@ -288,7 +288,7 @@
                         wp_reset_query();
                     ?>  
                   </div>
-                  <div class="useful-articles__button"><a class="useful-articles__href" href="/blog">Все статьи</a></div>
+                  <div class="useful-articles__button"><a class="useful-articles__href" href="/category/blog">Все статьи</a></div>
                 </div>
               </div>
             </section>

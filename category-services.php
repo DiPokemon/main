@@ -26,7 +26,7 @@
                                 <?php $length_cases = 0 ?>
                                 <?php
                                     $args_for_cases = [
-                                        'posts_per_page' => 9,
+                                        'posts_per_page' => -1,
                                         'category_name'  => 'cases',
                                         'offset'         => 0,
                                     ];
