@@ -208,20 +208,6 @@ function theme_pre_get_posts( $query ) {
 //     return $existing_mimes;
 // }
 
-/* вывод кнопки loadmore */
-global $wp_query;
- // текущая страница
-$paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
-// максимум страниц
-$max_pages = $wp_query->max_num_pages;
- 
-// если текущая страница меньше, чем максимум страниц, то выводим кнопку
-if( $paged < $max_pages ) {
-	echo '<div id="loadmore" style="text-align:center;">
-		<a href="#" data-max_pages="' . $max_pages . '" data-paged="' . $paged . '" class="button">Загрузить ещё</a>
-	</div>';
-}
-
 function loadmore_scripts() { 
  	wp_enqueue_script('loadmore', get_template_directory_uri().'/static/js/loadmore.js', array( 'jquery' ));
 	wp_localize_script( 'loadmore', 'topland', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) )
@@ -229,7 +215,7 @@ function loadmore_scripts() {
  
 	wp_enqueue_script( 'loadmore' );
 }
-
+add_action( 'wp_enqueue_scripts', 'loadmore_scripts' );
 
 
 /*
