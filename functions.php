@@ -217,6 +217,22 @@ function loadmore_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'loadmore_scripts' );
 
+add_action( 'wp_ajax_nopriv_loadmore', 'true_loadmore' );
+ function true_loadmore() { 
+	$paged = ! empty( $_POST[ 'paged' ] ) ? $_POST[ 'paged' ] : 1;
+	$paged++; 
+	$args = array(
+		'paged' => $paged,
+		'post_status' => 'publish'
+	); 
+	query_posts( $args ); 
+	while( have_posts() ) : the_post();
+ 
+		get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) );
+ 
+	endwhile; 
+	die; 
+}
 
 /*
  * "Хлебные крошки" для WordPress
