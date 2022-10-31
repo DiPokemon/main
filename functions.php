@@ -9,11 +9,11 @@ add_theme_support( 'custom-logo' );
 /* Load Styles */
 function topland_load_styles()
 {
-  wp_enqueue_style('style-zero', get_template_directory_uri().'/static/css/style-zero.css');
+  wp_enqueue_style('style-zero', get_template_directory_uri().'/static/css/style-zero-min.css');
   wp_enqueue_style('style', get_template_directory_uri().'/static/css/style-min.css');
-  wp_enqueue_style('style-adaptive', get_template_directory_uri().'/static/css/style-adaptive.css');
-  wp_enqueue_style('slick', get_template_directory_uri().'/static/js/slick/slick.css');
-  wp_enqueue_style('slick-theme', get_template_directory_uri().'/static/js/slick/slick-theme.css');
+  wp_enqueue_style('style-adaptive', get_template_directory_uri().'/static/css/style-adaptive-min.css');
+  wp_enqueue_style('slick', get_template_directory_uri().'/static/js/slick/slick-min.css');
+  wp_enqueue_style('slick-theme', get_template_directory_uri().'/static/js/slick/slick-theme-min.css');
   //wp_enqueue_style('style', get_stylesheet_uri());
 }; 
 add_action('wp_enqueue_scripts', 'topland_load_styles', 10);
