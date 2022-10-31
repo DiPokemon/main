@@ -228,7 +228,7 @@ add_action( 'wp_ajax_nopriv_loadmore', 'true_loadmore' );
 	query_posts( $args ); 
 	while( have_posts() ) : the_post();
  
-		get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) );
+		get_template_part( 'template-parts/blog-item');
  
 	endwhile; 
 	die; 
