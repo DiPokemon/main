@@ -220,23 +220,18 @@ function load_more() {
   ]);
 
   $response = '';
-  $max_pages = $ajaxposts->max_num_pages;
+
   if($ajaxposts->have_posts()) {
-	ob_start();
     while($ajaxposts->have_posts()) : $ajaxposts->the_post();
+		
+        
       $response .= get_template_part('template_parts/blog-item');
     endwhile;
-	$output = ob_get_contents();
-    ob_end_clean();
   } else {
     $response = '';
   }
-  $result = [
-    'max' => $max_pages,
-    'html' => $output,
-  ];
 
-  echo json_encode($result);
+  echo $response;
   exit;
 }
 add_action('wp_ajax_load_more', 'load_more');

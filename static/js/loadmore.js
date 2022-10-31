@@ -5,16 +5,13 @@ $('#load-more').on('click', function () {
     $.ajax({
         type: 'POST',
         url: '/wp-admin/admin-ajax.php',
-        dataType: 'json',
+        dataType: 'html',
         data: {
             action: 'load_more',
             paged: currentPage,
         },
         success: function (res) {
-            if (paged >= res.max) {
-                $('#load-more').hide();
-            };
-            $('.blog-block__grid').append(res.html);
+            $('.blog-block__grid').append(res);
         }
     });
 });
