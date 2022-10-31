@@ -13,7 +13,7 @@ $('#load-more').on('click', function () {
         success: function (res) {
             if (paged >= res.max) {
                 $('#load-more').hide();
-            }
+            };
             $('.blog-block__grid').append(res);
         }
     });
