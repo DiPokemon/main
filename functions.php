@@ -221,7 +221,7 @@ function load_more() {
 
   if($ajaxposts->have_posts()) {
     while($ajaxposts->have_posts()) : $ajaxposts->the_post();
-      $response .= get_template_part('template-parts/blog-item');
+      $response .= get_template_part('template_parts/blog-item');
     endwhile;
   } else {
     $response = '';
