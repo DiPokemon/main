@@ -28,6 +28,7 @@ function topland_load_scripts()
   wp_enqueue_script( 'jquery' );
   wp_enqueue_script('slick', get_template_directory_uri() . '/static/js/slick/slick.min.js', array(), NULL, true);
   wp_enqueue_script('init_main_slider', get_template_directory_uri().'/static/js/init_main_slider.js', array(), NULL, true);
+  wp_enqueue_script('loadmore', get_template_directory_uri().'/static/js/loadmore.js', array(), NULL, true);
 //   wp_enqueue_script('loadmore', get_template_directory_uri().'/static/js/loadmore.js', array(), NULL, true);
 } 
 add_action('wp_enqueue_scripts', 'topland_load_scripts', 10);
@@ -232,6 +233,7 @@ function load_more() {
 }
 add_action('wp_ajax_load_more', 'load_more');
 add_action('wp_ajax_nopriv_load_more', 'load_more');
+
 /*
  * "Хлебные крошки" для WordPress
  * автор: Dimox
