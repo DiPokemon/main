@@ -208,31 +208,36 @@ function theme_pre_get_posts( $query ) {
 //     return $existing_mimes;
 // }
 
-function loadmore_scripts() { 
- 	wp_enqueue_script('loadmore', get_template_directory_uri().'/static/js/loadmore.js', array( 'jquery' ));
-	wp_localize_script( 'loadmore', 'topland', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) )
-	);
- 
-	wp_enqueue_script( 'loadmore' );
-}
-add_action( 'wp_enqueue_scripts', 'loadmore_scripts' );
+function true_loadmore_scripts() {
+ 	wp_enqueue_script( 'true_loadmore', get_stylesheet_directory_uri() . '/static/js/loadmore.js', array('jquery') );
+} 
+add_action( 'wp_enqueue_scripts', 'true_loadmore_scripts' );
 
-add_action( 'wp_ajax_nopriv_loadmore', 'true_loadmore' );
- function true_loadmore() { 
-	$paged = ! empty( $_POST[ 'paged' ] ) ? $_POST[ 'paged' ] : 1;
-	$paged++; 
-	$args = array(
-		'paged' => $paged,
-		'post_status' => 'publish'
-	); 
-	query_posts( $args ); 
-	while( have_posts() ) : the_post();
+function true_load_posts(){
  
-		get_template_part( 'template-parts/blog-item');
+	$args = unserialize( stripslashes( $_POST['query'] ) );
+	$args['paged'] = $_POST['page'] + 1; // следующая страница
+	$args['post_status'] = 'publish';
  
-	endwhile; 
-	die; 
+	// обычно лучше использовать WP_Query, но не здесь
+	query_posts( $args );
+	// если посты есть
+	if( have_posts() ) :
+ 
+		// запускаем цикл
+		while( have_posts() ): the_post();
+ 
+			get_template_part( 'template-parts/blog-item', get_post_format() );
+ 
+		endwhile;
+ 
+	endif;
+	die();
 }
+ 
+ 
+add_action('wp_ajax_loadmore', 'true_load_posts');
+add_action('wp_ajax_nopriv_loadmore', 'true_load_posts');
 
 /*
  * "Хлебные крошки" для WordPress

@@ -41,19 +41,16 @@
                                 ?>  
                                 
                             </div>
-                            <?php 
-                                global $wp_query; 
-                                // текущая страница
-                                $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
-                                // максимум страниц
-                                $max_pages = $wp_query->max_num_pages;                                
-                                // если текущая страница меньше, чем максимум страниц, то выводим кнопку
-                                if( $paged < $max_pages ) {
-                                    echo '<div id="loadmore" style="text-align:center;">
-                                        <a href="#" data-max_pages="' . $max_pages . '" data-paged="' . $paged . '" class="button">Загрузить ещё</a>
-                                    </div>';
-                                }
-                            ?>
+                            
+                            <?php if (  $wp_query->max_num_pages > 1 ) : ?>
+                                <script>
+                                var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
+                                var true_posts = '<?php echo serialize($wp_query->query_vars); ?>';
+                                var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
+                                var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
+                                </script>
+                                <div id="true_loadmore">Загрузить ещё</div>
+                            <?php endif; ?>
                             <!-- <div id="loadmore" style="text-align:center;"><a href="#" class="button">Загрузить ещё</a></div>  -->
                         </div>
                     </div>

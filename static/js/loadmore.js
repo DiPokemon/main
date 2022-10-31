@@ -1,34 +1,24 @@
 jQuery(function ($) {
-    // определяем в переменные кнопку, текущую страницу и максимальное кол-во страниц
-    var button = $('#loadmore a'),
-        paged = button.data('paged'),
-        maxPages = button.data('max_pages');
-        button.click(function (event) {
-            event.preventDefault(); // предотвращаем клик по ссылке
-            $.ajax({
-                type: 'POST',
-                url: topland.ajax_url, // получаем из wp_localize_script()
-                data: {
-                    paged: paged, // номер текущей страниц
-                    action: 'loadmore' // экшен для wp_ajax_ и wp_ajax_nopriv_
-                },
-                beforeSend: function (xhr) {
-                    button.text('Загружаем...');
-                },
-                success: function (data) {
-
-                    paged++; // инкремент номера страницы
-                    button.parent().before(data);
-                    button.text('Загрузить ещё');
-
-                    // если последняя страница, то удаляем кнопку
-                    if (paged == maxPages) {
-                        button.remove();
-                    }
-
+    $('#true_loadmore').click(function () {
+        $(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
+        var data = {
+            'action': 'loadmore',
+            'query': true_posts,
+            'page': current_page
+        };
+        $.ajax({
+            url: ajaxurl, // обработчик
+            data: data, // данные
+            type: 'POST', // тип запроса
+            success: function (data) {
+                if (data) {
+                    $('#true_loadmore').text('Загрузить ещё').before(data); // вставляем новые посты
+                    current_page++; // увеличиваем номер страницы на единицу
+                    if (current_page == max_pages) $("#true_loadmore").remove(); // если последняя страница, удаляем кнопку
+                } else {
+                    $('#true_loadmore').remove(); // если мы дошли до последней страницы постов, скроем кнопку
                 }
-
+            }
         });
-
     });
 });
