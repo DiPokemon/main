@@ -215,7 +215,6 @@ function load_more() {
     'post_type'      => 'post', 
     'post_status'    => 'publish', 
     'posts_per_page' => 3, 
-    'cat'            => $category->cat_ID,
     'paged' 		 => $_POST['paged'],
   ]);
 
@@ -223,13 +222,7 @@ function load_more() {
 
   if($ajaxposts->have_posts()) {
     while($ajaxposts->have_posts()) : $ajaxposts->the_post();
-		if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
-                $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
-        else
-            $post_thumbnail_url = get_the_post_thumbnail_url();
-        $image_id = get_post_thumbnail_id();
-        $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
-        $image_title = get_the_title($image_id);
+		
         
       $response .= get_template_part('template_parts/blog-item');
     endwhile;
