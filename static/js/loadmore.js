@@ -14,7 +14,7 @@ $('#load-more').on('click', function () {
             if (paged >= res.max) {
                 $('#load-more').hide();
             };
-            $('.blog-block__grid').append(res);
+            $('.blog-block__grid').append(res.html);
         }
     });
 });
