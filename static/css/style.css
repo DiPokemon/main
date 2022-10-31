@@ -1359,6 +1359,9 @@ section.page__contacts-map{
   background-image: url(/wp-content/uploads/2021/11/map-new.png);
   background-position: center center
 }
+.map iframe{
+  border-radius: 5px;
+}
 
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------form-----------------------------------------*/

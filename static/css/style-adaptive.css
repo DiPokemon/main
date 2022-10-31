@@ -188,7 +188,7 @@
     .page-header {
         color: var(--main-white-color);
         font-family: 'Inter';
-        margin-bottom: 28px;
+        /* margin-bottom: 28px; */
     }
 
     .page-header__breadcrumbs {
@@ -532,6 +532,21 @@
     .blog-block__grid {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------contacts----------------------------------*/
+@media(max-width:768px) {
+    .page__contacts_map-wrapper{
+        flex-direction: column;
+    }
+    .page__contacts_map-wrapper .map,
+    .page__contacts_map-wrapper .form{
+        width:100%
+    }
+    .page__contacts_map-wrapper .map{
+        margin-bottom: 20px;
     }
 }
 /*---------------------------------------------------------------------------------------------------*/
