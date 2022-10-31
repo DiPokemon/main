@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    $(function () {
+        $(".menu-item-has-children").on("click", "a", function (event) {
+            $(window).width() > 768 || event.preventDefault()
+        })
+    });
+
     $('.accordion__item').click(function () {
         $(this).toggleClass('open');
     });
@@ -28,7 +34,16 @@ $(document).ready(function () {
             map_block.removeAttribute('data-src');              
             console.log('YMAP LOADED');          
         }      
-    }  
+    };
 
 });
 
+
+
+// $(window).on('resize', function () {
+//     if ($(window).width() < 768) {
+//         $('.menu-item-has-children').click(function (event) {
+//             event.preventDefault();
+//         });
+//     }
+// });
