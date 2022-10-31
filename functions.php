@@ -222,7 +222,7 @@ function load_more() {
   $response = '';
   $max_pages = $ajaxposts->max_num_pages;
   if($ajaxposts->have_posts()) {
-	ob_startt();
+	ob_start();
     while($ajaxposts->have_posts()) : $ajaxposts->the_post();
       $response .= get_template_part('template_parts/blog-item');
     endwhile;
