@@ -36,13 +36,25 @@
                                             <div class="articles__text"><?php the_excerpt() ?></div>
                                         </a>                                         
                                         <?php 
-                                    } 
-                                    endwhile; wp_reset_query();                                   
+                                    }                                                                        
                                 }	
                                 ?>  
                                 
                             </div>
-                            <div id="loadmore" style="text-align:center;"><a href="#" class="button">Загрузить ещё</a></div> 
+                            <?php 
+                                global $wp_query; 
+                                // текущая страница
+                                $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+                                // максимум страниц
+                                $max_pages = $wp_query->max_num_pages;                                
+                                // если текущая страница меньше, чем максимум страниц, то выводим кнопку
+                                if( $paged < $max_pages ) {
+                                    echo '<div id="loadmore" style="text-align:center;">
+                                        <a href="#" data-max_pages="' . $max_pages . '" data-paged="' . $paged . '" class="button">Загрузить ещё</a>
+                                    </div>';
+                                }
+                            ?>
+                            <!-- <div id="loadmore" style="text-align:center;"><a href="#" class="button">Загрузить ещё</a></div>  -->
                         </div>
                     </div>
                 </section>
