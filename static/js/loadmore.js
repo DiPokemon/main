@@ -1,24 +1,17 @@
-jQuery(function ($) {
-    $('#true_loadmore').click(function () {
-        $(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
-        var data = {
-            'action': 'loadmore',
-            'query': true_posts,
-            'page': current_page
-        };
-        $.ajax({
-            url: ajaxurl, // обработчик
-            data: data, // данные
-            type: 'POST', // тип запроса
-            success: function (data) {
-                if (data) {
-                    $('#true_loadmore').text('Загрузить ещё').before(data); // вставляем новые посты
-                    current_page++; // увеличиваем номер страницы на единицу
-                    if (current_page == max_pages) $("#true_loadmore").remove(); // если последняя страница, удаляем кнопку
-                } else {
-                    $('#true_loadmore').remove(); // если мы дошли до последней страницы постов, скроем кнопку
-                }
-            }
-        });
+let currentPage = 1;
+$('#load-more').on('click', function () {
+    currentPage++; // Do currentPage + 1, because we want to load the next page
+
+    $.ajax({
+        type: 'POST',
+        url: '/wp-admin/admin-ajax.php',
+        dataType: 'html',
+        data: {
+            action: 'load_more',
+            paged: currentPage,
+        },
+        success: function (res) {
+            $('.blog-block__grid').append(res);
+        }
     });
 });
