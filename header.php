@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head itemscope itemtype="http://schema.org/WPHeader">
-  <!-- <base href="https://topland-rnd.ru"> -->
+  <base href="https://topland-rnd.ru"> 
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-  <!-- <title itemprop="headline"><?php bloginfo('name'); ?></title>
-  <meta itemprop="description"name="description" content="<?php bloginfo('description'); ?>"> -->
+
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
