@@ -965,6 +965,7 @@ margin-right: 30px;
 .useful-articles__body .articles__img img{
   max-height:200px;
   object-fit: cover;
+  border-radius: 5px 5px 0 0;
 }
 
 /*------------------------------------------------------------------------------------------------*/
@@ -1270,6 +1271,18 @@ p.tariff_price {
 .blog-block__grid .articles__img img {
   max-height: 200px;
   object-fit: cover;
+      border-radius: 5px 5px 0 0;
+}
+#loadmore{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+#loadmore .btn{
+  border: 1px solid var(--main-white-color);
+  max-width: 200px;
+  border-radius: 5px;
+  padding: 10px 25px;    
 }
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------blog-article-----------------------------------*/
