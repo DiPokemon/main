@@ -5,12 +5,15 @@ $('#load-more').on('click', function () {
     $.ajax({
         type: 'POST',
         url: '/wp-admin/admin-ajax.php',
-        dataType: 'html',
+        dataType: 'json',
         data: {
             action: 'load_more',
-            paged: currentPage,
+            paged,
         },
         success: function (res) {
+            if (paged >= res.max) {
+                $('#load-more').hide();
+            }
             $('.blog-block__grid').append(res);
         }
     });
