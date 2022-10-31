@@ -24,7 +24,7 @@ function topland_load_scripts()
   
   wp_enqueue_script('script', get_template_directory_uri() . '/static/js/script.js', array(), NULL, true);
   wp_deregister_script( 'jquery' );
-  wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.6.1.slim.min.js', array(), NULL, false);
+  wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.6.1.min.js', array(), NULL, false);
   wp_enqueue_script( 'jquery' );
   wp_enqueue_script('slick', get_template_directory_uri() . '/static/js/slick/slick.min.js', array(), NULL, true);
   wp_enqueue_script('init_main_slider', get_template_directory_uri().'/static/js/init_main_slider.js', array(), NULL, true);
