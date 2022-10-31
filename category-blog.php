@@ -36,8 +36,8 @@
                                             <div class="articles__text"><?php the_excerpt() ?></div>
                                         </a>                                         
                                         <?php 
-                                    endwhile; wp_reset_query();   
-                                    }                                    
+                                    } 
+                                    endwhile; wp_reset_query();                                   
                                 }	
                                 ?>  
                                 
