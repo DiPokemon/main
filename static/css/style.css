@@ -1100,9 +1100,9 @@ margin-right: 30px;
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------category-list----------------------------------*/
 
-.services-block__grid .services-block__item .services-block__text {
+/* .services-block__grid .services-block__item .services-block__text {
   padding: 41px 0px 42px 34px;
-}
+} */
 .services-block__grid {
   display: flex;
   flex-wrap: wrap;
@@ -1113,15 +1113,14 @@ margin-right: 30px;
   font-weight: 400;
   font-size: 16px;
   color: var(--article-text-color);
-  margin-bottom: 170px;
 }
 .page__service-offer .cases-block__title{
   margin-top: 0
 }
 .offer_block-wrapper{
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 50px; */
 }
 .offer_block-text,
 .offer_block-form{
@@ -1129,7 +1128,7 @@ margin-right: 30px;
 }
 .offer_block-tariff{
   width:30%;
-  display: flex;
+  display: flex!important;
   flex-direction: column;
   align-items: center;
   gap:20px;
@@ -1138,6 +1137,7 @@ margin-right: 30px;
   padding: 10px;
   box-shadow: 0px 0px 5px #3f3354;
   background: #1f0c37;;
+  margin: 0 10px;
 }
 .tariff_title {
   font-weight: 400;
@@ -1161,8 +1161,8 @@ p.tariff_price {
 }
 .order_btn {
   border: 1px solid #3f3354;
-  padding: 10px 0;
-  width: 200px;
+  padding: 5px 20px;
+  max-width: 200px;
   text-align: center;
   border-radius: 5px;
   font-size: 20px;
@@ -1174,7 +1174,9 @@ p.tariff_price {
   background: #1a093079;
   box-shadow: 0px 0px 5px #3f3354;
 }
-
+.tariff_slider{
+  display: none;
+}
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------article-page-----------------------------------*/
 
