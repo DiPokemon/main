@@ -215,7 +215,7 @@ function load_more() {
     'post_type'      => 'post', 
     'post_status'    => 'publish', 
     'posts_per_page' => 3, 
-	'cat'            => $category->cat_ID,
+	'cat'            => 23,
     'paged' 		 => $_POST['paged'],
   ]);
 
