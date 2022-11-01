@@ -76,12 +76,12 @@ static function register_plugin_button_in_admin_menu(){
 	// Источник 1: https://wp-kama.ru/function/add_menu_page
 	// Источник 2: https://truemisha.ru/blog/wordpress/administration-menus.html
 	add_menu_page(
-		UFKS_SPORTSFACILITIES_PLUGIN_NAME_RU, 							// содержимое <title>
-		UFKS_SPORTSFACILITIES_PLUGIN_NAME_RU,							// название пункта в меню
+		TOPLAND_REVIEWS_PLUGIN_NAME_RU, 							// содержимое <title>
+		TOPLAND_REVIEWS_PLUGIN_NAME_RU,							// название пункта в меню
 		'manage_options',												// уровень доступа (взял из примера)
-		UFKS_SPORTSFACILITIES_PLUGIN_NAME,								// URL страницы с плагином
+		TOPLAND_REVIEWS_PLUGIN_NAME,								// URL страницы с плагином
 		array(__CLASS__, 'render_admin_page'), 							// функция, генерирующая страницу
-		plugins_url( UFKS_SPORTSFACILITIES_PLUGIN_NAME . '/static/images/admin_menu_button.png' ) // адрес иконки
+		plugins_url( TOPLAND_REVIEWS_PLUGIN_NAME . '/static/images/admin_menu_button.png' ) // адрес иконки
 	);
 }
 
@@ -92,7 +92,7 @@ static function register_plugin_button_in_admin_menu(){
  */
 static function render_admin_page(){
 	if (is_admin()) {
-		if ( (isset($_GET['page'])) && ($_GET['page'] == UFKS_SPORTSFACILITIES_PLUGIN_NAME) ) {
+		if ( (isset($_GET['page'])) && ($_GET['page'] == TOPLAND_REVIEWS_PLUGIN_NAME) ) {
 			switch ((isset($_GET['view']) ? $_GET['view'] : '')) {
 				case 'add':
 				    include dirname(self::$file) . '/views/form.php';
@@ -119,14 +119,13 @@ static function render_admin_page(){
  */
 function routing_handlers(){
 	if (is_admin()) {
-		if ( (isset($_GET['page'])) && ($_GET['page'] == UFKS_SPORTSFACILITIES_PLUGIN_NAME) ) {
+		if ( (isset($_GET['page'])) && ($_GET['page'] == TOPLAND_REVIEWS_PLUGIN_NAME) ) {
 			// Начальные данные
 			$id = null;
-			$title = null;
-			$address = null;
-			$phone  = null;
-			$lat    = null;
-			$lng 	= null;
+			$name = null;
+			$last_name = null;
+			$position  = null;
+			$text   = null;			
 
 			// Обработка $_POST и $_GET
 			if (isset($_GET['data_id']))
@@ -135,45 +134,41 @@ function routing_handlers(){
 			if (isset($_POST['data_id']))
 				$id = $_POST['data_id'];
 
-			if (isset($_POST['data_title']))
-				$title = $_POST['data_title'];
+			if (isset($_POST['data_name']))
+				$name = $_POST['data_name'];
 
-			if (isset($_POST['data_address']))
-				$address = $_POST['data_address'];
+			if (isset($_POST['data_last_name']))
+				$last_name = $_POST['data_last_name'];
 
-			if (isset($_POST['data_phone']))
-				$phone = $_POST['data_phone'];
+			if (isset($_POST['data_position']))
+				$position = $_POST['data_position'];
 
-			if (isset($_POST['data_lat']))
-				$lat = $_POST['data_lat'];
+			if (isset($_POST['data_text']))
+				$text = $_POST['data_text'];
 
-			if (isset($_POST['data_lng']))
-				$lng = $_POST['data_lng'];
+			
 
 			// Понять какое событие и выполнить его
 			switch ((isset($_GET['action']) ? $_GET['action'] : '')) {
 			case 'add':
-				self::$model->title   = $title;
-				self::$model->address = $address;
-				self::$model->phone   = $phone;
-				self::$model->lat     = $lat;
-				self::$model->lng     = $lng;
+				self::$model->name   = $name;
+				self::$model->last_name = $last_name;
+				self::$model->position   = $position;
+				self::$model->text     = $text;
 				self::$model->save();
-				print('<script>window.location = "' . UFKS_SPORTSFACILITIES_PLUGIN_NAME . '"</script>');
+				print('<script>window.location = "' . TOPLAND_REVIEWS_PLUGIN_NAME . '"</script>');
 				break;
 			case 'edit':
-				self::$model->get( $id );
-				self::$model->title   = $title;
-				self::$model->address = $address;
-				self::$model->phone   = $phone;
-				self::$model->lat     = $lat;
-				self::$model->lng     = $lng;
+				self::$model->name   = $name;
+				self::$model->last_name = $last_name;
+				self::$model->position   = $position;
+				self::$model->text     = $text;
 				self::$model->save();
-				print('<script>window.location = "' . UFKS_SPORTSFACILITIES_PLUGIN_NAME . '"</script>');
+				print('<script>window.location = "' . TOPLAND_REVIEWS_PLUGIN_NAME . '"</script>');
 				break;
 			case 'delete':
 				self::$model->delete( $id );
-				print('<script>window.location = "' . UFKS_SPORTSFACILITIES_PLUGIN_NAME . '"</script>');
+				print('<script>window.location = "' . TOPLAND_REVIEWS_PLUGIN_NAME . '"</script>');
 				break;
 			}
 
@@ -194,7 +189,7 @@ static function replace_shortcode() {
  * Вспомогательная функция: пользователь в панели управления и в текущем плагине?
  */
 static function is_this_plugin_admin_page() {
-	return is_admin() && ((isset($_GET['page'])) && ($_GET['page'] == UFKS_SPORTSFACILITIES_PLUGIN_NAME));
+	return is_admin() && ((isset($_GET['page'])) && ($_GET['page'] == TOPLAND_REVIEWS_PLUGIN_NAME));
 }
 
 }
