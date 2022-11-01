@@ -27,8 +27,6 @@ require_once dirname(__FILE__) . '/inc/class-main.php';
 require_once dirname(__FILE__) . '/inc/class-model.php';
 $topland_main_class = new ToplandReviews( __FILE__ );
 
-
-
 /**************
  * Run
  **************/
