@@ -181,8 +181,10 @@
                   <div class="main_block__wrapper">
                     <div class="slider_wrapper">
                       <div class="reviews_slider">
+
                         <?php echo do_shortcode('[topland_reviews]'); ?>
-                        <div itemscope itemtype="https://schema.org/Review" class="reviews-block__slide reviews-slide">
+
+                        <!-- <div itemscope itemtype="https://schema.org/Review" class="reviews-block__slide reviews-slide">
                           <meta itemprop="datePublished" content="2022-07-15"/>
                           <meta itemprop="name" content="Шарыпкин Вячеслав о TopLand">
                           <link itemprop="url" href="https://topland-rnd.ru">
@@ -207,15 +209,15 @@
                               <meta itemprop="ratingValue" content="5">
                               <meta itemprop="bestRating" content="5"/>
                           </div>
-                        </div>
+                        </div> -->
 
-                        <div class="reviews-block__slide reviews-slide">
+                        <!-- <div class="reviews-block__slide reviews-slide">
                           <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года.
                             Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
                             грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
                           <div class="reviews-slide__text2">Вячеслав Шарыпкин222</div>
                           <div class="reviews-slide__text3">Директор Trax.su</div>
-                        </div>
+                        </div> -->
 
                       </div>
                       <div class="slider-controls">
