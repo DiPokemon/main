@@ -19,7 +19,6 @@ define( 'TOPLAND_REVIEWS_DB_TABLE_NAME',     $wpdb->prefix . TOPLAND_REVIEWS_PLU
 define( 'TOPLAND_REVIEWS_PLUGIN_DIR',        plugin_dir_path( __FILE__ ) );
 define( 'TOPLAND_REVIEWS_PLUGIN_ADMIN_URL',  admin_url('?page=' . TOPLAND_REVIEWS_PLUGIN_NAME) );
 
-
 /**************
  * Class
  **************/
