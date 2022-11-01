@@ -173,13 +173,14 @@ p.tariff_price{font-size:14px}
 .order_btn{border:1px solid #3f3354;padding:5px 20px;max-width:200px;text-align:center;border-radius:5px;font-size:20px;background:#1a0930;color:var(--main-white-color)}
 .order_btn:hover{cursor:pointer;background:#1a093079;box-shadow:0 0 5px #3f3354}
 .tariff_slider{display:none}
+.service-article_text img{width:auto}
 .service-article_img{width:100%;height:324px;object-fit:cover;border-radius:5px;margin-bottom:48px}
 .service-article_text{font-family:"Inter";color:var(--article-text-color);font-weight:400;font-size:16px}
 .service-article_text h2,.service-article_text h3,.service-article_text h4,.service-article_text h5{color:var(--main-white-color);font-weight:400}
 .service-article_text h2{font-size:30px;margin-bottom:15px}
 .service-article_text h3{font-size:22px;margin-bottom:10px}
 .service-article_text h4{margin-bottom:10px}
-.service-article_text p{margin-bottom:40px}
+.service-article_text p{margin-bottom:20px}
 .page__blog__grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
 .page__blog__grid .articles__item{width:100%}
 .more-articles-button{display:flex;justify-content:center;margin-top:48px;margin-bottom:70px}
