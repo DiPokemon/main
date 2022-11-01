@@ -1,31 +1,27 @@
-<div id="map" style="width: 100%; height: 500px;"></div>
-<script>
-    var facilities = [
-        <?php
-            foreach ( self::$model->get_list() as $item ): ?>
-                {
-                    title: "<?= $item->title ?>",
-                    phone: "<?= $item->address ?>",
-                    address: "<?= $item->phone ?>",
-                    lat: <?= $item->lat ?>,
-                    lng: <?= $item->lng ?>
-                },                
-            <?php endforeach ?>
-    ];
-    function init() {
-        var map = new ymaps.Map("map", {
-            center: [47.23, 39.69], 
-            zoom: 11
-        });
-        var facilitiesCluster = new ymaps.Clusterer();
-        facilities.forEach(function (facility) {
-            facilitiesCluster.add(new ymaps.Placemark([ facility.lat, facility.lng ], {
-                hintContent: facility.title,
-                balloonContentHeader: facility.title,
-                balloonContentBody: facility.address + '<br>' + facility.phone
-            }));
-        });
-        map.geoObjects.add(facilitiesCluster);
-    }
-</script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init"></script>
+<?php foreach ( self::$model->get_list() as $item ): ?>
+           
+                        <div itemscope itemtype="https://schema.org/Review" class="reviews-block__slide reviews-slide">
+                          <meta itemprop="datePublished" content="2022-07-15"/>
+                          <meta itemprop="name" content="<?= $item->name ?> <?= $item->last_name ?> о TopLand">
+                          <link itemprop="url" href="https://topland-rnd.ru">
+                          <div itemprop="reviewBody" class="reviews-slide__text1"><?= $item->text ?></div>
+                          <div itemprop="author" itemscope itemtype="https://schema.org/Person" class="reviews-slide__text2"><span itemprop="name"><?= $item->name ?></span> <span itemprop="familyName"><?= $item->last_name ?></span></div>
+                          <div class="reviews-slide__text3"><?= $item->position ?></div>
+
+                          <div class="d-none" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+                              <meta itemprop="name" content="Отзыв о компании TopLand">
+                              <meta itemprop="telephone" content="+7 993 453-63-07">
+                              <link itemprop="url" href="https://topland-rnd.ru/"/>
+                              <meta itemprop="email" content="sales@topland-rnd.ru">
+                              <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                  <meta itemprop="addressLocality" content="Ростов">
+                                  <meta itemprop="streetAddress" content="Стабильная, 9">
+                              </p>
+                          </div>
+                          <div class="d-none" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                              <meta itemprop="worstRating" content="1">
+                              <meta itemprop="ratingValue" content="5">
+                              <meta itemprop="bestRating" content="5"/>
+                          </div>
+                        </div>
+<?php endforeach ?>
