@@ -25,7 +25,7 @@ define( 'TOPLAND_REVIEWS_PLUGIN_ADMIN_URL',  admin_url('?page=' . TOPLAND_REVIEW
  **************/
 require_once dirname(__FILE__) . '/inc/class-main.php';
 require_once dirname(__FILE__) . '/inc/class-model.php';
-$ещздфтв_main_class = new ToplandReviews( __FILE__ );
+$topland_main_class = new ToplandReviews( __FILE__ );
 
 
 
