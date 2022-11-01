@@ -156,7 +156,7 @@ function routing_handlers(){
 				self::$model->position   = $position;
 				self::$model->text     = $text;
 				self::$model->save();
-				print('<script>window.location = "' . TOPLAND_REVIEWS_PLUGIN_NAME . '"</script>');
+				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_REVIEWS_PLUGIN_NAME . '"</script>');
 				break;
 			case 'edit':
 				self::$model->name   = $name;
@@ -164,11 +164,11 @@ function routing_handlers(){
 				self::$model->position   = $position;
 				self::$model->text     = $text;
 				self::$model->save();
-				print('<script>window.location = "' . TOPLAND_REVIEWS_PLUGIN_NAME . '"</script>');
+				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_REVIEWS_PLUGIN_NAME . '"</script>');
 				break;
 			case 'delete':
 				self::$model->delete( $id );
-				print('<script>window.location = "' . TOPLAND_REVIEWS_PLUGIN_NAME . '"</script>');
+				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_REVIEWS_PLUGIN_NAME . '"</script>');
 				break;
 			}
 

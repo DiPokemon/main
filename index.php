@@ -181,7 +181,7 @@
                   <div class="main_block__wrapper">
                     <div class="slider_wrapper">
                       <div class="reviews_slider">
-
+                        <?php echo do_shortcode('[topland_reviews]'); ?>
                         <div itemscope itemtype="https://schema.org/Review" class="reviews-block__slide reviews-slide">
                           <meta itemprop="datePublished" content="2022-07-15"/>
                           <meta itemprop="name" content="Шарыпкин Вячеслав о TopLand">
