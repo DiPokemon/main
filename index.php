@@ -294,7 +294,9 @@
                 </div>
               </div>
             </section>
-            
+
+            <?php echo do_shortcode('[topland_cloudtag]'); ?>
+
             <section class="page__question question">
               <div class="question__container _container">
                 <div class="question__body">
