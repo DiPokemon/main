@@ -64,7 +64,7 @@
 
                 <?php echo do_shortcode('[topland_tariffs]'); ?>
 
-                <section>
+                <!-- <section>
                     <div class="offer_block-wrapper">
                         <div class="slider_wrapper">
                             <div class="tariff_slider">
@@ -122,7 +122,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
 
                 <section class="page__services-block services">
                     <div class="services-block__container _container">
