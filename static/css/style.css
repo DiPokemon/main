@@ -1179,7 +1179,7 @@ p.tariff_price {
 .tariff_slider .slick-track{
   display:flex
 }
-.offer_block-tariff{
+.offer_block-tariff.slick-slide{
   flex: 0 0 auto; 
   height: auto;
   justify-content: space-between
