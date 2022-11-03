@@ -6,7 +6,7 @@ $term = get_queried_object();
 # Получаем и записываем значения произвольных полей в переменные
 $top_text = get_field("top_text", $term);
 $cases_text   = get_field("cases_text", $term);
-$tariffs_text    = get_field("tariffs_text ", $term);
+$tariffs_text    = get_field("tariffs_text", $term);
 ?>
 <div class="_container">
                 <section class="page-header">
