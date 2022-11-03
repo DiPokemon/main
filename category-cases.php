@@ -3,66 +3,7 @@
                 <section class="page-header">
                     <?php if ( function_exists( 'topland_breadcrumbs' ) ) topland_breadcrumbs(); ?>  
                     <h1 class="page-header__title"><?php single_cat_title(); ?></h1>
-                </section>
-
-                <section class="page__service-offer">
-                    <div class="offer_block-wrapper">
-                        <div class="offer_block-text">
-                            ТЕКСТ
-                        </div>
-                        <div class="offer_block-form">
-                           <div class="form">
-                                <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cases-block__container">
-                        <div class="cases-block__body">
-                        <div class="cases-block__title">
-                            <h2 class="_h2 cases-block__title_h2">Кейсы</h2>
-                        </div>
-                        <div class="slider_wrapper">
-                            <div class="cases_slider">
-                                <?php $length_cases = 0 ?>
-                                <?php
-                                    $args_for_cases = [
-                                        'posts_per_page' => -1,
-                                        'category_name'  => 'cases',
-                                        'offset'         => 0,
-                                    ];
-                                    $query_cases = new WP_Query( $args_for_cases );
-                                    while ($query_cases->have_posts()) :
-                                        $query_cases->the_post();
-                                        $length_cases++;
-                                        if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
-                                            $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
-                                        else
-                                            $post_thumbnail_url = get_the_post_thumbnail_url();
-                                        $image_id = get_post_thumbnail_id();
-                                        $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
-                                        $image_title = get_the_title($image_id);
-                                ?>
-                                    <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
-                                        <div class="case_slide_wrapper">
-                                        <img loading="lazy" src="<?= $post_thumbnail_url ?>" alt="<?php echo $image_alt ?>" title="<?php echo $image_title ?>">
-                                        <div class="case_slide_title_wrapper">
-                                            <h3 class="case_slide__title"><?php the_title() ?></h3>
-                                        </div>                                
-                                        </div>                              
-                                    </a>
-                                <?php endwhile; wp_reset_query(); ?>  
-                            </div>
-                            <div class="slider-controls">
-                                <button type="button" class="slide-m-prev"></button>
-                                <div class="slide-m-dots"></div>
-                                <button type="button" class="slide-m-next"></button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>                    
-                </section>  
-
-                <?php echo do_shortcode('[topland_tariffs]'); ?>                
+                </section>                        
 
                 <section class="page__services-block services">
                     <div class="services-block__container _container">
@@ -132,6 +73,4 @@
                 </section>
 
             </div>
-
-
 <?php get_footer(); ?>
