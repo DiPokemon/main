@@ -1117,9 +1117,7 @@ margin-right: 30px;
   margin-top: 0
 }
 .offer_block-wrapper{
-  /* display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px; */
+  display: flex
 }
 .offer_block-text,
 .offer_block-form{
