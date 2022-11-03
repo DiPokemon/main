@@ -107,9 +107,9 @@
                   <div class="choice-block__text">
                     <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2 section_title">Почему выбирают<br>нашу компанию</h2></div>   
                     <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2-mobile section_title ">Почему выбирают нашу компанию</h2></div>                 
-                    <div class="choice-block__subtitle">Миссия нашей компании-это дать сильный старт Вашему бизнесу<br>и сохранить занимаемые за вами позиции.</div>
+                    <div class="choice-block__subtitle">Миссия нашего маркетингового агентства- стать лучшим партнером для Вас и вашей компании в области Seo продвижения и разработки сайтов, а также  продвинуть вас в поиске среди прочих.</div>
                     <ul class="choice-block__list">
-                      <li class="choice-block__el">По показателю SEO выводим клиентов на 70-90% в ТОП-10.</li>
+                      <li class="choice-block__el">С помощью Seo выводим клиентов на 70-90% в ТОП-10.</li>
                       <li class="choice-block__el">Способствуем расширению сферы деятельности партнеров, благодаря правильной маркетинговой стратегии.</li>
                       <li class="choice-block__el">Выводим Landing-page в ТОП-3 и улучшаем конверсионные показатели до 240%.</li>
                       <li class="choice-block__el">Повышаем продажи партнерских товаров и услуг в среднем в 3 раза.</li>  
