@@ -8,20 +8,20 @@ $(document).ready(function () {
         var $prev = $(sliderWrap).find('.slide-m-prev');
         var $dots = $(sliderWrap).find('.slide-m-dots');        
 
-        $tariff_slider.slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: false,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                },                
-            ],
-        });
+        // $tariff_slider.slick({
+        //     slidesToShow: 3,
+        //     slidesToScroll: 1,
+        //     arrows: false,
+        //     responsive: [
+        //         {
+        //             breakpoint: 768,
+        //             settings: {
+        //                 slidesToShow: 1,
+        //                 slidesToScroll: 1,
+        //             }
+        //         },                
+        //     ],
+        // });
 
         $slider_reviews.slick({
             autoplay: true,

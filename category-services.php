@@ -8,7 +8,7 @@
                 <section class="page__service-offer">
                     <div class="offer_block-top">
                         <div class="offer_block-text">
-                            ТЕКСТ
+                        <?= get_field("top_text"); ?>
                         </div>
                         <div class="offer_block-form">
                            <div class="form">
@@ -59,10 +59,24 @@
                             </div>
                         </div>
                         </div>
+                        <div class="cases_text">
+                            <?= get_field("cases_text"); ?>
+                        </div>                        
                     </div>                    
                 </section>  
-
-                <?php echo do_shortcode('[topland_tariffs]'); ?>
+                
+                <section>
+                    <div class="offer_block-wrapper">
+                        <div class="slider_wrapper">
+                            <div class="tariff_slider">
+                                <?php echo do_shortcode('[topland_tariffs]'); ?>
+                            </div>
+                        </div>
+                        <div class="cases_text">
+                            <?= get_field("tariffs_text"); ?>
+                        </div>
+                    </div>
+                </section> 
 
                 <!-- <section>
                     <div class="offer_block-wrapper">
