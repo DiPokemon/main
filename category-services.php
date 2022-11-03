@@ -72,7 +72,7 @@
                                 <?php echo do_shortcode('[topland_tariffs]'); ?>
                             </div>
                         </div>
-                        <div class="cases_text">
+                        <div class="tariffs_text">
                             <?= get_field("tariffs_text"); ?>
                         </div>
                     </div>
