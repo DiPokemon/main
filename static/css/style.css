@@ -1168,6 +1168,7 @@ p.tariff_price {
   font-size: 20px;
   background: #1a0930;
   color: var(--main-white-color);
+  margin: 0 auto
 }
 .order_btn:hover{
   cursor: pointer;

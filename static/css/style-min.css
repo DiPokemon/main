@@ -170,7 +170,7 @@ main.page{margin-top:68px}
 p.tariff_price{font-size:14px;text-align: center}
 .tariff_price span{font-size:20px;font-weight:600}
 .tariff_list{width:100%}
-.order_btn{border:1px solid #3f3354;padding:5px 20px;max-width:200px;text-align:center;border-radius:5px;font-size:20px;background:#1a0930;color:var(--main-white-color)}
+.order_btn{margin: 0 auto;border:1px solid #3f3354;padding:5px 20px;max-width:200px;text-align:center;border-radius:5px;font-size:20px;background:#1a0930;color:var(--main-white-color)}
 .order_btn:hover{cursor:pointer;background:#1a093079;box-shadow:0 0 5px #3f3354}
 .tariff_slider{display:none}
 .service-article_text img{width:auto}
