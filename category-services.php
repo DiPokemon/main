@@ -8,7 +8,7 @@
                 <section class="page__service-offer">
                     <div class="offer_block-top">
                         <div class="offer_block-text">
-                        <?= get_field("top_text"); ?>
+                        <?= the_field("top_text"); ?>
                         </div>
                         <div class="offer_block-form">
                            <div class="form">
@@ -60,7 +60,7 @@
                         </div>
                         </div>
                         <div class="cases_text">
-                            <?= get_field("cases_text"); ?>
+                            <?= the_field("cases_text"); ?>
                         </div>                        
                     </div>                    
                 </section>  
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         <div class="tariffs_text">
-                            <?= get_field("tariffs_text"); ?>
+                            <?= the_field("tariffs_text"); ?>
                         </div>
                     </div>
                 </section> 
