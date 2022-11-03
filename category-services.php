@@ -68,7 +68,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                             </div>
                         </div>
                         </div>
-                        <div class="cases_text">
+                        <div class="cases_text service_text-block">
                             <?= $cases_text ?>
                         </div>                        
                     </div>                    
@@ -81,7 +81,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                                 <?php echo do_shortcode('[topland_tariffs]'); ?>
                             </div>
                         </div>
-                        <div class="tariffs_text">
+                        <div class="tariffs_text service_text-block">
                             <?= $tariffs_text ?>
                         </div>
                     </div>
