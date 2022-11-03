@@ -5,15 +5,7 @@
                     <h1 class="page-header__title"><?php single_cat_title(); ?></h1>
                 </section>
                 
-                <?php 
-                    if ( is_single() ) {
-                    $cats =  get_the_category();
-                    $cat = $cats[0];
-                    } else {
-                    $cat = get_category( get_query_var('cat') );
-                    }
-                    echo $cat->slug;
-                ?>
+                
                 <section class="page__service-offer">
                     <div class="offer_block-wrapper">
                         <div class="offer_block-text">
