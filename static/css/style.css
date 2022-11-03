@@ -1157,8 +1157,6 @@ p.tariff_price {
   font-weight: 600;
 }
 .tariff_list {
-  border-top: 1px solid #3f3354;
-  border-bottom: 1px solid #3f3354;
   width: 100%;
 }
 .order_btn {
