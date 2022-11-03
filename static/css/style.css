@@ -1173,9 +1173,9 @@ p.tariff_price {
   background: #1a093079;
   box-shadow: 0px 0px 5px #3f3354;
 }
-.tariff_slider{
+/* .tariff_slider{
   display: none;
-}
+} */
 .tariff_slider .slick-track{
   display:flex
 }
