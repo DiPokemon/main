@@ -1,4 +1,13 @@
 <?php get_header(); ?>
+<?php
+# Получаем текущий термин таксономии
+$term = get_queried_object();
+
+# Получаем и записываем значения произвольных полей в переменные
+$top_text = get_field("top_text", $term);
+$cases_text   = get_field("cases_text", $term);
+$tariffs_text    = get_field("tariffs_text ", $term);
+?>
 <div class="_container">
                 <section class="page-header">
                     <?php if ( function_exists( 'topland_breadcrumbs' ) ) topland_breadcrumbs(); ?>  
@@ -8,7 +17,7 @@
                 <section class="page__service-offer">
                     <div class="offer_block-top">
                         <div class="offer_block-text">
-                        <?= the_field("top_text"); ?>
+                        <?= $top_text ?>
                         </div>
                         <div class="offer_block-form">
                            <div class="form">
@@ -60,7 +69,7 @@
                         </div>
                         </div>
                         <div class="cases_text">
-                            <?= the_field("cases_text"); ?>
+                            <?= $cases_text ?>
                         </div>                        
                     </div>                    
                 </section>  
@@ -73,7 +82,7 @@
                             </div>
                         </div>
                         <div class="tariffs_text">
-                            <?= the_field("tariffs_text"); ?>
+                            <?= $tariffs_text ?>
                         </div>
                     </div>
                 </section> 
