@@ -1141,13 +1141,16 @@ margin-right: 30px;
 .tariff_title {
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
 }
 .tariff_desc {
   font-size: 14px;
-  color:var(--article-text-color)
+  color:var(--article-text-color);
+  text-align: center;
 }
 p.tariff_price {
   font-size: 14px;
+  text-align: center;
 }
 .tariff_price span {
   font-size: 20px;
