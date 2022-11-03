@@ -1117,7 +1117,9 @@ margin-right: 30px;
   margin-top: 0
 }
 .offer_block-top{
-  display: flex
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .offer_block-text,
 .offer_block-form{
