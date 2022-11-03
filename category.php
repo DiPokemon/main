@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+<?php
+$term = get_queried_object();
+$top_text = get_field("top_text", $term);
+$cases_text   = get_field("cases_text", $term);
+$tariffs_text    = get_field("tariffs_text", $term);
+?>
 <div class="_container">
                 <section class="page-header">
                     <?php if ( function_exists( 'topland_breadcrumbs' ) ) topland_breadcrumbs(); ?>  
@@ -9,7 +15,7 @@
                 <section class="page__service-offer">
                     <div class="offer_block-top">
                         <div class="offer_block-text">
-                            ТЕКСТ
+                            <?= $top_text ?>
                         </div>
                         <div class="offer_block-form">
                            <div class="form">
@@ -60,10 +66,24 @@
                             </div>
                         </div>
                         </div>
+                        <div class="cases_text service_text-block">
+                            <?= $cases_text ?>
+                        </div> 
                     </div>                    
                 </section>  
 
-                <?php echo do_shortcode('[topland_tariffs]'); ?>                
+                <section>
+                    <div class="offer_block-wrapper">
+                        <div class="slider_wrapper">
+                            <div class="tariff_slider">
+                                <?php echo do_shortcode('[topland_tariffs]'); ?>
+                            </div>
+                        </div>
+                        <div class="tariffs_text service_text-block">
+                            <?= $tariffs_text ?>
+                        </div>
+                    </div>
+                </section>                  
 
                 <section class="page__services-block services">
                     <div class="services-block__container _container">
@@ -101,6 +121,7 @@
                                 ?> 
                             </div>
                         </div>
+                        
                     </div>
                 </section>
             

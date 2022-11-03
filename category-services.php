@@ -85,67 +85,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                             <?= $tariffs_text ?>
                         </div>
                     </div>
-                </section> 
-
-                <!-- <section>
-                    <div class="offer_block-wrapper">
-                        <div class="slider_wrapper">
-                            <div class="tariff_slider">
-                                <div class="offer_block-tariff">
-                                    <h3 class="tariff_title">Тариф 1</h3>  
-                                    <p class="tariff_desc">Для того-то</p>  
-                                    <p class="tariff_price">от <span>999 999</span> ₽</p>
-                                    <div class="tariff_list">
-                                        <ul>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                        </ul>                                
-                                    </div>
-                                    <a href="#" class="btn order_btn">Заказать</a>
-                                </div>
-                                <div class="offer_block-tariff">
-                                    <h3 class="tariff_title">Тариф 1</h3>  
-                                    <p class="tariff_desc">Для того-то</p>  
-                                    <p class="tariff_price">от <span>999 999</span> ₽</p>
-                                    <div class="tariff_list">
-                                        <ul>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                        </ul>                                
-                                    </div>
-                                    <a href="#" class="btn order_btn">Заказать</a>   
-                                </div>
-                                <div class="offer_block-tariff">
-                                    <h3 class="tariff_title">Тариф 1</h3>  
-                                    <p class="tariff_desc">Для того-то</p>  
-                                    <p class="tariff_price">от <span>999 999</span> ₽</p>
-                                    <div class="tariff_list">
-                                        <ul>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                            <li>Пункт</li>
-                                        </ul>                                
-                                    </div>
-                                    <a href="#" class="btn order_btn">Заказать</a>       
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
+                </section>                
 
                 <section class="page__services-block services">
                     <div class="services-block__container _container">
