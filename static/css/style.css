@@ -1194,6 +1194,15 @@ p.tariff_price {
   width:100%;
   padding-top:10px
 }
+.service_text-block {
+  border: 1px solid #3f3354;
+  border-radius: 5px;
+  padding: 50px;
+  margin-top: 20px;
+  background-color: var(--main-white-color);
+  color: #1a0930;
+  font-weight: 600;
+}
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------article-page-----------------------------------*/
 
