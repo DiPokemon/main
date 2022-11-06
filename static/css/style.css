@@ -612,6 +612,7 @@ main.page{
   display: flex;
   justify-content: space-between;
   z-index: 7;
+  align-items: center
 }
 .background-choice {
   position: absolute;
@@ -638,7 +639,8 @@ main.page{
 .choice-block__text {
   display: flex;
   flex-direction: column;
-  width: 50%
+  width: 50%;
+  padding-right: 10px
 }
 .choice-block__title {
   padding-top: 31px;
