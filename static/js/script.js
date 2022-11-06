@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(function () {
-        $(".menu-item-has-children").on("click", "a", function (event) {
+        $("li.menu-item-has-children").on("click", "a", function (event) {
             $(window).width() > 768 || event.preventDefault()
         })
     });
@@ -37,13 +37,3 @@ $(document).ready(function () {
     };
 
 });
-
-
-
-// $(window).on('resize', function () {
-//     if ($(window).width() < 768) {
-//         $('.menu-item-has-children').click(function (event) {
-//             event.preventDefault();
-//         });
-//     }
-// });
