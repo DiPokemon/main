@@ -12,9 +12,9 @@ $(document).ready(function () {
     $('.header__burger').click(function (event) {
         $('.header__burger,.header__menu').toggleClass('active');
         $('body').toggleClass('lock')
-    });
+    }); 
+});
 
-     
     let map_container = document.getElementById('map_container');      
     let options_map = {          
         once: true,          
@@ -35,5 +35,3 @@ $(document).ready(function () {
             console.log('YMAP LOADED');          
         }      
     };
-
-});
