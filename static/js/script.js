@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    $(function () {
-        $("li.menu-item-has-children").on("click", "a", function (event) {
-            $(window).width() > 768 || event.preventDefault()
-        })
-    });
+    // $(function () {
+    //     $("li.menu-item-has-children").on("click", "a", function (event) {
+    //         $(window).width() > 768 || event.preventDefault()
+    //     })
+    // });
 
     $('.accordion__item').click(function () {
         $(this).toggleClass('open');
@@ -15,6 +15,8 @@ $(document).ready(function () {
     }); 
 });
 
+document.addEventListener('DOMContentLoaded', function(){
+    //LazyLoad for MAP
     let map_container = document.getElementById('map_container');      
     let options_map = {          
         once: true,          
@@ -31,7 +33,17 @@ $(document).ready(function () {
             let map_block = document.getElementById('ymap_lazy');              
             map_loaded = true;              
             map_block.setAttribute('src', map_block.getAttribute('data-src'));              
-            map_block.removeAttribute('data-src');              
-            console.log('YMAP LOADED');          
+            map_block.removeAttribute('data-src');          
         }      
     };
+
+    // function() { 
+    //     if (window.innerWidth < 768) { 
+
+    //     }
+    // }
+
+
+}, false);
+
+    

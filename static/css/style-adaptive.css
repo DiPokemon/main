@@ -173,6 +173,10 @@
         transform: rotateX(0deg);
         position: static;
     }
+    li.menu-item-has-children > a{
+        pointer-events: none; 
+        cursor: default;  
+    }
 }
 
 /*---------------------------------------------------------------------------------------------------*/
