@@ -177,6 +177,7 @@
         pointer-events: none; 
         cursor: default;  
     }
+    
 }
 
 /*---------------------------------------------------------------------------------------------------*/
@@ -266,6 +267,12 @@
 
 }
 
+@media(max-width:925px){
+    .choice-block__text{
+        width:60%
+    }
+}
+
 @media(max-width:768px){
     .main-background1-img{        
         left: -793px;
@@ -300,8 +307,9 @@
 
     .choice-block__body{
         flex-direction: column-reverse;
-    }
-    .choice-block__img{
+    }    
+    .choice-block__img,
+    .choice-block__text{
         width: 100%
     }
 
