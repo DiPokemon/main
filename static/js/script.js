@@ -1,10 +1,4 @@
 $(document).ready(function () {
-    // $(function () {
-    //     $("li.menu-item-has-children").on("click", "a", function (event) {
-    //         $(window).width() > 768 || event.preventDefault()
-    //     })
-    // });
-
     $('.accordion__item').click(function () {
         $(this).toggleClass('open');
     });
@@ -36,14 +30,6 @@ document.addEventListener('DOMContentLoaded', function(){
             map_block.removeAttribute('data-src');          
         }      
     };
-
-    // function() { 
-    //     if (window.innerWidth < 768) { 
-
-    //     }
-    // }
-
-
 }, false);
 
     

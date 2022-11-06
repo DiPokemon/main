@@ -3,6 +3,18 @@
 // Удаляем category из УРЛа категорий (лучше No Category Base (WPML))
 // add_filter('category_link', create_function('$a', 'return str_replace("category/", "", $a);'), 9999);
 
+//Разрешить HTML теги в описаниях категорий
+foreach ( array( 'pre_term_description' ) as $filter ) {
+	remove_filter( $filter, 'wp_filter_kses' );
+	if ( ! current_user_can( 'unfiltered_html' ) ) {
+		add_filter( $filter, 'wp_filter_post_kses' );
+	}
+}
+ 
+foreach ( array( 'term_description' ) as $filter ) {
+	remove_filter( $filter, 'wp_kses_data' );
+}
+
 function remove_block_library_css()
 {
 	wp_dequeue_style( 'wp-block-library' );
