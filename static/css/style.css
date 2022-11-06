@@ -638,6 +638,7 @@ main.page{
 .choice-block__text {
   display: flex;
   flex-direction: column;
+  width: 50%
 }
 .choice-block__title {
   padding-top: 31px;
