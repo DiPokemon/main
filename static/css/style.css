@@ -1200,10 +1200,16 @@ p.tariff_price {
   border: 1px solid #3f3354;
   border-radius: 5px;
   padding: 50px;
-  margin-top: 20px;
+  margin-top: 50px 0;
   background-color: var(--main-white-color);
   color: #1a0930;
   font-weight: 600;
+}
+section.page__service-offer,
+section.page__service-offer
+{
+  padding: 0;
+  padding-top: 75px;
 }
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------article-page-----------------------------------*/
