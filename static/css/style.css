@@ -1437,7 +1437,8 @@ section.page__contacts-map{
   border: 1px solid #3f3354;
   background-color: #200e38;
   margin: 5px 0;
-  padding-left: 8px
+  padding-left: 8px;
+  color: var(--main-white-color)
 }
 .wpcf7-form textarea{
   padding-top: 8px

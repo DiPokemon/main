@@ -222,7 +222,7 @@ section.page__contacts-map{padding:0 0 50px}
 .map{height:500px;padding:0;background-image:url(/wp-content/uploads/2021/11/map-new.png);background-position:center center}
 .map iframe{border-radius:5px}
 .wpcf7-form{padding:20px 0}
-.wpcf7-form input,.wpcf7-form textarea{width:100%;height:40px;border-radius:5px;border:1px solid #3f3354;background-color:#200e38;margin:5px 0;padding-left:8px}
+.wpcf7-form input,.wpcf7-form textarea{width:100%;height:40px;border-radius:5px;border:1px solid #3f3354;background-color:#200e38;margin:5px 0;padding-left:8px;color: var(--main-white-color)}
 .wpcf7-form textarea{padding-top:8px}
 .wpcf7-form input::placeholder,.wpcf7-form textarea::placeholder{color:var(--main-white-color);text-transform:uppercase;font-family:"Inter"}
 input.wpcf7-form-control.has-spinner.wpcf7-submit{background-color:#a769f7;color:#fff;text-transform:uppercase}
