@@ -1429,6 +1429,7 @@ section.page__contacts-map{
 .page__about_wrapper{
   display: flex;
   align-items: center;
+  padding-top: 20px;
   gap: 20px
 }
 
@@ -1447,6 +1448,10 @@ section.page__contacts-map{
 .about_item-number {
   font-size: 40px;
   color: #3f3354
+}
+
+.thrid_block_about .page__about_wrapper {
+  padding-bottom: 20px;
 }
 
 /*---------------------------------------------------------------------------------------------------*/

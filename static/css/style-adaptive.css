@@ -583,6 +583,25 @@
         margin-bottom: 20px;
     }
 }
+
+/*---------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------about----------------------------------*/
+
+@media(max-width:920px){
+    .first_block_about .page__about_wrapper,
+    .thrid_block_about .page__about_wrapper
+    {
+        flex-direction: column-reverse;
+    }
+    .second_block_about .page__about_wrapper{
+        flex-direction: column;
+    }
+    .page__about_wrapper-left,
+    .page__about_wrapper-right{
+        width: 100%
+    }
+}
+
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------footer----------------------------------*/
 @media(max-width:768px){
