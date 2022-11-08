@@ -40,7 +40,7 @@
                     <div class="main-3columns">
                       <div class="main-3columns__item">
                           <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="Повышение продаж"></div>
-                          <div class="main-3colums__item_text">Повышаем продажи<br> партнерских товаров<br> и услуг в среднем в 3 раза</div>
+                          <div class="main-3colums__item_text">Повышаем продажи товаров и услуг в 3 раза</div>
                       </div>
                       <div class="main-3columns__item">
                           <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="Веб студия в Ростове-на-Дону"></div>
@@ -55,7 +55,7 @@
                       <div class="main-slider">
                         <div class="main-3columns__item">
                             <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="Повышение продаж"></div>
-                            <div class="main-3colums__item_text">Повышаем продажи партнерских товаров и услуг в среднем в 3 раза</div>
+                            <div class="main-3colums__item_text">Повышаем продажи товаров и услуг в 3 раза</div>
                         </div>
                         <div class="main-3columns__item">
                             <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="Веб студия в Ростове-на-Дону"></div>
@@ -127,7 +127,7 @@
               <div class="cases-block__container _container">
                 <div class="cases-block__body">
                   <div class="cases-block__title">
-                    <h2 class="_h2 cases-block__title_h2 section_title">Свежие кейсы студии</h2>
+                    <h2 class="_h2 cases-block__title_h2 section_title">SEO кейсы</h2>
                   </div>
                   <div class="slider_wrapper">
                       <div class="cases_slider">
