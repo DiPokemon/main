@@ -14,7 +14,7 @@ main.page{margin-top:68px}
 ._h2{font-family:"Inter";font-style:Medium;font-size:40px;font-weight:500;line-height:48px;text-align:center;color:var(--main-white-color)}
 .header__container._container{width:100%}
 .header__container{z-index:30;position:fixed;min-height:68px;background:#1a0930;width:100%;max-width:100%}
-.header_wrapper{margin:0 auto;max-width:1138px;display:flex;justify-content:space-between;align-items:center}
+.header_wrapper{margin:0 auto;max-width:1138px;display:-webkit-flex;display:-moz-flex;display:flex;justify-content:space-between;align-items:center}
 .header__menu{display:flex;align-items:center}
 .menu__list{display:flex;gap:30px;align-items:center;margin:0;padding:0}
 .menu__item{display:flex;align-items:stretch;float:left;position:relative}

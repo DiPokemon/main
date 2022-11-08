@@ -103,7 +103,10 @@ main.page{
 .header_wrapper{
   margin: 0 auto;
   max-width: 1138px;
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
+  
   justify-content: space-between;
   align-items: center;
 }
