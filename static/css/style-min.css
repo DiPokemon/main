@@ -188,7 +188,7 @@ section.page__service-offer,section.page__service-offer{padding: 0;padding-top: 
 .service-article_text h3{font-size:22px;margin-bottom:10px}
 .service-article_text h4{margin-bottom:10px}
 .service-article_text p{margin-bottom:20px}
-.service-article_text b{color: var(--main-white-color)}
+.service-article_text b, .service-article_text strong{color: var(--main-white-color)}
 .page__blog__grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
 .page__blog__grid .articles__item{width:100%}
 .more-articles-button{display:flex;justify-content:center;margin-top:48px;margin-bottom:70px}
