@@ -465,6 +465,9 @@
     .offer_block-text, .offer_block-form{
         width: 100%
     }
+    section.page__service-offer{
+        padding-top:0
+    }
 }
 @media(max-width: 460px){
     .services-block__item{
