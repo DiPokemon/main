@@ -576,6 +576,9 @@ main.page{
   border-radius: 3px;
   align-items: center;
 }
+.services-block__item:hover {
+  background: #3A116D;
+}
 .services-block__text {
   /* padding: 50px 0 55px 34px; */
   font-family: "Inter";

@@ -80,6 +80,7 @@ main.page{margin-top:68px}
 .toplend{font-family:"Open Sans";font-style:Medium;font-size:14px;line-height:21px;line-height:100%;text-align:Center;color:#6025bf}
 .services-block__columns{display:flex;gap:20px;flex-wrap:wrap}
 .services-block__item{width:32.15%;padding:30px;display:flex;flex-grow:1;justify-content:space-between;min-height:100px;background:#1f0c37;box-shadow:inset 0 -1px 3px 0 #573c7a;border-radius:3px;align-items:center}
+.services-block__item:hover {background: #3A116D}
 .services-block__text{font-family:"Inter";font-size:18px;line-height:22px;color:#fff}
 .serveces-item1{width:32.15%}
 .serveces-item2{width:32.15%}
