@@ -459,6 +459,9 @@
     .category-list_description{
         font-size:16px
     }
+    .offer_block-top{
+        flex-direction: column
+    }
     .offer_block-text, .offer_block-form{
         width: 100%
     }
