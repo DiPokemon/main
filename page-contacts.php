@@ -20,7 +20,7 @@
 
                 <div class="contacts_item">
                     <div class="contacts_item-icon"></div>
-                    <div class="contacts_item-text">
+                    <div class="contacts_item-body">
                         <span class="contacts_item-title">Телефон</span>
                         <span class="contacts_item-text">
                             <a href="tel:+79934536307">+7 993 453-63-07</a>
@@ -32,7 +32,7 @@
 
                 <div class="contacts_item">
                     <div class="contacts_item-icon"></div>
-                    <div class="contacts_item-text">
+                    <div class="contacts_item-body">
                         <span class="contacts_item-title">E-mail</span>
                         <span class="contacts_item-text">
                             <a href="mailto:sales@topland-rnd.ru">sales@topland-rnd.ru</a>
@@ -42,7 +42,7 @@
 
                 <div class="contacts_item">
                     <div class="contacts_item-icon"></div>
-                    <div class="contacts_item-text">
+                    <div class="contacts_item-body">
                         <span class="contacts_item-title">Время работы</span>
                         <span class="contacts_item-text">
                             Пн - Пт: с 9.00 до 19.00<br>
