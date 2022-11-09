@@ -1474,6 +1474,20 @@ span.contacts_item-title {
 .page_contacts-form .wpcf7-form textarea{
   margin: 0 10px
 }
+
+.page_contacts-text-block{
+  border: 1px solid #3f3354;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 20px 0; 
+  background-color: var(--main-white-color);
+  color: #1a0930;
+  font-weight: 600;
+}
+
+.wpcf7-spinner{
+  display: none
+}
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------about-----------------------------------------*/
 .page__about_wrapper{

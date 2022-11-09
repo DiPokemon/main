@@ -55,7 +55,7 @@
             <div id="map_container" class="map container-fluid">   
                 <script id="ymap_lazy" type="text/javascript" charset="utf-8" async data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A35c48d9808a50de74447c6d0ec48ba8b04881953d7f20f645b6e374170bb77f0&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>                                                    
             </div>
-            <div class="page_contacts-content">
+            <div class="page_contacts-text-block">
                 Digital агентство Topland в Ростове на Дону, готово оказать вам услуги SEO продвижение вашего сайта под ключ. Для оформления заказа и консультации достаточно просто заполнить форму обратной связи.
             </div>
             <div class="page_contacts-form">
