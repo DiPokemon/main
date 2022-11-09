@@ -157,6 +157,57 @@ main.page{margin-top:68px}
 .accordion__item_header{display:flex;justify-content:space-between;align-items:center;cursor:pointer;padding:21px 23px;font-size:18px;font-weight:500;color:var(--main-white-color);width:100%;box-sizing:border-box;font-family:'Inter';line-height:21px}
 .close .accordion__item_body{height:0;transition:height 1s ease-out;transform:scaleY(0);float:left;display:block}
 .open .accordion__item_body{padding:9px 81px 32px 23px;width:100%;margin:0 0 120px;display:block;transform:scaleY(1);transform-origin:top;transition:transform .4s ease;box-sizing:border-box;color:var(--article-text-color);font-family:'Inter'}
+
+.faq_accordion .acor-body {
+    width: 100%;
+    margin: 0 auto;
+    height: 0;
+    color: var(--article-text-color);
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  .faq_accordion .acor-body p {
+    margin: 0 0 10px;
+  }
+  .faq_accordion label {
+    cursor: pointer;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    color: var(--main-white-color);
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100; 
+    font-size: 18px;
+    margin: 0 0 5px;
+    transition: color .35s;
+  }
+  
+  .faq_accordion input{
+    display: none;
+  }
+  .faq_accordion label:before {
+    content: '\276F';
+    float: right;
+  }
+  .faq_accordion input:checked + label {  
+    color: var(--main-white-color);
+  }
+  .faq_accordion input:checked + label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+  }
+  .faq_accordion input:checked + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    color: var(--article-text-color);
+    padding: 20px 30px 10px;
+  }
+
 .page-header{color:var(--main-white-color);font-family:"Inter";padding:25px 0 0}
 .page-header__breadcrumbs{margin:25px 0;font-size:14px;font-weight:400;color:var(--article-text-color)}
 .page-header__breadcrumbs a:active,.page-header__breadcrumbs a:visited{color:var(--article-text-color)}
