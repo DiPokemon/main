@@ -1108,7 +1108,6 @@ margin-right: 30px;
   box-sizing: border-box;
   z-index: 100; 
   font-size: 18px;
-  margin: 0 0 5px;
   transition: color .35s;
   border: 1px solid var(--article-text-color);
   border-radius: 5px
@@ -1129,6 +1128,7 @@ margin-right: 30px;
   border-right: 1px solid #6025BF;
   border-left: 1px solid #6025BF; */
   border-bottom: none;
+  border-color: #6025BF;
   border-radius: 5px 5px 0 0
 }
 .faq_accordion input:checked + label:before {
