@@ -309,6 +309,33 @@
                      </div>
                      <div class="main_block__wrapper">
                        <div itemscope itemtype="https://schema.org/FAQPage" class="accordion faq_accordion" id="faq_accordion">
+
+                               
+    
+                          <input type="checkbox" name="chacor" id="chacor1" checked="checked" />
+                          <label for="chacor1">Заголовок вкладки</label>
+                          <div class="acor-body">
+                              <p>Описание вкладки</p>
+                          </div>
+                          
+                          <input type="checkbox" name="chacor" id="chacor2" />
+                          <label for="chacor2">Заголовок вкладки</label>
+                          <div class="acor-body">
+                              <p>Описание вкладки</p>
+                          </div>
+                          
+                          <input type="checkbox" name="chacor" id="chacor3" />
+                          <label for="chacor3">Заголовок вкладки</label>
+                          <div class="acor-body">
+                              <p>Описание вкладки</p>
+                          </div>
+                      
+                      
+
+
+
+
+
                          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                            <div class="accordion__item_header">
                            <span itemprop="name">Чем ваша компания лучше других?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
