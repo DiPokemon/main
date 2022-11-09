@@ -1227,7 +1227,8 @@ section.page__service-offer
 /*----------------------------------------------------article-page-----------------------------------*/
 
 .service-article_text img {
-  width: auto;
+  width: 100%;
+  object-fit: contain;
 }
 .service-article_img {
   width: 100%;
