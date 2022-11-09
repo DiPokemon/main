@@ -56,39 +56,13 @@
                 <script id="ymap_lazy" type="text/javascript" charset="utf-8" async data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A35c48d9808a50de74447c6d0ec48ba8b04881953d7f20f645b6e374170bb77f0&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>                                                    
             </div>
             <div class="page_contacts-text-block">
-                Digital агентство Topland в Ростове на Дону, готово оказать вам услуги SEO продвижение вашего сайта под ключ. Для оформления заказа и консультации достаточно просто заполнить форму обратной связи.
+                <?php the_content(); ?>
             </div>
             <div class="page_contacts-form">
                 <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
             </div>
         </div>
-    </section>
-
-    <section class="page__contacts">
-        <div class="page__contacts__container _container">
-            <div class="page__contacts__body">                
-                <div class="page__contacts_text">
-                    <?php the_content(); ?>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="page__contacts-map contact_block">
-        <div class="page__contacts__container _container">
-            <div class="page__contacts_map-wrapper">                
-                <div id="map_container" class="map container-fluid">   
-                    <script id="ymap_lazy" type="text/javascript" charset="utf-8" async data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A35c48d9808a50de74447c6d0ec48ba8b04881953d7f20f645b6e374170bb77f0&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>                                                    
-                </div>
-                <div class="form">
-                    <h3 class="form_title">У Вас остались вопросы</h3>
-                    <p class="form_text">Заполните форму обратной связи и наш специалист перезвонит Вам и проконсультирует по любой, интересующей Вас теме.</p>
-                    <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-
-                </div>
-            </div>
-        </div>
-    </section>        
+    </section>         
 </div>
 
 <?php get_footer(); ?>
