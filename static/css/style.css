@@ -371,8 +371,6 @@ main.page{
   max-width:600px
 }
 .main-title {
-  /* margin-top: 207px; */
-  margin-bottom: 39px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -380,6 +378,11 @@ main.page{
   line-height: 135%;
   text-transform: uppercase;
   color: var(--main-white-color);
+}
+
+.main_subtext{
+  padding: 35px 0;
+  font-size: 20px
 }
 
 .main-subtitle {
