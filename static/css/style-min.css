@@ -199,9 +199,10 @@ main.page{margin-top:68px}
   .faq_accordion input:checked + label {  
     color: var(--main-white-color);
     border: 1px 1px 0px 1px;
-    border-top: 1px solid #6025BF;
+    /* border-top: 1px solid #6025BF;
     border-right: 1px solid #6025BF;
-    border-left: 1px solid #6025BF;
+    border-left: 1px solid #6025BF; */
+    border-bottom: none;
     border-radius: 5px 5px 0 0
   }
   .faq_accordion input:checked + label:before {
