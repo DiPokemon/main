@@ -16,7 +16,7 @@
                     <div class="about_item">
                         <span class="about_item-number">01</span> 
                         <div class="about_item-text"> 
-                            Агентство TopLand оказываем услуги интернет маркетинга с 2016 года
+                            Оказываем услуги интернет маркетинга с 2016 года
                         </div>           
                     </div>
 
