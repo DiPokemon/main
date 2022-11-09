@@ -8,7 +8,7 @@
 
     <section class="page__about first_block_about">
         <div class="_container">
-            <p class="about_subtitle">Миссия нашего маркетингового агентства - обеспечить старт Вашему бизнесу, сохранить или поднять занимаемые вами позиции.</p>
+            <p class="page__about-text-block">Миссия нашего маркетингового агентства - обеспечить старт Вашему бизнесу, сохранить или поднять занимаемые вами позиции.</p>
             <div class="page__about_wrapper">
 
                 <div class="page__about_wrapper-left">
@@ -65,7 +65,7 @@
                 </div>
                     
                 <div class="page__about_wrapper-right">
-                    
+                    <h2 class="page__about-block-title">Что мы умеем</h2>
 
                     <div class="about_item">
                         <span class="about_item-number">01</span> 
@@ -101,11 +101,10 @@
 
     <section class="page__about thrid_block_about">
         <div class="_container">
-            <h2>Преимущества работы с нами</h2>
             <div class="page__about_wrapper">
 
                 <div class="page__about_wrapper-left">
-                    
+                    <h2 class="page__about-block-title">Преимущества работы с нами</h2>
                     <div class="about_item">
                         <span class="about_item-number">01</span> 
                         <div class="about_item-text"> 
@@ -160,7 +159,7 @@
                     <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/about_thrid.png" alt="SEO продвижение сайтов в Ростове">
                 </div>
         </div>
-        <p class="about_subtitle">Маркетинговое агентство “TopLand” в Ростове на Дону, готово оказать вам услуги SEO продвижение вашего сайта под ключ. Для оформления заказа и консультации достаточно просто заполнить форму обратной связи.</p>
+        <p class="page__about-text-block">Маркетинговое агентство “TopLand” в Ростове на Дону, готово оказать вам услуги SEO продвижения вашего сайта под ключ. Для оформления заказа и консультации достаточно просто заполнить форму обратной связи.</p>
     </section>
 
     <section class="page__about">
