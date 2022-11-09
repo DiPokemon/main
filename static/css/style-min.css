@@ -137,7 +137,7 @@ main.page{margin-top:68px}
 .useful-articles__title{margin-bottom:74px}
 .useful-articles__columns{display:flex;margin-bottom:59px;justify-content:space-between;border:1px solid #000}
 .articles__item{display:flex;flex-direction:column;width:32.15%;background:#f7f2ff;border-radius:5px}
-.articles__title_h3{font-family:"Inter";font-weight:600;font-size:16px;line-height:135%;color:#1a0930;padding:20px 0 5px 23px}
+.articles__title_h3{font-family:"Inter";font-weight:600;font-size:16px;line-height:135%;color:#1a0930;padding:20px 23px 5px 23px}
 .articles__text{font-family:"Inter";font-weight:400;font-size:14px;color:var(--article-text-color);padding:0 23px 31px}
 .useful-articles__button{margin-top:59px;background:#6025bf;border-radius:5px;padding:12px 62px}
 .useful-articles__href{font-family:"Open Sans";font-style:normal;font-weight:400;font-size:16px;line-height:24px;text-align:center;color:var(--main-white-color)}
