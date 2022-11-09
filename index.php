@@ -8,6 +8,7 @@
                           <div class="main-content">
                             <div class="main-content_wrapper">
                               <h1 class="main-title">Создание сайтов и SEO продвижение</h1>    
+                              <div class="main_subtext">Эффективные решения для вашего бизнеса</div>
                               <div class="main-subtitle">
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>SEO продвижение</div>                              
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>Создание сайтов</div>                              
