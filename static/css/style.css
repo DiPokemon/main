@@ -1082,8 +1082,6 @@ margin-right: 30px;
   font-family: 'Inter';
 }
 
-
-
 .faq_accordion .acor-body {
   width: 100%;
   margin: 0 auto;
@@ -1111,6 +1109,8 @@ margin-right: 30px;
   font-size: 18px;
   margin: 0 0 5px;
   transition: color .35s;
+  border: 1px solid #6025BF;
+  border-radius: 5px
 }
 
 .faq_accordion input{
@@ -1122,6 +1122,9 @@ margin-right: 30px;
 }
 .faq_accordion input:checked + label {  
   color: var(--main-white-color);
+  border: 1px 1px 0px 1px;
+  border: solid #6025BF;
+  border-radius: 5px
 }
 .faq_accordion input:checked + label:before {
   transition: transform .35s;
@@ -1132,6 +1135,9 @@ margin-right: 30px;
   margin-top: -5px;
   color: var(--article-text-color);
   padding: 20px 30px 10px;
+  border: 0px 1px 1px 1px;
+  border: solid #6025BF;
+  border-radius: 5px
 }
 
 /*---------------------------------------------------------------------------------------------------*/
