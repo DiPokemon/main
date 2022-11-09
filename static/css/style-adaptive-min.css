@@ -510,6 +510,22 @@
     }
 }
 
+@media(max-width:430px){
+    .page__contacts.info_block{
+        grid-template-columns: 1fr;
+    }
+    .contacts_item{
+        display: flex;
+    }
+    .contacts_item:nth-child(odd){
+        justify-content: flex-start;
+    }
+    .contacts_item:nth-child(even){
+        justify-content: flex-start;
+        text-align:left
+    }
+}
+
 @media(max-width:768px){
     .page__contacts_map-wrapper{
         flex-direction:column
