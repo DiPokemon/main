@@ -1098,6 +1098,7 @@ margin-right: 30px;
   margin: 0 0 10px;
 }
 .faq_accordion label {
+  margin-top: 10px;
   cursor: pointer;
   display: block;
   padding: 15px 20px;
@@ -1109,7 +1110,7 @@ margin-right: 30px;
   font-size: 18px;
   margin: 0 0 5px;
   transition: color .35s;
-  border: 1px solid #6025BF;
+  border: 1px solid var(--article-text-color);
   border-radius: 5px
 }
 
@@ -1119,6 +1120,7 @@ margin-right: 30px;
 .faq_accordion label:before {
   content: '\276F';
   float: right;
+  color: var(--article-text-color)
 }
 .faq_accordion input:checked + label {  
   color: var(--main-white-color);
@@ -1132,6 +1134,7 @@ margin-right: 30px;
 .faq_accordion input:checked + label:before {
   transition: transform .35s;
   transform: rotate(90deg);
+  color: #6025BF
 }
 .faq_accordion input:checked + label + .acor-body {
   height: auto;
