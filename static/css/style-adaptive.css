@@ -571,6 +571,15 @@
 
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------contacts----------------------------------*/
+@media(max-width:920px){
+    .page__contacts.info_block{
+        gap:20px
+    }
+    .page__contacts.info_block .contacts_item{
+        width: 50%
+    }
+}
+
 @media(max-width:768px) {
     .page__contacts_map-wrapper{
         flex-direction: column;

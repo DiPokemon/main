@@ -1483,6 +1483,7 @@ span.contacts_item-title {
   background-color: var(--main-white-color);
   color: #1a0930;
   font-weight: 600;
+  text-align: center
 }
 
 .wpcf7-spinner{

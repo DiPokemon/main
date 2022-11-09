@@ -492,6 +492,16 @@
         gap:10px
     }
 }
+
+@media(max-width:920px){
+    .page__contacts.info_block{
+        gap:20px
+    }
+    .page__contacts.info_block .contacts_item{
+        width: 50%
+    }
+}
+
 @media(max-width:768px){
     .page__contacts_map-wrapper{
         flex-direction:column
@@ -503,6 +513,7 @@
         margin-bottom:20px
     }
 }
+
  @media(max-width:920px){
      .first_block_about .page__about_wrapper, .thrid_block_about .page__about_wrapper {
          flex-direction: column-reverse;
