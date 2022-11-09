@@ -14,7 +14,7 @@
                     <div class="contacts_item-icon"></div>
                     <div class="contacts_item-body">
                         <span class="contacts_item-title">Адрес</span>
-                        <span class="contacts_item-text">Ростов-на-Дону, ул. Стабильная 9</span>
+                        <span class="contacts_item-text">Ростов-на-Дону,<br>ул. Стабильная 9</span>
                     </div>
                 </div>
 
