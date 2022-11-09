@@ -56,8 +56,7 @@
     </section>
 
     <section class="page__about second_block_about">
-        <div class="_container">
-            <h2>Что мы умеем</h2>
+        <div class="_container">            
             <div class="page__about_wrapper">
 
                 <div class="page__about_wrapper-left">
@@ -160,16 +159,6 @@
                 </div>
         </div>
         <p class="page__about-text-block">Маркетинговое агентство “TopLand” в Ростове на Дону, готово оказать вам услуги SEO продвижения вашего сайта под ключ. Для оформления заказа и консультации достаточно просто заполнить форму обратной связи.</p>
-    </section>
-
-    <section class="page__about">
-        <div class="page__about__container _container">
-            <div class="page__contacts__body">                
-                <div class="page__contacts_text">
-                    <?php the_content(); ?>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section class="page__contacts-map contact_block">
