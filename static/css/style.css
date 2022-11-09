@@ -1463,6 +1463,12 @@ span.contacts_item-title {
 .contacts_item-body a {
   text-decoration: underline;
 }
+
+.page_contacts-form form.wpcf7-form {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------about-----------------------------------------*/
 .page__about_wrapper{
