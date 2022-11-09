@@ -498,9 +498,16 @@
         grid-template-columns: 1fr 1fr;
         gap:20px
     }
-    /* .page__contacts.info_block .contacts_item{
-        width: 50%
-    } */
+    .contacts_item{
+        display: flex;
+    }
+    .contacts_item:nth-child(odd){
+        justify-content: flex-start;
+    }
+    .contacts_item:nth-child(even){
+        justify-content: flex-end;
+        text-align:right
+    }
 }
 
 @media(max-width:768px){
