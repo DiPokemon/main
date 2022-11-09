@@ -588,6 +588,22 @@
     }
 }
 
+@media(max-width:768px) {
+    .page__contacts_map-wrapper{
+        flex-direction: column;
+    }
+    .page__contacts_map-wrapper .map,
+    .page__contacts_map-wrapper .form{
+        width:100%
+    }
+    .page__contacts_map-wrapper .map{
+        margin-bottom: 20px;
+    }
+    .page_contacts-form form.wpcf7-form{
+        flex-direction: column
+    }
+}
+
 @media(max-width:430px){
     .page__contacts.info_block{
         grid-template-columns: 1fr;
@@ -603,20 +619,6 @@
         text-align:left
     }
 }
-
-@media(max-width:768px) {
-    .page__contacts_map-wrapper{
-        flex-direction: column;
-    }
-    .page__contacts_map-wrapper .map,
-    .page__contacts_map-wrapper .form{
-        width:100%
-    }
-    .page__contacts_map-wrapper .map{
-        margin-bottom: 20px;
-    }
-}
-
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------about----------------------------------*/
 
