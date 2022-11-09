@@ -182,7 +182,7 @@ p.tariff_price{font-size:14px;text-align: center}
 .offer_block-btn-wrapper{border-top:1px solid #3f3354;width:100%;padding-top:10px}
 .service_text-block {border: 1px solid #3f3354;border-radius: 5px;padding: 50px;margin-top: 50px;background-color: var(--main-white-color);color: #1a0930;font-weight: 600}
 section.page__service-offer{padding: 0;padding-top: 75px}
-.service-article_text figure {max-height: 400px}
+.service-article_text figure {max-height: 400px;margin-bottom: 20px}
 .service-article_text figure img {width: 100%;max-height: 400px;object-fit: cover}
 .service-article_img{width:100%;height:324px;object-fit:cover;border-radius:5px;margin-bottom:48px}
 .service-article_text{font-family:"Inter";color:var(--article-text-color);font-weight:400;font-size:16px}

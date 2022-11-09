@@ -1228,6 +1228,7 @@ section.page__service-offer
 
 .service-article_text figure {
   max-height: 400px;
+  margin-bottom: 20px
 }
 
 .service-article_text figure img {
