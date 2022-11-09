@@ -1469,6 +1469,11 @@ span.contacts_item-title {
   display: flex;
   justify-content: space-around;
 }
+
+.page_contacts-form .wpcf7-form input, 
+.page_contacts-form .wpcf7-form textarea{
+  margin: 0 10px
+}
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------about-----------------------------------------*/
 .page__about_wrapper{

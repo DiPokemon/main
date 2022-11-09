@@ -229,6 +229,7 @@ span.contacts_item-text {display: flex;flex-direction: column}
 span.contacts_item-title {text-transform: uppercase;font-weight: 600;font-size: 20px;padding-bottom: 15px}
 .contacts_item-body a {text-decoration: underline}
 .page_contacts-form form.wpcf7-form {padding: 20px 0;display: flex;justify-content: space-around}
+.page_contacts-form .wpcf7-form input,.page_contacts-form .wpcf7-form textarea{margin: 0 10px}
 .page__about_wrapper{display: flex;align-items: center;padding-top: 20px;gap: 20px}
 .page__about_wrapper-left,.page__about_wrapper-right{width: 50%}
 .about_item {display: flex;padding: 10px 0px;align-items: center;gap: 15px}
