@@ -313,30 +313,50 @@
                                
     
                           <input type="checkbox" name="chacor" id="chacor1" checked="checked" />
-                          <label for="chacor1">Заголовок вкладки</label>
+                          <label for="chacor1">Чем ваша компания лучше других?</label>
                           <div class="acor-body">
-                              <p>Описание вкладки</p>
+                              <p>Основатели компании изначально были техническими специалистами, 
+                           благодаря этому у компании есть четкая идеология работы с проектами. 
+                           Мы не обещаем золотых гор, только реальные цифры и факты</p>
                           </div>
                           
                           <input type="checkbox" name="chacor" id="chacor2" />
-                          <label for="chacor2">Заголовок вкладки</label>
+                          <label for="chacor2">Я знаю более раскрученные компании. Они сделают дешевле. Зачем мне переплачивать?</label>
                           <div class="acor-body">
-                              <p>Описание вкладки</p>
+                              <p>Чего Вы хотите? За что Вы готовы платить? За работу или результат? 
+                        Можно взять 10 000 рублей за работу, которая стоит 30 000.
+                         Заплатив 10 000 – Вы их просто выкинете. 
+                         Заплатив 30 000 – Вы отдадите их за конкретные цели и результаты. Так что нужно Вам?</p>
                           </div>
                           
                           <input type="checkbox" name="chacor" id="chacor3" />
-                          <label for="chacor3">Заголовок вкладки</label>
+                          <label for="chacor3">Почему так мало кейсов, которые можете показать?</label>
                           <div class="acor-body">
-                              <p>Описание вкладки</p>
+                              <p>Основатели компании длительное время работали в найме, затем на фрилансе, 
+                        затем по подряду с более крупными компаниями. 
+                        Именно поэтому большинство проектов относятся к чужим компаниям. 
+                        Зато работали над ними именно мы. Мы были внутренним механизмом других компаний. 
+                        Так что важнее? Обертка или содержание!?</p>
+                          </div>
+
+                          <input type="checkbox" name="chacor" id="chacor4" />
+                          <label for="chacor4">Почему мы сами еще не в ТОПе?</label>
+                          <div class="acor-body">
+                              <p>Недавно мы начали заниматься своим сайтом. 
+                        Так как ранее работали только в субподряде и по сарафанке, 
+                        необходимости разработки и продвижения качественного сайта не было. 
+                        Да и некогда было. В связи с расширением, появился отдел внутреннего маркетинга, 
+                        который в данный момент и занимается данным вопросом.</p>
                           </div>
                       
                       
+                      
 
 
 
 
 
-                         <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
+                         <!-- <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                            <div class="accordion__item_header">
                            <span itemprop="name">Чем ваша компания лучше других?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                            </div>
@@ -346,18 +366,20 @@
                            Мы не обещаем золотых гор, только реальные цифры и факты</span>
                            </div>
                          </div>
-                      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
-                        <div class="accordion__item_header">
-                        <span itemprop="name">Я знаю более раскрученные компании. Они сделают <br> дешевле. 
-                        Зачем мне переплачивать?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
-                        <span itemprop="text">Чего Вы хотите? За что Вы готовы платить? За работу или результат? 
-                        Можно взять 10 000 рублей за работу, которая стоит 30 000.
-                         Заплатив 10 000 – Вы их просто выкинете. 
-                         Заплатив 30 000 – Вы отдадите их за конкретные цели и результаты. Так что нужно Вам?</span>
-                        </div>
-                      </div>
+
+                          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
+                            <div class="accordion__item_header">
+                              <span itemprop="name">Я знаю более раскрученные компании. Они сделают <br> дешевле. 
+                                Зачем мне переплачивать?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
+                            </div>
+                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
+                                <span itemprop="text">Чего Вы хотите? За что Вы готовы платить? За работу или результат? 
+                                Можно взять 10 000 рублей за работу, которая стоит 30 000.
+                                Заплатив 10 000 – Вы их просто выкинете. 
+                                Заплатив 30 000 – Вы отдадите их за конкретные цели и результаты. Так что нужно Вам?</span>
+                            </div>
+                          </div>
+
                       <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
                         <span itemprop="name">Почему так мало кейсов, которые можете показать?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
@@ -370,22 +392,24 @@
                         Так что важнее? Обертка или содержание!?</span>
                         </div>
                       </div>
+
                       <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                         <div class="accordion__item_header">
-                        <span itemprop="name">Почему мы сами еще не в ТОПе?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
+                          <span itemprop="name">Почему мы сами еще не в ТОПе?</span> <img loading="lazy" class="Vector1" src="<?php echo get_template_directory_uri()?>/static/img/Vector1.svg" alt="img">
                         </div>
                         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="accordion__item_body">
-                        <span itemprop="text">Недавно мы начали заниматься своим сайтом. 
-                        Так как ранее работали только в субподряде и по сарафанке, 
-                        необходимости разработки и продвижения качественного сайта не было. 
-                        Да и некогда было. В связи с расширением, появился отдел внутреннего маркетинга, 
-                        который в данный момент и занимается данным вопросом.</span>
+                          <span itemprop="text">Недавно мы начали заниматься своим сайтом. 
+                          Так как ранее работали только в субподряде и по сарафанке, 
+                          необходимости разработки и продвижения качественного сайта не было. 
+                          Да и некогда было. В связи с расширением, появился отдел внутреннего маркетинга, 
+                          который в данный момент и занимается данным вопросом.</span>
+                        </div>
+                      </div> -->
+
                         </div>
                       </div>
                     </div>
-                  </div>
-                      </div>
-                      <div class="question-triple_stars_right"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
+                  <div class="question-triple_stars_right"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
                 </div>
               </div>
             </section>
