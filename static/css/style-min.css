@@ -223,7 +223,7 @@ section.page__contacts-map{padding:0 0 50px}
 .page__contacts_map-wrapper .form{padding:0 20px}
 .map{height:500px;padding:0;background-image:url(/wp-content/uploads/2021/11/map-new.png);background-position:center center;border-radius: 5px;box-shadow: 0 0 5px var(--main-white-color)}
 .map iframe{border-radius:5px}
-.page__contacts.info_block {display: flex;justify-content: space-between;padding-bottom: 30px}
+.page__contacts.info_block {display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;padding-bottom: 30px}
 .contacts_item-body {display: flex; flex-direction: column}
 span.contacts_item-text {display: flex;flex-direction: column}
 span.contacts_item-title {text-transform: uppercase;font-weight: 600;font-size: 20px;padding-bottom: 15px}

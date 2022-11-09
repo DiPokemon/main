@@ -573,11 +573,12 @@
 /*----------------------------------------------------contacts----------------------------------*/
 @media(max-width:920px){
     .page__contacts.info_block{
+        grid-template-columns: 1fr 1fr;
         gap:20px
     }
-    .page__contacts.info_block .contacts_item{
+    /* .page__contacts.info_block .contacts_item{
         width: 50%
-    }
+    } */
 }
 
 @media(max-width:768px) {

@@ -1438,8 +1438,9 @@ section.page__contacts-map{
 }
 
 .page__contacts.info_block {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* justify-content: space-between; */
   padding-bottom: 30px;
 }
 
