@@ -68,7 +68,7 @@ main.page{margin-top:68px}
 .main-3columns{display:flex;min-height:183px;justify-content:space-between;align-items:center}
 .main-3columns_mobile{display:none}
 .main-3columns__item{display:flex;gap:25px;width:30%;align-items:center}
-.main-3columns__item:first-child{font-size:20px}
+/* .main-3columns__item:first-child{font-size:20px} */
 .main-3columns__item_img{min-width:25px}
 .slide-m-dots .slick-dots{position:static;display:flex}
 .slider-controls{display:flex;flex-direction:row;align-items:center;justify-content:center}

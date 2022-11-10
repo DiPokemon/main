@@ -506,9 +506,9 @@ main.page{
   width: 30%;
   align-items: center;
 }
-.main-3columns__item:first-child {
+/* .main-3columns__item:first-child {
   font-size:20px;
-}
+} */
 
 
 .main-3columns__item_img{

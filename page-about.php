@@ -135,21 +135,21 @@
                     <div class="about_item">
                         <span class="about_item-number">05</span>                             
                         <div class="about_item-text"> 
-                            Комплексная работа над проектом
+                            Проводим комплексную работу над проектом
                         </div>           
                     </div>  
                     
                     <div class="about_item">
-                        <span class="about_item-number">05</span>                             
+                        <span class="about_item-number">06</span>                             
                         <div class="about_item-text"> 
-                            Прозрачные отчеты и консультирование
+                            Предоставляем прозрачные отчеты и консультирование
                         </div>           
                     </div>  
 
                     <div class="about_item">
-                        <span class="about_item-number">06</span>                             
+                        <span class="about_item-number">07</span>                             
                         <div class="about_item-text"> 
-                        Решение поставленных задач и возможность дальнейшего развития
+                            Качественно решаем поставленные задачи  
                         </div>           
                     </div> 
                 </div>
