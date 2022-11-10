@@ -41,11 +41,11 @@
                     <div class="main-3columns">
                       <div class="main-3columns__item">
                           <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="Повышение продаж"></div>
-                          <div class="main-3colums__item_text">Повышаем продажи товаров и услуг в 3 раза</div>
+                          <div class="main-3colums__item_text">SEO продвижение по Ростову-на-Дону и всей России</div>
                       </div>
                       <div class="main-3columns__item">
                           <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="Веб студия в Ростове-на-Дону"></div>
-                          <div class="main-3colums__item_text">7 лет работаем<br> в интернет-маркетинге</div>
+                          <div class="main-3colums__item_text">7 лет работаем в интернет-маркетинге</div>
                       </div>
                       <div class="main-3columns__item">
                           <div class="main-3columns__item_img"><img src="<?php echo get_template_directory_uri()?>/static/img/Stairs 1.svg" alt="SEO Продвижение сайтов"></div>
@@ -56,7 +56,7 @@
                       <div class="main-slider">
                         <div class="main-3columns__item">
                             <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="Повышение продаж"></div>
-                            <div class="main-3colums__item_text">Повышаем продажи товаров и услуг в 3 раза</div>
+                            <div class="main-3colums__item_text">SEO продвижение по Ростову-на-Дону и всей России</div>
                         </div>
                         <div class="main-3columns__item">
                             <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="Веб студия в Ростове-на-Дону"></div>
@@ -108,7 +108,7 @@
                   <div class="choice-block__text">
                     <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2 section_title">Почему выбирают<br>нашу компанию</h2></div>   
                     <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2-mobile section_title ">Почему выбирают нашу компанию</h2></div>                 
-                    <div class="choice-block__subtitle">Миссия нашего маркетингового агентства- стать лучшим партнером для Вас и вашей компании в области Seo продвижения и разработки сайтов, а также  продвинуть вас в поиске среди прочих.</div>
+                    <div class="choice-block__subtitle">Миссия нашего агентства - стать лучшим партнером для Вас и вашей компании в области Seo продвижения и разработки сайтов, а также  продвинуть вас в поиске среди прочих.</div>
                     <ul class="choice-block__list">
                       <li class="choice-block__el">С помощью Seo выводим клиентов на 70-90% в ТОП-10.</li>
                       <li class="choice-block__el">Способствуем расширению сферы деятельности партнеров, благодаря правильной маркетинговой стратегии.</li>
