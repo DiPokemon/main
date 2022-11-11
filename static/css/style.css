@@ -1620,13 +1620,13 @@ span.contacts_item-title {
   border-radius: 5px;
   border: 1px solid #3f3354;
   background-color: #200e38;
-  margin: 5px 0;
+  /* margin: 5px 0; */
   padding-left: 8px;
   color: var(--main-white-color)
 }
-.wpcf7-form textarea{
+/* .wpcf7-form textarea{
   padding-top: 8px
-}
+} */
 .wpcf7-form input::placeholder,
 .wpcf7-form textarea::placeholder {
   color: var(--article-text-color);
@@ -1644,10 +1644,19 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   color: var(--article-text-color)
 }
 
-.page_contacts-form-row .contact_form{
+.contact_form{
   display: flex;
+  gap:10px
+}
+
+.contact_form-row .contact_form{
+  flex-direction: row;
   width: 100%;
-  justify-content: space-evenly
+  justify-content: space-evenly;  
+}
+
+.contact_form-column .contact_form{
+  flex-direction: column;
 }
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------footer-----------------------------------------*/
