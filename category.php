@@ -65,7 +65,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                     <div class="cases-block__container">
                         <div class="cases-block__body">
                         <div class="cases-block__title">
-                            <h2 class="_h2 cases-block__title_h2">Кейсы</h2>
+                            <h2 class="_h2">Кейсы</h2>
                         </div>
                         <?php if (!empty($cases_text)): ?>
                             <div class="cases_text service_text-block">
@@ -117,7 +117,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                 <section class="page__service-tariffs">
                     <div class="offer_block-wrapper">
                         <div class="tariffs-block__title">
-                            <h2 class="_h2 tariffs-block__title_h2">Тарифы</h2>
+                            <h2 class="_h2">Тарифы</h2>
                         </div>
                         <?php if (!empty($tariffs_text)): ?>
                             <div class="tariffs_text service_text-block">

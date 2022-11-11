@@ -55,7 +55,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                     <div class="cases-block__container">
                         <div class="cases-block__body">
                         <div class="cases-block__title">
-                            <h2 class="_h2 cases-block__title_h2">Кейсы</h2>
+                            <h2 class="_h2">Кейсы</h2>
                         </div>
                         <?php if (!empty($cases_text)): ?>
                             <div class="cases_text service_text-block">
@@ -107,7 +107,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                 <section>
                     <div class="offer_block-wrapper">
                         <div class="cases-block__title">
-                            <h2 class="_h2 cases-block__title_h2">Тарифы</h2>
+                            <h2 class="_h2">Тарифы</h2>
                         </div>
                         <?php if (!empty($tariffs_text)): ?>
                             <div class="tariffs_text service_text-block">
@@ -121,10 +121,14 @@ $tariffs_text    = get_field("tariffs_text", $term);
                         </div>
                         
                     </div>
-                </section>                
+                </section> 
 
-                
-            
+                <section class="category-list_description">
+                    <div class="category-list_description__container _container">
+                        <div class="category-list_description__text"><?php echo category_description();?></div>
+                    </div>
+                </section>
+
                 <section class="page__service-selection service-selection">
                     <div class="service-selection__container _container">
                         <div class="service-selection__body">                        
@@ -150,13 +154,5 @@ $tariffs_text    = get_field("tariffs_text", $term);
                     </div>
                 </section>
 
-                <section class="category-list_description">
-                    <div class="category-list_description__container _container">
-                        <div class="category-list_description__text"><?php echo category_description();?></div>
-                    </div>
-                </section>
-
             </div>
-
-
 <?php get_footer(); ?>
