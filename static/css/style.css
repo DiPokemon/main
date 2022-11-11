@@ -1624,9 +1624,9 @@ span.contacts_item-title {
   padding-left: 8px;
   color: var(--main-white-color)
 }
-/* .wpcf7-form textarea{
+ .wpcf7-form textarea{
   padding-top: 8px
-} */
+} 
 .wpcf7-form input::placeholder,
 .wpcf7-form textarea::placeholder {
   color: var(--article-text-color);
