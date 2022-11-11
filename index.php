@@ -75,7 +75,7 @@
             <section class="page__services-block services">
               <div class="services-block__container _container">
                 <div class="services-block__body">
-                  <h2 class="_h2 services-block__title_h2 section_title"> Наши услуги</h2>
+                  <h2 class="_h2 services-block__title_h2 section_title">Наши услуги</h2>
                   <div class="services-block__columns">
                     <?php
                       $args = array(              
@@ -115,7 +115,7 @@
                       <li class="choice-block__el">Выводим Landing-page в ТОП-3 и улучшаем конверсионные показатели до 240%.</li>
                       <li class="choice-block__el">Повышаем продажи партнерских товаров и услуг в среднем в 3 раза.</li>  
                     </ul>
-                    <div class="choice-block__button"><a class="choice-block__href" href="/contacts">О компании</a></div>
+                    <div class="choice-block__button"><a class="choice-block__href" href="/about">О компании</a></div>
                   </div>
                   <div class="choice-block__img">
                     <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/unsplash_DUmFLtMeAbQ.jpg" alt="Разработка и СЕО продвижение сайтов в Ростове-на-Дону">

@@ -13,6 +13,35 @@ $tariffs_text    = get_field("tariffs_text", $term);
                     <?php if ( function_exists( 'topland_breadcrumbs' ) ) topland_breadcrumbs(); ?>  
                     <h1 class="page-header__title"><?php single_cat_title(); ?></h1>
                 </section>
+                
+                <section class="page__services-block services">
+                    <div class="services-block__container _container">
+                        <div class="services-block__body">
+                            <div class="services-block__grid">
+                                <?php
+                                    $queried_object = get_queried_object(); 
+                                    $child_cats = get_categories(array(
+                                    'taxonomy' => 'category',
+                                    'child_of' => $queried_object->term_id
+                                    ));
+                                    if(count($child_cats)){  
+                                    foreach ($child_cats as $key => $cat) { ?>
+                                        <a href="<?php echo get_category_link($cat->cat_ID);?>">
+                                            <div class="services-block__item">
+                                                <div class="services-block__text">
+                                                    <a href="<?php echo get_category_link($cat->cat_ID);?>"><?php echo $cat->name; ?></a>
+                                                </div>
+                                                <div class="services-block__img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="img"></div>
+                                            </div>  
+                                        </a>                                                                             
+                                        <?php 
+                                        }
+                                    }
+                                ?>                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <section class="page__service-offer">
                     <div class="offer_block-top">
@@ -30,6 +59,11 @@ $tariffs_text    = get_field("tariffs_text", $term);
                         <div class="cases-block__title">
                             <h2 class="_h2 cases-block__title_h2">Кейсы</h2>
                         </div>
+                        <?php if (!empty($cases_text)): ?>
+                            <div class="cases_text service_text-block">
+                                <?= $cases_text ?>
+                            </div>   
+                        <?php endif;?>  
                         <div class="slider_wrapper">
                             <div class="cases_slider">
                                 <?php $length_cases = 0 ?>
@@ -68,55 +102,30 @@ $tariffs_text    = get_field("tariffs_text", $term);
                             </div>
                         </div>
                         </div>
-                        <?php if (!empty($cases_text)): ?>
-                            <div class="cases_text service_text-block">
-                                <?= $cases_text ?>
-                            </div>   
-                        <?php endif;?>                    
+                                          
                     </div>                    
                 </section>  
                 
                 <section>
                     <div class="offer_block-wrapper">
-                        <div class="slider_wrapper">
-                            <div class="tariff_slider">
-                                <?php echo do_shortcode('[topland_tariffs]'); ?>
-                            </div>
+                        <div class="cases-block__title">
+                            <h2 class="_h2 cases-block__title_h2">Тарифы</h2>
                         </div>
                         <?php if (!empty($tariffs_text)): ?>
                             <div class="tariffs_text service_text-block">
                                 <?= $tariffs_text ?>
                             </div>
                         <?php endif;?> 
+                        <div class="slider_wrapper">
+                            <div class="tariff_slider">
+                                <?php echo do_shortcode('[topland_tariffs]'); ?>
+                            </div>
+                        </div>
+                        
                     </div>
                 </section>                
 
-                <section class="page__services-block services">
-                    <div class="services-block__container _container">
-                        <div class="services-block__body">
-                            <div class="services-block__grid">
-                                <?php
-                                    $queried_object = get_queried_object(); 
-                                    $child_cats = get_categories(array(
-                                    'taxonomy' => 'category',
-                                    'child_of' => $queried_object->term_id
-                                    ));
-                                    if(count($child_cats)){  
-                                    foreach ($child_cats as $key => $cat) { ?>
-                                        <div class="services-block__item">
-                                            <div class="services-block__text">
-                                                <a href="<?php echo get_category_link($cat->cat_ID);?>"><?php echo $cat->name; ?></a>
-                                            </div>
-                                            <div class="services-block__img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="img"></div>
-                                        </div>                                                                               
-                                        <?php 
-                                        }
-                                    }
-                                ?>                                
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                
             
                 <section class="page__service-selection service-selection">
                     <div class="service-selection__container _container">
