@@ -101,10 +101,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                         </div>
                         </div>
                                           
-                    </div>                    
-                </section>  
-                
-                <section>
+                    </div>  
                     <div class="offer_block-wrapper">
                         <div class="cases-block__title">
                             <h2 class="_h2">Тарифы</h2>
@@ -120,8 +117,8 @@ $tariffs_text    = get_field("tariffs_text", $term);
                             </div>
                         </div>
                         
-                    </div>
-                </section> 
+                    </div>                  
+                </section>
 
                 <section class="category-list_description">
                     <div class="category-list_description__container _container">
