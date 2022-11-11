@@ -316,6 +316,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit{background-color:#a769f7;color
 .contact_form{display: grid;gap:10px}
 .contact_form-row .contact_form{grid-template-columns: repeat(4,1fr);width: 100%}
 .contact_form-column .contact_form{grid-template-columns: 1fr}
+.contact_form-grid .contact_form{grid-template-columns: repeat(2, 1fr); width: 100%}
 .footer{background:#200e38;font-family:"Inter";font-weight:400}
 .footer__body{padding:40px 0;display:flex;flex-wrap:wrap;justify-content:space-between}
 .footer_left-side,.footer__navigation,.footer_right-side{display:flex}

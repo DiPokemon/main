@@ -1657,6 +1657,10 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 .contact_form-column .contact_form{
   grid-template-columns: 1fr
 }
+.contact_form-grid .contact_form{
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------footer-----------------------------------------*/
 

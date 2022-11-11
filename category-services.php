@@ -129,9 +129,12 @@ $tariffs_text    = get_field("tariffs_text", $term);
                                     <h2 class="_h2 service-selection__title_h2 section_title">Не знаете какую услугу выбрать?</h2>
                                 </div>
                                 <div class="service-selection__subtitle toplend">Напишите нам. Мы подскажем какая услуга принесет вашей компании больше прибыли</div>
-                                <div class="service-selection__button">
-                                    <a class="service-selection__href" href="https://wa.me/79934536307">Написать в What’sApp</a>
+                                <div class="page_contacts-form contact_form-grid">
+                                    <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
                                 </div>
+                                <!-- <div class="service-selection__button">
+                                    <a class="service-selection__href" href="https://wa.me/79934536307">Написать в What’sApp</a>
+                                </div> -->
                             </div>
                             <div class="service-selection__lightning_right">
                                 <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_right.svg" alt="lightning right">
