@@ -29,7 +29,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                                         <a href="<?php echo get_category_link($cat->cat_ID);?>">
                                             <div class="services-block__item">
                                                 <div class="services-block__text">
-                                                    <a href="<?php echo get_category_link($cat->cat_ID);?>"><?php echo $cat->name; ?></a>
+                                                    <?php echo $cat->name; ?>
                                                 </div>
                                                 <div class="services-block__img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="img"></div>
                                             </div>  
