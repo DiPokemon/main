@@ -1629,8 +1629,7 @@ span.contacts_item-title {
 }
 .wpcf7-form input::placeholder,
 .wpcf7-form textarea::placeholder {
-  color: var(--main-white-color);
-  text-transform: uppercase;
+  color: var(--article-text-color);
   font-family: "Inter";
 }
 input.wpcf7-form-control.has-spinner.wpcf7-submit {
@@ -1643,6 +1642,12 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 }
 .form_text{
   color: var(--article-text-color)
+}
+
+.page_contacts-form-row .contact_form{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly
 }
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------footer-----------------------------------------*/

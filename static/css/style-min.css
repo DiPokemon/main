@@ -309,10 +309,11 @@ span.contacts_item-title {text-transform: uppercase;font-weight: 600;font-size: 
 .wpcf7-form{padding:20px 0}
 .wpcf7-form input,.wpcf7-form textarea{width:100%;height:40px;border-radius:5px;border:1px solid #3f3354;background-color:#200e38;margin:5px 0;padding-left:8px;color: var(--main-white-color)}
 .wpcf7-form textarea{padding-top:8px}
-.wpcf7-form input::placeholder,.wpcf7-form textarea::placeholder{color:var(--main-white-color);text-transform:uppercase;font-family:"Inter"}
+.wpcf7-form input::placeholder,.wpcf7-form textarea::placeholder{color:var(--article-text-color);font-family:"Inter"}
 input.wpcf7-form-control.has-spinner.wpcf7-submit{background-color:#a769f7;color:#fff;text-transform:uppercase}
 .form_title{text-transform:uppercase}
 .form_text{color:var(--article-text-color)}
+.page_contacts-form-row .contact_form{display: flex;width: 100%;justify-content: space-evenly}
 .footer{background:#200e38;font-family:"Inter";font-weight:400}
 .footer__body{padding:40px 0;display:flex;flex-wrap:wrap;justify-content:space-between}
 .footer_left-side,.footer__navigation,.footer_right-side{display:flex}
