@@ -708,6 +708,7 @@ main.page{
 
 .cases-block__container{
   max-width: 90vw;
+  margin-top: 75px
 }
 .case_slide_wrapper {
   position:relative;

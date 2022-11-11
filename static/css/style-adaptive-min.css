@@ -477,6 +477,9 @@
     section.page__service-offer{
         padding-top:0
     }
+    .cases-block__container{
+        margin-top: 40px
+    }
 }
 @media(max-width: 460px){
     .services-block__item{
