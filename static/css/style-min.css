@@ -125,7 +125,7 @@ main.page{margin-top:68px}
 .service-selection__body{display:flex;flex-direction:row;width:100%;justify-content:space-between}
 .service-selection__lightning_left{display:flex;margin-left:15px;flex-shrink:3}
 .lightning_left{width:90%;align-self:flex-end}
-.service-selection__content{display:flex;flex-direction:column;align-items:center;margin-left:-50px}
+.service-selection__content{display:flex;flex-direction:column;align-items:center}
 .service-selection__lightning_right{flex-shrink:3;margin-right:30px}
 .lightning_right{width:90%}
 .service-selection__title{margin-top:51px;margin-bottom:24px}
