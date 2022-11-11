@@ -544,7 +544,8 @@
     .category-list_description {
         font-size: 16px;        
     }
-    .cases-block__container{
+    .cases-block__container,
+    .tariffs-block__container{
         margin-top: 40px
     }
 }   

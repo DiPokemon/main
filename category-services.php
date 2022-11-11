@@ -102,8 +102,8 @@ $tariffs_text    = get_field("tariffs_text", $term);
                         </div>
                                           
                     </div>  
-                    <div class="offer_block-wrapper">
-                        <div class="cases-block__title">
+                    <div class="tariffs-block__container">
+                        <div class="tariffs-block__title">
                             <h2 class="_h2">Тарифы</h2>
                         </div>
                         <?php if (!empty($tariffs_text)): ?>

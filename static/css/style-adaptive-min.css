@@ -477,7 +477,8 @@
     section.page__service-offer{
         padding-top:0
     }
-    .cases-block__container{
+    .cases-block__container,
+    .tariffs-block__container{
         margin-top: 40px
     }
 }

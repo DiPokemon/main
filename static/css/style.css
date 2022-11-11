@@ -706,7 +706,9 @@ main.page{
 /*-------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------page__cases-block------------------------*/
 
-.cases-block__container{
+.cases-block__container,
+.tariffs-block__container
+{
   max-width: 90vw;
   margin-top: 75px
 }
