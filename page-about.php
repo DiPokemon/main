@@ -170,6 +170,7 @@
                 <div class="form">
                     <h3 class="form_title">У Вас остались вопросы</h3>
                     <p class="form_text">Заполните форму обратной связи и наш специалист перезвонит Вам и проконсультирует по любой, интересующей Вас теме.</p>
+                    <div class="contact_form-column">
                     <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
 
                 </div>

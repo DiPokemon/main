@@ -58,7 +58,7 @@
             <div class="page_contacts-text-block">
                 <?php the_content(); ?>
             </div>
-            <div class="page_contacts-form-row">
+            <div class="page_contacts-form contact_form-row">
                 <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
             </div>
         </div>
