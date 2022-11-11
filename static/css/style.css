@@ -1548,10 +1548,10 @@ span.contacts_item-title {
   justify-content: space-around;
 }
 
-.page_contacts-form .wpcf7-form input, 
+/* .page_contacts-form .wpcf7-form input, 
 .page_contacts-form .wpcf7-form textarea{
   margin: 0 10px
-}
+} */
 
 .page_contacts-text-block{
   border: 1px solid #3f3354;
@@ -1645,18 +1645,17 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 }
 
 .contact_form{
-  display: flex;
+  display: grid;
   gap:10px
 }
 
 .contact_form-row .contact_form{
-  flex-direction: row;
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  justify-content: space-evenly;  
 }
 
 .contact_form-column .contact_form{
-  flex-direction: column;
+  grid-template-columns: 1fr
 }
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------footer-----------------------------------------*/

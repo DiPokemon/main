@@ -297,7 +297,7 @@ span.contacts_item-text {display: flex;flex-direction: column}
 span.contacts_item-title {text-transform: uppercase;font-weight: 600;font-size: 20px;padding-bottom: 15px}
 .contacts_item-body a {text-decoration: underline}
 .page_contacts-form form.wpcf7-form {padding: 20px 0;display: flex;justify-content: space-around}
-.page_contacts-form .wpcf7-form input,.page_contacts-form .wpcf7-form textarea{margin: 0 10px}
+/* .page_contacts-form .wpcf7-form input,.page_contacts-form .wpcf7-form textarea{margin: 0 10px} */
 .wpcf7-spinner{display: none}
 .page_contacts-text-block{border: 1px solid #3f3354;border-radius: 5px;padding: 50px;margin: 20px 0;background-color: var(--main-white-color);color: #1a0930;font-weight: 600;text-align: center}
 .page__about_wrapper{display: flex;align-items: center;padding-top: 20px;gap: 20px}
@@ -313,9 +313,9 @@ span.contacts_item-title {text-transform: uppercase;font-weight: 600;font-size: 
 input.wpcf7-form-control.has-spinner.wpcf7-submit{background-color:#a769f7;color:#fff;text-transform:uppercase}
 .form_title{text-transform:uppercase}
 .form_text{color:var(--article-text-color)}
-.contact_form{display: flex;gap:10px}
-.contact_form-row .contact_form{flex-direction: row;width: 100%;justify-content: space-evenly}
-.contact_form-column .contact_form{flex-direction: column}
+.contact_form{display: grid;gap:10px}
+.contact_form-row .contact_form{grid-template-columns: repeat(4,1fr);width: 100%}
+.contact_form-column .contact_form{grid-template-columns: 1fr}
 .footer{background:#200e38;font-family:"Inter";font-weight:400}
 .footer__body{padding:40px 0;display:flex;flex-wrap:wrap;justify-content:space-between}
 .footer_left-side,.footer__navigation,.footer_right-side{display:flex}
