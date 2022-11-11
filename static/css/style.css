@@ -546,7 +546,7 @@ main.page{
 
 .page__services-block {
   position: relative;
-    background: #1a0930;
+    /* background: #1a0930; */
     z-index: 6;
 }
 .services-block__title_h2 {
@@ -642,7 +642,7 @@ main.page{
   right: 0;
   top: -329px;
   /* background-size: cover; */
-  z-index: 6;
+  z-index: 5;
 }
 
 .choice-block__text {
