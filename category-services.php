@@ -129,7 +129,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                     </div>
                 </section>
 
-                <section class="page__service-selection service-selection">
+                <section id="lightning_contact_form" class="page__service-selection service-selection">
                     <div class="service-selection__container _container">
                         <div class="service-selection__body">                        
                             <div class="service-selection__lightning_left">
