@@ -344,7 +344,7 @@
 
                                
     
-                          <input type="checkbox" name="chacor" id="chacor1" checked="checked" />
+                          <!-- <input type="checkbox" name="chacor" id="chacor1" checked="checked" />
                           <label for="chacor1">Чем ваша компания лучше других?</label>
                           <div class="acor-body">
                               <p>Основатели компании изначально были техническими специалистами, 
@@ -379,7 +379,7 @@
                         необходимости разработки и продвижения качественного сайта не было. 
                         Да и некогда было. В связи с расширением, появился отдел внутреннего маркетинга, 
                         который в данный момент и занимается данным вопросом.</p>
-                          </div>
+                          </div> -->
                         
                           <input type="checkbox" name="chacor" id="chacor5" />
                           <label for="chacor5">Что такое SEO?</label>

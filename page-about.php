@@ -11,51 +11,44 @@
             <p class="page__about-text-block"><strong>Миссия нашего агентства</strong> - стремительно продвигать ваш бизнес в гору, брать новые высоты вместе с Вами и находить эффективные решения.</p>
             <div class="page__about_wrapper">
 
-                <div class="page__about_wrapper-left">
+                <div class="page__about_wrapper-left">                    
 
                     <div class="about_item">
                         <span class="about_item-number">01</span> 
-                        <div class="about_item-text"> 
-                            Оказываем  услуги интернет маркетинга с 2016 года
-                        </div>           
-                    </div>
-
-                    <div class="about_item">
-                        <span class="about_item-number">02</span> 
                         <div class="about_item-text"> 
                             С помощью SEO выводим сайты на показатели до 70-90% собранных коммерческих ключевых запросов в ТОП-10
                         </div>           
                     </div>
 
                     <div class="about_item">
-                        <span class="about_item-number">03</span> 
+                        <span class="about_item-number">02</span> 
                         <div class="about_item-text"> 
                             Повышаем продажи с сайтов наших клиентов в 3 раза
                         </div>           
                     </div>
 
                     <div class="about_item">
-                        <span class="about_item-number">04</span>                             
+                        <span class="about_item-number">03</span>                             
                         <div class="about_item-text"> 
                             Повышаем  доверие к бренду
                         </div>           
                     </div>
 
                     <div class="about_item">
-                        <span class="about_item-number">05</span>                             
+                        <span class="about_item-number">04</span>                             
                         <div class="about_item-text"> 
                             Улучшаем  техническое и информационное  состояния сайта
                         </div>           
                     </div>
 
                     <div class="about_item">
-                        <span class="about_item-number">06</span>
+                        <span class="about_item-number">05</span>
                         <div class="about_item-text"> 
                             Мы выполнили  более 70 успешных SEO проектов
                         </div>           
                     </div>
                     <div class="about_item">
-                        <span class="about_item-number">07</span> 
+                        <span class="about_item-number">06</span> 
                         <div class="about_item-text"> 
                             Успешно реализовали более 15 проектов по созданию корпоративных сайтов
                         </div>           
