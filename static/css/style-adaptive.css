@@ -364,10 +364,19 @@
     .service-selection__content{
         margin-left:0;
     }
-    .service-selection__body{
-        
+    .service-selection__body{        
         justify-content: center;
     }
+
+    .achievements_wrapper{
+        gap: 0px
+    }
+    
+    .achievements_left,
+    .achievements_right{
+        width: 100%
+    }
+
     .reviews_gradient_bg-img{
         top: 102px;
         right: 0;
