@@ -318,7 +318,8 @@
         justify-content:center
     }
     .achievements_wrapper{
-        gap: 0px
+        gap: 0px;
+        flex-direction: column
     }    
     .achievements_left,
     .achievements_right{
