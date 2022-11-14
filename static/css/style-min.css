@@ -62,7 +62,7 @@ main.page{margin-top:68px}
 .main-image__el{border-radius:5px}
 .main-image__el:nth-child(odd){transform:translateY(-50px)}
 .main-image__el:first-child{border:1px solid #3F3354;display:flex;font-family:"Open Sans";font-style:normal;color:var(--main-white-color);flex-direction:column;align-items:center;justify-content:flex-end}
-.main-image__text_title{font-style:normal;font-weight:500;font-size:49.2144px;line-height:74px;text-transform:uppercase;padding-bottom:30px}
+.main-image__text_title{font-style:normal;font-weight:500;font-size:25px}
 .main-image__text_subtitle{font-weight:400;font-size:14px;line-height:21px;padding:0 30px 30px;color:var(--article-text-color)}
 .main-background{position:relative;background:rgba(29,10,53,0.8);backdrop-filter:blur(4px);z-index:25}
 .main-3columns{display:flex;min-height:183px;justify-content:space-between;align-items:center}

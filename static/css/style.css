@@ -472,10 +472,8 @@ main.page{
 .main-image__text_title {
   font-style: normal;
   font-weight: 500;
-  font-size: 49.2144px;
-  line-height: 74px;  
-  text-transform: uppercase;
-  padding-bottom: 30px;  
+  font-size: 25px;
+  /* padding-bottom: 30px;   */
 }
 .main-image__text_subtitle {
   font-weight: 400;
