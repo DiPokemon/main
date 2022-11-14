@@ -192,7 +192,7 @@
                     <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/about_thrid.png" alt="SEO продвижение сайтов в Ростове">
                 </div>
         </div>
-        <p class="page__about-text-block">Маркетинговое агентство “TopLand” в Ростове на Дону, готово оказать качественные и эффективные Seo услуги для вашего сайта. Для оформления заказа и консультации достаточно просто заполнить форму обратной связи.</p>
+        <p class="page__about-text-block">МАРКЕТИНГОВОЕ АГЕНСТВО TOPLAND | РАБОТАЕМ В РОСТОВЕ НА ДОНУ С 2016 ГОДА</p>
     </section>
 
     <section class="page__contacts-map contact_block">
