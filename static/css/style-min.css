@@ -110,6 +110,8 @@ main.page{margin-top:68px}
 .case_slide_wrapper img{height:350px;object-fit:cover;border-radius:5px}
 .cases-block__title_h2{margin-bottom:50px}
 .cases-block__subtitle{margin-top:150px;margin-bottom:14px}
+.achievements_wrapper{display: flex;display: -webkit-flex;gap: 20px}
+.achievements_left,.achievements_right{width: 50%}
 .page__reviews-block{position:relative}
 .reviews-block__body{position:relative;z-index:3}
 .reviews_gradient_bg{position:absolute;width:449.03px;height:367.72px;left:.4px;top:.7px;background:radial-gradient(50.09% 124.66% at 65.27% 55.89%,rgba(73,0,107,0.396) 0%,rgba(255,31,233,0.4) 57.07%,rgba(222,129,255,0.4) 100%);filter:blur(100px);transform:rotate(-36.12deg)}
