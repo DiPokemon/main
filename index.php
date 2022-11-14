@@ -21,7 +21,7 @@
                             <div class="main-image_grid">
                               <div class="main-image__el">
                                 <div class="main-image__text_title">+70%</div>
-                                <div class="main-image__text_subtitle">Выводим сайты клиентов в топ-10</div>
+                                <div class="main-image__text_subtitle">О ВАС УЗНАЮТ</div>
                               </div>                            
                               <div class="main-image__el">
                                 <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/img2.png" alt="img">
@@ -41,7 +41,7 @@
                     <div class="main-3columns">
                       <div class="main-3columns__item">
                           <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="Повышение продаж"></div>
-                          <div class="main-3colums__item_text">SEO продвижение по Ростову-на-Дону и всей России</div>
+                          <div class="main-3colums__item_text">SEO продвижение как в Ростове на Дону, так и по всей России</div>
                       </div>
                       <div class="main-3columns__item">
                           <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="Веб студия в Ростове-на-Дону"></div>
@@ -56,7 +56,7 @@
                       <div class="main-slider">
                         <div class="main-3columns__item">
                             <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="Повышение продаж"></div>
-                            <div class="main-3colums__item_text">SEO продвижение по Ростову-на-Дону и всей России</div>
+                            <div class="main-3colums__item_text">SEO продвижение как в Ростове на Дону, так и по всей России</div>
                         </div>
                         <div class="main-3columns__item">
                             <div class="main-3columns__item_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Lightning 2.svg" alt="Веб студия в Ростове-на-Дону"></div>
@@ -108,12 +108,15 @@
                   <div class="choice-block__text">
                     <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2 section_title">Почему выбирают<br>нашу компанию</h2></div>   
                     <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2-mobile section_title ">Почему выбирают нашу компанию</h2></div>                 
-                    <div class="choice-block__subtitle">Миссия нашего агентства - стать лучшим партнером для Вас и вашей компании в области Seo продвижения и разработки сайтов, а также  продвинуть вас в поиске среди прочих.</div>
+                    <div class="choice-block__subtitle">Миссия нашего агентства - стремительно продвигать ваш бизнес в гору, брать новые высоты вместе с Вами и находить эффективные решения</div>
+                    <div class="choice-block__subtitle">Наша философия - стать надежным партнером для Вас и вашей компании в области интернет-маркетинга</div>
+                    <div class="choice-block__subtitle"><strong>Наши ценности</strong></div>
                     <ul class="choice-block__list">
-                      <li class="choice-block__el">С помощью Seo выводим клиентов на 70-90% в ТОП-10.</li>
-                      <li class="choice-block__el">Способствуем расширению сферы деятельности партнеров, благодаря правильной маркетинговой стратегии.</li>
-                      <li class="choice-block__el">Выводим Landing-page в ТОП-3 и улучшаем конверсионные показатели до 240%.</li>
-                      <li class="choice-block__el">Повышаем продажи партнерских товаров и услуг в среднем в 3 раза.</li>  
+                      <li class="choice-block__el">поддержание долгих партнерских  отношений</li>
+                      <li class="choice-block__el">комплексный подход к проекту</li>
+                      <li class="choice-block__el">прозрачность процесса работы</li>
+                      <li class="choice-block__el">помощь в определении задач</li>  
+                      <li class="choice-block__el">гарантия безопасности используемых методов</li>  
                     </ul>
                     <div class="choice-block__button"><a class="choice-block__href" href="/about">О компании</a></div>
                   </div>
@@ -171,6 +174,32 @@
               </div>
             </section>
             
+            <section class="achievements_section">
+              <div class="_container">
+                <div class="cases-block__title">
+                  <h2 class="_h2 achievements-block__title_h2 section_title">Наши достижения</h2>
+                </div>
+
+                <div class="achievements_wrapper">
+                  <div class="achievements_left">
+                    <ul>
+                      <li>С помощью Seo выводим сайты на показатели до 70-90% собранных коммерческих ключевых запросов в ТОП-10</li>
+                      <li>Наполняем смыслом  маркетинговые стратегии</li>
+                      <li>Повышаем продажи с сайтов наших клиентов в 3 раза</li>
+                    </ul>
+                  </div>
+                  <div class="achievements_right">
+                    <ul>
+                      <li>Постоянно контролируем  качество и сроки выполняемых работ</li>
+                      <li>Повышаем  доверие к вашему бренду</li>
+                      <li>Улучшаем  техническое и информационное состояние сайта</li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+            </section>
+
             <section class="page__reviews-block reviews">
               <div class="reviews_gradient_bg-img"></div>
               <div class="reviews-block__container _container">                
@@ -351,7 +380,42 @@
                         Да и некогда было. В связи с расширением, появился отдел внутреннего маркетинга, 
                         который в данный момент и занимается данным вопросом.</p>
                           </div>
-                      
+                        
+                          <input type="checkbox" name="chacor" id="chacor5" />
+                          <label for="chacor5">Что такое SEO?</label>
+                          <div class="acor-body">
+                              <p>Seo (Search Engine Optimization) —  это совокупность работ, 
+                                направленных на внутреннюю и внешнюю  оптимизацию, за счет чего  
+                                происходит продвижение  сайта в ТОП-10 поисковой выдачи Яндекс или Google 
+                                по целевым запросам пользователей. ТОПом считается первая страница поисковика. 
+                                Поднять сайт в ТОП-10 — главная цель Seo-специалистов.</p>
+                          </div>
+
+                          <input type="checkbox" name="chacor" id="chacor6" />
+                          <label for="chacor6">Когда будет результат от SEO?</label>
+                          <div class="acor-body">
+                              <p>После проведение работ с сайтом поисковикам нужно время, чтобы его проиндексировать.
+                                 Поисковые запросы со временем начинают ранжироваться все выше и выше,
+                                  пока не попадут в  ТОП-10 позиций. 
+                                  Этот временной интервал всегда разный – в среднем от 2 до 6 месяцев.</p>
+                          </div>
+
+                          <input type="checkbox" name="chacor" id="chacor7" />
+                          <label for="chacor7">Какие гарантии вы можете  предоставить?</label>
+                          <div class="acor-body">
+                              <p>С каждым клиентом мы заключаем официальный договор. С помощью Seo  
+                                выведем Ваш сайт на показатели  70-90% собранных коммерческих ключевых 
+                                запросов в ТОП-10 по Ростову на Дону, а также всей России. Предоставим 
+                                подробную отчетность на каждом из этапов проделываемых работ. Вы можете 
+                                ознакомится с результаты наших успешных проектов  в разделе кейсы.</p>
+                          </div>
+
+                          <input type="checkbox" name="chacor" id="chacor8" />
+                          <label for="chacor8">Вы работаете только в Ростове на Дону?</label>
+                          <div class="acor-body">
+                              <p>Мы предоставляем услуги Seo как в Ростове на Дону, так и по 
+                                всей России. Также вы можете заказать раскрутку за рубежом.</p>
+                          </div>
                       
                       
 

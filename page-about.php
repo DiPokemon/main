@@ -8,7 +8,7 @@
 
     <section class="page__about first_block_about">
         <div class="_container">
-            <p class="page__about-text-block">Миссия нашего маркетингового агентства - обеспечить старт Вашему бизнесу, сохранить или поднять занимаемые вами позиции.</p>
+            <p class="page__about-text-block"><strong>Миссия нашего агентства</strong> - стремительно продвигать ваш бизнес в гору, брать новые высоты вместе с Вами и находить эффективные решения.</p>
             <div class="page__about_wrapper">
 
                 <div class="page__about_wrapper-left">
@@ -16,35 +16,48 @@
                     <div class="about_item">
                         <span class="about_item-number">01</span> 
                         <div class="about_item-text"> 
-                            Оказываем услуги интернет маркетинга с 2016 года
+                            Оказываем  услуги интернет маркетинга с 2016 года
                         </div>           
                     </div>
 
                     <div class="about_item">
                         <span class="about_item-number">02</span> 
                         <div class="about_item-text"> 
-                            Мы выполнили  более 70 успешных SEO проектов
+                            С помощью SEO выводим сайты на показатели до 70-90% собранных коммерческих ключевых запросов в ТОП-10
                         </div>           
                     </div>
 
                     <div class="about_item">
                         <span class="about_item-number">03</span> 
                         <div class="about_item-text"> 
-                            По показателю SEO выводим сайты клиентов на 70-90% в ТОП-10
+                            Повышаем продажи с сайтов наших клиентов в 3 раза
                         </div>           
                     </div>
 
                     <div class="about_item">
-                        <span class="about_item-number">04</span> 
-                            Повышаем продажи партнерских товаров и услуг в среднем в 3 раза
+                        <span class="about_item-number">04</span>                             
                         <div class="about_item-text"> 
+                            Повышаем  доверие к бренду
                         </div>           
                     </div>
 
                     <div class="about_item">
-                        <span class="about_item-number">05</span> 
-                            Успешно реализовано более 15 проектов по созданию корпоративных сайтов
+                        <span class="about_item-number">05</span>                             
                         <div class="about_item-text"> 
+                            Улучшаем  техническое и информационное  состояния сайта
+                        </div>           
+                    </div>
+
+                    <div class="about_item">
+                        <span class="about_item-number">06</span>
+                        <div class="about_item-text"> 
+                            Мы выполнили  более 70 успешных SEO проектов
+                        </div>           
+                    </div>
+                    <div class="about_item">
+                        <span class="about_item-number">07</span> 
+                        <div class="about_item-text"> 
+                            Успешно реализовали более 15 проектов по созданию корпоративных сайтов
                         </div>           
                     </div>
                 </div>
@@ -76,21 +89,21 @@
                     <div class="about_item">
                         <span class="about_item-number">02</span> 
                         <div class="about_item-text"> 
-                            Seo продвижение: по позициям, тематике, KPI, оффлайн магазинов, сайтов услуг и т.д.
+                            SEO продвижение: по позициям, тематике, KPI, оффлайн магазинов, сайтов услуг и т.д.
                         </div>           
                     </div>
 
                     <div class="about_item">
                         <span class="about_item-number">03</span> 
                         <div class="about_item-text"> 
-                            Работа с маркетплейсом Wildberries: отзывы, контент, продвижение карточки товара в ТОП-10
+                            Работа с маркетплейсами: отзывы, контент, продвижение карточек товара в ТОП-10
                         </div>           
                     </div>
 
                     <div class="about_item">
-                        <span class="about_item-number">04</span> 
-                            Гео продвижение: размещение на картах Google Maps, Яндекс Картах и 2GIS
+                        <span class="about_item-number">04</span>                             
                         <div class="about_item-text"> 
+                        Гео продвижение: размещение на картах Google Maps, Яндекс Картах и 2GIS
                         </div>           
                     </div>                  
                 
@@ -126,30 +139,51 @@
                     </div>
 
                     <div class="about_item">
-                        <span class="about_item-number">04</span> 
-                            Публикуем результаты своих  работ с подробным  описанием процесса в разделе кейсы
+                        <span class="about_item-number">04</span>                             
                         <div class="about_item-text"> 
+                            Публикуем результаты своих  работ с подробным  описанием процесса в разделе кейсы
                         </div>           
                     </div>      
                     
                     <div class="about_item">
                         <span class="about_item-number">05</span>                             
                         <div class="about_item-text"> 
-                            Проводим комплексную работу над проектом
+                            Выполняем комплексную работу над проектом с заключением договора оказания услкуг
                         </div>           
                     </div>  
                     
                     <div class="about_item">
                         <span class="about_item-number">06</span>                             
                         <div class="about_item-text"> 
-                            Предоставляем прозрачные отчеты и консультирование
+                            Качественно решаем поставленные  задачи и предоставляем возможность дальнейшего развития
                         </div>           
                     </div>  
 
                     <div class="about_item">
                         <span class="about_item-number">07</span>                             
                         <div class="about_item-text"> 
-                            Качественно решаем поставленные задачи  
+                            Сопровождаем  и консультируем клиента на всех этапах 
+                        </div>           
+                    </div> 
+
+                    <div class="about_item">
+                        <span class="about_item-number">08</span>                             
+                        <div class="about_item-text"> 
+                            Исследуем рынки, вникаем в бизнес-процессы, строим гипотезы, тестируем – достигаем KPI
+                        </div>           
+                    </div> 
+
+                    <div class="about_item">
+                        <span class="about_item-number">09</span>                             
+                        <div class="about_item-text"> 
+                            Используем исключительно современные технологии в веб-разработке, что гарантирует стабильную работу при высоких нагрузках
+                        </div>           
+                    </div> 
+
+                    <div class="about_item">
+                        <span class="about_item-number">10</span>                             
+                        <div class="about_item-text"> 
+                            Предоставляем подробную отчетность о проделанной работе
                         </div>           
                     </div> 
                 </div>
@@ -158,7 +192,7 @@
                     <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/about_thrid.png" alt="SEO продвижение сайтов в Ростове">
                 </div>
         </div>
-        <p class="page__about-text-block">Маркетинговое агентство “TopLand” в Ростове на Дону, готово оказать вам услуги SEO продвижения вашего сайта под ключ. Для оформления заказа и консультации достаточно просто заполнить форму обратной связи.</p>
+        <p class="page__about-text-block">Маркетинговое агентство “TopLand” в Ростове на Дону, готово оказать качественные и эффективные Seo услуги для вашего сайта. Для оформления заказа и консультации достаточно просто заполнить форму обратной связи.</p>
     </section>
 
     <section class="page__contacts-map contact_block">
