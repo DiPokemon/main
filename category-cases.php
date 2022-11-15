@@ -4,6 +4,12 @@
                     <?php if ( function_exists( 'topland_breadcrumbs' ) ) topland_breadcrumbs(); ?>  
                     <h1 class="page-header__title"><?php single_cat_title(); ?></h1>
                 </section>                        
+                
+                <section class="category-list_description">
+                    <div class="category-list_description__container _container">
+                        <div class="category-list_description__text"><?php echo category_description();?></div>
+                    </div>
+                </section>
 
                 <section class="page__services-block services">
                     <div class="services-block__container _container">
@@ -44,11 +50,7 @@
                     </div>
                 </section>
             
-                <section class="category-list_description">
-                    <div class="category-list_description__container _container">
-                        <div class="category-list_description__text"><?php echo category_description();?></div>
-                    </div>
-                </section>
+                
 
                 <section class="page__service-selection service-selection">
                     <div class="service-selection__container _container">
