@@ -110,9 +110,9 @@ main.page{
   display: -webkit-flex;
   display: -moz-flex;
   display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   align-items: center;
 }
