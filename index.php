@@ -20,7 +20,7 @@
                           <div class="main-image">
                             <div class="main-image_grid">
                               <div class="main-image__el">
-                                <div class="main-image__text_title">О Вас узнают</div>
+                                <div class="main-image__text_title">Для любой задачи есть решение!</div>
                               </div>                            
                               <div class="main-image__el">
                                 <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/img2.png" alt="img">
