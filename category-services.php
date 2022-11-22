@@ -44,13 +44,15 @@ $tariffs_text    = get_field("tariffs_text", $term);
                 <section class="page__service-offer">
                     <div class="offer_block-top">
                         <div class="offer_block-text">
-                        <?= $top_text ?>
+                            <?= $top_text ?>
                         </div>
                         <div class="offer_block-form">
-                           <div class="form">
+                           <div class="page_contacts-form contact_form-row">
                                 <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
                             </div>
                         </div>
+
+                        
                     </div>
                     <div class="tariffs-block__container">
                         <div class="tariffs-block__title">
