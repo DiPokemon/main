@@ -93,13 +93,13 @@ main.page{margin-top:68px}
 .background-choice{position:absolute;width:380.09px;height:270.36px;right:-130px;top:100px;background:radial-gradient(51.61% 115.36% at 67.24% 51.72%,rgba(73,0,107,0.396) 0%,rgba(255,31,233,0.4) 57.07%,rgba(222,129,255,0.4) 100%);filter:blur(100px);transform:rotate(-80.12deg)}
 .background-choice-img{position:absolute;width:50vw;height:1043px;background-image:url(../img/bg-choises.png);background-repeat:no-repeat;right:0;top:-329px;z-index:5}
 .choice-block__text{display: -webkit-box;display: -ms-flexbox;display: flex;flex-direction:column;width: 50%;padding-right: 10px}
-.choice-block__title{padding-top:31px}
+/* .choice-block__title{padding-top:31px} */
 .choice-block__title_h2{line-height:48px;text-align:left}
 .choice-block__title_h2-mobile{display:none}
-.choice-block__subtitle{margin-top:30px;margin-bottom:32px;font-family:"Inter";font-style:Regular;font-size:16px;line-height:22px;line-height:135%;color:var(--main-white-color)}
+.choice-block__subtitle{margin: 10px 0;font-family:"Inter";font-style:Regular;font-size:16px;line-height:22px;line-height:135%;color:var(--main-white-color)}
 .choice-block__el{font-family:"Inter";font-size:16px;line-height:22px;line-height:135%;color:#7f7190;list-style:disc;margin-bottom:5px}
 .choice-block__button{margin-top:70px}
-.choice-block__href{font-family:"Open Sans";font-style:normal;font-weight:400;font-size:16px;line-height:24px;padding:12px 55px;background:#6025bf;border-radius:5px;text-align:center;color:var(--main-white-color)}
+.choice-block__href{font-family:"Open Sans";font-style:normal;font-weight:400;font-size:16px;line-height:24px;padding:12px 55px;background:#6025bf;border-radius:5px;text-align:center;color:var(--main-white-color);display: block;max-width: 250px;}
 .choice-block__img{position:relative;z-index:1}
 .choice-block__img img{border-radius:5px}
 .cases-block__container,.tariffs-block__container{max-width:90vw;margin-top: 75px}

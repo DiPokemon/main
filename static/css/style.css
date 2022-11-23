@@ -716,7 +716,7 @@ main.page{
   padding-right: 10px
 }
 .choice-block__title {
-  padding-top: 31px;
+  /* padding-top: 31px; */
 }
 .choice-block__title_h2 {
   line-height: 48px;
@@ -726,8 +726,7 @@ main.page{
   display: none
 }
 .choice-block__subtitle {
-  margin-top: 30px;
-  margin-bottom: 32px;
+  margin: 10px 0;
   font-family: "Inter";
   font-style: Regular;
   font-size: 16px;
@@ -758,6 +757,8 @@ main.page{
   border-radius: 5px;
   text-align: center;
   color: var(--main-white-color);
+  display: block;
+  max-width: 250px;
 }
 .choice-block__img {
   position: relative;
