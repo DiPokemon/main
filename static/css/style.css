@@ -683,7 +683,8 @@ main.page{
     display: flex;
   justify-content: space-between;
   z-index: 7;
-  align-items: center
+  align-items: stretch;
+  flex-direction: row;
 }
 .background-choice {
   position: absolute;
@@ -762,10 +763,19 @@ main.page{
 }
 .choice-block__img {
   position: relative;
-    z-index: 1;
+  z-index: 1;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
 }
 .choice-block__img img {
   border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*-------------------------------------------------------------------------------------------*/
