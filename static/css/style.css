@@ -1,7 +1,7 @@
 :root {
   --main-white-color: #f7f2ff;
   /*основной "белый" цвет, используется почти во всех текстах*/
-  --article-text-color: #6e5e83;
+  --article-text-color: #a992c7;
   /* цвет для абзацев статей, описаний услуг и мелких подзаголовков*/
 }
 @font-face {
@@ -741,7 +741,7 @@ main.page{
   font-size: 16px;
   line-height: 22px;
   line-height: 135%;
-  color: #7f7190;
+  color: var(--article-text-color);
   list-style: disc;
   margin-bottom:5px
 }

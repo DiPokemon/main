@@ -1,4 +1,4 @@
-:root{--main-white-color:#f7f2ff;--article-text-color:#6e5e83}
+:root{--main-white-color:#f7f2ff;--article-text-color:#a992c7}
 @font-face{font-family:"Inter";src:local(Inter),url(../fonts/Inter/Inter-Regular.woff2) format("woff2"),url(../fonts/Inter/Inter-Regular.woff) format("woff"),url(../fonts/Inter/Inter-Regular.ttf) format("ttf"),url(../fonts/Inter/Inter-Regular.eot) format("eot")}
 @font-face{font-family:"Open Sans";src:local("Open Sans"),url(../fonts/Open_Sans/OpenSans-Regular.woff2) format("woff2"),url(../fonts/Open_Sans/OpenSans-Regular.woff) format("woff"),url(../fonts/Open_Sans/OpenSans-Regular.ttf) format("ttf"),url(../fonts/Open_Sans/OpenSans-Regular.eot) format("eot")}
 body{position:relative;height:100%;background:#1a0930;z-index:3}
@@ -97,7 +97,7 @@ main.page{margin-top:68px}
 .choice-block__title_h2{line-height:48px;text-align:left}
 .choice-block__title_h2-mobile{display:none}
 .choice-block__subtitle{margin: 10px 0;font-family:"Inter";font-style:Regular;font-size:16px;line-height:22px;line-height:135%;color:var(--main-white-color)}
-.choice-block__el{font-family:"Inter";font-size:16px;line-height:22px;line-height:135%;color:#7f7190;list-style:disc;margin-bottom:5px}
+.choice-block__el{font-family:"Inter";font-size:16px;line-height:22px;line-height:135%;color:var(--article-text-color);list-style:disc;margin-bottom:5px}
 .choice-block__button{margin-top:70px}
 .choice-block__href{font-family:"Open Sans";font-style:normal;font-weight:400;font-size:16px;line-height:24px;padding:12px 55px;background:#6025bf;border-radius:5px;text-align:center;color:var(--main-white-color);display: block;max-width: 250px;}
 .choice-block__img{position:relative;z-index:1;width: 40%;display: flex;justify-content: flex-end;align-items: stretch}
