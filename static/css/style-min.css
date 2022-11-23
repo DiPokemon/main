@@ -92,7 +92,7 @@ main.page{margin-top:68px}
 .choice-block__body{position:relative;display: -webkit-box;display: -ms-flexbox;display: flex;justify-content:space-between;z-index:7;align-items: stretch;flex-direction: row}
 .background-choice{position:absolute;width:380.09px;height:270.36px;right:-130px;top:100px;background:radial-gradient(51.61% 115.36% at 67.24% 51.72%,rgba(73,0,107,0.396) 0%,rgba(255,31,233,0.4) 57.07%,rgba(222,129,255,0.4) 100%);filter:blur(100px);transform:rotate(-80.12deg)}
 .background-choice-img{position:absolute;width:50vw;height:1043px;background-image:url(../img/bg-choises.png);background-repeat:no-repeat;right:0;top:-329px;z-index:5}
-.choice-block__text{display: -webkit-box;display: -ms-flexbox;display: flex;flex-direction:column;width: 50%;padding-right: 10px}
+.choice-block__text{display: -webkit-box;display: -ms-flexbox;display: flex;flex-direction:column;width: 50%;padding-right: 10px;justify-content: space-between;}
 /* .choice-block__title{padding-top:31px} */
 .choice-block__title_h2{line-height:48px;text-align:left}
 .choice-block__title_h2-mobile{display:none}
