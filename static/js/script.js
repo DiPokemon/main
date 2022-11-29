@@ -7,6 +7,17 @@ $(document).ready(function () {
         $('.header__burger,.header__menu').toggleClass('active');
         $('body').toggleClass('lock')
     }); 
+
+    $(function(){	
+        var column = 0;
+        $('.offer_block-tariff .offer_block-tariff-top').each(function(){
+            h = $(this).height();
+            if (h > column) {
+                column = h;
+            }
+        }).height(column);
+    });
+
 });
 
 document.addEventListener('DOMContentLoaded', function(){
