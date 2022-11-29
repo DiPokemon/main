@@ -29,8 +29,8 @@
               <div class="footer__contact footer-contact">
                 <div class="footer_tel-list">
                   <div class="footer-contact__title">Контакты:</div>
-                  <div class="footer-contact__tel">
-                    <p><a itemprop="telephone" class="footer__link" href="tel:+79934536307">+7 993 453-63-07</a></p>
+                  <div class="footer-contact__tel">       
+                    <p><a itemprop="telephone" class="footer__link" href="tel:+79951359593">+7 995 135-95-93</a></p>             
                     <p><a itemprop="telephone" class="footer__link" href="tel:+79934556307">+7 993 455-63-07</a></p>
                     <p><a itemprop="telephone" class="footer__link" href="tel:+79614236307">+7 961 423-63-07</a></p>
                   </div>
