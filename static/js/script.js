@@ -18,7 +18,7 @@ $(document).ready(function () {
                 }
             }
         );
-        columns.attr('style','min-height:' + tallestcolumn);
+        columns.attr('style','min-height:' + tallestcolumn + 'px');
     }
     $(document).ready(function() {
         setEqualHeight($(".offer_block-tariff-top"));
