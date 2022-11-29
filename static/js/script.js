@@ -21,7 +21,7 @@ $(document).ready(function () {
         columns.height(tallestcolumn);
     }
     $(document).ready(function() {
-        setEqualHeight($("offer_block-tariff-top"));
+        setEqualHeight($(".offer_block-tariff-top"));
     });
 });
 
