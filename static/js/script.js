@@ -8,16 +8,21 @@ $(document).ready(function () {
         $('body').toggleClass('lock')
     }); 
 
-    $(function(){	
-        var column = 0;
-        $('.offer_block-tariff .offer_block-tariff-top').each(function(){
-            h = $(this).height();
-            if (h > column) {
-                column = h;
+    function setEqualHeight(columns){
+        var tallestcolumn = 0;
+        columns.each(
+            function(){
+                currentHeight = $(this).height();
+                if(currentHeight > tallestcolumn){
+                    tallestcolumn = currentHeight;
+                }
             }
-        }).height(column);
+        );
+        columns.height(tallestcolumn);
+    }
+    $(document).ready(function() {
+        setEqualHeight($("offer_block-tariff-top"));
     });
-
 });
 
 document.addEventListener('DOMContentLoaded', function(){
