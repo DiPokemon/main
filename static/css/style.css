@@ -874,7 +874,7 @@ main.page{
 .reviews_gradient_bg-img{
   position: absolute;
   top: -75px;
-  width: 100vw;
+  width: 99vw;
   height: 851px;
   background-image: url(../img/bg-reviews.png);
   background-repeat: no-repeat;
