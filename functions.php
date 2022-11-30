@@ -1,5 +1,10 @@
 <?php
-
+function remove_redirect_guess_404_permalink( $redirect_url ) {
+	if ( is_404() )
+	return false;
+	return $redirect_url;
+	}
+add_filter( 'redirect_canonical', 'remove_redirect_guess_404_permalink' );
 // Удаляем category из УРЛа категорий (лучше No Category Base (WPML))
 // add_filter('category_link', create_function('$a', 'return str_replace("category/", "", $a);'), 9999);
 
