@@ -1,7 +1,4 @@
 <?php
-add_filter('redirect_canonical', function ($redirect_url) {
-    return is_404() ? false : $redirect_url;
-});
 // Удаляем category из УРЛа категорий (лучше No Category Base (WPML))
 // add_filter('category_link', create_function('$a', 'return str_replace("category/", "", $a);'), 9999);
 
