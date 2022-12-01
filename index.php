@@ -14,7 +14,7 @@
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>Создание сайтов</div>                              
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>Решения для бизнеса</div>
                               </div>
-                              <a href="https://wa.me/79934536307" class="btn main-button_href" >Задайте вопрос в What’sApp</a>
+                              <a href="https://wa.me/79514976107" class="btn main-button_href" >Задайте вопрос в What’sApp</a>
                             </div>
                           </div>
                           <div class="main-image">
@@ -88,7 +88,7 @@
                       $term_query = new WP_Term_Query( $args );
                         foreach( $term_query->get_terms() as $term ){                            
                           ?>                           
-                          <a class="services-block__item" href="/<?php echo $term->taxonomy?>/<?php echo $term->slug?>">
+                          <a class="services-block__item" href="/services/<?php echo $term->slug?>">
                             <div class="services-block__text"><?php echo $term->name?></div>
                             <div class="services-block__img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="<?php echo $term->name?>"></div>
                           </a>
