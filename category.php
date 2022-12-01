@@ -11,6 +11,24 @@ $tariffs_text    = get_field("tariffs_text", $term);
                     <h1 class="page-header__title"><?php single_cat_title(); ?></h1>
                 </section>
                 
+                <section section="page__service-offer">
+                    <div class="tariffs-block__container">
+                        <div class="tariffs-block__title">
+                            <h2 class="_h2">Тарифы</h2>
+                        </div>
+                        <?php if (!empty($tariffs_text)): ?>
+                            <div class="tariffs_text service_text-block">
+                                <?= $tariffs_text ?>
+                            </div>
+                        <?php endif;?> 
+                        <div class="slider_wrapper">
+                            <div class="tariff_slider">
+                                <?php echo do_shortcode('[topland_tariffs]'); ?>
+                            </div>
+                        </div>                        
+                    </div> 
+                </section>
+
                 <section class="page__services-block services">
                     <div class="services-block__container _container">
                         <div class="services-block__body">
@@ -62,21 +80,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                             </div>
                         </div>
                     </div>
-                    <div class="tariffs-block__container">
-                            <div class="tariffs-block__title">
-                                <h2 class="_h2">Тарифы</h2>
-                            </div>
-                            <?php if (!empty($tariffs_text)): ?>
-                                <div class="tariffs_text service_text-block">
-                                    <?= $tariffs_text ?>
-                                </div>
-                            <?php endif;?>
-                            <div class="slider_wrapper">
-                                <div class="tariff_slider">
-                                    <?php echo do_shortcode('[topland_tariffs]'); ?>
-                                </div>
-                            </div>                        
-                    </div> 
+                    
                     <div class="cases-block__container">
                         <div class="cases-block__body">
                             <div class="cases-block__title">
