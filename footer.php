@@ -39,8 +39,35 @@
               </div>
             </div>            
           </div>
+          <div class="cities">
+            <span>Москва</span>
+            <span>Сочи</span>
+            <span>Новосибирск</span>
+            <span>Екатеринбург</span>
+            <span>Ростов-на-Дону</span>
+            <span>Уфа</span>
+            <span>Красноярск</span>
+            <span>Волгоград</span>
+            <span>Краснодар</span>
+            <span>Тюмень</span>
+            <span>Тольятти</span>
+            <span>Набережные Челны</span>
+            <span>Казань</span>
+            <span>Воронеж</span>
+            <span>Екатеринбург</span>
+            <span>Ижевск</span>
+            <span>Краснодар</span>
+            <span>Нижний Новгород</span>
+            <span>Омск</span>
+            <span>Пермь</span>
+            <span>Самара</span>
+            <span>Саратов</span>
+            <span>Санкт-Петербург</span>
+            <span>Челябинск</span>
+          </div>
         </div>
     </footer>   
+
  </div>
 
 </body>

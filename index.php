@@ -105,6 +105,57 @@
               <div class="choice-block__container _container">
                 <div class="choice-block__body">                
                   <div class="choice-block__text">
+                  <div class="test_banner faq_accordion">
+                                <input type="checkbox" name="test_banner" id="chacor_test" />
+                                <label for="chacor_test">Ключевые слова</label>
+                                <div class="acor-body">
+                                    <p>Seo специалист</p>
+                                    <p>Seo анализ</p>
+                                    <p>Отзывы</p>
+                                    <p>Рейтинг</p>
+                                    <p>Аудит</p>
+                                    <p>Продвижение</p>
+                                    <p>Гарантии</p>
+                                    <p>Решения для бизнеса</p>
+                                    <p>ТОП - 10</p>
+                                    <p>Интернет - маркетинг </p>
+                                    <p>Интернет-магазин</p>
+                                    <p>Ключи </p>
+                                    <p>Поисковые системы </p>
+                                    <p>Маркетплейсы</p>
+                                    <p>Разработка</p>
+                                    <p>Яндекс</p>
+                                    <p>Кейсы </p>
+                                    <p>Посещаемость</p>
+                                    <p>Google </p>
+                                    <p>Раскрутка</p>
+                                    <p>Seo </p>
+                                    <p>Преимущества </p>
+                                    <p>Аналитика </p>
+                                    <p>Лиды </p>
+                                    <p>KPI</p>
+                                    <p>Контекстная реклама</p>
+                                    <p>Интернет - реклама </p>
+                                    <p>Для бизнес</p>
+                                    <p>Трафик </p>
+                                    <p>Marketing</p>
+                                    <p>Цена продвижения </p>
+                                    <p>Ключевые запросы</p>
+                                    <p>Прибыль</p>
+                                    <p>Конверсия</p>
+                                    <p>Оптимизация </p>
+                                    <p>Тематики</p>
+                                    <p>Карточки товаров</p>
+                                    <p>Блог</p>
+                                    <p>Лендинг</p>
+                                    <p>Продажи</p>
+                                    <p>Веб-сайт</p>
+                                    <p>Продвижение на картах</p>
+                                    <p>Сайт под ключ</p>
+                                    <p>Создание сайтов </p>
+                                    <p>Техническая поддержка</p>
+                                </div>
+                              </div>
                     <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2 section_title">Почему выбирают<br>нашу компанию</h2></div>   
                     <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2-mobile section_title ">Почему выбирают нашу компанию</h2></div>                 
                     <div class="choice-block__subtitle">Миссия нашего агентства - стремительно продвигать ваш бизнес в гору, брать новые высоты вместе с Вами и находить эффективные решения</div>

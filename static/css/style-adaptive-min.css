@@ -602,7 +602,13 @@
     }
 }
 
- @media(max-width:768px){
+@media(max-width: 1000px){
+    .cities{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(max-width:768px){
     .footer__navigation{
         order:1;
         width:100%;
@@ -615,7 +621,17 @@
         width:45%;
         padding-top:10px
     }
+    .cities{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
+
+@media(max-width: 550px){
+    .cities{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media(max-width: 460px){
     .menu-footer__list{
         gap:11px

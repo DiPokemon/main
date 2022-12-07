@@ -1265,6 +1265,16 @@ margin-right: 30px;
   border-radius: 0 0 5px 5px
 }
 
+.test_banner{
+  margin-bottom: 10px;
+}
+
+.test_banner .acor-body{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 10px;
+}
+
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------page-header------------------------------------*/
 
@@ -1896,6 +1906,15 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 .footer__link{
   color: var(--article-text-color);
 }
+
+.cities {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: var(--main-white-color);
+  font-size: 14px;
+}
+
+
 
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------404-----------------------------------------*/
