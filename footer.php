@@ -39,6 +39,49 @@
               </div>
             </div>            
           </div>
+          <div class="footer_test-menu">
+            <div class="footer_column">
+              <h3>Продвижение и создание сайтов</h3>
+                  <span>Позиции в ТОП-10</span>
+                  <span>Продвижение в Яндексе</span>
+                  <span>Продвижение в Google</span>
+                  <span>Продвижение интернет-магазинов</span>
+                  <span>Аудит сайта</span>
+                  <span>SEO для регионов</span>
+                  <span>Тематики</span>
+                  <span>Разработка Landing Page (Одностраничный сайт)</span>
+                  <span>Разработка корпоративного сайта</span>
+                  <span>Разработка интернет-магазина</span> 
+                  <span>Разработка сайта - визитки</span>
+            </div>
+
+            <div class="footer_column">
+              <h3>Услуги</h3>
+              <span>Создание сайтов</span>
+              <span>Веб-аналитика</span>
+              <span>Social media marketing</span>
+              <span>Техническая поддержка</span>
+              <span>Контент-маркетинг</span>
+              <span>E-mail маркетинг</span>
+              <span>Медийная реклама</span>
+              <span>Настройка контекстной рекламы</span>
+              <span>Seo аудит</span>
+            </div>
+
+            <div class="footer_column">
+              <h3>О компании</h3>
+                <span>Контакты</span>
+                <span>Кейсы</span>
+                <span>Отзывы</span>
+                <span>Блог</span>
+                <span>Словарь терминов</span>
+                <span>Политика конфиденциальности</span>
+                <span>Использование материалов сайта</span>
+                <span>Настройка контекстной рекламы</span>
+                <span>Seo аудит</span>
+            </div>
+
+          </div>
           <div class="cities">
             <span>Москва</span>
             <span>Сочи</span>

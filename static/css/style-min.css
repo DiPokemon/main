@@ -279,7 +279,9 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit{background-color:#a769f7;color
 .footer-contact__tel{font-size:14px;line-height:17px;color:var(--article-text-color)}
 .footer-contact__email{font-size:14px;line-height:17px;color:var(--article-text-color)}
 .footer__link{color:var(--article-text-color)}
-.cities {display: grid;grid-template-columns: repeat(5, 1fr);color: var(--main-white-color);font-size: 14px;}
+.footer_test-menu {color: var(--article-text-color);display: grid;grid-template-columns: repeat(3, 1fr);padding-bottom: 20px}
+.footer_column {display: flex;flex-direction: column}
+.cities {color: var(--article-text-color);display: grid;grid-template-columns: repeat(5, 1fr);color: var(--main-white-color);font-size: 14px;}
 .page-404{height:calc(100vh - 270px);display: -webkit-box;display: -ms-flexbox;display: flex;justify-content:space-evenly;align-items:center;flex-direction:column}
 .title_404{font-size:150px;font-weight:600;color:var(--article-text-color)}
 .text_404{font-weight:400;color:var(--article-text-color);text-align:center}

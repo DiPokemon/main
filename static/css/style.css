@@ -1278,6 +1278,7 @@ margin-right: 30px;
 .test_banner.faq_accordion .acor-body p{
   margin: 0!important;
 }
+
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------page-header------------------------------------*/
 
@@ -1910,7 +1911,20 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   color: var(--article-text-color);
 }
 
+.footer_test-menu {
+  color: var(--article-text-color);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 20px;
+}
+
+.footer_column {
+  display: flex;
+  flex-direction: column;
+}
+
 .cities {
+  color: var(--article-text-color);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   color: var(--main-white-color);

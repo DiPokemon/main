@@ -4,7 +4,7 @@
               <div class="main-background2-img"></div>
               <div class="main-background3-img"></div>                        
                 <div class="main-block__container _container">
-                      <div class="main-block__body"> 
+                      <div class="main-block__body">
                           <div class="main-content">
                             <div class="main-content_wrapper">
                               <h1 class="main-title">Комплексное SEO продвижение сайтов</h1>    
@@ -15,6 +15,163 @@
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>Решения для бизнеса</div>
                               </div>
                               <a href="https://wa.me/79514976107" class="btn main-button_href" >Задайте вопрос в What’sApp</a>
+                              <div class="test_header_menu faq_accordion">      
+                                <input type="checkbox" name="chacor" id="header_test_menu" />
+                                <label for="header_test_menu">Тест меню</label>
+                                <div class="acor-body">
+                                  <div class="header_column">
+                                      <ul>     
+                                        <span>Услуги</span>         
+                                        <span>SEO</span>
+                                        <li>Seo  продвижение сайта в Google</li>
+                                        <li>Seo продвижение сайта в Яндексе</li>
+                                        <li>Seo продвижение интернет - магазина</li>
+                                        <li>Продвижение сайтов в поисковых системах</li>
+                                        <li>Seo для корпоративных сайтов</li>
+                                        <li>Позиции в ТОП-10</li>
+                                        <li>Продвижение по трафику</li>
+                                        <li>Продвижение по лидам</li>
+                                        <li>Seo - продвижение молодого сайта</li>
+                                        <li>Комплексное продвижение</li>
+                                        <li>Зарубежное Seo</li>
+                                        <li>Региональное Seo продвижение сайта</li>
+                                        <li>Копирайтинг</li>
+                                        <li>Smart. Быстрый CPA</li>
+                                        <li>Performance-маркетинг</li>
+                                        <li>Бренд - маркетинг</li>
+                                        <li>Seo оптимизация сайта</li>
+                                        <li>Оптимизация под голосовой поиск</li>
+                                        <li>Продвижение сайта банка</li>
+                                        <li>Продвижение офлайн - магазина</li>
+                                        <li>Seo - продвижение медицинских сайтов</li>
+                                        <li>Seo продвижение по тематикам</li>
+                                        <li>Seo - аудит</li>
+                                        <li>Продвижение стартапа</li>
+                                        <li>Seo продвижение сайта услуг</li>
+                                        <li>KPI в Seo</li>              
+                                      </ul>
+                                  </div>
+
+                                  <div class="header_column">
+                                      <ul>
+                                        <span>Создание сайтов</span>
+                                        <li>Разработка Landing Page</li>
+                                        <li>Разработка корпоративного сайта</li>
+                                        <li>Разработка интернет-магазина</li>
+                                        <li>Разработка портала</li>
+                                        <li>Разработка сложных веб-проектов</li>
+                                        <li>Техническая поддержка сайтов</li>
+                                        <li>Дизайн сайтов</li>
+                                        <li>Разработка сайтов для гостиниц и отелей</li>
+                                        <li>Разработка блога</li>
+                                        <li>Разработка форума</li>
+                                        <li>Разработка промо - сайта</li>
+                                        <li>Разработка контент - сайта</li>
+                                        <li>Разработка персонального сайта</li>
+                                        <li>Разработка  информационного сайта</li>
+                                        <li>Разработка сайта - визитки</li>
+                                      </ul>
+                                  </div>
+
+                                  <div class="header_column">
+                                      <ul>
+                                        <span>Реклама</span>
+                                        <li>Реклама в Яндекс.Директ</li>
+                                        <li>Настройка и ведение Яндекс.Директ</li>
+                                        <li>Настройка ретаргетинга в Яндекс.Директ</li>
+                                        <li>Реклама в Яндекс.Маркете</li>
+                                        <li>Реклама для Интернет - магазина</li>
+                                        <li>Реклама в  Google ADS</li>
+                                        <li>Настройка рекламы в РСЯ</li>
+                                        <li>Медийная реклама</li>
+                                        <li>Ведение и настройка контекстной рекламы</li>
+                                        <li>Ведение и настройка баннерной рекламы</li>
+                                        <li>Ведение и настройка тизерной рекламы</li>
+                                        <li>Таргетированная реклама</li>
+                                        <li>Реклама в интернете</li>
+                                        <li>Реклама в Яндекс.Картах</li>
+                                      </ul>
+                                  </div>
+
+                                  <div class="header_column">
+                                      <ul>
+                                        <span>Продвижение в социальных сетях</span>
+                                        <li>Создание и ведение групп</li>
+                                        <li>SERM - управление репутацией</li>
+                                        <li>ORM - репутация продукта</li>
+                                        <li>Продвижение в ВКонтакте</li>
+                                        <li>Разработка Smm стратегии</li>
+                                        <li>Таргетированная реклама</li>
+                                        <li>Продвижение в Telegram</li>
+                                        <li>Продвижение в одноклассниках</li>
+                                        <li>E-mail маркетинг</li>
+                                        <li>Реклама у блогеров</li>
+                                        <li>Таргетированная реклама в ВКонтакте</li>
+                                      </ul>
+                                  </div>
+
+                                  <div class="header_column">
+                                      <ul>
+                                        <span>Гео-сервисы</span>
+                                        <li>Продвижение на картах</li>
+                                      </ul>
+                                  </div>
+
+                                  <div class="header_column">
+                                      <ul>
+                                        <span>Маркетплейсы</span>
+                                        <li>Продвижение в маркетплейсах</li>
+                                        <li>Работа с отзывами Wildberries</li>
+                                        <li>Продвижение на Яндекс.Маркете</li>
+                                        <li>Продажи на Ozon</li>
+                                        <li>Продвижение на Ozon</li>
+                                        <li>Дизайн карточек</li>
+                                        <li>Продвижение по категориям Wildberries</li>
+                                        <li>Работа над контентом Wildberries</li>
+                                        <li>Продвижение карточки товара Wildberries</li>
+                                        <li>SEO - продвижение Wildberries</li>
+                                      </ul>
+                                  </div>
+
+                                  <div class="header_column">
+                                      <ul>
+                                        <span>Аудиты и аналитика</span>
+                                        <li>Аудит сайта</li>
+                                        <li>Технический аудит</li>
+                                        <li>Коммерческий аудит</li>
+                                        <li>Юзабилити аудит</li>
+                                        <li>Комплексная web-аналитика</li>
+                                        <li>Настройка сквозной аналитики</li>
+                                        <li>Настройка счетчиков</li>
+                                      </ul>
+                                  </div>
+
+                                  <div class="header_column">
+                                      <ul>
+                                        <span>Акции</span>
+                                        <li>Smart по цене стандартных тарифов</li>
+                                        <li>2 лучше чем 1</li>
+                                        <li>Медицина</li>
+                                        <li>Мебель</li>
+                                        <li>Строительство</li>
+                                        <li>Автомобили</li>
+                                        <li>Юридические услуги</li>
+                                      </ul>
+                                  </div>
+
+                                  <div class="header_column">
+                                      <ul>
+                                        <span>О Нас</span>
+                                        <li>Отзывы</li>
+                                        <li>Вакансии</li>
+                                        <li>Договор</li>
+                                        <li>Гарантии</li>
+                                        <li>Блог</li>
+                                        <li>Контакты</li>
+                                      </ul>
+                                  </div>
+                                </div>        
+                            </div>
                             </div>
                           </div>
                           <div class="main-image">
@@ -69,6 +226,7 @@
                     </div>
                   </div>
                 </div>  
+                
             </section>                                
 
             <section class="page__services-block services">
