@@ -20,9 +20,7 @@
                                 <label for="header_test_menu">Тест меню</label>
                                 <div class="acor-body">
                                   <div class="header_column">
-                                      <ul>     
-                                        <span>Услуги</span>         
-                                        <span>SEO</span>
+                                      <ul>
                                         <li>Seo  продвижение сайта в Google</li>
                                         <li>Seo продвижение сайта в Яндексе</li>
                                         <li>Seo продвижение интернет - магазина</li>
@@ -54,7 +52,6 @@
 
                                   <div class="header_column">
                                       <ul>
-                                        <span>Создание сайтов</span>
                                         <li>Разработка Landing Page</li>
                                         <li>Разработка корпоративного сайта</li>
                                         <li>Разработка интернет-магазина</li>
@@ -75,7 +72,6 @@
 
                                   <div class="header_column">
                                       <ul>
-                                        <span>Реклама</span>
                                         <li>Реклама в Яндекс.Директ</li>
                                         <li>Настройка и ведение Яндекс.Директ</li>
                                         <li>Настройка ретаргетинга в Яндекс.Директ</li>
@@ -95,7 +91,6 @@
 
                                   <div class="header_column">
                                       <ul>
-                                        <span>Продвижение в социальных сетях</span>
                                         <li>Создание и ведение групп</li>
                                         <li>SERM - управление репутацией</li>
                                         <li>ORM - репутация продукта</li>
@@ -112,14 +107,12 @@
 
                                   <div class="header_column">
                                       <ul>
-                                        <span>Гео-сервисы</span>
                                         <li>Продвижение на картах</li>
                                       </ul>
                                   </div>
 
                                   <div class="header_column">
                                       <ul>
-                                        <span>Маркетплейсы</span>
                                         <li>Продвижение в маркетплейсах</li>
                                         <li>Работа с отзывами Wildberries</li>
                                         <li>Продвижение на Яндекс.Маркете</li>
@@ -135,7 +128,6 @@
 
                                   <div class="header_column">
                                       <ul>
-                                        <span>Аудиты и аналитика</span>
                                         <li>Аудит сайта</li>
                                         <li>Технический аудит</li>
                                         <li>Коммерческий аудит</li>
@@ -144,30 +136,14 @@
                                         <li>Настройка сквозной аналитики</li>
                                         <li>Настройка счетчиков</li>
                                       </ul>
-                                  </div>
+                                  </div> 
 
                                   <div class="header_column">
                                       <ul>
-                                        <span>Акции</span>
-                                        <li>Smart по цене стандартных тарифов</li>
-                                        <li>2 лучше чем 1</li>
-                                        <li>Медицина</li>
-                                        <li>Мебель</li>
-                                        <li>Строительство</li>
-                                        <li>Автомобили</li>
-                                        <li>Юридические услуги</li>
-                                      </ul>
-                                  </div>
-
-                                  <div class="header_column">
-                                      <ul>
-                                        <span>О Нас</span>
                                         <li>Отзывы</li>
                                         <li>Вакансии</li>
                                         <li>Договор</li>
                                         <li>Гарантии</li>
-                                        <li>Блог</li>
-                                        <li>Контакты</li>
                                       </ul>
                                   </div>
                                 </div>        
