@@ -25,7 +25,7 @@
 
             <!-- SchemaOrg -->
             <div itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
-                <meta content="<?= $service_price ?>?>" itemprop="lowPrice"/>
+                <meta content="<?= $service_price ?>" itemprop="lowPrice"/>
                 <meta content="RUR" itemprop="priceCurrency"/>
             </div>
         </div>
