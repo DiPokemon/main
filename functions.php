@@ -439,11 +439,11 @@ function topland_breadcrumbs() {
 } 
 
 // подключаем функцию активации мета блока (service_price)
-add_action('add_meta_boxes', 'topland_service_price', 1);
+// add_action('add_meta_boxes', 'topland_service_price', 1);
 
-function topland_service_price() {
-	add_meta_box( 'service_price', 'Цена услуги', 'service_price_box_func', 'post', 'normal', 'high'  );
-}
+// function topland_service_price() {
+// 	add_meta_box( 'service_price', 'Цена услуги', 'service_price_box_func', 'post', 'normal', 'high'  );
+// }
 
 
 // код блока
