@@ -8,6 +8,15 @@ $(document).ready(function () {
         $('body').toggleClass('lock')
     }); 
 
+    if ($('window').width() <= 768) {
+        $('.first_lvl_menu>.sub-menu>li>menu__link').click(function(event) {
+            event.preventDefault();
+        });
+    };
+    
+      
+  
+
     function setEqualHeight(columns){
         var tallestcolumn = 0;
         columns.each(

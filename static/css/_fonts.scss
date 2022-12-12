@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Inter";
+    src: local("Inter"), url("../fonts/Inter/Inter-Regular.woff2") format("woff2"),
+      url("../fonts/Inter/Inter-Regular.woff") format("woff"),
+      url("../fonts/Inter/Inter-Regular.ttf") format("ttf"),
+      url("../fonts/Inter/Inter-Regular.eot") format("eot");
+  }
+@font-face {
+    font-family: "Open Sans";
+    src: local("Open Sans"),
+      url("../fonts/Open_Sans/OpenSans-Regular.woff2") format("woff2"),
+      url("../fonts/Open_Sans/OpenSans-Regular.woff") format("woff"),
+      url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("ttf"),
+      url("../fonts/Open_Sans/OpenSans-Regular.eot") format("eot");
+  }
