@@ -137,10 +137,14 @@ function change_logo_class( $html ) {
 };
 
 // Вывод анонса с заданным количеством слов
-function new_excerpt_length($length) {
-  return 10;
-}
-add_filter('excerpt_length', 'new_excerpt_length');
+add_filter( 'excerpt_length', function($length) {
+    return 10;
+} );
+
+// function new_excerpt_length($length) {
+//   return 10;
+// }
+// add_filter('excerpt_length', 'new_excerpt_length');
 
 // Удаление конструкции [...] в конце
 add_filter('excerpt_more', function($more) {
