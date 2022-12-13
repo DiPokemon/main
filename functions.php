@@ -23,7 +23,7 @@ add_theme_support( 'custom-logo' );
 function topland_load_styles()
 {
   //wp_enqueue_style('style-zero', get_template_directory_uri().'/static/css/style-zero-min.css');
-  wp_enqueue_style('style-min', get_template_directory_uri().'/static/css/new_style.min.css');
+  wp_enqueue_style('new-style', get_template_directory_uri().'/static/css/new_style.css');
   //wp_enqueue_style('style-adaptive', get_template_directory_uri().'/static/css/style-adaptive-min.css');
   wp_enqueue_style('slick', get_template_directory_uri().'/static/js/slick/slick.css');
   wp_enqueue_style('slick-theme', get_template_directory_uri().'/static/js/slick/slick-theme.css');
