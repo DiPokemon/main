@@ -369,6 +369,90 @@
               </div>
             </section>
             
+          <section>
+            <div class="_container">
+              <div>
+                <h2 class="_h2 section_title">Наша команда</h2>
+              </div>
+              <div class="staff_wrapper">
+                <div class="half_column">
+                    <div class="staff_item">
+                      <h3 class="staff_name">Интернет-маркетолог</h3>
+                      <p class="staff_desc">Отвечает за консалтинг и общую стратегию развития проекта.</p>
+                    </div> 
+
+                    <div class="staff_item">
+                      <h3 class="staff_name">Контент-менеджер</h3>
+                      <p class="staff_desc">Разрабатывает контент-стратегию в социальных сетях, отвечает за создание и размещение контента.</p>
+                    </div> 
+
+                    <div class="staff_item">
+                      <h3 class="staff_name">SEO-специалист </h3>
+                      <p class="staff_desc">
+                        <ul>
+                          <li>SEO-аудит: технический, коммерческий аудит, проверка структуры и оптимизации контента</li>
+                          <li>Анализ тематики и конкурентов </li>
+                          <li>Работа над структурой сайта </li>
+                          <li>Обработка поведенческого фактора</li>
+                          <li>ТЗ для копирайтера</li>
+                          <li>Работа с ссылочной массой </li>
+                          <li>Анализ результата с возможной корректировкой стратегии</li>
+                        </ul>
+                      </p>
+                    </div> 
+
+                    <div class="staff_item">
+                      <h3 class="staff_name">UX-специалист</h3>
+                      <p class="staff_desc">Специалист, задача которого сделать продукт удобным, понятным и логичным для всех пользователей и клиентов.</p>
+                    </div> 
+
+                    <div class="staff_item">
+                      <h3 class="staff_name">SMM-специалист</h3>
+                      <p class="staff_desc">Проводит работы по продвижению товаров и услуг клиентов, развитию бренда. Ведение и наполнение аккаунтов в Одноклассниках, ВКонтакте, Facebook, Instagram и других социальных сетях.</p>
+                    </div> 
+
+                    <div class="staff_item">
+                      <h3 class="staff_name">Таргетолог</h3>
+                      <p class="staff_desc">Настраивает и следит за эффективностью рекламных кампаний в поисковых системах. </p>
+                    </div> 
+                </div>
+
+                <div class="half_column">
+                    <div class="staff_item">
+                      <h3 class="staff_name">Аккаунт-менеджер</h3>
+                      <p class="staff_desc">Связующее звено между агентством и клиентом. Отвечает за документооборот, финансы, следит за выполнением всех сроков по проекту. </p>
+                    </div> 
+
+                    <div class="staff_item">
+                      <h3 class="staff_name">SEO-копирайтер</h3>
+                      <p class="staff_desc">Работает  над написанием  текстов и подготовке контента по техническому заданию Seo - специалиста.</p>
+                    </div> 
+
+                    <div class="staff_item">
+                      <h3 class="staff_name">Веб-мастер</h3>
+                      <p class="staff_desc">Проверяет техническую сторону сайта на отсутствие ошибок и соответствие требованиям поисковых систем.</p>
+                    </div> 
+
+                    <div class="staff_item">
+                      <h3 class="staff_name">Аналитик</h3>
+                      <p class="staff_desc">Отвечает за качество аналитики, готовит отчеты, настройку интеграций рекламных кабинетов с системами сквозной аналитики.</p>
+                    </div> 
+
+                    <div class="staff_item">
+                      <h3 class="staff_name">Программист/разработчик</h3>
+                      <p class="staff_desc">Работает с  html кодом согласно техническому заданию от Seo специалиста.</p>
+                    </div> 
+
+                    <div class="staff_item">
+                      <h3 class="staff_name">Тимлид отдела платного трафика</h3>
+                      <p class="staff_desc">Следит за качеством оказания услуги, помогает в сложных вопросах.</p>
+                    </div> 
+                </div>
+
+              </div>
+            </div>
+          </section>
+
             <section class="achievements_section">
               <div class="_container">
                 <div class="cases-block__title">
@@ -390,6 +474,119 @@
                       <li>Улучшаем  техническое и информационное состояние сайта</li>
                       <li>Работаем с технически сложными тематиками</li>
                     </ul>
+                  </div>
+                </div>
+                
+              </div>
+            </section>
+
+            <section>
+              <div class="_container">
+                <div>
+                  <h2 class="_h2 section_title">Этапы работы</h2>
+                </div>
+                <div class="accordion">
+
+                  <input type="checkbox" name="chacor" id="step_1" />
+                  <label for="step_1">Анализ сайта и погружение в бизнес клиента</label>
+                  <div class="acor-body">
+                    <p>Опираясь на десятки параметров оцениваем Ваш сайт. Учитываем такие аспекты как</p>
+                    <ul>
+                      <li>Техническое состояние;</li>
+                      <li>Аналитические данные;</li>
+                      <li>Поведенческий фактор.</li>
+                    </ul>
+                    <p>Анализируем  продукты/услуги Вашего бизнеса, а также  главных конкурентов. На основании собранной 
+                      информации формируем план по SEO продвижению и определяем перечень задач, которые предстоит решить.</p>
+                  </div>
+
+                  <input type="checkbox" name="chacor" id="step_2" />
+                  <label for="step_2">Разработка стратегии продвижения</label>
+                  <div class="acor-body">
+                    <p>Разрабатываем стратегию продвижения сайта для разных поисковых систем, а также подробное  техническое 
+                       задание для копирайтера, контент менеджера, дизайнера, верстальщика и разработчика на основе конкурентного анализа и данных аудита сайта.</p>                    
+                  </div>
+
+                  <input type="checkbox" name="chacor" id="step_3" />
+                  <label for="step_3">Оптимизация сайта и внедрение ключевых фраз </label>
+                  <div class="acor-body">
+                    <p>На основе технического задания подготавливаем уникальный  контент  для страниц сайта. 
+                      По согласованию вносим  корректировки в структуру ресурса  с целью оптимизации под алгоритмы разных поисковиков.</p>
+                    <p>Корректируем  компоновки страниц, дорабатываем  дизайн, внедряем дополнительный  функционал и продающие триггеры 
+                      с целью улучшения поведенческого фактора и конверсии страниц и сайта в целом. </p>
+                  </div>
+
+                  <input type="checkbox" name="chacor" id="step_4" />
+                  <label for="step_4">Постапдейтный аудит</label>
+                  <div class="acor-body">
+                    <p>После оптимизации сайта проводим  мониторинг позиций в поиске, оцениваем динамику 
+                      визитов пользователей. Исследуем показатели эффективности и корректируем  последующий план</p>                    
+                  </div>
+                </div>
+                <div class="page_contacts-form contact_form-row">
+                  <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
+                </div>           
+              </div>
+            </section>
+            
+            <section>
+              <div class="_container">
+                <div>
+                  <h2 class="_h2 section_title">Наши гарантии</h2>
+                </div>
+                <div class="slider_wrapper">
+                  <div class="guarantee_slider">
+
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-hand-holding-usd"></i></div>
+                      <div class="guarantee_text">Оплата за результат</div>
+                    </div>
+                    
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-clipboard-check"></i></div>
+                      <div class="guarantee_text">Заключение договора</div>
+                    </div>
+
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-users"></i></div>
+                      <div class="guarantee_text">Команда специалистов</div>
+                    </div>
+
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-thumbs-up"></i></div>
+                      <div class="guarantee_text">Белые методы продвижения</div>
+                    </div>
+
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-desktop"></i></div>
+                      <div class="guarantee_text">Улучшение юзабилити сайта</div>
+                    </div>
+
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-funnel-dollar"></i></div>
+                      <div class="guarantee_text">Повышение конверсии сайта</div>
+                    </div>
+
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-route"></i></div>
+                      <div class="guarantee_text">Четкая стратегия развития проекта</div>
+                    </div>
+                    
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="far fa-eye"></i></div>
+                      <div class="guarantee_text">Прозрачная отчетность</div>
+                    </div>
+
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-shield-alt"></i></div>
+                      <div class="guarantee_text">Безопасносность</div>
+                    </div>
+
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-handshake"></i></div>
+                      <div class="guarantee_text">Индивидуальный подход</div>
+                    </div>
+
                   </div>
                 </div>
                 

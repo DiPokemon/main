@@ -441,10 +441,21 @@
         filter: blur(100px);
     }
 
+    .staff_wrapper{
+        flex-direction: column;
+        
+    }
+
+    .half_column{
+        width: 100%;
+    }
+
     section{
         padding:40px 0
     }
     
+
+
 }
 @media(max-width:630px){
     .main-title{

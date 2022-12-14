@@ -1087,6 +1087,38 @@ main.page {
 }
 
 /*---------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------staff----------------------------*/
+.staff_wrapper {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.half_column {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.staff_item {
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 3px #f7f2ff;
+          box-shadow: 0px 0px 3px #f7f2ff;
+}
+.staff_item .staff_name {
+  color: #a992c7;
+}
+
+/*---------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------achievments_section----------------------------*/
 .achievements_wrapper {
   display: -webkit-box;
@@ -1098,6 +1130,33 @@ main.page {
 .achievements_left,
 .achievements_right {
   width: 50%;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------guarantee----------------------------*/
+.guarantee_slider {
+  margin-top: 20px;
+}
+
+.guarantee_item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.guarantee_item .guarantee_icon {
+  font-size: 40px;
+}
+.guarantee_item .guarantee_text {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /*---------------------------------------------------------------------------------------------*/
@@ -1595,7 +1654,8 @@ main.page {
   font-family: "Inter";
 }
 
-.faq_accordion .acor-body {
+.faq_accordion .acor-body,
+.accordion .acor-body {
   width: 100%;
   margin: 0 auto;
   height: 0;
@@ -1610,11 +1670,13 @@ main.page {
   font-size: 16px;
 }
 
-.faq_accordion .acor-body p {
+.faq_accordion .acor-body p,
+.accordion .acor-body p {
   margin: 0 0 10px;
 }
 
-.faq_accordion label {
+.faq_accordion label,
+.accordion label {
   margin-top: 10px;
   cursor: pointer;
   display: block;
@@ -1632,17 +1694,20 @@ main.page {
   border-radius: 5px;
 }
 
-.faq_accordion input {
+.faq_accordion input,
+.accordion input {
   display: none;
 }
 
-.faq_accordion label:before {
+.faq_accordion label:before,
+.accordion label:before {
   content: "❯";
   float: right;
   color: #a992c7;
 }
 
-.faq_accordion input:checked + label {
+.faq_accordion input:checked + label,
+.accordion input:checked + label {
   color: #f7f2ff;
   border: 1px 1px 0px 1px;
   border-bottom: none;
@@ -1650,7 +1715,8 @@ main.page {
   border-radius: 5px 5px 0 0;
 }
 
-.faq_accordion input:checked + label:before {
+.faq_accordion input:checked + label:before,
+.accordion input:checked + label:before {
   -webkit-transition: -webkit-transform 0.35s;
   transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -1660,7 +1726,8 @@ main.page {
   color: #6025BF;
 }
 
-.faq_accordion input:checked + label + .acor-body {
+.faq_accordion input:checked + label + .acor-body,
+.accordion input:checked + label + .acor-body {
   height: auto;
   margin-top: -5px;
   color: #a992c7;
@@ -2957,6 +3024,15 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     background: radial-gradient(50.09% 124.66% at 65.27% 55.89%, rgba(73, 0, 107, 0.396) 0%, rgba(255, 31, 233, 0.4) 57.07%, rgba(222, 129, 255, 0.4) 100%);
     -webkit-filter: blur(100px);
             filter: blur(100px);
+  }
+  .staff_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .half_column {
+    width: 100%;
   }
   section {
     padding: 40px 0;

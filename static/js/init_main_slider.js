@@ -4,6 +4,7 @@ $(document).ready(function () {
         var $tariff_slider = $(sliderWrap).find('.tariff_slider');
         var $slider_cases = $(sliderWrap).find('.cases_slider');
         var $main_slider = $(sliderWrap).find('.main-slider');
+        var $guarantee_slider = $(sliderWrap).find('.guarantee_slider');
         var $next = $(sliderWrap).find('.slide-m-next');
         var $prev = $(sliderWrap).find('.slide-m-prev');
         var $dots = $(sliderWrap).find('.slide-m-dots');        
@@ -11,6 +12,7 @@ $(document).ready(function () {
         $tariff_slider.slick({
             slidesToShow: 3,
             slidesToScroll: 1,
+            autoplay: true,
             arrows: false,
             responsive: [
                 {
@@ -64,6 +66,35 @@ $(document).ready(function () {
                 },
                 {
                     breakpoint: 460,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+            ],
+        });
+
+        $guarantee_slider.slick({   
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 850,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 650,
+                    settings: {
+                        slidesToShow: 2,                        
+                    }
+                },
+                {
+                    breakpoint: 450,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
