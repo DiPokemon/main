@@ -709,6 +709,16 @@
                         <a class="articles__item" href="<?php the_permalink() ?>">
                             <div class="articles__img"><img loading="lazy" src="<?= $post_thumbnail_url ?>" alt="<?php echo $image_alt ?>" title="<?php echo $image_title ?>"></div>
                             <div class="articles__title"><h3 class="articles__title_h3"><?php the_title() ?></h3></div>
+                            <div class="articles__tags">                              
+                              <?php 
+                                if (get_the_tag_list()) { 
+                                  $tags = get_the_terms( $post->ID, 'post_tag'); 
+                                  foreach ($tags as $tag) {
+                                    echo $tag->name.' '; 
+                                  }
+                                } 
+                              ?>                            
+                            </div>
                             <div class="articles__text"><?php the_excerpt() ?></div>
                         </a>
                     <?php
@@ -899,7 +909,15 @@
                               <p>Мы предоставляем услуги Seo как в Ростове на Дону, так и по 
                                 всей России. Также вы можете заказать раскрутку за рубежом.</p>
                           </div>
-                      
+
+                          <input type="checkbox" name="chacor" id="chacor9" />
+                          <label for="chacor9">Какие работы вы проводите на проекте?</label>
+                          <div class="acor-body">
+                              <p>Команда наших специалистов вносит изменения в контент и функционал сайта. 
+                                Все предварительно согласовывается с клиентом. Мы оптимизируем существующий контент 
+                                и добавляем новый в соответствии с требованиями поисковых систем, при необходимости 
+                                можем менять функционал и структуру посадочных страниц.</p>
+                          </div>
                       
 
 

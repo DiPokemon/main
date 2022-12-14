@@ -80,6 +80,12 @@ $tariffs_text    = get_field("tariffs_text", $term);
                     </div> 
                 </section>
 
+                <section class="form_row">
+                    <div class="page_contacts-form contact_form-row">
+                        <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
+                    </div>
+                </section>
+
                 <section class="page__services-block services">
                     <div class="services-block__container _container">
                         <div class="services-block__body">
@@ -105,8 +111,11 @@ $tariffs_text    = get_field("tariffs_text", $term);
                                             $post_thumbnail_url = get_the_post_thumbnail_url();
                                         ?>
                                          <a class="services-block__item" href="<?php the_permalink(); ?>">
-                                            <div class="services-block__text"><?php the_title(); ?></div>
-                                            <div class="services-block__text services-block__text-price">От <?php the_field("service_price"); ?> ₽</div>
+                                            <div class="service-block_left">
+                                                <div class="services-block__text"><?php the_title(); ?></div>
+                                                <div class="services-block__desc"><?php the_excerpt(); ?></div>
+                                                <div class="services-block__text services-block__text-price">От <?php the_field("service_price"); ?> ₽</div>
+                                            </div>                                            
                                             <div class="services-block__img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="<?php the_title(); ?>"></div>
 
                                         </a>  
@@ -127,11 +136,11 @@ $tariffs_text    = get_field("tariffs_text", $term);
                         <div class="offer_block-text">
                             <?= $top_text ?>
                         </div>
-                        <div class="offer_block-form">
+                        <!-- <div class="offer_block-form">
                            <div class="form">
                                 <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     
                     <div class="cases-block__container">

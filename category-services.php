@@ -109,7 +109,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                         </div>
                     </div>
                 </section>
-
+                
                 <section class="page__service-offer">
                     <div class="offer_block-top">
                         <div class="offer_block-text">

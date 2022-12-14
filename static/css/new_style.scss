@@ -593,6 +593,11 @@ body {
     text-align: Center;
     color: #6025bf;
   }
+
+ section.form_row{
+  padding: 0;
+ }
+
   .services-block__columns {
     display: flex;
     gap: 20px;
@@ -609,30 +614,37 @@ body {
     box-shadow: inset 0px -1px 3px 0px #573c7a;
     border-radius: 3px;
     align-items: center;
+    gap:10px
   }
 
+  .service-block_left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
+    .services-block__desc{
+      color: $article-text-color;
+      font-size: 14px;
+    }
 
-  .services-block__text-price{
-    display:none;  
+    .services-block__desc{
+      color: $article-text-color;
+      font-size: 14px;
+    }
+
+    .services-block__text-price{
+      text-decoration: underline;
+    }
   }
 
   .services-block__item:hover {
-    background: #3A116D;
-
-
-    .services-block__text{
-      display: none;   
-    }
-    .services-block__text.services-block__text-price{
-      display: block;
-    }
+    background: #3A116D;   
   }
 
   .services-block__text {
     font-family: "Inter";
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 20px;
     color: #ffffff;
   }
   
@@ -1054,6 +1066,11 @@ body {
     line-height: 135%;
     color: #1a0930;
     padding: 20px 23px 5px 23px;
+  }
+  .articles__tags{
+    padding: 0px 23px;
+    color: darken($article-text-color, 0.2);
+    font-size: 13px
   }
   .articles__text {
     font-family: "Inter";
