@@ -1942,7 +1942,6 @@ p.tariff_price {
           flex-direction: column;
   border-bottom: 1px solid #3f3354;
   width: 100%;
-  padding-bottom: 10px;
 }
 
 .tariff_body {
