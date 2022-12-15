@@ -654,6 +654,33 @@
               </div>
             </section>
             
+            <section>
+              <div class="_container">
+                <div class="reviews-block__title">
+                  <h2 class="_h2 section_title">Наши технологии и инструменты</h2>
+                </div>
+                <div class="slider_wrapper">
+                  <div class="techno_slider">
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/wp.png" alt="SEO продвижение сайтов на WordPress"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/bitrix.png" alt="SEO продвижение сайтов на Bitrix"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/ya_webmaster.png" alt="Использование Яндекс Вебмастера"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/elementor.png" alt="Создание сайтов на Elementor"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/pr_cy.png" alt="Использование PR-CY"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/figma.png" alt="Макеты сайтов в Figma"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/topvisor.png" alt="Использование TopVisor"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/g_ads.png" alt="Настройка рекламы в Google Ads"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/modx.png" alt="SEO продвижение сайтов на MODX"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/g_analytics.png" alt="Использование Google Analytics"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/ya_metrika.png" alt="Использование Яндекс Метрики"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/g_search_console.png" alt="Использование Google Search Console"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/ya_direct.png" alt="Настройка Яндекс Директ"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/jivosite.png" alt="Установка и настройка Jivosite"></div>
+                    <div class="tecno_item"><img src="<?php echo get_template_directory_uri()?>/static/img/techno/miralinks.png" alt="Использование Miralinks"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
                 <section class="page__service-selection service-selection">
                     <div class="service-selection__container _container">
                         <div class="service-selection__body">                        

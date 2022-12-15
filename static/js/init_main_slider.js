@@ -5,6 +5,7 @@ $(document).ready(function () {
         var $slider_cases = $(sliderWrap).find('.cases_slider');
         var $main_slider = $(sliderWrap).find('.main-slider');
         var $guarantee_slider = $(sliderWrap).find('.guarantee_slider');
+        var $techno_slider = $(sliderWrap).find('.techno_slider');
         var $next = $(sliderWrap).find('.slide-m-next');
         var $prev = $(sliderWrap).find('.slide-m-prev');
         var $dots = $(sliderWrap).find('.slide-m-dots');        
@@ -19,6 +20,22 @@ $(document).ready(function () {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },                
+            ],
+        });
+
+        $techno_slider.slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
                         slidesToScroll: 1,
                     }
                 },                
