@@ -6,6 +6,8 @@
     $tariffs_text    = get_field("tariffs_text", $term);
     $after_posts_title = get_field("after_post_list_title", $term);
     $after_posts_text = get_field("after_post_list_text", $term);
+    $steps_block_title = get_field("steps_title", $term);
+    $steps = get_field("step", $term);
 ?>
 <div class="_container">
                 <section class="page-header">
@@ -152,10 +154,32 @@
                                 <?= $after_posts_text ?>
                             </div> 
                         <?php endif;?>
-                    </div>
-
-                
+                    </div>                
                 </section>
+
+                <section>
+                    <div class="_container">
+                        <div>
+                            <h2 class="_h2 section_title"><?= $steps_block_title ?></h2>
+                        </div> 
+                        <div class="accordion">
+                            <?php if($steps): ?>
+                                <?php $i=0; ?>
+                                <?php foreach($steps as $step): ?>                                    
+                                    <input type="checkbox" name="chacor" id="step_<?= $i; ?>" />
+                                    <label for="step_<?= $i; ?>"><?= $step['step_title'] ?></label>
+                                    <div class="acor-body">
+                                        <?= $step['step_text'] ?>
+                                    </div>
+                                    <?php $i++ ?>
+                                <?php endforeach ?>
+                                
+                            <?php else : ?>
+
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </section>        
 
                 <section class="page__service-offer">                                      
                     <div class="cases-block__container">
