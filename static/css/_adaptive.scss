@@ -454,6 +454,10 @@
         padding:40px 0
     }
     
+    .tabs > label {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
 
 
 }
@@ -487,7 +491,7 @@
     .services-block__item{
         width:100%;
         min-height: 70px;
-        padding: 0 20px
+        padding: 10px 20px
     }
 }
 
@@ -506,6 +510,9 @@
     }
     .main-image__text_subtitle {
         padding: 0 15px 30px 15px
+    }
+    .tab_header {
+        flex-direction: column;
     }
 }
 
@@ -622,6 +629,9 @@
     .cases-block__container,
     .tariffs-block__container{
         margin-top: 40px
+    }
+    .text_wrapper{
+        flex-direction: column-reverse;
     }
 }   
 
