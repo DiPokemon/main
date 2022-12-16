@@ -15,7 +15,8 @@
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>Решения для бизнеса</div>
                               </div>
                               <a href="https://wa.me/79514976107" class="btn main-button_href" >Задайте вопрос в What’sApp</a>
-                              <div class="test_header_menu faq_accordion">      
+
+                              <!--<div class="test_header_menu faq_accordion">      
                                 <input type="checkbox" name="chacor" id="header_test_menu" />
                                 <label for="header_test_menu">Тест меню</label>
                                 <div class="acor-body">
@@ -146,8 +147,10 @@
                                         <li>Гарантии</li>
                                       </ul>
                                   </div>
-                                </div>        
-                            </div>
+
+                                </div>   
+
+                            </div>-->
                             </div>
                           </div>
                           <div class="main-image">
@@ -249,7 +252,7 @@
               <div class="choice-block__container _container">
                 <div class="choice-block__body">                
                   <div class="choice-block__text">
-                  <div class="test_banner faq_accordion">
+                              <!--<div class="test_banner faq_accordion">
                                 <input type="checkbox" name="test_banner" id="chacor_test" />
                                 <label for="chacor_test">Ключевые слова</label>
                                 <div class="acor-body">
@@ -299,7 +302,7 @@
                                     <p>Создание сайтов </p>
                                     <p>Техническая поддержка</p>
                                 </div>
-                              </div>
+                              </div>-->
                     <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2 section_title">Почему выбирают<br>нашу компанию</h2></div>   
                     <div class="choice-block__title"><h2 class="_h2 choice-block__title_h2-mobile section_title ">Почему выбирают нашу компанию</h2></div>                 
                     <div class="choice-block__subtitle">Миссия нашего агентства - стремительно продвигать ваш бизнес в гору, брать новые высоты вместе с Вами и находить эффективные решения</div>

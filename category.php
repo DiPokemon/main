@@ -1,19 +1,27 @@
 <?php get_header(); ?>
 <?php
-$term = get_queried_object();
-$top_text = get_field("top_text", $term);
-$cases_text   = get_field("cases_text", $term);
-$tariffs_text    = get_field("tariffs_text", $term);
+    $term = get_queried_object();
+    $top_text = get_field("top_text", $term);
+    $cases_text   = get_field("cases_text", $term);
+    $tariffs_text    = get_field("tariffs_text", $term);
+    $after_posts_title = get_field("after_post_list_title", $term);
+    $after_posts_text = get_field("after_post_list_text", $term);
 ?>
 <div class="_container">
                 <section class="page-header">
                     <?php if ( function_exists( 'topland_breadcrumbs' ) ) topland_breadcrumbs(); ?>  
                     <h1 class="page-header__title"><?php single_cat_title(); ?></h1>
+
+                    <div class="category_top-text">
+                            <?= $top_text ?>
+                    </div>
                 </section>
                 
+                
+
                 <section section="page__service-offer">
                     <div class="tariffs-block__container">
-                    <div class="test_banner faq_accordion">
+                            <!--<div class="test_banner faq_accordion">
                                 <input type="checkbox" name="test_banner" id="chacor_test" />
                                 <label for="chacor_test">Ключевые слова</label>
                                 <div class="acor-body">
@@ -63,7 +71,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                                     <p>Создание сайтов </p>
                                     <p>Техническая поддержка</p>
                                 </div>
-                              </div>
+                              </div>-->
                         <div class="tariffs-block__title">
                             <h2 class="_h2">Тарифы</h2>
                         </div>
@@ -134,18 +142,22 @@ $tariffs_text    = get_field("tariffs_text", $term);
                     </div>
                 </section>
                 
-                <section class="page__service-offer">
-                    <div class="offer_block-top">
-                        <div class="offer_block-text">
-                            <?= $top_text ?>
-                        </div>
-                        <!-- <div class="offer_block-form">
-                           <div class="form">
-                                <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-                            </div>
-                        </div> -->
+                <section>
+                    <div class="_container">
+                        <?php if (!empty($after_posts_text)): ?>
+                            <div>
+                                <h2 class="_h2 section_title"><?= $after_posts_title ?></h2>
+                            </div>                        
+                            <div class="cases_text service_text-block">
+                                <?= $after_posts_text ?>
+                            </div> 
+                        <?php endif;?>
                     </div>
-                    
+
+                
+                </section>
+
+                <section class="page__service-offer">                                      
                     <div class="cases-block__container">
                         <div class="cases-block__body">
                             <div class="cases-block__title">

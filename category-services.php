@@ -16,7 +16,7 @@ $tariffs_text    = get_field("tariffs_text", $term);
                 
                 <section section="page__service-offer">
                     <div class="tariffs-block__container">
-                    <div class="test_banner faq_accordion">
+                            <!--<div class="test_banner faq_accordion">
                                 <input type="checkbox" name="test_banner" id="chacor_test" />
                                 <label for="chacor_test">Ключевые слова</label>
                                 <div class="acor-body">
@@ -66,7 +66,8 @@ $tariffs_text    = get_field("tariffs_text", $term);
                                     <p>Создание сайтов </p>
                                     <p>Техническая поддержка</p>
                                 </div>
-                              </div>
+                            </div>-->
+
                         <!-- <div class="tariffs-block__title">
                             <h2 class="_h2">Тарифы</h2>
                         </div> -->
