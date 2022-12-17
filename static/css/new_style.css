@@ -1150,6 +1150,40 @@ section.form_row {
 }
 
 /*---------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------work_area----------------------------*/
+.work_area_slider {
+  margin-top: 20px;
+}
+
+.work_area_slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.work_area-item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.work_area-item .work_area_icon img {
+  width: 40px;
+}
+.work_area-item .work_area_text {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*---------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------guarantee----------------------------*/
 .guarantee_slider {
   margin-top: 20px;

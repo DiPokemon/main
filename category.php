@@ -251,6 +251,198 @@
                 </section>
 
                 <section>
+              <div class="_container">
+                <div>
+                  <h2 class="_h2 section_title">Сферы, с которыми мы работаеи</h2>
+                </div>
+                <div class="slider_wrapper">
+                  <div class="work_area_slider">
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/fitnes.png" alt=""></div>
+                      <div class="work_area_text">Фитнес</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/zastroy.png" alt=""></div>
+                      <div class="work_area_text">Застройщики</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/bank.png" alt=""></div>
+                      <div class="work_area_text">Банки</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/nedvizh.png" alt=""></div>
+                      <div class="work_area_text">Недвижимость</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/turizm_icon.png" alt=""></div>
+                      <div class="work_area_text">Туризм</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/uslugi_icon.png" alt=""></div>
+                      <div class="work_area_text">Услуги</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/int-mag.png" alt=""></div>
+                      <div class="work_area_text">Интернет-магазин</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/landing.png" alt=""></div>
+                      <div class="work_area_text">Лендинг</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/car.png" alt=""></div>
+                      <div class="work_area_text">Автомобили</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/salon_icon.png" alt=""></div>
+                      <div class="work_area_text">Салон красоты</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/uristi.png" alt=""></div>
+                      <div class="work_area_text">Юридические услуги</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/furniture.png" alt=""></div>
+                      <div class="work_area_text">Мебель</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/med.png" alt=""></div>
+                      <div class="work_area_text">Медицина</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/jewelry.png" alt=""></div>
+                      <div class="work_area_text">Ювелирные изделия</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/konsalting.png" alt=""></div>
+                      <div class="work_area_text">Консалтинг</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/books.png" alt=""></div>
+                      <div class="work_area_text">Книги</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/news.png" alt=""></div>
+                      <div class="work_area_text">Новости</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/building-company.png" alt=""></div>
+                      <div class="work_area_text">Стройматериалы</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/kosmetika.png" alt=""></div>
+                      <div class="work_area_text">Косметика</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/strahovanie.png" alt=""></div>
+                      <div class="work_area_text">Страховые компании</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/auto-salon.png" alt=""></div>
+                      <div class="work_area_text">Автосалоны</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/kafe.png" alt=""></div>
+                      <div class="work_area_text">Кафе, рестораны</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/hotel.png" alt=""></div>
+                      <div class="work_area_text">Гостиницы</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/flower_icon.png" alt=""></div>
+                      <div class="work_area_text">Цветы</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/supermarket.png" alt=""></div>
+                      <div class="work_area_text">Продукты</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/logistic.png" alt=""></div>
+                      <div class="work_area_text">Транспорт</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/odezhda.png" alt=""></div>
+                      <div class="work_area_text">Одежда</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/kompany.png" alt=""></div>
+                      <div class="work_area_text">Производства</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/farmer.png" alt=""></div>
+                      <div class="work_area_text">Сельхозтехника</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/tipografiya.png" alt=""></div>
+                      <div class="work_area_text">Типография</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/apteka.png" alt=""></div>
+                      <div class="work_area_text">Аптеки</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/korporativnij.png" alt=""></div>
+                      <div class="work_area_text">Корпоративные сайты</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/portals.png" alt=""></div>
+                      <div class="work_area_text">Порталы</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/b2b.png" alt=""></div>
+                      <div class="work_area_text">E-Commerce</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/stroy.png" alt=""></div>
+                      <div class="work_area_text">Строительство</div>
+                    </div>
+
+                    <div class="work_area-item">
+                      <div class="work_area_icon"><img src="<?php echo get_template_directory_uri()?>/static/img/work_area/stom.png" alt=""></div>
+                      <div class="work_area_text">Стоматология</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+                <section>
                     <div class="_container">
                         <div>
                         <h2 class="_h2 section_title">Наши гарантии</h2>

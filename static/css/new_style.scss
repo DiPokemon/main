@@ -858,7 +858,36 @@ body {
   .achievements_right{
     width: 50%
   }
-  
+
+   /*---------------------------------------------------------------------------------------------*/
+  /*-----------------------------------------------work_area----------------------------*/
+
+  .work_area_slider{
+    margin-top: 20px;
+  }
+
+  .work_area_slider .slick-track {
+    display: flex;
+    gap: 10px;
+}
+
+  .work_area-item {
+    display: flex!important;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .work_area_icon img {
+      width: 40px;
+    }
+
+    .work_area_text{
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+}
+
   /*---------------------------------------------------------------------------------------------*/
   /*-----------------------------------------------guarantee----------------------------*/
 
