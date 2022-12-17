@@ -14,143 +14,7 @@
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>Создание сайтов</div>                              
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>Решения для бизнеса</div>
                               </div>
-                              <a href="https://wa.me/79514976107" class="btn main-button_href" >Задайте вопрос в What’sApp</a>
-
-                              <!--<div class="test_header_menu faq_accordion">      
-                                <input type="checkbox" name="chacor" id="header_test_menu" />
-                                <label for="header_test_menu">Тест меню</label>
-                                <div class="acor-body">
-                                  <div class="header_column">
-                                      <ul>
-                                        <li>Seo  продвижение сайта в Google</li>
-                                        <li>Seo продвижение сайта в Яндексе</li>
-                                        <li>Seo продвижение интернет - магазина</li>
-                                        <li>Продвижение сайтов в поисковых системах</li>
-                                        <li>Seo для корпоративных сайтов</li>
-                                        <li>Позиции в ТОП-10</li>
-                                        <li>Продвижение по трафику</li>
-                                        <li>Продвижение по лидам</li>
-                                        <li>Seo - продвижение молодого сайта</li>
-                                        <li>Комплексное продвижение</li>
-                                        <li>Зарубежное Seo</li>
-                                        <li>Региональное Seo продвижение сайта</li>
-                                        <li>Копирайтинг</li>
-                                        <li>Smart. Быстрый CPA</li>
-                                        <li>Performance-маркетинг</li>
-                                        <li>Бренд - маркетинг</li>
-                                        <li>Seo оптимизация сайта</li>
-                                        <li>Оптимизация под голосовой поиск</li>
-                                        <li>Продвижение сайта банка</li>
-                                        <li>Продвижение офлайн - магазина</li>
-                                        <li>Seo - продвижение медицинских сайтов</li>
-                                        <li>Seo продвижение по тематикам</li>
-                                        <li>Seo - аудит</li>
-                                        <li>Продвижение стартапа</li>
-                                        <li>Seo продвижение сайта услуг</li>
-                                        <li>KPI в Seo</li>              
-                                      </ul>
-                                  </div>
-
-                                  <div class="header_column">
-                                      <ul>
-                                        <li>Разработка Landing Page</li>
-                                        <li>Разработка корпоративного сайта</li>
-                                        <li>Разработка интернет-магазина</li>
-                                        <li>Разработка портала</li>
-                                        <li>Разработка сложных веб-проектов</li>
-                                        <li>Техническая поддержка сайтов</li>
-                                        <li>Дизайн сайтов</li>
-                                        <li>Разработка сайтов для гостиниц и отелей</li>
-                                        <li>Разработка блога</li>
-                                        <li>Разработка форума</li>
-                                        <li>Разработка промо - сайта</li>
-                                        <li>Разработка контент - сайта</li>
-                                        <li>Разработка персонального сайта</li>
-                                        <li>Разработка  информационного сайта</li>
-                                        <li>Разработка сайта - визитки</li>
-                                      </ul>
-                                  </div>
-
-                                  <div class="header_column">
-                                      <ul>
-                                        <li>Реклама в Яндекс.Директ</li>
-                                        <li>Настройка и ведение Яндекс.Директ</li>
-                                        <li>Настройка ретаргетинга в Яндекс.Директ</li>
-                                        <li>Реклама в Яндекс.Маркете</li>
-                                        <li>Реклама для Интернет - магазина</li>
-                                        <li>Реклама в  Google ADS</li>
-                                        <li>Настройка рекламы в РСЯ</li>
-                                        <li>Медийная реклама</li>
-                                        <li>Ведение и настройка контекстной рекламы</li>
-                                        <li>Ведение и настройка баннерной рекламы</li>
-                                        <li>Ведение и настройка тизерной рекламы</li>
-                                        <li>Таргетированная реклама</li>
-                                        <li>Реклама в интернете</li>
-                                        <li>Реклама в Яндекс.Картах</li>
-                                      </ul>
-                                  </div>
-
-                                  <div class="header_column">
-                                      <ul>
-                                        <li>Создание и ведение групп</li>
-                                        <li>SERM - управление репутацией</li>
-                                        <li>ORM - репутация продукта</li>
-                                        <li>Продвижение в ВКонтакте</li>
-                                        <li>Разработка Smm стратегии</li>
-                                        <li>Таргетированная реклама</li>
-                                        <li>Продвижение в Telegram</li>
-                                        <li>Продвижение в одноклассниках</li>
-                                        <li>E-mail маркетинг</li>
-                                        <li>Реклама у блогеров</li>
-                                        <li>Таргетированная реклама в ВКонтакте</li>
-                                      </ul>
-                                  </div>
-
-                                  <div class="header_column">
-                                      <ul>
-                                        <li>Продвижение на картах</li>
-                                      </ul>
-                                  </div>
-
-                                  <div class="header_column">
-                                      <ul>
-                                        <li>Продвижение в маркетплейсах</li>
-                                        <li>Работа с отзывами Wildberries</li>
-                                        <li>Продвижение на Яндекс.Маркете</li>
-                                        <li>Продажи на Ozon</li>
-                                        <li>Продвижение на Ozon</li>
-                                        <li>Дизайн карточек</li>
-                                        <li>Продвижение по категориям Wildberries</li>
-                                        <li>Работа над контентом Wildberries</li>
-                                        <li>Продвижение карточки товара Wildberries</li>
-                                        <li>SEO - продвижение Wildberries</li>
-                                      </ul>
-                                  </div>
-
-                                  <div class="header_column">
-                                      <ul>
-                                        <li>Аудит сайта</li>
-                                        <li>Технический аудит</li>
-                                        <li>Коммерческий аудит</li>
-                                        <li>Юзабилити аудит</li>
-                                        <li>Комплексная web-аналитика</li>
-                                        <li>Настройка сквозной аналитики</li>
-                                        <li>Настройка счетчиков</li>
-                                      </ul>
-                                  </div> 
-
-                                  <div class="header_column">
-                                      <ul>
-                                        <li>Отзывы</li>
-                                        <li>Вакансии</li>
-                                        <li>Договор</li>
-                                        <li>Гарантии</li>
-                                      </ul>
-                                  </div>
-
-                                </div>   
-
-                            </div>-->
+                              <a href="https://wa.me/79514976107" class="btn main-button_href" >Задайте вопрос в What’sApp</a>                              
                             </div>
                           </div>
                           <div class="main-image">
@@ -204,8 +68,7 @@
                       </div>
                     </div>
                   </div>
-                </div>  
-                
+                </div>                  
             </section>                                
 
             <section class="page__services-block services">
@@ -530,8 +393,114 @@
                   <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
                 </div>           
               </div>
+            </section>      
+
+            <section>
+              <div class="_container">
+                <div class="tariffs_tabs__title">
+                  <h2 class="_h2 section_title">Тарифы</h2>
+                </div>
+                <div class="tabs">                  
+                    <input type="radio" name="tab_btn" id="tab_btn_1" value="" checked>
+                    <label for="tab_btn_1">Разработка</label>
+                    <input type="radio" name="tab_btn" id="tab_btn_2" value="">
+                    <label for="tab_btn_2">SEO</label>
+                    <input type="radio" name="tab_btn" id="tab_btn_3" value="">
+                    <label for="tab_btn_3">Контекстная реклама</label>
+                    <input type="radio" name="tab_btn" id="tab_btn_4" value="">
+                    <label for="tab_btn_4">Маркетплейсы</label>                                 
+                        
+                  <div id="tab_1" class="tabs_block">
+                      <div class="tab_header">
+                        <div class="tab_title">Разработка под ключ</div>
+                        <div class="tab_price">от <span>50 000</span> ₽</div>
+                      </div>
+                      <div class="tab_body">
+                        Разрабатываем индивидуальные сайты с продающим дизайном, интерактивным функционалом под разные бизнес задачи.
+                        Основательно прорабатываем каждый из этапов разработки. Особое внимание уделяем стадии тестирования перед сдачей проекта.
+                      </div>
+                      <div class="tab_footer">
+                        <div class="tab_btn">
+
+                        </div>
+                      </div>
+                  </div>
+                  <div id="tab_2" class="tabs_block">
+                      <div class="tab_header">
+                        <div class="tab_title">SEO</div>
+                        <div class="tab_price">от <span>21 000</span> ₽</div>
+                      </div>
+                      <div class="tab_body">
+                        SEO продвижение — эффективный маркетинговый инструмент, который принесет вам новых клиентов при грамотной оптимизации. 
+                        Результаты будут видны не сразу, как это происходит в рекламе. SEO — это длительная стратегия, которая и результат приносит 
+                        на более долгое время.
+                      </div>
+                      <div class="tab_footer">
+                        <div class="tab_btn">
+                      
+                        </div>
+                      </div>
+                  </div>
+                  <div id="tab_3" class="tabs_block">
+                      <div class="tab_header">
+                        <div class="tab_title">Контекстная реклама </div>
+                        <div class="tab_price">от <span>25 000</span> ₽ / месяц</div>
+                      </div>
+                      <div class="tab_body">
+                        Контекстная реклама – один из самых эффективных источников трафика на ваш сайт. Размещение рекламы в Яндексе и Google 
+                        поможет Вам в разы увеличить продажи, оповестить и завлечь нужный контингент клиентов и выработать позитивное мнение о компании.
+                      </div>
+                      <div class="tab_footer">
+                        <div class="tab_btn">
+                      
+                        </div>
+                      </div>
+                  </div>
+                  <div id="tab_4" class="tabs_block">
+                      <div class="tab_header">
+                        <div class="tab_title">Маркетплейсы</div>
+                        <div class="tab_price">от <span>25 000</span> ₽</div>
+                      </div>
+                      <div class="tab_body">
+                        Все больше компаний появляются на маркетплейсах для того чтобы вести там свой бизнес, и получать хорошую прибыль. 
+                        Но конкуренция везде огромная. Поэтому, необходимо понимать как можно выделиться и результативно продвинуть свой 
+                        товар на онлайн-площадке.
+                      </div>
+                      <div class="tab_footer">
+                        <div class="tab_btn">
+                      
+                        </div>
+                      </div>
+                  </div>
+                </div>  
+              </div>
             </section>
-            
+
+            <section class="page__service-selection service-selection">
+                    <div class="service-selection__container _container">
+                        <div class="service-selection__body">                        
+                            <div class="service-selection__lightning_left">
+                                <img class="lightning_left" loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_left.svg" alt="lightning left">
+                            </div>
+                            <div class="service-selection__content">         
+                                <div class="service-selection__title">
+                                    <h2 class="_h2 service-selection__title_h2 section_title">Не знаете какую услугу выбрать?</h2>
+                                </div>
+                                <div class="service-selection__subtitle toplend">Напишите нам. Мы подскажем какая услуга принесет вашей компании больше прибыли</div>
+                                <div class="page_contacts-form contact_form-grid">
+                                    <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
+                                </div>
+                                <!-- <div class="service-selection__button">
+                                    <a class="service-selection__href" href="https://wa.me/79934536307">Написать в What’sApp</a>
+                                </div> -->
+                            </div>
+                            <div class="service-selection__lightning_right">
+                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_right.svg" alt="lightning right">
+                            </div>                        
+                        </div>
+                    </div>
+            </section>
+
             <section>
               <div class="_container">
                 <div>
@@ -539,124 +508,51 @@
                 </div>
                 <div class="slider_wrapper">
                   <div class="guarantee_slider">
-
                     <div class="guarantee_item">
                       <div class="guarantee_icon"><i class="fas fa-hand-holding-usd"></i></div>
                       <div class="guarantee_text">Оплата за результат</div>
-                    </div>
-                    
+                    </div>                    
                     <div class="guarantee_item">
                       <div class="guarantee_icon"><i class="fas fa-clipboard-check"></i></div>
                       <div class="guarantee_text">Заключение договора</div>
                     </div>
-
                     <div class="guarantee_item">
                       <div class="guarantee_icon"><i class="fas fa-users"></i></div>
                       <div class="guarantee_text">Команда специалистов</div>
                     </div>
-
                     <div class="guarantee_item">
                       <div class="guarantee_icon"><i class="fas fa-thumbs-up"></i></div>
                       <div class="guarantee_text">Белые методы продвижения</div>
                     </div>
-
                     <div class="guarantee_item">
                       <div class="guarantee_icon"><i class="fas fa-desktop"></i></div>
                       <div class="guarantee_text">Улучшение юзабилити сайта</div>
                     </div>
-
                     <div class="guarantee_item">
                       <div class="guarantee_icon"><i class="fas fa-funnel-dollar"></i></div>
                       <div class="guarantee_text">Повышение конверсии сайта</div>
                     </div>
-
                     <div class="guarantee_item">
                       <div class="guarantee_icon"><i class="fas fa-route"></i></div>
                       <div class="guarantee_text">Четкая стратегия развития проекта</div>
-                    </div>
-                    
+                    </div>                    
                     <div class="guarantee_item">
                       <div class="guarantee_icon"><i class="far fa-eye"></i></div>
                       <div class="guarantee_text">Прозрачная отчетность</div>
                     </div>
-
                     <div class="guarantee_item">
                       <div class="guarantee_icon"><i class="fas fa-shield-alt"></i></div>
                       <div class="guarantee_text">Безопасносность</div>
                     </div>
-
                     <div class="guarantee_item">
                       <div class="guarantee_icon"><i class="fas fa-handshake"></i></div>
                       <div class="guarantee_text">Индивидуальный подход</div>
                     </div>
-
                   </div>
-                </div>
-                
+                </div>                
               </div>
             </section>
 
-            <section class="page__reviews-block reviews">
-              <div class="reviews_gradient_bg-img"></div>
-              <div class="reviews-block__container _container">                
-                <div class="reviews-block__body">                
-                <div class="triple_stars revies_triple_stars"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
-                  <div class="reviews-block__title">
-                    <h2 class="_h2 reviews-block__title_h2 section_title">Отзывы клиентов</h2>
-                  </div>
-                  <div class="main_block__wrapper">
-                    <div class="slider_wrapper">
-                      <div class="reviews_slider">
-
-                        <?php echo do_shortcode('[topland_reviews]'); ?>
-
-                        <!-- <div itemscope itemtype="https://schema.org/Review" class="reviews-block__slide reviews-slide">
-                          <meta itemprop="datePublished" content="2022-07-15"/>
-                          <meta itemprop="name" content="Шарыпкин Вячеслав о TopLand">
-                          <link itemprop="url" href="https://topland-rnd.ru">
-                          <div itemprop="reviewBody" class="reviews-slide__text1">Работаем с компанией Topland 1,5 года. 
-                            Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
-                            грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
-                          <div itemprop="author" itemscope itemtype="https://schema.org/Person" class="reviews-slide__text2"><span itemprop="name">Вячеслав</span> <span itemprop="familyName">Шарыпкин</span></div>
-                          <div class="reviews-slide__text3">Директор Trax.su</div>
-
-                          <div class="d-none" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
-                              <meta itemprop="name" content="Отзыв о компании TopLand">
-                              <meta itemprop="telephone" content="+7 993 453-63-07">
-                              <link itemprop="url" href="https://topland-rnd.ru/"/>
-                              <meta itemprop="email" content="sales@topland-rnd.ru">
-                              <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                                  <meta itemprop="addressLocality" content="Ростов">
-                                  <meta itemprop="streetAddress" content="Стабильная, 9">
-                              </p>
-                          </div>
-                          <div class="d-none" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                              <meta itemprop="worstRating" content="1">
-                              <meta itemprop="ratingValue" content="5">
-                              <meta itemprop="bestRating" content="5"/>
-                          </div>
-                        </div> -->
-
-                        <!-- <div class="reviews-block__slide reviews-slide">
-                          <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года.
-                            Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
-                            грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
-                          <div class="reviews-slide__text2">Вячеслав Шарыпкин222</div>
-                          <div class="reviews-slide__text3">Директор Trax.su</div>
-                        </div> -->
-
-                      </div>
-                      <div class="slider-controls">
-                        <button type="button" class="reviews_slide-m-prev slide-m-prev"></button>
-                        <div class="reviews_slide-m-dots slide-m-dots"></div>
-                        <button type="button" class="reviews_slide-m-next slide-m-next"></button>
-                      </div>
-                    </div> 
-                  </div>
-                </div>
-              </div>
-            </section>
-            
             <section>
               <div class="_container">
                 <div class="reviews-block__title">
@@ -684,32 +580,6 @@
               </div>
             </section>
 
-                <section class="page__service-selection service-selection">
-                    <div class="service-selection__container _container">
-                        <div class="service-selection__body">                        
-                            <div class="service-selection__lightning_left">
-                                <img class="lightning_left" loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_left.svg" alt="lightning left">
-                            </div>
-                            <div class="service-selection__content">         
-                                <div class="service-selection__title">
-                                    <h2 class="_h2 service-selection__title_h2 section_title">Не знаете какую услугу выбрать?</h2>
-                                </div>
-                                <div class="service-selection__subtitle toplend">Напишите нам. Мы подскажем какая услуга принесет вашей компании больше прибыли</div>
-                                <div class="page_contacts-form contact_form-grid">
-                                    <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-                                </div>
-                                <!-- <div class="service-selection__button">
-                                    <a class="service-selection__href" href="https://wa.me/79934536307">Написать в What’sApp</a>
-                                </div> -->
-                            </div>
-                            <div class="service-selection__lightning_right">
-                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_right.svg" alt="lightning right">
-                            </div>                        
-                        </div>
-                    </div>
-                </section>
-            
-            
             <section class="page__useful-articles useful-articles">
               <div class="useful-articles__container _container">
                 <div class="useful-articles__body">
@@ -761,149 +631,16 @@
               </div>
             </section>
 
-            <section>
-              <div class="_container">
-                <div class="tariffs_tabs__title">
-                  <h2 class="_h2 section_title">Тарифы</h2>
-                </div>
-                <div class="tabs">
-                  
-                    <input type="radio" name="tab_btn" id="tab_btn_1" value="" checked>
-                    <label for="tab_btn_1">Разработка</label>
-
-                    <input type="radio" name="tab_btn" id="tab_btn_2" value="">
-                    <label for="tab_btn_2">SEO</label>
-
-                    <input type="radio" name="tab_btn" id="tab_btn_3" value="">
-                    <label for="tab_btn_3">Контекстная реклама</label>
-
-                    <input type="radio" name="tab_btn" id="tab_btn_4" value="">
-                    <label for="tab_btn_4">Маркетплейсы</label>
-                                  
-                        
-                  <div id="tab_1" class="tabs_block">
-                      <div class="tab_header">
-                        <div class="tab_title">Разработка под ключ</div>
-                        <div class="tab_price">от <span>50 000</span> ₽</div>
-                      </div>
-                      <div class="tab_body">
-                        Разрабатываем индивидуальные сайты с продающим дизайном, интерактивным функционалом под разные бизнес задачи.
-                        Основательно прорабатываем каждый из этапов разработки. Особое внимание уделяем стадии тестирования перед сдачей проекта.
-                      </div>
-                      <div class="tab_footer">
-                        <div class="tab_btn">
-
-                        </div>
-                      </div>
-                  </div>
-
-                  <div id="tab_2" class="tabs_block">
-                      <div class="tab_header">
-                        <div class="tab_title">SEO</div>
-                        <div class="tab_price">от <span>21 000</span> ₽</div>
-                      </div>
-                      <div class="tab_body">
-                        SEO продвижение — эффективный маркетинговый инструмент, который принесет вам новых клиентов при грамотной оптимизации. 
-                        Результаты будут видны не сразу, как это происходит в рекламе. SEO — это длительная стратегия, которая и результат приносит 
-                        на более долгое время.
-                      </div>
-                      <div class="tab_footer">
-                        <div class="tab_btn">
-                      
-                        </div>
-                      </div>
-                  </div>
-
-                  <div id="tab_3" class="tabs_block">
-                      <div class="tab_header">
-                        <div class="tab_title">Контекстная реклама </div>
-                        <div class="tab_price">от <span>25 000</span> ₽ / месяц</div>
-                      </div>
-                      <div class="tab_body">
-                        Контекстная реклама – один из самых эффективных источников трафика на ваш сайт. Размещение рекламы в Яндексе и Google 
-                        поможет Вам в разы увеличить продажи, оповестить и завлечь нужный контингент клиентов и выработать позитивное мнение о компании.
-                      </div>
-                      <div class="tab_footer">
-                        <div class="tab_btn">
-                      
-                        </div>
-                      </div>
-                  </div>
-
-                  <div id="tab_4" class="tabs_block">
-                      <div class="tab_header">
-                        <div class="tab_title">Маркетплейсы</div>
-                        <div class="tab_price">от <span>25 000</span> ₽</div>
-                      </div>
-                      <div class="tab_body">
-                        Все больше компаний появляются на маркетплейсах для того чтобы вести там свой бизнес, и получать хорошую прибыль. 
-                        Но конкуренция везде огромная. Поэтому, необходимо понимать как можно выделиться и результативно продвинуть свой 
-                        товар на онлайн-площадке.
-                      </div>
-                      <div class="tab_footer">
-                        <div class="tab_btn">
-                      
-                        </div>
-                      </div>
-                  </div>
-
-                </div>  
-              </div>
-            </section>
-
-            <!-- <?php echo do_shortcode('[topland_cloudtag]'); ?> -->
-
             <section class="page__question question">
               <div class="question__container _container">
                 <div class="question__body">
-                  <div class="question-triple_stars_left"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
-                  
+                  <div class="question-triple_stars_left"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>                  
                   <div class="question-content">
                      <div class="question__title">
                        <h2 class="_h2 question__title_h2 section_title">Вопрос/Ответ</h2>
                      </div>
                      <div class="main_block__wrapper">
-                       <div itemscope itemtype="https://schema.org/FAQPage" class="accordion faq_accordion" id="faq_accordion">
-
-                               
-    
-                          <!-- <input type="checkbox" name="chacor" id="chacor1" checked="checked" />
-                          <label for="chacor1">Чем ваша компания лучше других?</label>
-                          <div class="acor-body">
-                              <p>Основатели компании изначально были техническими специалистами, 
-                           благодаря этому у компании есть четкая идеология работы с проектами. 
-                           Мы не обещаем золотых гор, только реальные цифры и факты</p>
-                          </div>
-                          
-                          <input type="checkbox" name="chacor" id="chacor2" />
-                          <label for="chacor2">Я знаю более раскрученные компании. Они сделают дешевле. Зачем мне переплачивать?</label>
-                          <div class="acor-body">
-                              <p>Чего Вы хотите? За что Вы готовы платить? За работу или результат? 
-                        Можно взять 10 000 рублей за работу, которая стоит 30 000.
-                         Заплатив 10 000 – Вы их просто выкинете. 
-                         Заплатив 30 000 – Вы отдадите их за конкретные цели и результаты. Так что нужно Вам?</p>
-                          </div>
-                          
-                          <input type="checkbox" name="chacor" id="chacor3" />
-                          <label for="chacor3">Почему так мало кейсов, которые можете показать?</label>
-                          <div class="acor-body">
-                              <p>Основатели компании длительное время работали в найме, затем на фрилансе, 
-                        затем по подряду с более крупными компаниями. 
-                        Именно поэтому большинство проектов относятся к чужим компаниям. 
-                        Зато работали над ними именно мы. Мы были внутренним механизмом других компаний. 
-                        Так что важнее? Обертка или содержание!?</p>
-                          </div>
-
-                          <input type="checkbox" name="chacor" id="chacor4" />
-                          <label for="chacor4">Почему мы сами еще не в ТОПе?</label>
-                          <div class="acor-body">
-                              <p>Недавно мы начали заниматься своим сайтом. 
-                        Так как ранее работали только в субподряде и по сарафанке, 
-                        необходимости разработки и продвижения качественного сайта не было. 
-                        Да и некогда было. В связи с расширением, появился отдел внутреннего маркетинга, 
-                        который в данный момент и занимается данным вопросом.</p>
-                          </div> -->
-                        
+                       <div itemscope itemtype="https://schema.org/FAQPage" class="accordion faq_accordion" id="faq_accordion">                        
                           <input type="checkbox" name="chacor" id="chacor5" />
                           <label for="chacor5">Что такое SEO?</label>
                           <div class="acor-body">
@@ -913,7 +650,6 @@
                                 по целевым запросам пользователей. ТОПом считается первая страница поисковика. 
                                 Поднять сайт в ТОП-10 — главная цель Seo-специалистов.</p>
                           </div>
-
                           <input type="checkbox" name="chacor" id="chacor6" />
                           <label for="chacor6">Когда будет результат от SEO?</label>
                           <div class="acor-body">
@@ -922,7 +658,6 @@
                                   пока не попадут в  ТОП-10 позиций. 
                                   Этот временной интервал всегда разный – в среднем от 2 до 6 месяцев.</p>
                           </div>
-
                           <input type="checkbox" name="chacor" id="chacor7" />
                           <label for="chacor7">Какие гарантии вы можете  предоставить?</label>
                           <div class="acor-body">
@@ -932,14 +667,12 @@
                                 подробную отчетность на каждом из этапов проделываемых работ. Вы можете 
                                 ознакомится с результаты наших успешных проектов  в разделе кейсы.</p>
                           </div>
-
                           <input type="checkbox" name="chacor" id="chacor8" />
                           <label for="chacor8">Вы работаете только в Ростове на Дону?</label>
                           <div class="acor-body">
                               <p>Мы предоставляем услуги Seo как в Ростове на Дону, так и по 
                                 всей России. Также вы можете заказать раскрутку за рубежом.</p>
                           </div>
-
                           <input type="checkbox" name="chacor" id="chacor9" />
                           <label for="chacor9">Какие работы вы проводите на проекте?</label>
                           <div class="acor-body">
@@ -948,11 +681,6 @@
                                 и добавляем новый в соответствии с требованиями поисковых систем, при необходимости 
                                 можем менять функционал и структуру посадочных страниц.</p>
                           </div>
-                      
-
-
-
-
 
                          <!-- <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion__item close">
                            <div class="accordion__item_header">
@@ -1003,7 +731,6 @@
                           который в данный момент и занимается данным вопросом.</span>
                         </div>
                       </div> -->
-
                         </div>
                       </div>
                     </div>
@@ -1011,4 +738,64 @@
                 </div>
               </div>
             </section>
+
+            <section class="page__reviews-block reviews">
+              <div class="reviews_gradient_bg-img"></div>
+              <div class="reviews-block__container _container">                
+                <div class="reviews-block__body">                
+                <div class="triple_stars revies_triple_stars"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
+                  <div class="reviews-block__title">
+                    <h2 class="_h2 reviews-block__title_h2 section_title">Отзывы клиентов</h2>
+                  </div>
+                  <div class="main_block__wrapper">
+                    <div class="slider_wrapper">
+                      <div class="reviews_slider">
+                        <?php echo do_shortcode('[topland_reviews]'); ?>
+                        <!-- <div itemscope itemtype="https://schema.org/Review" class="reviews-block__slide reviews-slide">
+                          <meta itemprop="datePublished" content="2022-07-15"/>
+                          <meta itemprop="name" content="Шарыпкин Вячеслав о TopLand">
+                          <link itemprop="url" href="https://topland-rnd.ru">
+                          <div itemprop="reviewBody" class="reviews-slide__text1">Работаем с компанией Topland 1,5 года. 
+                            Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
+                            грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
+                          <div itemprop="author" itemscope itemtype="https://schema.org/Person" class="reviews-slide__text2"><span itemprop="name">Вячеслав</span> <span itemprop="familyName">Шарыпкин</span></div>
+                          <div class="reviews-slide__text3">Директор Trax.su</div>
+
+                          <div class="d-none" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+                              <meta itemprop="name" content="Отзыв о компании TopLand">
+                              <meta itemprop="telephone" content="+7 993 453-63-07">
+                              <link itemprop="url" href="https://topland-rnd.ru/"/>
+                              <meta itemprop="email" content="sales@topland-rnd.ru">
+                              <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                  <meta itemprop="addressLocality" content="Ростов">
+                                  <meta itemprop="streetAddress" content="Стабильная, 9">
+                              </p>
+                          </div>
+                          <div class="d-none" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                              <meta itemprop="worstRating" content="1">
+                              <meta itemprop="ratingValue" content="5">
+                              <meta itemprop="bestRating" content="5"/>
+                          </div>
+                        </div> -->
+
+                        <!-- <div class="reviews-block__slide reviews-slide">
+                          <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года.
+                            Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
+                            грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
+                          <div class="reviews-slide__text2">Вячеслав Шарыпкин222</div>
+                          <div class="reviews-slide__text3">Директор Trax.su</div>
+                        </div> -->
+
+                      </div>
+                      <div class="slider-controls">
+                        <button type="button" class="reviews_slide-m-prev slide-m-prev"></button>
+                        <div class="reviews_slide-m-dots slide-m-dots"></div>
+                        <button type="button" class="reviews_slide-m-next slide-m-next"></button>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </section>
+
 <?php get_footer(); ?>
