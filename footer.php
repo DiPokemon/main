@@ -84,7 +84,6 @@
             <span>Москва</span>
             <span>Сочи</span>
             <span>Новосибирск</span>
-            <span>Екатеринбург</span>
             <span>Ростов-на-Дону</span>
             <span>Уфа</span>
             <span>Красноярск</span>

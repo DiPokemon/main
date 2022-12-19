@@ -73,7 +73,33 @@
           </div>
           <div class="header__location">
             <div class="header__location_img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/location.svg" alt="location"/></div>
-            <div class="header__location_text">Ростов-на-Дону</div>
+            <div class="header__location_text">
+              <span class="current_city">Ростов-на-Дону</span>
+              <ul class="header_cities">
+                <li>Москва</li>
+                <li>Санкт-Петербург</li>
+                <li>Уфа</li>
+                <li>Тольяти</li>
+                <li>Ижевск</li>
+                <li>Самара</li>
+                <li>Сочи</li>
+                <li>Красноярск</li>
+                <li>Набережные Челны</li>
+                <li>Краснодар</li>
+                <li>Саратов</li>
+                <li>Новосибирск</li>
+                <li>Волгоград</li>
+                <li>Казань</li>
+                <li>Нижний Новгород</li>
+                <li>Екатеринбург</li>
+                <li>Краснодар</li>
+                <li>Воронеж</li>
+                <li>Омск</li>
+                <li>Челябинск</li>
+                <li>Тюмень</li>
+                <li>Пермь</li>
+              </ul>
+            </div>
           </div>
           <div class="header__hrVert"></div>
           <div class="header__contact">

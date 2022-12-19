@@ -207,11 +207,6 @@ body {
     }
   }
 
-// .sub-menu .sub-menu{
-//   visibility: visible;
-//   opacity: 1;
-// }
-
 .first_lvl_menu.menu-item:hover>.sub-menu {
     visibility: visible;
     opacity: 1;
@@ -222,12 +217,6 @@ body {
     position: relative;
   }
 
-// .sub-menu .menu-item .menu__link {
-//     color: #ffffff;
-//     padding: 10px 20px;
-//     font-size: 13px;
-// }
- 
 .header__logo {
     display: flex;
     padding: 0 10px;
@@ -241,11 +230,13 @@ body {
     font-weight: 500;
     font-size: 24px;
   }
+
 .header__location {
     display: flex;
     gap: 10px;
     align-items: center;
   }
+
 .header__location_text {
     font-family: "Inter";
     font-style: normal;
@@ -254,7 +245,38 @@ body {
     line-height: 19px;
     text-align: right;
     color: $main-white-color;
+    position: relative;
   }
+
+  ul.header_cities{
+    display: none;
+  }
+
+  ul.header_cities {    
+    gap: 8px;
+    top: 30px;
+    position: absolute;    
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 190px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color: #250558;
+    background: transparentize($main-white-color, 0.2);
+    backdrop-filter: blur(5px);
+    transition: .5s linear;
+    box-shadow: 0px 1px 2px #f7f2ff;
+}
+
+  .current_city{
+    cursor: pointer;
+  }
+
+  .current_city:hover + ul.header_cities{
+    display: flex;
+  }  
+
 .header__hrVert {
     border-left: 1px solid #3f3354;
     min-height: 68px;
@@ -1433,9 +1455,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-  }
-
-  
+  }  
 
   .offer_block-text,
   .offer_block-form{
@@ -1539,6 +1559,19 @@ body {
       border-radius: 10px;
     }
   }
+
+  .tags_slider .slick-track {
+    display: flex;
+    gap: 10px;
+}
+
+  a.tags_item {
+    border: 1px solid $main-white-color;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
   /*---------------------------------------------------------------------------------------------------*/
   /*----------------------------------------------------article-page-----------------------------------*/
   

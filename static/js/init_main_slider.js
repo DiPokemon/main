@@ -7,6 +7,7 @@ $(document).ready(function () {
         var $guarantee_slider = $(sliderWrap).find('.guarantee_slider');
         var $techno_slider = $(sliderWrap).find('.techno_slider');
         var $work_area = $(sliderWrap).find('.work_area_slider');
+        var $tags = $(sliderWrap).find('.tags_slider');
         var $next = $(sliderWrap).find('.slide-m-next');
         var $prev = $(sliderWrap).find('.slide-m-prev');
         var $dots = $(sliderWrap).find('.slide-m-dots');        
@@ -60,6 +61,34 @@ $(document).ready(function () {
         });
 
         $work_area.slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 850,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 650,
+                    settings: {
+                        slidesToShow: 2,                        
+                    }
+                },
+                {
+                    breakpoint: 450,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+            ],
+        });
+
+        $tags.slick({
             slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: true,

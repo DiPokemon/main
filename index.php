@@ -185,7 +185,59 @@
                   </div>
                 </div>
               </div>
-            </section>    
+            </section>   
+            
+            <section>
+              <div class="_container">
+                <div>
+                  <h2 class="_h2 section_title">Наши гарантии</h2>
+                </div>
+                <div class="slider_wrapper">
+                  <div class="guarantee_slider">
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-hand-holding-usd"></i></div>
+                      <div class="guarantee_text">Оплата за результат</div>
+                    </div>                    
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-clipboard-check"></i></div>
+                      <div class="guarantee_text">Заключение договора</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-users"></i></div>
+                      <div class="guarantee_text">Команда специалистов</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-thumbs-up"></i></div>
+                      <div class="guarantee_text">Белые методы продвижения</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-desktop"></i></div>
+                      <div class="guarantee_text">Улучшение юзабилити сайта</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-funnel-dollar"></i></div>
+                      <div class="guarantee_text">Повышение конверсии сайта</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-route"></i></div>
+                      <div class="guarantee_text">Четкая стратегия развития проекта</div>
+                    </div>                    
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="far fa-eye"></i></div>
+                      <div class="guarantee_text">Прозрачная отчетность</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-shield-alt"></i></div>
+                      <div class="guarantee_text">Безопасносность</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-handshake"></i></div>
+                      <div class="guarantee_text">Индивидуальный подход</div>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </section>
 
             <section class="page__cases-block cases">
               <div class="cases-block__container _container">
@@ -389,9 +441,7 @@
                       визитов пользователей. Исследуем показатели эффективности и корректируем  последующий план</p>                    
                   </div>
                 </div>
-                <div class="page_contacts-form contact_form-row">
-                  <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-                </div>           
+                          
               </div>
             </section>      
 
@@ -476,29 +526,12 @@
               </div>
             </section>
 
-            <section class="page__service-selection service-selection">
-                    <div class="service-selection__container _container">
-                        <div class="service-selection__body">                        
-                            <div class="service-selection__lightning_left">
-                                <img class="lightning_left" loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_left.svg" alt="lightning left">
-                            </div>
-                            <div class="service-selection__content">         
-                                <div class="service-selection__title">
-                                    <h2 class="_h2 service-selection__title_h2 section_title">Не знаете какую услугу выбрать?</h2>
-                                </div>
-                                <div class="service-selection__subtitle toplend">Напишите нам. Мы подскажем какая услуга принесет вашей компании больше прибыли</div>
-                                <div class="page_contacts-form contact_form-grid">
-                                    <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-                                </div>
-                                <!-- <div class="service-selection__button">
-                                    <a class="service-selection__href" href="https://wa.me/79934536307">Написать в What’sApp</a>
-                                </div> -->
-                            </div>
-                            <div class="service-selection__lightning_right">
-                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_right.svg" alt="lightning right">
-                            </div>                        
-                        </div>
-                    </div>
+            <section class="form_row">
+              <div class="_container">
+                <div class="page_contacts-form contact_form-row">
+                  <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
+                </div>
+              </div>              
             </section>
 
             <section>
@@ -693,57 +726,7 @@
               </div>
             </section>
 
-            <section>
-              <div class="_container">
-                <div>
-                  <h2 class="_h2 section_title">Наши гарантии</h2>
-                </div>
-                <div class="slider_wrapper">
-                  <div class="guarantee_slider">
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-hand-holding-usd"></i></div>
-                      <div class="guarantee_text">Оплата за результат</div>
-                    </div>                    
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-clipboard-check"></i></div>
-                      <div class="guarantee_text">Заключение договора</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-users"></i></div>
-                      <div class="guarantee_text">Команда специалистов</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-thumbs-up"></i></div>
-                      <div class="guarantee_text">Белые методы продвижения</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-desktop"></i></div>
-                      <div class="guarantee_text">Улучшение юзабилити сайта</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-funnel-dollar"></i></div>
-                      <div class="guarantee_text">Повышение конверсии сайта</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-route"></i></div>
-                      <div class="guarantee_text">Четкая стратегия развития проекта</div>
-                    </div>                    
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="far fa-eye"></i></div>
-                      <div class="guarantee_text">Прозрачная отчетность</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-shield-alt"></i></div>
-                      <div class="guarantee_text">Безопасносность</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-handshake"></i></div>
-                      <div class="guarantee_text">Индивидуальный подход</div>
-                    </div>
-                  </div>
-                </div>                
-              </div>
-            </section>
+            
 
             <section>
               <div class="_container">
@@ -988,6 +971,31 @@
                   </div>
                 </div>
               </div>
+            </section>
+
+            <section class="page__service-selection service-selection">
+                    <div class="service-selection__container _container">
+                        <div class="service-selection__body">                        
+                            <div class="service-selection__lightning_left">
+                                <img class="lightning_left" loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_left.svg" alt="lightning left">
+                            </div>
+                            <div class="service-selection__content">         
+                                <div class="service-selection__title">
+                                    <h2 class="_h2 service-selection__title_h2 section_title">Не знаете какую услугу выбрать?</h2>
+                                </div>
+                                <div class="service-selection__subtitle toplend">Напишите нам. Мы подскажем какая услуга принесет вашей компании больше прибыли</div>
+                                <div class="page_contacts-form contact_form-grid">
+                                    <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
+                                </div>
+                                <!-- <div class="service-selection__button">
+                                    <a class="service-selection__href" href="https://wa.me/79934536307">Написать в What’sApp</a>
+                                </div> -->
+                            </div>
+                            <div class="service-selection__lightning_right">
+                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_right.svg" alt="lightning right">
+                            </div>                        
+                        </div>
+                    </div>
             </section>
 
 <?php get_footer(); ?>

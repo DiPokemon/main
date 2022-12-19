@@ -12,6 +12,7 @@
     $after_guarantee_text = get_field("after_guarantee_text", $term);
     $after_guarantee_img = get_field("after_guarantee_img", $term);
     $specialists = get_field("specialists", $term);
+    $tags = get_field("tags", $term);
 ?>
 <div class="_container">
                 <section class="page-header">
@@ -147,43 +148,110 @@
                         
                     </div>
                 </section>
-                
-                <section>
-                    <div class="_container">
-                        <?php if (!empty($after_posts_text)): ?>
+
+                <?php if (!empty($after_posts_text)): ?>                
+                    <section>
+                        <div class="_container">
                             <div>
                                 <h2 class="_h2 section_title"><?= $after_posts_title ?></h2>
                             </div>                        
                             <div class="cases_text service_text-block">
                                 <?= $after_posts_text ?>
+                            </div>                            
+                        </div>                
+                    </section>
+                <?php endif;?>
+
+                <?php if($steps): ?>
+                    <section>
+                        <div class="_container">
+                            <div>
+                                <h2 class="_h2 section_title"><?= $steps_block_title ?></h2>
                             </div> 
-                        <?php endif;?>
-                    </div>                
-                </section>
+                            <div class="accordion">
+                                
+                                    <?php $i=0; ?>
+                                    <?php foreach($steps as $step): ?>                                    
+                                        <input type="checkbox" name="chacor" id="step_<?= $i; ?>" />
+                                        <label for="step_<?= $i; ?>"><?= $step['step_title'] ?></label>
+                                        <div class="acor-body">
+                                            <?= $step['step_text'] ?>
+                                        </div>
+                                        <?php $i++ ?>
+                                    <?php endforeach ?>
+                                    
+                               
+                                
+                            </div>
+                        </div>
+                    </section>  
+                <?php else : ?>
+   
+                <?php endif; ?>
 
                 <section>
                     <div class="_container">
                         <div>
-                            <h2 class="_h2 section_title"><?= $steps_block_title ?></h2>
-                        </div> 
-                        <div class="accordion">
-                            <?php if($steps): ?>
-                                <?php $i=0; ?>
-                                <?php foreach($steps as $step): ?>                                    
-                                    <input type="checkbox" name="chacor" id="step_<?= $i; ?>" />
-                                    <label for="step_<?= $i; ?>"><?= $step['step_title'] ?></label>
-                                    <div class="acor-body">
-                                        <?= $step['step_text'] ?>
-                                    </div>
-                                    <?php $i++ ?>
-                                <?php endforeach ?>
-                                
-                            <?php else : ?>
-
-                            <?php endif; ?>
+                        <h2 class="_h2 section_title">Наши гарантии</h2>
                         </div>
+                        <div class="slider_wrapper">
+                        <div class="guarantee_slider">
+
+                            <div class="guarantee_item">
+                            <div class="guarantee_icon"><i class="fas fa-hand-holding-usd"></i></div>
+                            <div class="guarantee_text">Оплата за результат</div>
+                            </div>
+                            
+                            <div class="guarantee_item">
+                            <div class="guarantee_icon"><i class="fas fa-clipboard-check"></i></div>
+                            <div class="guarantee_text">Заключение договора</div>
+                            </div>
+
+                            <div class="guarantee_item">
+                            <div class="guarantee_icon"><i class="fas fa-users"></i></div>
+                            <div class="guarantee_text">Команда специалистов</div>
+                            </div>
+
+                            <div class="guarantee_item">
+                            <div class="guarantee_icon"><i class="fas fa-thumbs-up"></i></div>
+                            <div class="guarantee_text">Белые методы продвижения</div>
+                            </div>
+
+                            <div class="guarantee_item">
+                            <div class="guarantee_icon"><i class="fas fa-desktop"></i></div>
+                            <div class="guarantee_text">Улучшение юзабилити сайта</div>
+                            </div>
+
+                            <div class="guarantee_item">
+                            <div class="guarantee_icon"><i class="fas fa-funnel-dollar"></i></div>
+                            <div class="guarantee_text">Повышение конверсии сайта</div>
+                            </div>
+
+                            <div class="guarantee_item">
+                            <div class="guarantee_icon"><i class="fas fa-route"></i></div>
+                            <div class="guarantee_text">Четкая стратегия развития проекта</div>
+                            </div>
+                            
+                            <div class="guarantee_item">
+                            <div class="guarantee_icon"><i class="far fa-eye"></i></div>
+                            <div class="guarantee_text">Прозрачная отчетность</div>
+                            </div>
+
+                            <div class="guarantee_item">
+                            <div class="guarantee_icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="guarantee_text">Безопасносность</div>
+                            </div>
+
+                            <div class="guarantee_item">
+                            <div class="guarantee_icon"><i class="fas fa-handshake"></i></div>
+                            <div class="guarantee_text">Индивидуальный подход</div>
+                            </div>
+
+                        </div>
+                        </div>
+                        
                     </div>
-                </section>        
+                </section>
 
                 <section class="page__service-offer">                                      
                     <div class="cases-block__container">
@@ -440,71 +508,7 @@
                   </div>
                 </div>
               </div>
-            </section>
-
-                <section>
-                    <div class="_container">
-                        <div>
-                        <h2 class="_h2 section_title">Наши гарантии</h2>
-                        </div>
-                        <div class="slider_wrapper">
-                        <div class="guarantee_slider">
-
-                            <div class="guarantee_item">
-                            <div class="guarantee_icon"><i class="fas fa-hand-holding-usd"></i></div>
-                            <div class="guarantee_text">Оплата за результат</div>
-                            </div>
-                            
-                            <div class="guarantee_item">
-                            <div class="guarantee_icon"><i class="fas fa-clipboard-check"></i></div>
-                            <div class="guarantee_text">Заключение договора</div>
-                            </div>
-
-                            <div class="guarantee_item">
-                            <div class="guarantee_icon"><i class="fas fa-users"></i></div>
-                            <div class="guarantee_text">Команда специалистов</div>
-                            </div>
-
-                            <div class="guarantee_item">
-                            <div class="guarantee_icon"><i class="fas fa-thumbs-up"></i></div>
-                            <div class="guarantee_text">Белые методы продвижения</div>
-                            </div>
-
-                            <div class="guarantee_item">
-                            <div class="guarantee_icon"><i class="fas fa-desktop"></i></div>
-                            <div class="guarantee_text">Улучшение юзабилити сайта</div>
-                            </div>
-
-                            <div class="guarantee_item">
-                            <div class="guarantee_icon"><i class="fas fa-funnel-dollar"></i></div>
-                            <div class="guarantee_text">Повышение конверсии сайта</div>
-                            </div>
-
-                            <div class="guarantee_item">
-                            <div class="guarantee_icon"><i class="fas fa-route"></i></div>
-                            <div class="guarantee_text">Четкая стратегия развития проекта</div>
-                            </div>
-                            
-                            <div class="guarantee_item">
-                            <div class="guarantee_icon"><i class="far fa-eye"></i></div>
-                            <div class="guarantee_text">Прозрачная отчетность</div>
-                            </div>
-
-                            <div class="guarantee_item">
-                            <div class="guarantee_icon"><i class="fas fa-shield-alt"></i></div>
-                            <div class="guarantee_text">Безопасносность</div>
-                            </div>
-
-                            <div class="guarantee_item">
-                            <div class="guarantee_icon"><i class="fas fa-handshake"></i></div>
-                            <div class="guarantee_text">Индивидуальный подход</div>
-                            </div>
-
-                        </div>
-                        </div>
-                        
-                    </div>
-                </section>
+            </section>               
 
                 <?php if (!empty($after_guarantee_text)): ?>
                     <section>
@@ -530,7 +534,7 @@
                         $half_count = $count/2;
                         $half = ceil($half_count);
                         $first_half = array_slice($specialists, 0, $half);
-                        $seconf_half = array_slice($specialists, $half, $count);
+                        $second_half = array_slice($specialists, $half, $count);
                     ?>
                     <section>
                         <div class="_container">
@@ -558,6 +562,22 @@
                     </section>  
                 <?php endif; ?>
 
+                <?php if($tags): ?>
+                    <section>
+                        <div class="_container">
+                            <div class="slider_wrapper">
+                                <div class="tags_slider">
+                                    <?php foreach($tags as $tag) : ?>
+                                        
+                                            <a href="<?= $tag["tag_link"] ?>" class="tags_item"><?= $tag["tag_name"] ?></a>
+                                        
+                                    <?php endforeach; ?>
+                                </div> 
+                            </div>
+                        </div>
+                    </section>
+                <?php endif; ?>
+
                 <section id="lightning_contact_form" class="page__service-selection service-selection">
                     <div class="service-selection__container _container">
                         <div class="service-selection__body">                        
@@ -582,6 +602,8 @@
                         </div>
                     </div>
                 </section>
+
+                
 
             </div>
 <?php get_footer(); ?>
