@@ -1590,7 +1590,7 @@ section.form_row {
       -ms-user-select: none;
           user-select: none;
   background-color: #f7f2ff;
-  color: #6025bf;
+  color: #a769f7;
   border-radius: 10px;
   padding: 5px 10px;
   font-size: 18px;
@@ -1616,7 +1616,7 @@ section.form_row {
           flex-direction: column;
   gap: 20px;
   border-radius: 10px;
-  background-color: #6025bf;
+  background-color: #a769f7;
   color: #f7f2ff;
 }
 

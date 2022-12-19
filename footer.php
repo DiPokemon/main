@@ -8,24 +8,6 @@
                 <div itemprop="name" class="logo_text">TopLand</div>  
               </div>
               <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="footer__adress"><span itemprop="addressLocality">Ростов-на-Дону</span>,<br><span itemprop="streetAddress"> ул. Стабильная</span> 9</div>  
-            </div>
-
-            <div class="footer__navigation">
-
-                <?php
-                    wp_nav_menu( array(
-                        'container'       => 'nav',          
-                        'container_class' => 'footer__menu menu-footer',           
-                        'menu_class'      => 'menu-footer__list',          
-                        'fallback_cb'     => 'wp_page_menu',            
-                        'link_class'     => 'menu-footer__link',           
-                        'theme_location'  => 'footer_menu',
-                        'add_li_class'    => 'menu-footer__item'               
-                    ) );
-                ?>
-                
-            </div>            
-            <div class="footer_right-side">
               <div class="footer__contact footer-contact">
                 <div class="footer_tel-list">
                   <div class="footer-contact__title">Контакты:</div>
@@ -37,49 +19,51 @@
                 </div>  
                 <div class="footer-contact__email"><a itemprop="email" class="footer__link" href="mailto:sales@topland-rnd.ru">sales@topland-rnd.ru</a></div>  
               </div>
-            </div>            
+            </div>
+
+            <div class="footer__navigation">
+
+              <div class="footer_column">
+                <h3>Продвижение</h3>
+                    <span>Позиции в ТОП-10</span>
+                    <span>Продвижение в Яндексе</span>
+                    <span>Продвижение в Google</span>
+                    <span>Продвижение интернет-магазинов</span>
+                    <span>Аудит сайта</span>
+                    <span>SEO для регионов</span>
+                    <span>Тематики</span>                    
+              </div>
+
+              <div class="footer_column">
+                <h3>Услуги</h3>
+                  <span>Создание сайтов</span>
+                  <span>Разработка Landing Page (Одностраничный сайт)</span>
+                  <span>Разработка корпоративного сайта</span>
+                  <span>Разработка интернет-магазина</span>               
+                  <span>Веб-аналитика</span>
+                  <span>Social media marketing</span>
+                  <span>Техническая поддержка</span>
+                  <span>Контент-маркетинг</span>
+                  <span>E-mail маркетинг</span>
+                  <span>Медийная реклама</span>
+                  <span>Настройка контекстной рекламы</span>
+                  <span>Seo аудит</span>
+              </div>
+
+              <div class="footer_column">
+                <h3>О компании</h3>
+                  <span>Контакты</span>
+                  <span>Кейсы</span>
+                  <span>Отзывы</span>
+                  <span>Блог</span>
+                  <span>Словарь терминов</span>
+                  <span>Политика конфиденциальности</span>
+                  <span>Использование материалов сайта</span>
+              </div>
+                
+            </div>    
           </div>
-          <div class="footer_test-menu">
-            <div class="footer_column">
-              <h3>Продвижение</h3>
-                  <span>Позиции в ТОП-10</span>
-                  <span>Продвижение в Яндексе</span>
-                  <span>Продвижение в Google</span>
-                  <span>Продвижение интернет-магазинов</span>
-                  <span>Аудит сайта</span>
-                  <span>SEO для регионов</span>
-                  <span>Тематики</span>
-                  
-            </div>
-
-            <div class="footer_column">
-              <h3>Услуги</h3>
-              <span>Создание сайтов</span>
-              <span>Разработка Landing Page (Одностраничный сайт)</span>
-              <span>Разработка корпоративного сайта</span>
-              <span>Разработка интернет-магазина</span>               
-              <span>Веб-аналитика</span>
-              <span>Social media marketing</span>
-              <span>Техническая поддержка</span>
-              <span>Контент-маркетинг</span>
-              <span>E-mail маркетинг</span>
-              <span>Медийная реклама</span>
-              <span>Настройка контекстной рекламы</span>
-              <span>Seo аудит</span>
-            </div>
-
-            <div class="footer_column">
-              <h3>О компании</h3>
-                <span>Контакты</span>
-                <span>Кейсы</span>
-                <span>Отзывы</span>
-                <span>Блог</span>
-                <span>Словарь терминов</span>
-                <span>Политика конфиденциальности</span>
-                <span>Использование материалов сайта</span>
-            </div>
-
-          </div>
+          
           <div class="cities">
             <span>Москва</span>
             <span>Сочи</span>
