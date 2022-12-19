@@ -22,8 +22,19 @@
             </div>
 
             <div class="footer__navigation">
+              <?php
+                    wp_nav_menu( array(
+                        'container'       => 'nav',          
+                        'container_class' => 'footer__menu menu-footer',           
+                        'menu_class'      => 'menu-footer__list',          
+                        'fallback_cb'     => 'wp_page_menu',            
+                        'link_class'     => 'menu-footer__link',           
+                        'theme_location'  => 'footer_menu',
+                        'add_li_class'    => 'menu-footer__item'               
+                    ) );
+                ?>
 
-              <div class="footer_column">
+              <!-- <div class="footer_column">
                 <h3>Продвижение</h3>
                     <span>Позиции в ТОП-10</span>
                     <span>Продвижение в Яндексе</span>
@@ -59,7 +70,7 @@
                   <span>Словарь терминов</span>
                   <span>Политика конфиденциальности</span>
                   <span>Использование материалов сайта</span>
-              </div>
+              </div> -->
                 
             </div>    
           </div>

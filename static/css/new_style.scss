@@ -956,7 +956,7 @@ body {
   .reviews_gradient_bg-img{
     position: absolute;
     top: -75px;
-    width: 99vw;
+    width: 97vw;
     height: 851px;
     background-image: url(../img/bg-reviews.png);
     background-repeat: no-repeat;
@@ -1951,6 +1951,48 @@ body {
   .footer_right-side{
     display: flex
   }
+
+  .footer_left-side{
+    width: 25%;
+  }
+
+  .footer__navigation{
+    width: 75%;
+    
+    .footer__menu,
+    .menu-footer__list {
+      width: 100%;
+    }    
+
+    .menu-footer__list{
+      display: flex;
+      justify-content: space-between;
+
+      .menu-footer__item>.menu-footer__link{
+        font-size: 18px;
+        font-weight: 600;
+        color: $main-white-color;
+        line-height: 30px;
+      }
+
+      .sub-menu>.menu-footer__item>.menu-footer__link{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
+      
+    // .sub-menu .menu-footer__link{
+    //   display: flex;
+    //   font-style: normal;
+      
+    //   line-height: 24px;
+    //   color: $main-white-color;
+    //   align-items: center;
+    // }
+    
+  } 
+
   .footer_left-side,
   .footer_right-side{
     flex-direction: column;
@@ -1967,21 +2009,17 @@ body {
     line-height: 135%;
     color: $article-text-color;
   }
-  .menu-footer__list {
-    display: flex;
-    gap: 35px;
-  }
-  .menu-footer__link {
-    display: flex;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: $main-white-color;
-    align-items: center;
-  }
+  // .menu-footer__list {
+  //   display: flex;
+  //   gap: 35px;
+  // }
+
+ 
+
   .footer__contact {
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
   }
   .footer-contact__title {
     font-size: 16px;
@@ -2006,17 +2044,18 @@ body {
     color: $article-text-color;
   }
   
-  .footer_test-menu {
-    color: $article-text-color;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 20px;
-  }
+
+  // .footer_test-menu {
+  //   color: $article-text-color;
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 1fr);
+  //   padding-bottom: 20px;
+  // }
   
-  .footer_column {
-    display: flex;
-    flex-direction: column;
-  }
+  // .footer_column {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
   
   .cities {
     color: $article-text-color;

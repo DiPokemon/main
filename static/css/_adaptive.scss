@@ -205,7 +205,7 @@
 
     
 
-    .sub-menu{
+    header .sub-menu{
         visibility: hidden;
         opacity: 0;
         display: none;
@@ -761,24 +761,37 @@
 
 @media(max-width:768px){
     .footer__navigation{
-        order: 1;
-        width: 100%;
         justify-content: center;
         padding-bottom: 10px;
-        border-bottom: 1px solid $article-text-color;
+
+        .menu-footer__list{
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-end;
+
+            .menu-footer__item{
+                text-align: end;
+            }
+        }
+        
+        
     }
     .footer_left-side,
     .footer_right-side{
-        order: 2;
-        width: 45%;
         padding-top: 10px
     }
     .cities{
+        border-top: 1px solid $article-text-color;
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media(max-width: 550px){
+
+    .footer_left-side,
+    .footer__navigation {
+        width: 50%;
+    }
     .cities{
         grid-template-columns: repeat(2, 1fr);
     }
