@@ -32,6 +32,9 @@ $(document).ready(function () {
     $(document).ready(function() {
         setEqualHeight($(".offer_block-tariff-top"));
     });
+    $(document).ready(function() {
+        setEqualHeight($(".case_slide__title"));
+    });    
 });
 
 document.addEventListener('DOMContentLoaded', function(){
