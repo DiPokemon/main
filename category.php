@@ -27,58 +27,7 @@
                 
 
                 <section section="page__service-offer">
-                    <div class="tariffs-block__container">
-                            <!--<div class="test_banner faq_accordion">
-                                <input type="checkbox" name="test_banner" id="chacor_test" />
-                                <label for="chacor_test">Ключевые слова</label>
-                                <div class="acor-body">
-                                    <p>Seo специалист</p>
-                                    <p>Seo анализ</p>
-                                    <p>Отзывы</p>
-                                    <p>Рейтинг</p>
-                                    <p>Аудит</p>
-                                    <p>Продвижение</p>
-                                    <p>Гарантии</p>
-                                    <p>Решения для бизнеса</p>
-                                    <p>ТОП - 10</p>
-                                    <p>Интернет - маркетинг </p>
-                                    <p>Интернет-магазин</p>
-                                    <p>Ключи </p>
-                                    <p>Поисковые системы </p>
-                                    <p>Маркетплейсы</p>
-                                    <p>Разработка</p>
-                                    <p>Яндекс</p>
-                                    <p>Кейсы </p>
-                                    <p>Посещаемость</p>
-                                    <p>Google </p>
-                                    <p>Раскрутка</p>
-                                    <p>Seo </p>
-                                    <p>Преимущества </p>
-                                    <p>Аналитика </p>
-                                    <p>Лиды </p>
-                                    <p>KPI</p>
-                                    <p>Контекстная реклама</p>
-                                    <p>Интернет - реклама </p>
-                                    <p>Для бизнес</p>
-                                    <p>Трафик </p>
-                                    <p>Marketing</p>
-                                    <p>Цена продвижения </p>
-                                    <p>Ключевые запросы</p>
-                                    <p>Прибыль</p>
-                                    <p>Конверсия</p>
-                                    <p>Оптимизация </p>
-                                    <p>Тематики</p>
-                                    <p>Карточки товаров</p>
-                                    <p>Блог</p>
-                                    <p>Лендинг</p>
-                                    <p>Продажи</p>
-                                    <p>Веб-сайт</p>
-                                    <p>Продвижение на картах</p>
-                                    <p>Сайт под ключ</p>
-                                    <p>Создание сайтов </p>
-                                    <p>Техническая поддержка</p>
-                                </div>
-                              </div>-->
+                    <div class="tariffs-block__container">                            
                         <div class="tariffs-block__title">
                             <h2 class="_h2">Тарифы</h2>
                         </div>
@@ -321,7 +270,7 @@
                 <section>
               <div class="_container">
                 <div>
-                  <h2 class="_h2 section_title">Сферы, с которыми мы работаеи</h2>
+                  <h2 class="_h2 section_title">Сферы, с которыми мы работаем</h2>
                 </div>
                 <div class="slider_wrapper">
                   <div class="work_area_slider">
@@ -528,35 +477,18 @@
                     </section>
                 <?php endif;?>
                 
-                <?php if($specialists): ?>
-                    <?php 
-                        $count = count($specialists);
-                        $half_count = $count/2;
-                        $half = ceil($half_count);
-                        $first_half = array_slice($specialists, 0, $half);
-                        $second_half = array_slice($specialists, $half, $count);
-                    ?>
+                <?php if($specialists): ?>                    
                     <section>
                         <div class="_container">
                             <div>
                                 <h2 class="_h2 section_title">Наши специалисты</h2>
                             </div> 
                             <div class="staff_wrapper">
-                                <div class="half_column">
-                                    <?php foreach($first_half as $specialist):?>
-                                        <div class="staff_item">
-                                            <h3 class="staff_name"><?= $specialist["specialist"] ?></h3>                                        
-                                        </div> 
-                                    <?php endforeach; ?>
-                                </div>
-
-                                <div class="half_column">
-                                    <?php foreach($second_half as $specialist) : ?>
-                                        <div class="staff_item">
-                                            <h3 class="staff_name"><?= $specialist["specialist"] ?></h3>                                        
-                                        </div> 
-                                    <?php endforeach; ?>
-                                </div>
+                                <?php foreach($specialists as $specialist):?>
+                                    <div class="staff_item">
+                                        <h3 class="staff_name"><?= $specialist["specialist"] ?></h3>                                        
+                                    </div> 
+                                <?php endforeach; ?>                                
                             </div>  
                         </div>
                     </section>  
