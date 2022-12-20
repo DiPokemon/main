@@ -35,6 +35,9 @@ $(document).ready(function () {
     $(document).ready(function() {
         setEqualHeight($(".case_slide__title"));
     });    
+    $(document).ready(function() {
+        setEqualHeight($(".services-block__text"));
+    });  
 });
 
 document.addEventListener('DOMContentLoaded', function(){

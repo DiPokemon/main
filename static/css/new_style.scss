@@ -635,7 +635,7 @@ body {
     background: #1f0c37;
     box-shadow: inset 0px -1px 3px 0px #573c7a;
     border-radius: 3px;
-    align-items: center;
+    align-items: flex-start;
     gap:10px
   }
 
@@ -658,6 +658,12 @@ body {
       text-decoration: underline;
     }
   }
+
+  .services-block__img {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
 
   .services-block__item:hover {
     background: #3A116D;   
@@ -1553,8 +1559,14 @@ body {
 
   .text_wrapper{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
+
+    ._h2{
+      text-align: left;
+      font-size: 30px;
+      line-height: 30px;
+    }
 
     img{
       border-radius: 10px;

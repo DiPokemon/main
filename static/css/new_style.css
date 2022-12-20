@@ -892,9 +892,9 @@ section.form_row {
   -webkit-box-shadow: inset 0px -1px 3px 0px #573c7a;
           box-shadow: inset 0px -1px 3px 0px #573c7a;
   border-radius: 3px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 10px;
 }
 
@@ -918,6 +918,16 @@ section.form_row {
 }
 .service-block_left .services-block__text-price {
   text-decoration: underline;
+}
+
+.services-block__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .services-block__item:hover {
@@ -2077,10 +2087,15 @@ section.page__service-offer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 10px;
+}
+.text_wrapper ._h2 {
+  text-align: left;
+  font-size: 30px;
+  line-height: 30px;
 }
 .text_wrapper img {
   border-radius: 10px;
