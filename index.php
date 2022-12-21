@@ -962,7 +962,7 @@
               </div>
             </section>
 
-            <section class="page__reviews-block reviews">
+            <section id="reviews" class="page__reviews-block reviews">
               <div class="reviews_gradient_bg-img"></div>
               <div class="reviews-block__container _container">                
                 <div class="reviews-block__body">                
