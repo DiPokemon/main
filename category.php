@@ -76,8 +76,10 @@
                                         ?>
                                          <a class="services-block__item" href="<?php the_permalink(); ?>">
                                             <div class="service-block_left">
-                                                <div class="services-block__text"><?php the_title(); ?></div>
-                                                <div class="services-block__desc"><?php the_excerpt(); ?></div>
+                                                <div class="service-block-top">
+                                                   <div class="services-block__text"><?php the_title(); ?></div>
+                                                    <div class="services-block__desc"><?php the_excerpt(); ?></div> 
+                                                </div>                                                
                                                 <?php $service_price = get_field("service_price"); ?>
                                                 <?php if (!empty($service_price)): ?>
                                                     <div class="services-block__text services-block__text-price">От <?= $service_price ?> ₽</div>

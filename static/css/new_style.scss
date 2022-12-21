@@ -643,6 +643,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: space-between;
+    
+    .service-block-top{
+      display: flex;
+      gap: 10px;
+    }
+
 
     .services-block__desc{
       color: $article-text-color;
