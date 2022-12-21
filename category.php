@@ -82,7 +82,7 @@
                                                 </div>                                                
                                                 <?php $service_price = get_field("service_price"); ?>
                                                 <?php if (!empty($service_price)): ?>
-                                                    <div class="services-block__text services-block__text-price">От <?= $service_price ?> ₽</div>
+                                                    <div class="services-block__text-price">От <?= $service_price ?> ₽</div>
                                                 <?php endif;?>
                                             </div>                                            
                                             <div class="services-block__img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="<?php the_title(); ?>"></div>

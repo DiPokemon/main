@@ -907,6 +907,15 @@ section.form_row {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.service-block_left .service-block-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
 }
 .service-block_left .services-block__desc {
   color: #a992c7;
@@ -918,6 +927,10 @@ section.form_row {
 }
 .service-block_left .services-block__text-price {
   text-decoration: underline;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
 
 .services-block__img {
