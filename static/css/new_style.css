@@ -916,6 +916,10 @@ section.form_row {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .service-block_left .services-block__desc {
   color: #a992c7;
