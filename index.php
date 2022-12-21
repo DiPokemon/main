@@ -93,7 +93,8 @@
                             <div class="services-block__img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="<?php echo $term->name?>"></div>
                           </a>
                           <?php                          
-                        }
+                        };
+                        wp_reset_query();
                     ?> 
                   </div>   
                 </div> 
@@ -753,12 +754,12 @@
                   <div class="useful-articles__columns articles">
                     <?php $length = 0 ?>
                     <?php
-                        $args_for_horz_news = [
+                        $args_articles = [
                             'posts_per_page' => 3,
                             'category_name'  => 'blog',
                             'offset'         => 0,
                         ];
-                        $query = new WP_Query( $args_for_horz_news );
+                        $query = new WP_Query( $args_articles );
                         while ($query->have_posts()) :
                             $query->the_post();
                             $length++;
