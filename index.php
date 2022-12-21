@@ -743,7 +743,7 @@
               </div>
             </section>
 
-            <section class="page__cases-block cases">
+            <!-- <section class="page__cases-block cases">
               <div class="cases-block__container _container">
                 <div class="cases-block__body">
                   <div class="cases-block__title">
@@ -789,9 +789,9 @@
                   </div>
                 </div>
               </div>
-            </section>
+            </section> -->
 
-            <!-- <section class="page__useful-articles useful-articles">
+            <section class="page__useful-articles useful-articles">
               <div class="useful-articles__container _container">
                 <div class="useful-articles__body">
                   <div class="useful-articles__title">
@@ -822,12 +822,12 @@
                             <div class="articles__title"><h3 class="articles__title_h3"><?php the_title() ?></h3></div>
                             <div class="articles__tags">                              
                               <?php 
-                                if (get_the_tag_list()) { 
-                                  $tags_articles = get_the_terms( $post->ID, 'post_tag'); 
-                                  foreach ($tags_articles as $tag) {
-                                    echo $tag->name.' '; 
-                                  }
-                                } 
+                                // if (get_the_tag_list()) { 
+                                //   $tags_articles = get_the_terms( $post->ID, 'post_tag'); 
+                                //   foreach ($tags_articles as $tag) {
+                                //     echo $tag->name.' '; 
+                                //   }
+                                // } 
                               ?>                            
                             </div>
                             <div class="articles__text"><?php the_excerpt() ?></div>
@@ -840,7 +840,7 @@
                   <div class="useful-articles__button"><a class="useful-articles__href" href="/category/blog">Все статьи</a></div>
                 </div>
               </div>
-            </section> -->
+            </section>
 
             <section class="page__question question">
               <div class="question__container _container">
