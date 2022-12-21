@@ -772,13 +772,13 @@
                                 $image_title_articles = get_the_title($image_id_articles);
                     ?>
                         <a class="articles__item" href="<?php the_permalink() ?>">
-                            <div class="articles__img"><img  src="<?= $post_thumbnail_url_articles ?>" alt="<?php echo $image_alt_articles ?>" title="<?php echo $image_title_articles ?>"></div>
+                            <div class="articles__img"><img src="<?= $post_thumbnail_url_articles ?>" alt="<?php echo $image_alt_articles ?>" title="<?php echo $image_title_articles ?>"></div>
                             <div class="articles__title"><h3 class="articles__title_h3"><?php the_title() ?></h3></div>
                             <div class="articles__tags">                              
                               <?php 
                                 if (get_the_tag_list()) { 
                                   $tags_articles = get_the_terms( $post->ID, 'post_tag'); 
-                                  foreach ($tags as $tag) {
+                                  foreach ($tags_articles as $tag) {
                                     echo $tag->name.' '; 
                                   }
                                 } 
