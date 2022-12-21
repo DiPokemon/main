@@ -714,9 +714,7 @@
                   </div>
                 </div>
               </div>
-            </section>
-
-            
+            </section>            
 
             <section>
               <div class="_container">
@@ -745,7 +743,55 @@
               </div>
             </section>
 
-            <section class="page__useful-articles useful-articles">
+            <section class="page__cases-block cases">
+              <div class="cases-block__container _container">
+                <div class="cases-block__body">
+                  <div class="cases-block__title">
+                    <h2 class="_h2 cases-block__title_h2 section_title">SEO кейсы 2</h2>
+                  </div>
+                  <div class="slider_wrapper">
+                      <div class="cases_slider">
+                        <?php $length_cases_2 = 0 ?>
+                        <?php                            
+                            $args_for_cases_2 = [
+                                'posts_per_page' => 9,
+                                'category_name'  => 'cases',
+                                'offset'         => 0,
+                            ];
+                            $query_cases_2 = new WP_Query( $args_for_cases_2 );
+                            while ($query_cases_2->have_posts()) :
+                                $query_cases_2->the_post();
+                                $length_cases_2++;
+                                if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
+                                    $post_thumbnail_url_2 = get_template_directory_uri().'/static/empty-banner.gif';
+                                else
+                                    $post_thumbnail_url_2 = get_the_post_thumbnail_url();
+                                $image_id_2 = get_post_thumbnail_id();
+                                $image_alt_2 = get_post_meta($image_id_2, '_wp_attachment_image_alt', TRUE);
+                                $image_title_2 = get_the_title($image_id_2);
+                        ?>
+                            <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
+                                <div class="case_slide_wrapper">
+                                  <img loading="lazy" src="<?= $post_thumbnail_url_2 ?>" alt="<?php echo $image_alt_2 ?>" title="<?php echo $image_title_2 ?>">
+                                  <div class="case_slide_title_wrapper">
+                                    <h3 class="case_slide__title"><?php the_title() ?></h3>
+                                    <div class="case__excerpt"><?php the_excerpt() ?></div>
+                                  </div>                                
+                                </div>                              
+                            </a>
+                        <?php endwhile; wp_reset_query(); ?>  
+                      </div>
+                      <div class="slider-controls">
+                        <button type="button" class="slide-m-prev"></button>
+                        <div class="slide-m-dots"></div>
+                        <button type="button" class="slide-m-next"></button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- <section class="page__useful-articles useful-articles">
               <div class="useful-articles__container _container">
                 <div class="useful-articles__body">
                   <div class="useful-articles__title">
@@ -794,7 +840,7 @@
                   <div class="useful-articles__button"><a class="useful-articles__href" href="/category/blog">Все статьи</a></div>
                 </div>
               </div>
-            </section>
+            </section> -->
 
             <section class="page__question question">
               <div class="question__container _container">
