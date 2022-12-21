@@ -259,13 +259,17 @@
                             while ($query_cases->have_posts()) :
                                 $query_cases->the_post();
                                 $length_cases++;
-                                if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
-                                    $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
-                                else
-                                    $post_thumbnail_url = get_the_post_thumbnail_url();
-                                $image_id = get_post_thumbnail_id();
-                                $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
-                                $image_title = get_the_title($image_id);
+                                if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url())){
+                                  $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
+                                }
+                                    
+                                else {
+                                  $post_thumbnail_url = get_the_post_thumbnail_url();
+                                  $image_id = get_post_thumbnail_id();
+                                  $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+                                  $image_title = get_the_title($image_id);
+                                }
+                                
                         ?>
                             <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
                                 <div class="case_slide_wrapper">
@@ -762,13 +766,17 @@
                             while ($query_cases_2->have_posts()) :
                                 $query_cases_2->the_post();
                                 $length_cases_2++;
-                                if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
-                                    $post_thumbnail_url_2 = get_template_directory_uri().'/static/empty-banner.gif';
-                                else
-                                    $post_thumbnail_url_2 = get_the_post_thumbnail_url();
-                                $image_id_2 = get_post_thumbnail_id();
-                                $image_alt_2 = get_post_meta($image_id_2, '_wp_attachment_image_alt', TRUE);
-                                $image_title_2 = get_the_title($image_id_2);
+                                if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url())){
+                                  $post_thumbnail_url_2 = get_template_directory_uri().'/static/empty-banner.gif';
+                                }
+                                    
+                                else{
+                                  $post_thumbnail_url_2 = get_the_post_thumbnail_url();
+                                  $image_id_2 = get_post_thumbnail_id();
+                                  $image_alt_2 = get_post_meta($image_id_2, '_wp_attachment_image_alt', TRUE);
+                                  $image_title_2 = get_the_title($image_id_2);
+                                }
+                                    
                         ?>
                             <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
                                 <div class="case_slide_wrapper">
@@ -798,8 +806,8 @@
                     <h2 class="_h2 useful-articles__title_h2 section_title">Полезные статьи</h2>
                   </div>
                   <div class="useful-articles__columns articles">
-                    <?php $length_articles = 0 ?>
-                    <?php
+                    <?php 
+                        $length_articles = 0;                     
                         $args_articles = [
                             'posts_per_page' => 3,
                             'category_name'  => 'blog',
@@ -809,27 +817,31 @@
                         while ($query_articles->have_posts()) :
                             $query_articles->the_post();
                             $length_articles++;
-                            if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
-                                $post_thumbnail_url_articles = get_template_directory_uri().'/static/empty-banner.gif';
-                            else
+                            if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url())){
+                              $post_thumbnail_url_articles = get_template_directory_uri().'/static/empty-banner.gif';
+                            }
+                                
+                            else{
                                 $post_thumbnail_url_articles = get_the_post_thumbnail_url();
                                 $image_id_articles = get_post_thumbnail_id();
                                 $image_alt_articles = get_post_meta($image_id_articles, '_wp_attachment_image_alt', TRUE);
                                 $image_title_articles = get_the_title($image_id_articles);
+                            }
+                                
                     ?>
                         <a class="articles__item" href="<?php the_permalink() ?>">
                             <div class="articles__img"><img src="<?= $post_thumbnail_url_articles ?>" alt="<?php echo $image_alt_articles ?>" title="<?php echo $image_title_articles ?>"></div>
                             <div class="articles__title"><h3 class="articles__title_h3"><?php the_title() ?></h3></div>
-                            <div class="articles__tags">                              
-                              <?php 
-                                // if (get_the_tag_list()) { 
-                                //   $tags_articles = get_the_terms( $post->ID, 'post_tag'); 
-                                //   foreach ($tags_articles as $tag) {
-                                //     echo $tag->name.' '; 
-                                //   }
-                                // } 
-                              ?>                            
-                            </div>
+                            <?php if (get_the_tag_list()) : ?>
+                              <div class="articles__tags">                            
+                                <?php
+                                    $tags_articles = get_the_terms( $post->ID, 'post_tag'); 
+                                    foreach ($tags_articles as $tag) {
+                                      echo $tag->name.' '; 
+                                    }
+                                ?>                            
+                              </div>
+                            <?php endif; ?>
                             <div class="articles__text"><?php the_excerpt() ?></div>
                         </a>
                     <?php
