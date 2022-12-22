@@ -2623,6 +2623,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 10px;
 }
 .footer__navigation .menu-footer__list .menu-footer__item > .menu-footer__link {
   font-size: 18px;
@@ -3540,12 +3541,6 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .footer__navigation .menu-footer__list .menu-footer__item {
-    text-align: end;
   }
   .footer_left-side,
 .footer_right-side {

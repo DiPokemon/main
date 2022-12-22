@@ -1994,6 +1994,7 @@ body {
     .menu-footer__list{
       display: flex;
       justify-content: space-between;
+      gap:10px;
 
       .menu-footer__item>.menu-footer__link{
         font-size: 18px;
