@@ -691,6 +691,30 @@ body {
     background: transparent;
   }
   
+/*---------------------------------------------------------------------------------------------*/
+  /*----------------------------------------spotlight---------------------------------------------*/
+
+  .spotlight_wrap {
+    border-radius: 10px;
+    height: 300px;
+    cursor: none;
+    position: relative;
+    box-shadow: 0px 0px 5px $main-white-color;
+    padding: 10px;
+    color: $main-white-color;
+
+    .spotlight {
+      position: absolute;
+      height: 300px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+      backdrop-filter: blur(0px);
+  }
+}
+
   /*---------------------------------------------------------------------------------------------*/
   /*----------------------------------------services---------------------------------------------*/
   

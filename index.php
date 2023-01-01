@@ -70,7 +70,14 @@
                   </div>
                 </div>                  
             </section>                                
-
+            <section>
+              <div class="_container">
+                <div class="spotlight_wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit Praesentium itaque tenetur aspernatur nostrum eum Ipsum commodi officiis quaerat consequatur soluta dolorem sint Saepe beatae consectetur reprehenderit esse et cum aliquid
+                  <div class="spotlight"></div>
+                </div>
+              </div>
+            </section>
             <section class="page__services-block services">
               <div class="services-block__container _container">
                 <div class="services-block__body">
