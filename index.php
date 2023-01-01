@@ -93,7 +93,8 @@
                             <div class="services-block__img"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Frame 1.svg" alt="<?php echo $term->name?>"></div>
                           </a>
                           <?php                          
-                        }
+                        };
+                        wp_reset_query();
                     ?> 
                   </div>   
                 </div> 
@@ -258,13 +259,17 @@
                             while ($query_cases->have_posts()) :
                                 $query_cases->the_post();
                                 $length_cases++;
-                                if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
-                                    $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
-                                else
-                                    $post_thumbnail_url = get_the_post_thumbnail_url();
-                                $image_id = get_post_thumbnail_id();
-                                $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
-                                $image_title = get_the_title($image_id);
+                                if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url())){
+                                  $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
+                                }
+                                    
+                                else {
+                                  $post_thumbnail_url = get_the_post_thumbnail_url();
+                                  $image_id = get_post_thumbnail_id();
+                                  $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+                                  $image_title = get_the_title($image_id);
+                                }
+                                
                         ?>
                             <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
                                 <div class="case_slide_wrapper">
@@ -713,9 +718,7 @@
                   </div>
                 </div>
               </div>
-            </section>
-
-            
+            </section>            
 
             <section>
               <div class="_container">
@@ -744,6 +747,58 @@
               </div>
             </section>
 
+            <!-- <section class="page__cases-block cases">
+              <div class="cases-block__container _container">
+                <div class="cases-block__body">
+                  <div class="cases-block__title">
+                    <h2 class="_h2 cases-block__title_h2 section_title">SEO кейсы 2</h2>
+                  </div>
+                  <div class="slider_wrapper">
+                      <div class="cases_slider">
+                        <?php $length_cases_2 = 0 ?>
+                        <?php                            
+                            $args_for_cases_2 = [
+                                'posts_per_page' => 9,
+                                'category_name'  => 'cases',
+                                'offset'         => 0,
+                            ];
+                            $query_cases_2 = new WP_Query( $args_for_cases_2 );
+                            while ($query_cases_2->have_posts()) :
+                                $query_cases_2->the_post();
+                                $length_cases_2++;
+                                if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url())){
+                                  $post_thumbnail_url_2 = get_template_directory_uri().'/static/empty-banner.gif';
+                                }
+                                    
+                                else{
+                                  $post_thumbnail_url_2 = get_the_post_thumbnail_url();
+                                  $image_id_2 = get_post_thumbnail_id();
+                                  $image_alt_2 = get_post_meta($image_id_2, '_wp_attachment_image_alt', TRUE);
+                                  $image_title_2 = get_the_title($image_id_2);
+                                }
+                                    
+                        ?>
+                            <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
+                                <div class="case_slide_wrapper">
+                                  <img loading="lazy" src="<?= $post_thumbnail_url_2 ?>" alt="<?php echo $image_alt_2 ?>" title="<?php echo $image_title_2 ?>">
+                                  <div class="case_slide_title_wrapper">
+                                    <h3 class="case_slide__title"><?php the_title() ?></h3>
+                                    <div class="case__excerpt"><?php the_excerpt() ?></div>
+                                  </div>                                
+                                </div>                              
+                            </a>
+                        <?php endwhile; wp_reset_query(); ?>  
+                      </div>
+                      <div class="slider-controls">
+                        <button type="button" class="slide-m-prev"></button>
+                        <div class="slide-m-dots"></div>
+                        <button type="button" class="slide-m-next"></button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </section> -->
+
             <section class="page__useful-articles useful-articles">
               <div class="useful-articles__container _container">
                 <div class="useful-articles__body">
@@ -751,38 +806,42 @@
                     <h2 class="_h2 useful-articles__title_h2 section_title">Полезные статьи</h2>
                   </div>
                   <div class="useful-articles__columns articles">
-                    <?php $length = 0 ?>
-                    <?php
-                        $args_for_horz_news = [
+                    <?php 
+                        $length_articles = 0;                     
+                        $args_articles = [
                             'posts_per_page' => 3,
                             'category_name'  => 'blog',
                             'offset'         => 0,
                         ];
-                        $query = new WP_Query( $args_for_horz_news );
-                        while ($query->have_posts()) :
-                            $query->the_post();
-                            $length++;
-                            if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
-                                $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
-                            else
-                                $post_thumbnail_url = get_the_post_thumbnail_url();
-                            $image_id = get_post_thumbnail_id();
-                            $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
-                            $image_title = get_the_title($image_id);
+                        $query_articles = new WP_Query( $args_articles );
+                        while ($query_articles->have_posts()) :
+                            $query_articles->the_post();
+                            $length_articles++;
+                            if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url())){
+                              $post_thumbnail_url_articles = get_template_directory_uri().'/static/empty-banner.gif';
+                            }
+                                
+                            else{
+                                $post_thumbnail_url_articles = get_the_post_thumbnail_url();
+                                $image_id_articles = get_post_thumbnail_id();
+                                $image_alt_articles = get_post_meta($image_id_articles, '_wp_attachment_image_alt', TRUE);
+                                $image_title_articles = get_the_title($image_id_articles);
+                            }
+                                
                     ?>
                         <a class="articles__item" href="<?php the_permalink() ?>">
-                            <div class="articles__img"><img loading="lazy" src="<?= $post_thumbnail_url ?>" alt="<?php echo $image_alt ?>" title="<?php echo $image_title ?>"></div>
+                            <div class="articles__img"><img src="<?= $post_thumbnail_url_articles ?>" alt="<?php echo $image_alt_articles ?>" title="<?php echo $image_title_articles ?>"></div>
                             <div class="articles__title"><h3 class="articles__title_h3"><?php the_title() ?></h3></div>
-                            <div class="articles__tags">                              
-                              <?php 
-                                if (get_the_tag_list()) { 
-                                  $tags = get_the_terms( $post->ID, 'post_tag'); 
-                                  foreach ($tags as $tag) {
-                                    echo $tag->name.' '; 
-                                  }
-                                } 
-                              ?>                            
-                            </div>
+                            <?php if (get_the_tag_list()) : ?>
+                              <div class="articles__tags">                            
+                                <?php
+                                    $tags_articles = get_the_terms( $post->ID, 'post_tag'); 
+                                    foreach ($tags_articles as $tag) {
+                                      echo $tag->name.' '; 
+                                    }
+                                ?>                            
+                              </div>
+                            <?php endif; ?>
                             <div class="articles__text"><?php the_excerpt() ?></div>
                         </a>
                     <?php
@@ -903,7 +962,7 @@
               </div>
             </section>
 
-            <section class="page__reviews-block reviews">
+            <section id="reviews" class="page__reviews-block reviews">
               <div class="reviews_gradient_bg-img"></div>
               <div class="reviews-block__container _container">                
                 <div class="reviews-block__body">                

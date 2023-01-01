@@ -643,6 +643,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: space-between;
+    height: 100%;
+    
+    .service-block-top{
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+
 
     .services-block__desc{
       color: $article-text-color;
@@ -656,6 +665,10 @@ body {
 
     .services-block__text-price{
       text-decoration: underline;
+      font-family: "Inter";
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
     }
   }
 
@@ -1981,6 +1994,7 @@ body {
     .menu-footer__list{
       display: flex;
       justify-content: space-between;
+      gap:10px;
 
       .menu-footer__item>.menu-footer__link{
         font-size: 18px;
