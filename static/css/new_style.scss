@@ -85,6 +85,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position:relative;
 }
 
 .header__menu{
@@ -102,7 +103,7 @@ body {
   display: flex;
   align-items:stretch;
   float:left;
-  position:relative
+  // position:relative
 }
 .menu__link{
   display: flex;
@@ -118,9 +119,9 @@ body {
 }
 .sub-menu{
   display: flex;
-  flex-direction:column;
+  flex-direction:row;
   position:absolute;
-  top:25px;
+  top:70px;
   z-index:5;
   min-width:200px;
   border-radius:3px;
@@ -133,10 +134,19 @@ body {
   transition:.5s linear;
   box-shadow:0 0 5px $main-white-color;
 
+  
+
   .sub-menu{
-    left: 205px;
+    // left: 205px;
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1138px;
     min-width:300px;
     font-size: 13px;
+    display: grid;
+    top:55px;
+    grid-template-columns: repeat(4, 1fr);
+
 
     .menu-item .menu__link{
       padding:5px 10px;
@@ -152,7 +162,7 @@ body {
 }
 
 .sub-menu .menu-item{
-  position:relative
+  // position:relative
 }
 
 .sub-menu .menu-item:hover{

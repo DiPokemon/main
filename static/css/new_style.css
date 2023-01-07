@@ -181,6 +181,7 @@ main.page {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header__menu {
@@ -212,7 +213,6 @@ main.page {
       -ms-flex-align: stretch;
           align-items: stretch;
   float: left;
-  position: relative;
 }
 
 .menu__link {
@@ -237,12 +237,12 @@ main.page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   position: absolute;
-  top: 25px;
+  top: 70px;
   z-index: 5;
   min-width: 200px;
   border-radius: 3px;
@@ -260,9 +260,14 @@ main.page {
           box-shadow: 0 0 5px #f7f2ff;
 }
 .sub-menu .sub-menu {
-  left: 205px;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1138px;
   min-width: 300px;
   font-size: 13px;
+  display: grid;
+  top: 55px;
+  grid-template-columns: repeat(4, 1fr);
 }
 .sub-menu .sub-menu .menu-item .menu__link {
   padding: 5px 10px;
@@ -274,10 +279,6 @@ main.page {
   opacity: 1;
   -webkit-transform: rotateX(0deg);
           transform: rotateX(0deg);
-}
-
-.sub-menu .menu-item {
-  position: relative;
 }
 
 .sub-menu .menu-item:hover {
