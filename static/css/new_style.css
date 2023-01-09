@@ -267,6 +267,7 @@ main.page {
   font-size: 13px;
   display: grid;
   top: 55px;
+  left: 0;
   grid-template-columns: repeat(4, 1fr);
 }
 .sub-menu .sub-menu .menu-item .menu__link {
