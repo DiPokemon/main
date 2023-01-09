@@ -234,6 +234,9 @@ main.page {
 }
 
 .sub-menu {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1138px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,7 +267,7 @@ main.page {
   margin: 0 auto;
   max-width: 1138px;
   min-width: 300px;
-  font-size: 13px;
+  font-size: 14px;
   display: grid;
   top: 55px;
   left: 0;
@@ -272,7 +275,7 @@ main.page {
 }
 .sub-menu .sub-menu .menu-item .menu__link {
   padding: 5px 10px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .menu-item:hover > .sub-menu {
