@@ -2433,6 +2433,23 @@ span.contacts_item-title {
           flex-direction: column;
 }
 
+.captcha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.captcha img, .captcha span {
+  width: 50%;
+}
+
+.captcha img {
+  height: 100%;
+  max-height: 40px;
+  border-radius: 5px;
+}
+
 .page_contacts-text-block {
   padding: 20px 0;
 }

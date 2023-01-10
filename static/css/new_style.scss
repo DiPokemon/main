@@ -2020,6 +2020,20 @@ body {
     flex-direction: column;
   }
   
+  .captcha {
+    display: flex;
+    gap: 10px;
+  }
+
+  .captcha img, .captcha span {
+    width: 50%;
+  }
+
+  .captcha img {
+    height: 100%;
+    max-height: 40px;
+    border-radius: 5px;
+  }
 
   
   .page_contacts-text-block{
@@ -2143,7 +2157,7 @@ body {
   .footer_left-side{
     width: 25%;
   }
-  
+
 
   .footer__navigation{
     width: 75%;
