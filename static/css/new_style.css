@@ -2448,6 +2448,7 @@ span.contacts_item-title {
   height: 100%;
   max-height: 40px;
   border-radius: 5px;
+  border: 1px solid #3f3354;
 }
 
 .page_contacts-text-block {
