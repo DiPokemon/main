@@ -494,7 +494,7 @@ add_action('wp_footer', 'wpmidia_activate_masked_input');
 ?>
 <script type="text/javascript">
 	jQuery( function($){
-	$(".tel").mask("+7 (999) 999-9999");
+	$(".tel").mask("+7 999 999-9999");
 	});
 </script>
 <?php
