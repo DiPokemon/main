@@ -73,8 +73,58 @@
             <section>
               <div class="_container">
                 <div class="spotlight_wrap">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit Praesentium itaque tenetur aspernatur nostrum eum Ipsum commodi officiis quaerat consequatur soluta dolorem sint Saepe beatae consectetur reprehenderit esse et cum aliquid
-                  <div class="spotlight"></div>
+
+                  <div class="spotlight_text">
+                    <span>Seo специалист</span>
+                    <span>Seo анализ</span>
+                    <span>Отзывы</span>
+                    <span>Рейтинг</span>
+                    <span>Аудит</span>
+                    <span>Раскрутка сайта</span>
+                    <span>Продвижение</span>
+                    <span>Гарантии</span>
+                    <span>Решения для бизнеса</span>
+                    <span>ТОП - 10</span>
+                    <span>Интернет - маркетинг </span>
+                    <span>Интернет-магазин</span>
+                    <span>Ключи</span>
+                    <span>Поисковые системы</span>
+                    <span>Маркетплейсы</span>
+                    <span>Разработка</span>
+                    <span>Яндекс</span>
+                    <span>Кейсы</span>
+                    <span>Посещаемость</span>
+                    <span>Google</span>
+                    <span>Раскрутка</span>
+                    <span>Seo</span>
+                    <span>Преимущества </span>
+                    <span>Аналитика</span>
+                    <span>Лиды</span>
+                    <span>KPI</span>
+                    <span>Контекстная реклама</span>
+                    <span>Интернет - реклама </span>
+                    <span>Для бизнеса</span>
+                    <span>Трафик</span>
+                    <span>Marketing</span>
+                    <span>Цена продвижения</span>
+                    <span>Ключевые запросы</span>
+                    <span>Прибыль</span>
+                    <span>Конверсия</span>
+                    <span>Оптимизация</span>
+                    <span>Тематики</span>
+                    <span>Карточки товаров</span>
+                    <span>Блог</span>
+                    <span>Лендинг</span>
+                    <span>Продажи</span>
+                    <span>Веб-сайт</span>
+                    <span>Продвижение на картах</span>
+                    <span>Сайт под ключ</span>
+                    <span>Создание сайтов</span>
+                    <span>Техническая поддержка</span>
+                  </div>
+                  
+                  <img id="redux" src="<?php echo get_template_directory_uri()?>/static/img/unsplash_DUmFLtMeAbQ.jpg" alt="">
+
                 </div>
               </div>
             </section>

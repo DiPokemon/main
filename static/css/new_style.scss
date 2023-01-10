@@ -708,25 +708,45 @@ body {
 /*---------------------------------------------------------------------------------------------*/
   /*----------------------------------------spotlight---------------------------------------------*/
 
+//   #canvas {
+//     background:url(/wp-content/themes/main/static/img/unsplash_DUmFLtMeAbQ.jpg);       
+//     width: 531px;
+//     height: 438px;
+// }
+
   .spotlight_wrap {
     border-radius: 10px;
     height: 300px;
     cursor: none;
     position: relative;
-    box-shadow: 0px 0px 5px $main-white-color;
-    padding: 10px;
+    box-shadow: 0px 0px 5px $main-white-color;    
     color: $main-white-color;
 
-    .spotlight {
+    .spotlight_text{
+      padding: 10px;
       position: absolute;
-      height: 300px;
-      width: 100%;
-      top: 0;
-      left: 0;
+      z-index: 1;
+    }
+
+    canvas{
       border-radius: 10px;
-      background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-      backdrop-filter: blur(0px);
-  }
+      position: absolute;
+      // width: 100%;
+      // height: 100%;
+      // object-fit: cover;
+      z-index:2;
+    }
+
+  //   .spotlight {
+  //     position: absolute;
+  //     height: 300px;
+  //     width: 100%;
+  //     top: 0;
+  //     left: 0;
+  //     border-radius: 10px;
+  //     background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  //     backdrop-filter: blur(0px);
+  // }
 }
 
   /*---------------------------------------------------------------------------------------------*/
@@ -1993,6 +2013,7 @@ body {
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
   }
   
 
