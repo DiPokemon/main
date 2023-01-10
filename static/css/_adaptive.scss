@@ -131,6 +131,7 @@
     }
 
     .header__menu{
+        overflow: scroll;
         position:fixed;
         left: 0;
         top: -100%;
