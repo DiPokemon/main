@@ -2876,7 +2876,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     position: fixed;
   }
   .header__menu {
-    overflow: scroll;
+    overflow-y: scroll;
     position: fixed;
     left: 0;
     top: -100%;
