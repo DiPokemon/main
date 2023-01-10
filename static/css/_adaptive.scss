@@ -216,6 +216,10 @@
         border-left: 1px solid #f7f2ff;
         box-shadow: none;
         background: none;
+
+        .sub-menu{
+            max-width: unset;
+        }
     }
 
     .header__menu .sub-menu .menu-item:hover{
