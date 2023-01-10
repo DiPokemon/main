@@ -2982,7 +2982,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     background: none;
   }
   .header__menu .sub-menu .sub-menu {
-    max-width: unset;
+    min-width: unset;
   }
   .header__menu .sub-menu .menu-item:hover {
     background: none;
