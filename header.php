@@ -25,7 +25,7 @@
   <?php wp_head();?>
 </head>
 <body>
-  <!-- новогодняя мотня 2.1 -->
+
 <div class="b-page_newyear">
     <div class="b-page__content">
         <i class="b-head-decor">
