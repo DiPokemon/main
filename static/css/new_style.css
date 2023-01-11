@@ -79,6 +79,10 @@ hr {
   margin: 0;
 }
 
+.top-0 {
+  top: 0;
+}
+
 body {
   position: relative;
   height: 100%;
