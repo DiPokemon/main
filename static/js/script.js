@@ -389,7 +389,7 @@ document.addEventListener('DOMContentLoaded', function(){
 }, false);
 
 
-var header = $(".header");
+var header = $(".header__container");
 var scrollChange = 70;
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
