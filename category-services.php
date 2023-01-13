@@ -148,7 +148,7 @@ $cloud_tags = get_field("cloud_tags", $term);
                             <div class="cloud_tag-block__body"> 
                                 <div class="cloud_tag_slider">
                                     <?php $i=0; ?>
-                                    <?php foreach($tags as $tag): ?>   
+                                    <?php foreach($cloud_tags as $tag): ?>   
                                         <div class="cloud_tag-slide">
                                             <span class="cloud_tag_link"><?= $tag['tag_text'] ?></span>
                                         </div>
