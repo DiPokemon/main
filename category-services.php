@@ -1,4 +1,11 @@
 <?php get_header(); ?>
+
+<?php
+/*
+*Template name: Категория-услуг
+*/
+?>
+
 <?php
 # Получаем текущий термин таксономии
 $term = get_queried_object();
