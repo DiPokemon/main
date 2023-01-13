@@ -1,3 +1,8 @@
+<?php
+/*
+*Template name: Главная
+*/
+?>
 <?php get_header(); ?>
             <section class="page__main-block main">
               <div class="main-background1-img"></div>
