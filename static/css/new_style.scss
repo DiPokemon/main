@@ -2298,4 +2298,17 @@ body {
     text-align: center;
   }
 
+  //CLOUD TAGS
+
+  .cloud_tag_link {
+    border: 1px solid $main-white-color;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0
+  }
+    
+  .cloud_tag-slide {
+    margin: 0 5px
+  }
+
   @import "adaptive";

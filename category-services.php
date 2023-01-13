@@ -7,6 +7,7 @@ $term = get_queried_object();
 $top_text = get_field("top_text", $term);
 $cases_text   = get_field("cases_text", $term);
 $tariffs_text    = get_field("tariffs_text", $term);
+$cloud_tags = get_field("cloud_tags", $term);
 ?>
 <div class="_container">
                 <section class="page-header">
@@ -70,7 +71,6 @@ $tariffs_text    = get_field("tariffs_text", $term);
                                 <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
                             </div>
                         </div>
-
                         
                     </div>
                      
@@ -134,6 +134,24 @@ $tariffs_text    = get_field("tariffs_text", $term);
                         <div class="category-list_description__text"><?php echo category_description();?></div>
                     </div>
                 </section>
+
+                <?php if (!empty($cloud_tags)): ?>
+                    <section class="cloud_tag-section ">
+                        <div class="cloud_tag-container _container">                
+                            <div class="cloud_tag-block__body"> 
+                                <div class="cloud_tag_slider">
+                                    <?php $i=0; ?>
+                                    <?php foreach($tags as $tag): ?>   
+                                        <div class="cloud_tag-slide">
+                                            <span class="cloud_tag_link"><?= $tag['tag_text'] ?></span>
+                                        </div>
+                                        <?php $i++ ?>
+                                    <?php endforeach ?>
+                                </div>  
+                            </div>
+                        </div>
+                    </section>
+                <?php endif;?> 
 
                 <section id="lightning_contact_form" class="page__service-selection service-selection">
                     <div class="service-selection__container _container">

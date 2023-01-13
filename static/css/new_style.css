@@ -2774,6 +2774,17 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   text-align: center;
 }
 
+.cloud_tag_link {
+  border: 1px solid #f7f2ff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.cloud_tag-slide {
+  margin: 0 5px;
+}
+
 @media (max-width: 768px) {
   ._container {
     max-width: 90vw;

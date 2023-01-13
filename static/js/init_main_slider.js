@@ -7,6 +7,7 @@ $(document).ready(function () {
         var $guarantee_slider = $(sliderWrap).find('.guarantee_slider');
         var $techno_slider = $(sliderWrap).find('.techno_slider');
         var $work_area = $(sliderWrap).find('.work_area_slider');
+        var $cloud_tags = $(sliderWrap).find('.cloud_tag_slider');
         var $tags = $(sliderWrap).find('.tags_slider');
         var $next = $(sliderWrap).find('.slide-m-next');
         var $prev = $(sliderWrap).find('.slide-m-prev');
@@ -186,6 +187,33 @@ $(document).ready(function () {
                 },
                 {
                     breakpoint: 450,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+            ],
+        });
+
+        $cloud_tags.slick({   
+            autoplay: true,
+            dots: false,
+            arrows: false,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 460,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
