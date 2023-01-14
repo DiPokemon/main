@@ -2774,6 +2774,10 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   text-align: center;
 }
 
+.cloud_tag_slider .slick-track {
+  padding: 5px 0;
+}
+
 .cloud_tag-slide {
   margin: 0 5px;
   border-radius: 10px;
