@@ -13,6 +13,7 @@
     $after_guarantee_img = get_field("after_guarantee_img", $term);
     $specialists = get_field("specialists", $term);
     $tags = get_field("tags", $term);
+    $cloud_tags = get_field("cloud_tags", $term);
 ?>
 <div class="_container">
                 <section class="page-header">
@@ -496,21 +497,23 @@
                     </section>  
                 <?php endif; ?>
 
-                <?php if($cloud_tags): ?>
-                    <section>
-                        <div class="_container">
-                            <div class="slider_wrapper">
-                                <div class="tags_slider">
-                                    <?php foreach($cloud_tags as $tag) : ?>
-                                        
-                                            <a href="<?= $tag["tag_link"] ?>" class="tags_item"><?= $tag["tag_name"] ?></a>
-                                        
-                                    <?php endforeach; ?>
-                                </div> 
+                <?php if (!empty($cloud_tags)): ?>
+                    <section class="cloud_tag-section ">
+                        <div class="cloud_tag-container _container">                
+                            <div class="cloud_tag-block__body"> 
+                                <div class="cloud_tag_slider">
+                                    <?php $i=0; ?>
+                                    <?php foreach($cloud_tags as $tag): ?>   
+                                        <div class="cloud_tag-slide">
+                                            <span class="cloud_tag_link"><?= $tag['tag_text'] ?></span>
+                                        </div>
+                                        <?php $i++ ?>
+                                    <?php endforeach ?>
+                                </div>  
                             </div>
                         </div>
                     </section>
-                <?php endif; ?>
+                <?php endif;?> 
 
 
                 <section id="lightning_contact_form" class="page__service-selection service-selection">
