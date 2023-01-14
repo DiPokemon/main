@@ -496,12 +496,12 @@
                     </section>  
                 <?php endif; ?>
 
-                <?php if($tags): ?>
+                <?php if($cloud_tags): ?>
                     <section>
                         <div class="_container">
                             <div class="slider_wrapper">
                                 <div class="tags_slider">
-                                    <?php foreach($tags as $tag) : ?>
+                                    <?php foreach($cloud_tags as $tag) : ?>
                                         
                                             <a href="<?= $tag["tag_link"] ?>" class="tags_item"><?= $tag["tag_name"] ?></a>
                                         
@@ -511,6 +511,7 @@
                         </div>
                     </section>
                 <?php endif; ?>
+
 
                 <section id="lightning_contact_form" class="page__service-selection service-selection">
                     <div class="service-selection__container _container">
