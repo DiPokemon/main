@@ -2300,15 +2300,21 @@ body {
 
   //CLOUD TAGS
 
-  .cloud_tag_link {
-    border: 1px solid $main-white-color;
-    border-radius: 5px;
-    text-align: center;
-    padding: 10px 0
-  }
+  // .cloud_tag_link {
+  //   border: 1px solid $main-white-color;
+  //   border-radius: 5px;
+  //   text-align: center;
+  //   padding: 10px 0
+  // }
     
   .cloud_tag-slide {
-    margin: 0 5px
-  }
+    margin: 0 5px;
+    // border: 1px solid $main-white-color;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 3px #f7f2ff;
+    color: #a992c7;
+}
 
   @import "adaptive";
