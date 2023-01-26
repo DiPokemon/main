@@ -75,56 +75,56 @@
                 <div class="spotlight_wrap">
 
                   <div class="spotlight_text">
-                    <span>Seo специалист</span>
-                    <span>Seo анализ</span>
-                    <span>Отзывы</span>
-                    <span>Рейтинг</span>
-                    <span>Аудит</span>
-                    <span>Раскрутка сайта</span>
-                    <span>Продвижение</span>
-                    <span>Гарантии</span>
-                    <span>Решения для бизнеса</span>
-                    <span>ТОП - 10</span>
-                    <span>Интернет - маркетинг </span>
-                    <span>Интернет-магазин</span>
-                    <span>Ключи</span>
-                    <span>Поисковые системы</span>
-                    <span>Маркетплейсы</span>
-                    <span>Разработка</span>
-                    <span>Яндекс</span>
-                    <span>Кейсы</span>
-                    <span>Посещаемость</span>
-                    <span>Google</span>
-                    <span>Раскрутка</span>
-                    <span>Seo</span>
-                    <span>Преимущества </span>
-                    <span>Аналитика</span>
-                    <span>Лиды</span>
-                    <span>KPI</span>
-                    <span>Контекстная реклама</span>
-                    <span>Интернет - реклама </span>
-                    <span>Для бизнеса</span>
-                    <span>Трафик</span>
-                    <span>Marketing</span>
-                    <span>Цена продвижения</span>
-                    <span>Ключевые запросы</span>
-                    <span>Прибыль</span>
-                    <span>Конверсия</span>
-                    <span>Оптимизация</span>
-                    <span>Тематики</span>
-                    <span>Карточки товаров</span>
-                    <span>Блог</span>
-                    <span>Лендинг</span>
-                    <span>Продажи</span>
-                    <span>Веб-сайт</span>
-                    <span>Продвижение на картах</span>
-                    <span>Сайт под ключ</span>
-                    <span>Создание сайтов</span>
-                    <span>Техническая поддержка</span>
+                    <span class="spotlight_key">Seo специалист</span>
+                    <span class="spotlight_key">Seo анализ</span>
+                    <span class="spotlight_key">Отзывы</span>
+                    <span class="spotlight_key">Рейтинг</span>
+                    <span class="spotlight_key">Аудит</span>
+                    <span class="spotlight_key">Раскрутка сайта</span>
+                    <span class="spotlight_key">Продвижение</span>
+                    <span class="spotlight_key">Гарантии</span>
+                    <span class="spotlight_key">Решения для бизнеса</span>
+                    <span class="spotlight_key">ТОП - 10</span>
+                    <span class="spotlight_key">Интернет - маркетинг </span>
+                    <span class="spotlight_key">Интернет-магазин</span>
+                    <span class="spotlight_key">Ключи</span>
+                    <span class="spotlight_key">Поисковые системы</span>
+                    <span class="spotlight_key">Маркетплейсы</span>
+                    <span class="spotlight_key">Разработка</span>
+                    <span class="spotlight_key">Яндекс</span>
+                    <span class="spotlight_key">Кейсы</span>
+                    <span class="spotlight_key">Посещаемость</span>
+                    <span class="spotlight_key">Google</span>
+                    <span class="spotlight_key">Раскрутка</span>
+                    <span class="spotlight_key">Seo</span>
+                    <span class="spotlight_key">Преимущества </span>
+                    <span class="spotlight_key">Аналитика</span>
+                    <span class="spotlight_key">Лиды</span>
+                    <span class="spotlight_key">KPI</span>
+                    <span class="spotlight_key">Контекстная реклама</span>
+                    <span class="spotlight_key">Интернет - реклама </span>
+                    <span class="spotlight_key">Для бизнеса</span>
+                    <span class="spotlight_key">Трафик</span>
+                    <span class="spotlight_key">Marketing</span>
+                    <span class="spotlight_key">Цена продвижения</span>
+                    <span class="spotlight_key">Ключевые запросы</span>
+                    <span class="spotlight_key">Прибыль</span>
+                    <span class="spotlight_key">Конверсия</span>
+                    <span class="spotlight_key">Оптимизация</span>
+                    <span class="spotlight_key">Тематики</span>
+                    <span class="spotlight_key">Карточки товаров</span>
+                    <span class="spotlight_key">Блог</span>
+                    <span class="spotlight_key">Лендинг</span>
+                    <span class="spotlight_key">Продажи</span>
+                    <span class="spotlight_key">Веб-сайт</span>
+                    <span class="spotlight_key">Продвижение на картах</span>
+                    <span class="spotlight_key">Сайт под ключ</span>
+                    <span class="spotlight_key">Создание сайтов</span>
+                    <span class="spotlight_key">Техническая поддержка</span>
                   </div>
                   
-                  <img id="redux" src="<?php echo get_template_directory_uri()?>/static/img/unsplash_DUmFLtMeAbQ.jpg" alt="">
-
+                  <img id="redux" src="<?php echo get_template_directory_uri()?>/static/img/abstr.jpg" alt="">
+                  
                 </div>
               </div>
             </section>

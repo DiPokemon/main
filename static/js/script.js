@@ -1,4 +1,23 @@
 $(document).ready(function () {
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        };
+        return color;
+    };
+
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
+      }
+    $('.spotlight_key').each((i, el) => el.style.color = getRandomColor());            
+    $('.spotlight_key').each((i, el) => el.style.fontSize = getRandomInt(14, 24)+"px");
+    
+
+
     $('.accordion__item').click(function () {
         $(this).toggleClass('open');
     });
@@ -6,80 +25,13 @@ $(document).ready(function () {
     $('.header__burger').click(function (event) {
         $('.header__burger,.header__menu').toggleClass('active');
         $('body').toggleClass('lock')
-    }); 
+    });
 
     if ($('window').width() <= 768) {
-        $('.first_lvl_menu>.sub-menu>li>menu__link').click(function(event) {
+        $('.first_lvl_menu>.sub-menu>li>menu__link').click(function (event) {
             event.preventDefault();
         });
-    };
-
-    // (function() {
-    //     // Creates a new canvas element and appends it as a child
-    //     // to the parent element, and returns the reference to
-    //     // the newly created canvas element
-    
-    
-    //     function createCanvas(parent, width, height) {
-    //         var canvas = {};
-    //         canvas.node = document.createElement('canvas');
-    //         canvas.context = canvas.node.getContext('2d');
-    //         canvas.node.width = width || 100;
-    //         canvas.node.height = height || 100;
-    //         parent.appendChild(canvas.node);
-    //         return canvas;
-    //     }
-    
-    //     function init(container, width, height, fillColor) {
-    //         var canvas = createCanvas(container, width, height);
-    //         var ctx = canvas.context;
-    //         // define a custom fillCircle method
-    //         ctx.fillCircle = function(x, y, radius, fillColor) {
-    //             this.fillStyle = fillColor;
-    //             this.beginPath();
-    //             this.moveTo(x, y);
-    //             this.arc(x, y, radius, 0, Math.PI * 2, false);
-    //             this.fill();
-    //         };
-    //         ctx.clearTo = function(fillColor) {
-    //             ctx.fillStyle = fillColor;
-    //             ctx.fillRect(0, 0, width, height);
-    //         };
-    //         ctx.clearTo(fillColor || "#ddd");
-    
-    //         // bind mouse events
-    //         canvas.node.onmousemove = function(e) {
-    //             if (!canvas.isDrawing) {
-    //                return;
-    //             }
-    //             var x = e.pageX - this.offsetLeft;
-    //             var y = e.pageY - this.offsetTop;
-    //             var radius = 10; // or whatever
-    //             var fillColor = '#ff0000';
-    //             ctx.globalCompositeOperation = 'destination-out';
-    //             ctx.fillCircle(x, y, radius, fillColor);
-    //         };
-    //         canvas.node.onmousedown = function(e) {
-    //             canvas.isDrawing = true;
-    //         };
-    //         canvas.node.onmouseup = function(e) {
-    //             canvas.isDrawing = false;
-    //         };
-    //     }
-    
-    //     var container = document.getElementById('canvas');
-    //     init(container, 531, 438, '#ddd');
-    
-    // })();
-
-
-    // $(window).mousemove(function(e){
-    //     let w = $('.spotlight').innerWidth(),
-    //     h = $('.spotlight').innerHeight(),
-    //     t = e.pageY - $('.spotlight').offset().top,
-    //     l = e.pageX - $('.spotlight').offset().left;
-    //     $('.spotlight').css('background-image', 'radial-gradient(circle at ' + (l / w * 100) + '% ' + (t / h * 100) + '%, transparent 80px, rgba(26,9,48,.97) 120px)', 'backdrop-filter', 'blur(5px)');
-    // });
+    };    
     
     (function ($) {
         var methods = {
@@ -95,7 +47,7 @@ $(document).ready(function () {
                             $canvas = $("<canvas/>"),
                             canvas = $canvas.get(0),
                             size = (options && options.size) ? options.size : 100,
-                            completeRatio = (options && options.completeRatio) ? options.completeRatio : .7,
+                            completeRatio = (options && options.completeRatio) ? options.completeRatio : .5,
                             completeFunction = (options && options.completeFunction) ? options.completeFunction : null,
                             parts = [],
                             colParts = Math.floor(width / size),
@@ -119,6 +71,7 @@ $(document).ready(function () {
     
                         ctx.lineCap = "round";
                         // bind events
+                        $canvas.bind('mousemove.eraser', methods.mouseMove);
                         $canvas.bind('mousedown.eraser', methods.mouseDown);
                         $canvas.bind('touchstart.eraser', methods.touchStart);
                         $canvas.bind('touchmove.eraser', methods.touchMove);
@@ -186,19 +139,19 @@ $(document).ready(function () {
                     var ta = event.originalEvent.changedTouches,
                         n = ta.length;
                     while (n--)
-                    if (ta[n].identifier == data.touchID) {
-                        var tx = ta[n].pageX - data.posX,
-                            ty = ta[n].pageY - data.posY;
-                        methods.evaluatePoint(data, tx, ty);
-                        data.ctx.beginPath();
-                        data.ctx.moveTo(data.touchX, data.touchY);
-                        data.touchX = tx;
-                        data.touchY = ty;
-                        data.ctx.lineTo(data.touchX, data.touchY);
-                        data.ctx.stroke();
-                        event.preventDefault();
-                        break;
-                    }
+                        if (ta[n].identifier == data.touchID) {
+                            var tx = ta[n].pageX - data.posX,
+                                ty = ta[n].pageY - data.posY;
+                            methods.evaluatePoint(data, tx, ty);
+                            data.ctx.beginPath();
+                            data.ctx.moveTo(data.touchX, data.touchY);
+                            data.touchX = tx;
+                            data.touchY = ty;
+                            data.ctx.lineTo(data.touchX, data.touchY);
+                            data.ctx.stroke();
+                            event.preventDefault();
+                            break;
+                        }
                 }
             },
             touchEnd: function (event) {
@@ -209,11 +162,11 @@ $(document).ready(function () {
                     var ta = event.originalEvent.changedTouches,
                         n = ta.length;
                     while (n--)
-                    if (ta[n].identifier == data.touchID) {
-                        data.touchDown = false;
-                        event.preventDefault();
-                        break;
-                    }
+                        if (ta[n].identifier == data.touchID) {
+                            data.touchDown = false;
+                            event.preventDefault();
+                            break;
+                        }
                 }
             },
     
@@ -323,24 +276,27 @@ $(document).ready(function () {
         };
     })(jQuery);
     
-    addEventListener( "load", init, false );
+    addEventListener("load", init, false);
                 
-                function init( event ) {
-                    $("#redux").eraser();
+    function init(event) {
+        $("#redux").eraser({ size: 30 });
                     
-                    // you can alse specify the brush size (in pixel) by using options :
-                    // $("#redux").eraser({size: 20});
-                }
+        // you can alse specify the brush size (in pixel) by using options :
+        // $("#redux").eraser({size: 10});
+    }
                 
-                function remove(event) {
-                    $("#redux").eraser('clear');
-                    event.preventDefault();
-                }
+    function remove(event) {
+        $("#redux").eraser('clear');
+        event.preventDefault();
+    }
                 
-                function reset(event) {
-                    $("#redux").eraser('reset');
-                    event.preventDefault();
-                }
+    function reset(event) {
+        $("#redux").eraser('reset');
+        event.preventDefault();
+    }
+    
+   
+           
     
     function setEqualHeight(columns){
         var tallestcolumn = 0;
