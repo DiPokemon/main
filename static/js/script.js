@@ -13,8 +13,20 @@ $(document).ready(function () {
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
       }
-    $('.spotlight_key').each((i, el) => el.style.color = getRandomColor());            
-    $('.spotlight_key').each((i, el) => el.style.fontSize = getRandomInt(14, 24)+"px");
+    $('.spotlight_key').each((i, el) => el.style.color = getRandomColor());      
+    if (window.innerWidth > 900) {
+        $('.spotlight_key').each((i, el) => el.style.fontSize = getRandomInt(14, 20) + "px");
+    }
+    else if (window.innerWidth > 650) {
+        $('.spotlight_key').each((i, el) => el.style.fontSize = getRandomInt(14, 18) + "px");
+    }
+    else if (window.innerWidth > 500){ 
+        $('.spotlight_key').each((i, el) => el.style.fontSize = getRandomInt(13, 14)+"px");
+    }
+    else { 
+        $('.spotlight_key').each((i, el) => el.style.fontSize = getRandomInt(13, 14)+"px");
+    }
+    
     
 
 
@@ -54,13 +66,14 @@ $(document).ready(function () {
                             numParts = colParts * Math.floor(height / size),
                             n = numParts,
                             ctx = canvas.getContext("2d");
-    
+                        console.log('pos: ', pos);
                         // replace target with canvas
                         $this.after($canvas);
                         canvas.id = this.id;
                         canvas.className = this.className;
                         canvas.width = width;
                         canvas.height = height;
+                        
                         ctx.drawImage(this, 0, 0);
                         $this.remove();
     
@@ -280,6 +293,7 @@ $(document).ready(function () {
                 
     function init(event) {
         $("#redux").eraser({ size: 30 });
+        $("#redux").eraser('reset');
                     
         // you can alse specify the brush size (in pixel) by using options :
         // $("#redux").eraser({size: 10});

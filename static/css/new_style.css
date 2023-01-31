@@ -3572,4 +3572,23 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   .menu-footer__link {
     font-size: 15px;
   }
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------spotlight----------------------------------*/
+@media (max-width: 900px) {
+  .spotlight_wrap .spotlight_text {
+    padding: 5px;
+    gap: 5px;
+  }
+}
+@media (max-width: 430px) {
+  .spotlight_wrap .spotlight_text {
+    padding: 3px;
+    gap: 3px;
+  }
+}
+@media (max-width: 500px) {
+  .spotlight_wrap {
+    height: 350px;
+  }
 }/*# sourceMappingURL=new_style.css.map */

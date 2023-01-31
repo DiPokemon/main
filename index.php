@@ -123,7 +123,7 @@
                     <span class="spotlight_key">Техническая поддержка</span>
                   </div>
                   
-                  <img id="redux" src="<?php echo get_template_directory_uri()?>/static/img/abstr.jpg" alt="">
+                  <img id="redux" src="<?php echo get_template_directory_uri()?>/static/img/spotlight_bg.jpg" alt="">
                   
                 </div>
               </div>
