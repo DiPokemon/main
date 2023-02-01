@@ -1581,7 +1581,7 @@ section.form_row {
 }
 
 .useful-articles__body .articles__img img {
-  max-height: 200px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px 5px 0 0;
