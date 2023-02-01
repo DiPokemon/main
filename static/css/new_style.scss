@@ -2020,6 +2020,21 @@ body {
     flex-direction: column;
   }
   
+  .captcha {
+    display: flex;
+    gap: 10px;
+  }
+
+  .captcha img, .captcha span {
+    width: 50%;
+  }
+
+  .captcha img {
+    height: 100%;
+    max-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #3f3354;
+  }
 
   
   .page_contacts-text-block{
@@ -2143,6 +2158,7 @@ body {
   .footer_left-side{
     width: 25%;
   }
+
 
   .footer__navigation{
     width: 75%;
@@ -2287,5 +2303,27 @@ body {
     color: $article-text-color;
     text-align: center;
   }
+
+  //CLOUD TAGS
+
+  // .cloud_tag_link {
+  //   border: 1px solid $main-white-color;
+  //   border-radius: 5px;
+  //   text-align: center;
+  //   padding: 10px 0
+  // }
+  .cloud_tag_slider .slick-track{
+    padding: 5px 0;
+  }
+
+  .cloud_tag-slide {
+    margin: 0 5px;
+    // border: 1px solid $main-white-color;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 3px #f7f2ff;
+    color: #a992c7;
+}
 
   @import "adaptive";

@@ -358,4 +358,16 @@ document.addEventListener('DOMContentLoaded', function(){
     };
 }, false);
 
+
+var header = $(".header__container");
+var scrollChange = 70;
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= scrollChange) {
+        header.addClass("top-0");
+    } else {
+        header.removeClass("top-0");
+    }
+});
       

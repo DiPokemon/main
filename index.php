@@ -1,3 +1,8 @@
+<?php
+/*
+*Template name: Главная
+*/
+?>
 <?php get_header(); ?>
             <section class="page__main-block main">
               <div class="main-background1-img"></div>
@@ -69,8 +74,9 @@
                     </div>
                   </div>
                 </div>                  
-            </section>                                
-            <section>
+            </section>    
+            
+            <!-- <section>
               <div class="_container">
                 <div class="spotlight_wrap">
 
@@ -127,7 +133,8 @@
                   
                 </div>
               </div>
-            </section>
+            </section> -->
+
             <section class="page__services-block services">
               <div class="services-block__container _container">
                 <div class="services-block__body">

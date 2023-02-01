@@ -29,6 +29,7 @@ function topland_load_styles()
   wp_enqueue_style('slick-theme', get_template_directory_uri().'/static/js/slick/slick-theme.css');
   //wp_enqueue_style('style', get_stylesheet_uri());
   wp_enqueue_style('fontawesome', get_template_directory_uri().'/static/css/fontawesome.all.css');
+  wp_enqueue_style('newyear', get_template_directory_uri().'/static/newyear/style.css');
 }; 
 add_action('wp_enqueue_scripts', 'topland_load_styles', 10);
 
@@ -43,6 +44,8 @@ function topland_load_scripts()
   wp_enqueue_script('slick', get_template_directory_uri() . '/static/js/slick/slick.min.js', array('jquery'), NULL, true);
   wp_enqueue_script('init_main_slider', get_template_directory_uri().'/static/js/init_main_slider.js', array('slick'), NULL, true);
   wp_enqueue_script('loadmore', get_template_directory_uri().'/static/js/loadmore.js', array(), NULL, true);
+  wp_enqueue_script('maskedinput', get_template_directory_uri().'/static/js/maskedinput.js', array('jquery'), NULL, true);
+  wp_enqueue_script('newyear_js', get_template_directory_uri().'/static/newyear/script.js', array(), NULL, true);
 //   wp_enqueue_script('loadmore', get_template_directory_uri().'/static/js/loadmore.js', array(), NULL, true);
 } 
 add_action('wp_enqueue_scripts', 'topland_load_scripts', 10);
@@ -488,3 +491,13 @@ function topland_service_price_update( $post_id ){
 	return $post_id;
 }
 
+add_action('wp_footer', 'wpmidia_activate_masked_input');
+	function wpmidia_activate_masked_input(){
+?>
+<script type="text/javascript">
+	jQuery( function($){
+	$(".tel").mask("+7 999 999-9999");
+	});
+</script>
+<?php
+}
