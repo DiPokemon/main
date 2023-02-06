@@ -66,7 +66,7 @@ $(document).ready(function () {
                             numParts = colParts * Math.floor(height / size),
                             n = numParts,
                             ctx = canvas.getContext("2d");
-                        console.log('pos: ', pos);
+                        
                         // replace target with canvas
                         $this.after($canvas);
                         canvas.id = this.id;
@@ -83,6 +83,10 @@ $(document).ready(function () {
                         ctx.lineWidth = size;
     
                         ctx.lineCap = "round";
+                       
+
+                        
+                        
                         // bind events
                         $canvas.bind('mousemove.eraser', methods.mouseMove);
                         $canvas.bind('mousedown.eraser', methods.mouseDown);
@@ -256,6 +260,7 @@ $(document).ready(function () {
             size: function (value) {
                 var $this = $(this),
                     data = $this.data('eraser');
+                
                 if (data && value) {
                     data.size = value;
                     data.ctx.lineWidth = value;
@@ -293,7 +298,7 @@ $(document).ready(function () {
                 
     function init(event) {
         $("#redux").eraser({ size: 30 });
-        $("#redux").eraser('reset');
+        
                     
         // you can alse specify the brush size (in pixel) by using options :
         // $("#redux").eraser({size: 10});
@@ -309,6 +314,13 @@ $(document).ready(function () {
         event.preventDefault();
     }
     
+    $(".spotlight_wrap").mousemove(function(e) {
+        var parentOffset = $(this).parent().offset();
+        var posX = (e.pageX - parentOffset.left) - 30;
+        var posY = (e.pageY - parentOffset.top) - 30;
+      
+        $('mask g').attr('transform', 'translate(' + posX + ',' + posY + ')');
+      });
    
            
     
