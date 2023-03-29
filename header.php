@@ -274,7 +274,7 @@
       Акция действует только при заказе до конца апреля  и с оплатой за 2 месяца
     </div>
     
-    <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]') ?>
+    <?php echo do_shortcode('[contact-form-7 id="2772" title="Акция"]') ?>
     
   </div>
 <main class="page">
