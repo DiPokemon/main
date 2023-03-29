@@ -2337,4 +2337,186 @@ body {
     color: #a992c7;
 }
 
+#promo_modal{
+  width: 400px;
+  right: -500px;
+}
+
+#promo_modal.active{ 
+  right: 50px;
+}
+
+#promo_modal{
+  max-height: 600px;
+  font-family: "Inter";
+  display: block;  
+  position: fixed;
+  z-index: 999;    
+  background-color: #fff;
+  overflow-x: hidden;
+  padding: 10px 10px 10px 10px;
+  transition: 0.5s; 
+	box-shadow: 0px 0px 5px #000;
+	border-radius: 5px;
+  top: 50%;   
+	transform: translate(0px, -50%);    
+
+  .promo_modal_close{
+    text-align: end;
+
+    a{
+      color: #1a0930;
+      font-size: 25px;      
+      line-height: 25px;
+    }
+  }
+
+  .promo_title{
+    font-size: 18px;
+    padding-bottom: 20px;
+    color: #1a0930;
+  }
+
+  .promo_subtitle{
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  
+  .contact_form{
+    input {
+      background-color: #fff;
+      color: #3f3354;
+    }
+
+    br{
+      display: none;
+    }
+    .wpcf7-submit{
+      background-color: #fff;
+      color: #3f3354;
+      cursor: pointer;
+    }
+    .wpcf7-submit:hover{
+      background-color: #3f3354;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  
+}
+
+#open_modal {
+  background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  transform: translate3d(0, 0, 0);  
+  display: block;  
+  position: fixed;
+  z-index: 999;  
+  font-size: 16px;	
+  top: 50%;   
+  right: 0px;
+	transform: translate(0px, -50%);   
+  color: $main-white-color;
+  cursor: pointer;	
+  padding: 10px 5px;
+  border-radius: 5px 0px 0px 5px;  
+
+  a{
+    font-family: "Inter";
+    font-weight: 500;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+}
+
+
+.action_header{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0px;
+  align-items: center;
+  background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  transform: translate3d(0, 0, 0); 
+
+  .action_title{
+
+    a{
+      color: $main-white-color;
+      text-transform: uppercase;
+      font-family: "Inter";
+      font-size: 24px;
+    }
+  }
+
+  .action_timer{
+
+    .timer__items {
+      display: flex;
+      font-size: 14px;
+      align-items: stretch;
+      display: flex;
+      gap: 20px;
+
+      .timer__item {
+        font-family: "Inter";
+        position: relative;
+        min-width: 60px;        
+        text-align: center;
+        line-height: 1;
+        font-weight: bold;
+        color: #28025a;
+        background-color: $main-white-color;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px 10px 20px 10px;
+
+        &::before {
+          font-family: "Inter";
+          content: attr(data-title);
+          display: block;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%);
+          font-size: 10px;
+          font-weight: normal;    
+          padding-bottom: 5px;      
+        }
+      }
+
+      .timer__divider {
+        display: none;
+        width: 1px;
+        padding: 0;
+        margin: 0;
+        opacity: 0.25;
+        background-color: white;
+      }
+    }
+    
+    
+    
+    
+    
+  }
+}
+
+
   @import "adaptive";
+   
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

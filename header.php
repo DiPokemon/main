@@ -151,6 +151,26 @@
         </i>
     </div>
 </div>
+   <div class="action_header">
+      <div class="action_title"><a onclick="openModal()" href="javascript:void(0)">Скидка 10% на SEO услуги!</a></div>
+      <div class="action_timer">
+        <div class="timer">
+
+          <div class="timer__items">
+
+            <div class="timer__item timer__days" data-title="дней"></div>
+            <div class="timer__divider"></div>
+            <div class="timer__item timer__hours" data-title="часов"></div>
+            <div class="timer__divider"></div>
+            <div class="timer__item timer__minutes" data-title="минут"></div>
+            <div class="timer__divider"></div>
+            <div class="timer__item timer__seconds" data-title="секунд"></div>
+
+          </div>
+
+        </div>
+    </div>
+   </div>
   <div class="wrapper">      
     <header class="header">
       <div class="header__container _container">
@@ -239,6 +259,22 @@
       </div>
       
     </header>
+    
+  </div>
+
+  <div id="open_modal" class="promo_btn">
+    <a onclick="openModal()" href="javascript:void(0)">Акция</a>
+  </div>
+  <div id="promo_modal" class="promo_modal">
+    <div class="promo_modal_close"><a href="javascript:void(0)" class="promo_close_btn" onclick="closeModal(event)">&times;</a></div>
+    <div class="promo_title">
+      Скидка 10% на SEO услуги
+    </div>
+    <div class="promo_subtitle">
+      Акция действует только при заказе до конца апреля  и с оплатой за 2 месяца
+    </div>
+    
+    <?php echo do_shortcode('[contact-form-7 id="2420" title="Акция"]') ?>
     
   </div>
 <main class="page">

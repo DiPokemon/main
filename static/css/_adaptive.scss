@@ -850,3 +850,48 @@
         height:350px;
     }
 }
+
+
+/* -- ACTION -- */
+@media(max-width: 768px){
+    .action_header{
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0px;
+    
+        .action_title{
+    
+            a{          
+              font-size: 18px;
+            }
+          }
+    
+          .action_timer{
+    
+            .timer__items {          
+              font-size: 14px;
+        
+              .timer__item {
+                font-size: 14px;
+                padding: 5px 10px 15px 10px;
+        
+                &::before {
+                  font-size: 8px;     
+                }
+              }
+            } 
+          }
+    }
+}
+
+@media(max-width:470px){
+    #promo_modal{
+        width: 300px;        
+      }
+}
+
+@media(max-width:360px){
+    #promo_modal{
+        width: 250px;        
+      }
+}
