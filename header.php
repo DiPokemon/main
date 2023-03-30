@@ -265,7 +265,7 @@
   <div id="open_modal" class="promo_btn">
     <a onclick="openModal()" href="javascript:void(0)">Акция</a>
   </div>
-  <div id="promo_modal" class="promo_modal">
+  <div id="promo_modal" class="promo_modal active">
     <div class="promo_modal_close"><a href="javascript:void(0)" class="promo_close_btn" onclick="closeModal(event)">&times;</a></div>
     <div class="promo_title">
       Скидка 10% на SEO услуги

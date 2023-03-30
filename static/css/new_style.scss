@@ -2337,16 +2337,15 @@ body {
     color: #a992c7;
 }
 
-#promo_modal{
-  width: 400px;
-  right: -500px;
-}
-
 #promo_modal.active{ 
   right: 50px;
 }
 
 #promo_modal{
+  width: 400px;
+  right: -500px;
+  background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
   max-height: 600px;
   font-family: "Inter";
   display: block;  
@@ -2359,13 +2358,15 @@ body {
 	box-shadow: 0px 0px 5px #000;
 	border-radius: 5px;
   top: 50%;   
-	transform: translate(0px, -50%);    
+	transform: translate(0px, -50%);  
+  box-shadow: 0px 0px 3px #f7f2ff;  
 
   .promo_modal_close{
     text-align: end;
 
     a{
-      color: #1a0930;
+      // color: #1a0930;
+      color: #fff;
       font-size: 25px;      
       line-height: 25px;
     }
@@ -2374,12 +2375,14 @@ body {
   .promo_title{
     font-size: 18px;
     padding-bottom: 20px;
-    color: #1a0930;
+    // color: #1a0930;
+    color: #fff;
   }
 
   .promo_subtitle{
     font-size: 16px;
     padding-bottom: 10px;
+    color: #fff;
   }
   
   .contact_form{
