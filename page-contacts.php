@@ -26,7 +26,6 @@
                         <span class="contacts_item-text">
                             <a href="tel:+79934481000">+7 993 448 1000</a>
                             <a href="tel:+79514976107">+7 951 497 61 07</a>
-                            <a href="tel:+79614236307">+7 961 423 63 07</a>
                         </span>
                     </div>
                 </div>

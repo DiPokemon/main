@@ -250,7 +250,7 @@
           <div class="header__hrVert"></div>
           <div class="header__contact">
             <div class="header__contact_telefon"><a href="tel:+79934481000">+7 993 448-1000</a></div>
-            <div class="header__contact_telefon-mob"><a href="tel:+79934536307"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/phone.svg" alt="Телефон маркетингового агентства в Ростове"/></a></div>
+            <div class="header__contact_telefon-mob"><a href="tel:+79934481000"><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/phone.svg" alt="Телефон маркетингового агентства в Ростове"/></a></div>
             <div class="header_contact_href"><a class="header__link" href="https://wa.me/79514976107">Написать в What’sApp</a></div>
           </div>
             
