@@ -1612,7 +1612,8 @@ section.form_row {
 #tab_btn_1:checked ~ #tab_1,
 #tab_btn_2:checked ~ #tab_2,
 #tab_btn_3:checked ~ #tab_3,
-#tab_btn_4:checked ~ #tab_4 {
+#tab_btn_4:checked ~ #tab_4,
+#tab_btn_5:checked ~ #tab_5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3325,6 +3326,9 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   .main-3columns__item:first-child,
   .main-3columns__item {
     font-size: 15px;
+  }
+  .tabs > label {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 925px) {
