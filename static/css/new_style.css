@@ -2902,9 +2902,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 }
 
 .action_header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

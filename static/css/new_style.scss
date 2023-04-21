@@ -2436,7 +2436,8 @@ body {
 
 
 .action_header{
-  display: flex;
+  //display: flex;
+  display: none;
   justify-content: center;
   gap: 30px;
   padding: 20px 0px;
