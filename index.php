@@ -568,7 +568,7 @@
                   <div id="tab_5" class="tabs_block">
                       <div class="tab_header">
                         <div class="tab_title"><a href="/services/geo-servisy/">Продвижение на картах</a></div>
-                        <div class="tab_price">от <span>123</span> ₽</div>
+                        <div class="tab_price">от <span>20 000</span> ₽</div>
                       </div>
                       <div class="tab_body">
                         <p><b>Гео продвижение</b> - это маркетинговая стратегия, направленная на продвижение бизнеса 
