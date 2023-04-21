@@ -1,9 +1,14 @@
 <?php get_header(); ?>
 
-<?php while (have_posts()) : the_post(); ?>
-    <div <?php post_class(); ?>>
+<div class="_container">
+    <section class="page-header">
+        <?php if ( function_exists( 'topland_breadcrumbs' ) ) topland_breadcrumbs(); ?>        
+        <h1 class="page-header__title"><?php the_title(); ?></h1>
+    </section>  
+
+    <section>
         <?php the_content(); ?>
-    </div>
-<?php endwhile; ?>
+    </section>
+</div>   
 
 <?php get_footer(); ?>
