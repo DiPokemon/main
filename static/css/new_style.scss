@@ -1426,6 +1426,20 @@ body {
     font-size: 25px;
   }
 
+  .tabs_price_list{
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px #f7f2ff;
+
+  }
+
+  .tabs_price_list:hover{
+    color: #1a0930;
+    background-color: $main-white-color
+  }
+
+
+
   /*------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------page__question----------------------------------*/
   .question {
@@ -2052,11 +2066,22 @@ body {
   .page_contacts-text-block{
     padding: 20px 0
   }
-  
-  .wpcf7-spinner{
-    display: none
+
+  .wpcf7-submit{
+    cursor: pointer;
   }
 
+  .page_contacts-form{
+    p {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .wpcf7-spinner{
+        width: 27px;
+      }
+    }
+  } 
   /*---------------------------------------------------------------------------------------------------*/
   /*----------------------------------------------------about-----------------------------------------*/
 

@@ -595,7 +595,7 @@
 
                 </div>  
                 <br>
-                <a href="/prajs-list">Ознакомиться с полным перечнем цен</a>
+                <a class="tabs_price_list" href="/prajs-list">Ознакомиться с полным перечнем цен</a>
               </div>
             </section>
 

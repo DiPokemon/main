@@ -1672,6 +1672,18 @@ section.form_row {
   font-size: 25px;
 }
 
+.tabs_price_list {
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 5px #f7f2ff;
+          box-shadow: 0px 0px 5px #f7f2ff;
+}
+
+.tabs_price_list:hover {
+  color: #1a0930;
+  background-color: #f7f2ff;
+}
+
 /*------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------page__question----------------------------------*/
 .question {
@@ -2477,8 +2489,21 @@ span.contacts_item-title {
   padding: 20px 0;
 }
 
-.wpcf7-spinner {
-  display: none;
+.wpcf7-submit {
+  cursor: pointer;
+}
+
+.page_contacts-form p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.page_contacts-form p .wpcf7-spinner {
+  width: 27px;
 }
 
 /*---------------------------------------------------------------------------------------------------*/
