@@ -446,3 +446,42 @@ function changeTimezone(date, ianatz) {
     // вызываем функцию countdownTimer каждую секунду
     timerId = setInterval(countdownTimer, 1000);
   });
+
+//Вывод списка городов
+var dropdown = document.getElementById("dropdown");
+var cityList = dropdown.getElementsByTagName("ul")[0];
+var selectedCity = document.getElementById("selectedCity");
+
+dropdown.addEventListener("mouseover", function() {
+    cityList.style.display = "block";
+});
+
+dropdown.addEventListener("mouseout", function() {
+    if (!selectedCity.innerHTML) {
+        cityList.style.display = "none";
+    } else {
+        cityList.addEventListener("mouseout", function() {
+            cityList.style.display = "none";
+        });
+    }
+});
+cityList.addEventListener("click", function(e) {
+    if (e.target && e.target.nodeName == "LI") {
+
+        selectedCity.innerHTML = e.target.innerHTML;
+        cityList.style.display = "none";
+    }
+});
+
+// Сохранение выбранного города
+var savedCity = localStorage.getItem('selectedCity');
+if (savedCity) {
+    selectedCity.innerHTML = savedCity;
+}
+cityList.addEventListener("click", function(e) {
+    if (e.target && e.target.nodeName == "LI") {
+        selectedCity.innerHTML = e.target.innerHTML;
+        localStorage.setItem('selectedCity', selectedCity.innerHTML);
+        cityList.style.display = "none";
+    }
+});
