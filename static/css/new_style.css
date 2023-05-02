@@ -352,7 +352,6 @@ ul.header_cities {
   top: 30px;
   position: absolute;
   border-radius: 10px;
-  padding: 10px;
   min-width: 190px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -378,7 +377,7 @@ ul.header_cities {
 }
 #dropdown ul li:hover {
   background-color: rgba(255, 255, 255, 0.062745098);
-  padding: 5px 0px;
+  padding-left: 10px;
 }
 
 .current_city {

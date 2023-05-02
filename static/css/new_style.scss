@@ -371,7 +371,7 @@ body {
     top: 30px;
     position: absolute;
     border-radius: 10px;
-    padding: 10px;
+    //padding: 10px;
     min-width: 190px;
     flex-direction: column;
     align-items: flex-start;
@@ -389,7 +389,7 @@ body {
 
   &:hover{
     background-color: #ffffff10;
-    padding: 5px 0px;
+    padding-left: 10px;  
   }
 }
 
