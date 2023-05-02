@@ -329,6 +329,7 @@ main.page {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-right: 5px;
+  cursor: pointer;
 }
 
 .header__location_text {
