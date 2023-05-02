@@ -1127,6 +1127,13 @@ body {
   
   .page__reviews-block {
     position: relative;
+
+    .reviews-slide {
+
+      .reviews_image{
+          display:none;
+      }
+    }
   }
   .reviews-block__body {
     position: relative;

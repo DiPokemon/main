@@ -1293,6 +1293,9 @@ section.form_row {
 .page__reviews-block {
   position: relative;
 }
+.page__reviews-block .reviews-slide .reviews_image {
+  display: none;
+}
 
 .reviews-block__body {
   position: relative;
