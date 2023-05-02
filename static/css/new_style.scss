@@ -2172,6 +2172,35 @@ body {
     width: 100%;
   }
 
+
+/* -- PAGE TESTIMONIALS --*/
+.page__reviews-block.page_testimonials{
+    .main_block__wrapper{
+        max-width: 100%;
+
+        .reviews-slide{
+            max-width: 100%;
+            display: flex!important;
+            flex-direction: row;
+
+            .reviews_image{
+                display: block;
+                width: 50%;
+
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 5px 0px 0px 5px;
+
+                }
+            }
+            .reviews_body{
+                width: 50%;
+            }
+        }
+    }     
+}
+
   /*---------------------------------------------------------------------------------------------------*/
   /*----------------------------------------------------footer-----------------------------------------*/
   

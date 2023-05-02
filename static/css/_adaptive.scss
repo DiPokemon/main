@@ -465,6 +465,30 @@
         filter: blur(100px);
     }
 
+    .page__reviews-block.page_testimonials{
+        .main_block__wrapper{            
+    
+            .reviews-slide{
+                max-width: 100%;
+                display: flex!important;
+                flex-direction: column;
+    
+                .reviews_image{
+                    display: block;
+                    width: 100%;
+    
+                    img{
+                        height: 100%;
+                        border-radius: 5px 5px 0px 0px;
+                    }
+                }
+                .reviews_body{
+                    width: 100%;
+                }
+            }
+        }     
+    }
+
     .staff_wrapper{
         grid-template-columns: 1fr;
         gap: 20px
