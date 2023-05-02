@@ -386,6 +386,11 @@ body {
 #dropdown ul li {
   padding: 5px;
   cursor: pointer;
+
+  &:hover{
+    background-color: #ffffff10;
+    padding: 5px 0px;
+  }
 }
 
   .current_city{
