@@ -372,12 +372,7 @@ ul.header_cities {
 #dropdown ul li:hover {
   background-color: rgba(255, 255, 255, 0.062745098);
   padding-left: 10px;
-}
-#dropdown ul li:last-child {
-  border-radius: 0px 0px 10px 10px;
-}
-#dropdown ul li:first-child {
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
 }
 
 .current_city {
