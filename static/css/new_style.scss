@@ -367,14 +367,16 @@ body {
   }
 
   ul.header_cities {
-    gap: 8px;
+    //gap: 8px;
+    grid-template-columns: 1fr 1fr;
     top: 30px;
+    left: -100px;
     position: absolute;
     border-radius: 10px;
     //padding: 10px;
-    min-width: 190px;
-    flex-direction: column;
-    align-items: flex-start;
+    min-width: 400px;
+    //flex-direction: column;
+    //align-items: flex-start;
     text-align: left;
     color: $main-white-color;
     background: transparentize(#3A116D, 0.2);

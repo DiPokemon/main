@@ -348,18 +348,12 @@ ul.header_cities {
 }
 
 ul.header_cities {
-  gap: 8px;
+  grid-template-columns: 1fr 1fr;
   top: 30px;
+  left: -100px;
   position: absolute;
   border-radius: 10px;
-  min-width: 190px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  min-width: 400px;
   text-align: left;
   color: #f7f2ff;
   background: rgba(58, 17, 109, 0.8);

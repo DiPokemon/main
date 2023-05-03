@@ -453,7 +453,7 @@ var cityList = dropdown.getElementsByTagName("ul")[0];
 var selectedCity = document.getElementById("selectedCity");
 
 dropdown.addEventListener("mouseover", function() {
-    cityList.style.display = "block";
+    cityList.style.display = "grid";
 });
 
 dropdown.addEventListener("mouseout", function() {
