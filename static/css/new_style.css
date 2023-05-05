@@ -3404,7 +3404,8 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .main-image, .main-content {
+  .main-image,
+  .main-content {
     width: 100%;
   }
   .main-image {
@@ -3667,7 +3668,8 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .main-content, .main-image {
+  .main-content,
+  .main-image {
     width: 100%;
   }
   .main-image_grid {
@@ -3980,6 +3982,11 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 @media (max-width: 360px) {
   #promo_modal {
     width: 250px;
+  }
+}
+@media (max-width: 365px) {
+  .tabs_price_list {
+    display: block;
   }
 }
 @-webkit-keyframes gradient {
