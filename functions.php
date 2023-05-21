@@ -502,3 +502,31 @@ add_action('wp_footer', 'wpmidia_activate_masked_input');
 </script>
 <?php
 }
+
+/* add Schema.Org in NavMenu */
+function filter_wp_nav_menu($nav_menu,$args) {
+    global $schemaURL;
+    $dom = new DOMDocument();
+    @$dom->loadHTML('<?xml encoding="utf-8" ?>' . $nav_menu);
+    $x = new DOMXPath($dom);
+    foreach($x->query("//a") as $node) {
+        $node->setAttribute("itemprop","url");
+    }
+    foreach($x->query("//li") as $node) {
+        $node->setAttribute("itemprop","itemListElement");
+		$node->setAttribute("itemscope","");
+		$node->setAttribute("itemtype","http://schema.org/ItemList");
+    }
+    foreach($x->query("//ul") as $node) {
+        $node->setAttribute("itemprop","about");
+		$node->setAttribute("itemscope","");
+		$node->setAttribute("itemtype","http://schema.org/ItemList");
+    }
+    foreach($x->query("//nav") as $node) {
+        $node->setAttribute("itemscope", "");	
+		$node->setAttribute("itemtype", "http://schema.org/SiteNavigationElement");	
+    }	
+    $nav_menu = $node->c14n();
+    return $nav_menu ;
+}
+add_filter( 'wp_nav_menu', 'filter_wp_nav_menu', 10, 2 );
