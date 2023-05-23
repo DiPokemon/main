@@ -860,6 +860,7 @@ ul.header_cities {
 .page__services-block {
   position: relative;
   z-index: 6;
+  padding-bottom: 0px;
 }
 
 .services-block__title_h2 {
@@ -1967,6 +1968,10 @@ section.form_row {
 
 /*---------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------category-list----------------------------------*/
+.category_top-text {
+  padding-top: 75px;
+}
+
 .services-block__grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2133,6 +2138,10 @@ section.page__service-offer,
 section.page__service-offer {
   padding: 0;
   padding-top: 75px;
+}
+
+#wpcf7-f1968-o1 {
+  margin-top: -50px;
 }
 
 .text_wrapper {
