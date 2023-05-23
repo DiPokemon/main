@@ -268,7 +268,7 @@
                       
 
                 <?php if (!empty($after_guarantee_text)): ?>
-                    <section>
+                    <section class="site-types">
                         <div class="_container">
                             <div class="text_wrapper">
                                 <div class="half_column">
@@ -301,25 +301,7 @@
                         </div>
                     </section>  
                 <?php endif; ?>
-
-                <?php if (!empty($cloud_tags)): ?>
-                    <section class="cloud_tag-section ">
-                        <div class="cloud_tag-container _container">                
-                            <div class="cloud_tag-block__body"> 
-                                <div class="cloud_tag_slider">
-                                    <?php $i=0; ?>
-                                    <?php foreach($cloud_tags as $tag): ?>   
-                                        <div class="cloud_tag-slide">
-                                            <span class="cloud_tag_link"><?= $tag['tag_text'] ?></span>
-                                        </div>
-                                        <?php $i++ ?>
-                                    <?php endforeach ?>
-                                </div>  
-                            </div>
-                        </div>
-                    </section>
-                <?php endif;?> 
-
+                
                   <!-- Сферы -->
                   <section>
               <div class="_container">
@@ -519,7 +501,24 @@
                         <div class="category-list_description__text"><?php echo category_description();?></div>
                     </div>
                 </section>
-
+                <!-- Теги -->
+                <?php if (!empty($cloud_tags)): ?>
+                    <section class="cloud_tag-section ">
+                        <div class="cloud_tag-container _container">                
+                            <div class="cloud_tag-block__body"> 
+                                <div class="cloud_tag_slider">
+                                    <?php $i=0; ?>
+                                    <?php foreach($cloud_tags as $tag): ?>   
+                                        <div class="cloud_tag-slide">
+                                            <span class="cloud_tag_link"><?= $tag['tag_text'] ?></span>
+                                        </div>
+                                        <?php $i++ ?>
+                                    <?php endforeach ?>
+                                </div>  
+                            </div>
+                        </div>
+                    </section>
+                <?php endif;?> 
                 <section id="lightning_contact_form" class="page__service-selection service-selection">
                     <div class="service-selection__container _container">
                         <div class="service-selection__body">                        
