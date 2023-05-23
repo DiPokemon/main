@@ -19,39 +19,10 @@
                 <section class="page-header">
                     <?php if ( function_exists( 'topland_breadcrumbs' ) ) topland_breadcrumbs(); ?>  
                     <h1 class="page-header__title"><?php single_cat_title(); ?></h1>
-
-                    <div class="category_top-text">
-                            <?= $top_text ?>
-                    </div>
                 </section>
                 
-                
-
-                <section section="page__service-offer">
-                    <div class="tariffs-block__container">                            
-                        <div class="tariffs-block__title">
-                            <h2 class="_h2">Тарифы</h2>
-                        </div>
-                        <?php if (!empty($tariffs_text)): ?>
-                            <div class="tariffs_text service_text-block">
-                                <?= $tariffs_text ?>
-                            </div>
-                        <?php endif;?> 
-                        <div class="slider_wrapper">
-                            <div class="tariff_slider">
-                                <?php echo do_shortcode('[topland_tariffs]'); ?>
-                            </div>
-                        </div>                        
-                    </div> 
-                </section>
-
-                <section class="form_row">
-                    <div class="page_contacts-form contact_form-row">
-                        <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-                    </div>
-                </section>
-
-                <section class="page__services-block services">
+                 <!-- Блок услуги -->
+                 <section class="page__services-block services">
                     <div class="services-block__container _container">
                         <div class="services-block__body">
                             <div class="services-block__grid">
@@ -100,20 +71,95 @@
                         
                     </div>
                 </section>
+                
+                <!-- Тарифы -->
+                <section section="page__service-offer">
+                    <div class="tariffs-block__container">                            
+                        <div class="tariffs-block__title">
+                            <h2 class="_h2">Тарифы</h2>
+                        </div>
+                        <?php if (!empty($tariffs_text)): ?>
+                            <div class="tariffs_text service_text-block">
+                                <?= $tariffs_text ?>
+                            </div>
+                        <?php endif;?> 
+                        <div class="slider_wrapper">
+                            <div class="tariff_slider">
+                                <?php echo do_shortcode('[topland_tariffs]'); ?>
+                            </div>
+                        </div>                        
+                    </div> 
+                </section>
+                <section class="form_row">
+                    <div class="page_contacts-form contact_form-row">
+                        <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
+                    </div>
+                </section>
+                <!-- Верхний текст -->
+                <div class="category_top-text">
+                            <?= $top_text ?>
+                </div>
+                <!-- Кейсы, форма обратной связи -->
+                <section class="page__service-offer categorry_test">                                      
+                    <div class="cases-block__container">
+                        <div class="cases-block__body">
+                            <div class="cases-block__title">
+                                <h2 class="_h2">Кейсы</h2>
+                            </div>
+                            <?php if (!empty($cases_text)): ?>
+                                <div class="cases_text service_text-block">
+                                    <?= $cases_text ?>
+                                </div> 
+                            <?php endif;?>
+                            <div class="slider_wrapper">
+                                <div class="cases_slider">
+                                    <?php $length_cases = 0 ?>
+                                    <?php
+                                        $args_for_cases = [
+                                            'posts_per_page' => -1,
+                                            'category_name'  => 'cases',
+                                            'offset'         => 0,
+                                        ];
+                                        $query_cases = new WP_Query( $args_for_cases );
+                                        while ($query_cases->have_posts()) :
+                                            $query_cases->the_post();
+                                            $length_cases++;
+                                            if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
+                                                $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
+                                            else
+                                                $post_thumbnail_url = get_the_post_thumbnail_url();
+                                            $image_id = get_post_thumbnail_id();
+                                            $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+                                            $image_title = get_the_title($image_id);
+                                    ?>
+                                        <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
+                                            <div class="case_slide_wrapper">
+                                            <img loading="lazy" src="<?= $post_thumbnail_url ?>" alt="<?php echo $image_alt ?>" title="<?php echo $image_title ?>">
+                                            <div class="case_slide_title_wrapper">
+                                                <h3 class="case_slide__title"><?php the_title() ?></h3>
+                                            </div>                                
+                                            </div>                              
+                                        </a>
+                                    <?php endwhile; wp_reset_query(); ?>  
+                                </div>
+                                <div class="slider-controls">
+                                    <button type="button" class="slide-m-prev"></button>
+                                    <div class="slide-m-dots"></div>
+                                    <button type="button" class="slide-m-next"></button>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>    
+                                              
+                </section>
+                <section class="form_row">
+                    <div class="page_contacts-form contact_form-row">
+                        <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
+                    </div>
+                </section>  
+      
 
-                <?php if (!empty($after_posts_text)): ?>                
-                    <section>
-                        <div class="_container">
-                            <div>
-                                <h2 class="_h2 section_title"><?= $after_posts_title ?></h2>
-                            </div>                        
-                            <div class="cases_text service_text-block">
-                                <?= $after_posts_text ?>
-                            </div>                            
-                        </div>                
-                    </section>
-                <?php endif;?>
-
+                <!-- Этапы -->
                 <?php if($steps): ?>
                     <section>
                         <div class="_container">
@@ -138,9 +184,8 @@
                         </div>
                     </section>  
                 <?php else : ?>
-   
                 <?php endif; ?>
-
+                <!-- Гарантии -->
                 <section>
                     <div class="_container">
                         <div>
@@ -205,72 +250,78 @@
                     </div>
                 </section>
 
-                <section class="page__service-offer">                                      
-                    <div class="cases-block__container">
-                        <div class="cases-block__body">
-                            <div class="cases-block__title">
-                                <h2 class="_h2">Кейсы</h2>
-                            </div>
-                            <?php if (!empty($cases_text)): ?>
-                                <div class="cases_text service_text-block">
-                                    <?= $cases_text ?>
-                                </div> 
-                            <?php endif;?>
-                            <div class="slider_wrapper">
-                                <div class="cases_slider">
-                                    <?php $length_cases = 0 ?>
-                                    <?php
-                                        $args_for_cases = [
-                                            'posts_per_page' => -1,
-                                            'category_name'  => 'cases',
-                                            'offset'         => 0,
-                                        ];
-                                        $query_cases = new WP_Query( $args_for_cases );
-                                        while ($query_cases->have_posts()) :
-                                            $query_cases->the_post();
-                                            $length_cases++;
-                                            if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url()))
-                                                $post_thumbnail_url = get_template_directory_uri().'/static/empty-banner.gif';
-                                            else
-                                                $post_thumbnail_url = get_the_post_thumbnail_url();
-                                            $image_id = get_post_thumbnail_id();
-                                            $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
-                                            $image_title = get_the_title($image_id);
-                                    ?>
-                                        <a class="cases-block__slide case_slide" href="<?php the_permalink() ?>">
-                                            <div class="case_slide_wrapper">
-                                            <img loading="lazy" src="<?= $post_thumbnail_url ?>" alt="<?php echo $image_alt ?>" title="<?php echo $image_title ?>">
-                                            <div class="case_slide_title_wrapper">
-                                                <h3 class="case_slide__title"><?php the_title() ?></h3>
-                                            </div>                                
-                                            </div>                              
-                                        </a>
-                                    <?php endwhile; wp_reset_query(); ?>  
+
+                <?php if (!empty($after_posts_text)): ?>                
+                    <section>
+                        <div class="_container">
+                            <div>
+                                <h2 class="_h2 section_title"><?= $after_posts_title ?></h2>
+                            </div>                        
+                            <div class="cases_text service_text-block">
+                                <?= $after_posts_text ?>
+                            </div>                            
+                        </div>                
+                    </section>
+                <?php endif;?>
+
+
+                      
+
+                <?php if (!empty($after_guarantee_text)): ?>
+                    <section>
+                        <div class="_container">
+                            <div class="text_wrapper">
+                                <div class="half_column">
+                                    <h2 class="_h2 section_title"><?= $after_guarantee_title ?></h2>
+                                    <div class="cases_text service_text-block">
+                                        <?= $after_guarantee_text ?>
+                                    </div>
                                 </div>
-                                <div class="slider-controls">
-                                    <button type="button" class="slide-m-prev"></button>
-                                    <div class="slide-m-dots"></div>
-                                    <button type="button" class="slide-m-next"></button>
+                                <div class="half_column">
+                                    <img src="<?= $after_guarantee_img ?>" alt="<?= $after_guarantee_title ?>">
                                 </div>
                             </div>
-                        </div>                        
-                    </div>    
-                                              
-                </section>
+                        </div>  
+                    </section>
+                <?php endif;?>
+                
+                <?php if($specialists): ?>                    
+                    <section>
+                        <div class="_container">
+                            <div>
+                                <h2 class="_h2 section_title">Наши специалисты</h2>
+                            </div> 
+                            <div class="staff_wrapper">
+                                <?php foreach($specialists as $specialist):?>
+                                    <div class="staff_item">
+                                        <h3 class="staff_name"><?= $specialist["specialist"] ?></h3>                                        
+                                    </div> 
+                                <?php endforeach; ?>                                
+                            </div>  
+                        </div>
+                    </section>  
+                <?php endif; ?>
 
-                <section class="category-list_description">
-                    <div class="category-list_description__container _container">
-                        <div class="category-list_description__text"><?php echo category_description();?></div>
-                    </div>
-                </section>
+                <?php if (!empty($cloud_tags)): ?>
+                    <section class="cloud_tag-section ">
+                        <div class="cloud_tag-container _container">                
+                            <div class="cloud_tag-block__body"> 
+                                <div class="cloud_tag_slider">
+                                    <?php $i=0; ?>
+                                    <?php foreach($cloud_tags as $tag): ?>   
+                                        <div class="cloud_tag-slide">
+                                            <span class="cloud_tag_link"><?= $tag['tag_text'] ?></span>
+                                        </div>
+                                        <?php $i++ ?>
+                                    <?php endforeach ?>
+                                </div>  
+                            </div>
+                        </div>
+                    </section>
+                <?php endif;?> 
 
-                <section class="form_row">
-                    <div class="page_contacts-form contact_form-row">
-                        <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-                    </div>
-                </section>
-
-                <section>
+                  <!-- Сферы -->
+                  <section>
               <div class="_container">
                 <div>
                   <h2 class="_h2 section_title">Сферы, с которыми мы работаем</h2>
@@ -460,61 +511,14 @@
                   </div>
                 </div>
               </div>
-            </section>               
+            </section>    
 
-                <?php if (!empty($after_guarantee_text)): ?>
-                    <section>
-                        <div class="_container">
-                            <div class="text_wrapper">
-                                <div class="half_column">
-                                    <h2 class="_h2 section_title"><?= $after_guarantee_title ?></h2>
-                                    <div class="cases_text service_text-block">
-                                        <?= $after_guarantee_text ?>
-                                    </div>
-                                </div>
-                                <div class="half_column">
-                                    <img src="<?= $after_guarantee_img ?>" alt="<?= $after_guarantee_title ?>">
-                                </div>
-                            </div>
-                        </div>  
-                    </section>
-                <?php endif;?>
-                
-                <?php if($specialists): ?>                    
-                    <section>
-                        <div class="_container">
-                            <div>
-                                <h2 class="_h2 section_title">Наши специалисты</h2>
-                            </div> 
-                            <div class="staff_wrapper">
-                                <?php foreach($specialists as $specialist):?>
-                                    <div class="staff_item">
-                                        <h3 class="staff_name"><?= $specialist["specialist"] ?></h3>                                        
-                                    </div> 
-                                <?php endforeach; ?>                                
-                            </div>  
-                        </div>
-                    </section>  
-                <?php endif; ?>
-
-                <?php if (!empty($cloud_tags)): ?>
-                    <section class="cloud_tag-section ">
-                        <div class="cloud_tag-container _container">                
-                            <div class="cloud_tag-block__body"> 
-                                <div class="cloud_tag_slider">
-                                    <?php $i=0; ?>
-                                    <?php foreach($cloud_tags as $tag): ?>   
-                                        <div class="cloud_tag-slide">
-                                            <span class="cloud_tag_link"><?= $tag['tag_text'] ?></span>
-                                        </div>
-                                        <?php $i++ ?>
-                                    <?php endforeach ?>
-                                </div>  
-                            </div>
-                        </div>
-                    </section>
-                <?php endif;?> 
-
+                <!-- Текст-описание -->
+                <section class="category-list_description">
+                    <div class="category-list_description__container _container">
+                        <div class="category-list_description__text"><?php echo category_description();?></div>
+                    </div>
+                </section>
 
                 <section id="lightning_contact_form" class="page__service-selection service-selection">
                     <div class="service-selection__container _container">
