@@ -2015,6 +2015,10 @@ section.form_row {
   width: 100%;
 }
 
+.offer_block-text {
+  padding-bottom: 30px;
+}
+
 .offer_block-tariff {
   width: 30%;
   display: -webkit-box !important;
@@ -4025,4 +4029,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   100% {
     background-position: 0% 50%;
   }
+}
+.promo_btn {
+  display: none;
 }/*# sourceMappingURL=new_style.css.map */
