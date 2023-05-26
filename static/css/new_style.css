@@ -4031,5 +4031,5 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   }
 }
 .promo_btn {
-  display: none;
+  display: none !important;
 }/*# sourceMappingURL=new_style.css.map */
