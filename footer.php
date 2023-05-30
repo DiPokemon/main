@@ -35,7 +35,7 @@
             </div>    
           </div>
           
-          <div class="cities">
+          <!-- <div class="cities">
             <span>Москва</span>
             <span>Сочи</span>
             <span>Новосибирск</span>
@@ -59,7 +59,7 @@
             <span>Саратов</span>
             <span>Санкт-Петербург</span>
             <span>Челябинск</span>
-          </div>
+          </div> -->
         </div>
     </footer>   
 
