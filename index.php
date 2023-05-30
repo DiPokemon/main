@@ -1067,7 +1067,65 @@
                 </div>
               </div>
             </section>
+            <section id="reviews" class="page__reviews-block reviews">
+              <div class="reviews_gradient_bg-img"></div>
+              <div class="reviews-block__container _container">                
+                <div class="reviews-block__body">                
+                <div class="triple_stars revies_triple_stars"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
+                  <div class="reviews-block__title">
+                    <h2 class="_h2 reviews-block__title_h2 section_title">Отзывы клиентов</h2>
+                  </div>
+                  <div class="main_block__wrapper">
+                    <div class="slider_wrapper">
+                      <div class="reviews_slider">
+                        <?php echo do_shortcode('[seo_reviews]'); ?>
+                        <!-- <?php echo do_shortcode('[topland_reviews]'); ?> -->
+                        <!-- <div itemscope itemtype="https://schema.org/Review" class="reviews-block__slide reviews-slide">
+                          <meta itemprop="datePublished" content="2022-07-15"/>
+                          <meta itemprop="name" content="Шарыпкин Вячеслав о TopLand">
+                          <link itemprop="url" href="https://topland-rnd.ru">
+                          <div itemprop="reviewBody" class="reviews-slide__text1">Работаем с компанией Topland 1,5 года. 
+                            Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
+                            грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
+                          <div itemprop="author" itemscope itemtype="https://schema.org/Person" class="reviews-slide__text2"><span itemprop="name">Вячеслав</span> <span itemprop="familyName">Шарыпкин</span></div>
+                          <div class="reviews-slide__text3">Директор Trax.su</div>
 
+                          <div class="d-none" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+                              <meta itemprop="name" content="Отзыв о компании TopLand">
+                              <meta itemprop="telephone" content="+7 993 453-63-07">
+                              <link itemprop="url" href="https://topland-rnd.ru/"/>
+                              <meta itemprop="email" content="sales@topland-rnd.ru">
+                              <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                  <meta itemprop="addressLocality" content="Ростов">
+                                  <meta itemprop="streetAddress" content="Стабильная, 9">
+                              </p>
+                          </div>
+                          <div class="d-none" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                              <meta itemprop="worstRating" content="1">
+                              <meta itemprop="ratingValue" content="5">
+                              <meta itemprop="bestRating" content="5"/>
+                          </div>
+                        </div> -->
+
+                        <!-- <div class="reviews-block__slide reviews-slide">
+                          <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года.
+                            Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
+                            грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
+                          <div class="reviews-slide__text2">Вячеслав Шарыпкин222</div>
+                          <div class="reviews-slide__text3">Директор Trax.su</div>
+                        </div> -->
+
+                      </div>
+                      <div class="slider-controls">
+                        <button type="button" class="reviews_slide-m-prev slide-m-prev"></button>
+                        <div class="reviews_slide-m-dots slide-m-dots"></div>
+                        <button type="button" class="reviews_slide-m-next slide-m-next"></button>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </section>
             <section class="page__question question">
               <div class="question__container _container">
                 <div class="question__body">
@@ -1176,65 +1234,7 @@
               </div>
             </section>
 
-            <section id="reviews" class="page__reviews-block reviews">
-              <div class="reviews_gradient_bg-img"></div>
-              <div class="reviews-block__container _container">                
-                <div class="reviews-block__body">                
-                <div class="triple_stars revies_triple_stars"><img loading="lazy" class="triple-stars" src="<?php echo get_template_directory_uri()?>/static/img/triple_stars.svg" alt="img"></div>
-                  <div class="reviews-block__title">
-                    <h2 class="_h2 reviews-block__title_h2 section_title">Отзывы клиентов</h2>
-                  </div>
-                  <div class="main_block__wrapper">
-                    <div class="slider_wrapper">
-                      <div class="reviews_slider">
-                        <?php echo do_shortcode('[seo_reviews]'); ?>
-                        <!-- <?php echo do_shortcode('[topland_reviews]'); ?> -->
-                        <!-- <div itemscope itemtype="https://schema.org/Review" class="reviews-block__slide reviews-slide">
-                          <meta itemprop="datePublished" content="2022-07-15"/>
-                          <meta itemprop="name" content="Шарыпкин Вячеслав о TopLand">
-                          <link itemprop="url" href="https://topland-rnd.ru">
-                          <div itemprop="reviewBody" class="reviews-slide__text1">Работаем с компанией Topland 1,5 года. 
-                            Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
-                            грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
-                          <div itemprop="author" itemscope itemtype="https://schema.org/Person" class="reviews-slide__text2"><span itemprop="name">Вячеслав</span> <span itemprop="familyName">Шарыпкин</span></div>
-                          <div class="reviews-slide__text3">Директор Trax.su</div>
-
-                          <div class="d-none" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
-                              <meta itemprop="name" content="Отзыв о компании TopLand">
-                              <meta itemprop="telephone" content="+7 993 453-63-07">
-                              <link itemprop="url" href="https://topland-rnd.ru/"/>
-                              <meta itemprop="email" content="sales@topland-rnd.ru">
-                              <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                                  <meta itemprop="addressLocality" content="Ростов">
-                                  <meta itemprop="streetAddress" content="Стабильная, 9">
-                              </p>
-                          </div>
-                          <div class="d-none" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                              <meta itemprop="worstRating" content="1">
-                              <meta itemprop="ratingValue" content="5">
-                              <meta itemprop="bestRating" content="5"/>
-                          </div>
-                        </div> -->
-
-                        <!-- <div class="reviews-block__slide reviews-slide">
-                          <div class="reviews-slide__text1">Работаем с компанией Topland 1,5 года.
-                            Хочу отметить оперативность в решении всех поставленных задач, инициативу и 
-                            грамотную работу специалистов. Рассчитываю на дальнейшее плодотворное сотрудничество.</div>
-                          <div class="reviews-slide__text2">Вячеслав Шарыпкин222</div>
-                          <div class="reviews-slide__text3">Директор Trax.su</div>
-                        </div> -->
-
-                      </div>
-                      <div class="slider-controls">
-                        <button type="button" class="reviews_slide-m-prev slide-m-prev"></button>
-                        <div class="reviews_slide-m-dots slide-m-dots"></div>
-                        <button type="button" class="reviews_slide-m-next slide-m-next"></button>
-                      </div>
-                    </div> 
-                  </div>
-                </div>
-              </div>
-            </section>
+            
 
             <!-- <section>
               <div class="_container">
