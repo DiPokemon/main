@@ -458,7 +458,7 @@
                   <div class="acor-body">
                   <div class="tab_header">
                   <div class="tab_title">Контекстная реклама</div>
-                        <div class="tab_price">от <span>25 000</span> ₽ / месяц<</div>
+                        <div class="tab_price">от <span>25 000</span> ₽ / месяц</div>
                       </div>
                       <div class="tab_body">
                         <b>Контекстная реклама – это:</b>
