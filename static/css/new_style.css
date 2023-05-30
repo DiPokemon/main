@@ -3936,6 +3936,9 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   .footer_right-side {
     padding-top: 10px;
   }
+  .footer_left-side {
+    padding-bottom: 350px;
+  }
 }
 @media (max-width: 550px) {
   .footer_left-side,

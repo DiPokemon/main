@@ -847,6 +847,9 @@
     //     border-top: 1px solid $article-text-color;
     //     grid-template-columns: repeat(3, 1fr);
     // }
+    .footer_left-side {
+        padding-bottom: 350px;
+    }
 }
 
 @media(max-width: 550px) {
