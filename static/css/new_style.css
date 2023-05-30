@@ -1642,7 +1642,7 @@ section.form_row {
 }
 
 .tabs > label {
-  margin-right: 20px;
+  margin-right: 10px;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -1662,6 +1662,7 @@ section.form_row {
   position: relative;
   top: 1px;
   text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
 .tabs > input[type=radio]:checked + label {
@@ -4006,6 +4007,27 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 @media (max-width: 365px) {
   .tabs_price_list {
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .acor-body .tab_header {
+    padding-bottom: 25px;
+    color: #f7f2ff;
+    line-height: 1.5;
+  }
+  .acor-body p {
+    line-height: 1.5;
+  }
+  .tab_body {
+    color: #f7f2ff;
+  }
+  .tarifs_desktop {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .tarifs_mobile {
+    display: none;
   }
 }
 @-webkit-keyframes gradient {

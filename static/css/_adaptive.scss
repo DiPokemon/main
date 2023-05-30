@@ -944,3 +944,32 @@
         display: block;
     }
 }
+
+// Тарифы для мобилки
+@media(max-width:768px) {
+    .acor-body {
+        .tab_header {
+            padding-bottom: 25px;
+            color: $main-white-color;
+            line-height: 1.5;
+        }
+    }
+    .acor-body {
+        p {
+            line-height: 1.5;
+            // color: $main-white-color;
+        }
+    }
+    .tab_body {
+        color: $main-white-color;
+    }
+    .tarifs_desktop {
+        display: none;
+    }
+}
+
+@media(min-width:769px) {
+    .tarifs_mobile {
+        display: none;
+    }
+}
