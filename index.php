@@ -1236,9 +1236,9 @@
               </div>
             </section>
 
-            <section>
+            <!-- <section>
               <div class="_container">
-                <div class="spotlight_wrap">
+                <div class="spotlight_wrap"> -->
                   <!-- <svg x="0px" y="0px" width="600px" height="300px" viewBox="0 0 600 300">
                     <mask id="mask">     
                       <rect width="100%" height="100%" x="0" y="0" fill="white" opacity="0.8" />
@@ -1247,7 +1247,7 @@
                         </g>
                     </mask>
                   </svg> -->
-                  <div class="spotlight_text">
+                  <!-- <div class="spotlight_text">
                     <span class="spotlight_key">Seo специалист</span>
                     <span class="spotlight_key">Seo анализ</span>
                     <span class="spotlight_key">Отзывы</span>
@@ -1300,7 +1300,7 @@
                   
                 </div>
               </div>
-            </section>
+            </section> -->
 
             <section class="page__service-selection service-selection">
                     <div class="service-selection__container _container">
