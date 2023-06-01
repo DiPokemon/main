@@ -3940,6 +3940,11 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     padding-bottom: 600px;
   }
 }
+@media (max-width: 390px) {
+  .footer_left-side {
+    padding-bottom: 680px;
+  }
+}
 @media (max-width: 550px) {
   .footer_left-side,
   .footer__navigation {

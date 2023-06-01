@@ -852,6 +852,12 @@
     }
 }
 
+@media(max-width: 390px) {
+    .footer_left-side {
+        padding-bottom: 680px;
+    }
+}
+
 @media(max-width: 550px) {
     .footer_left-side,
     .footer__navigation {
