@@ -26,20 +26,22 @@ $cloud_tags = get_field("cloud_tags", $term);
                 <div class="service-article__container _container">
                     <div class="service-article__body <?php post_class(); ?>">
                         <img loading="lazy" itemprop="image" class="service-article_img" src="<?php the_post_thumbnail_url() ?>" alt="<?php echo $image_alt ?>" title="<?php echo $image_title ?>">
+                        
+            <section class="single-services-block">
+                <div class="single-services-block__price">
+                    <?php $service_price = get_field("service_price"); ?>
+                    <?php if (!empty($service_price)): ?>
+                        <div class="single_services-block__text-price">Цена от <?= $service_price ?> ₽</div>
+                        <?php endif;?>
+                        <div class="single_services-block__text"> <?php echo do_shortcode('[contact-form-7 id="2491" title="Контактная форма mini"]'); ?></div>
+                </div> 
+            </section>
+                        
                         <div itemprop="description" class="service-article_text">
                             <?php the_content(); ?>
                         </div>
                     </div>
                 </div>
-                <section class="single-services-block">
-                <div class="single-services-block__price">
-                        <?php $service_price = get_field("service_price"); ?>
-                        <?php if (!empty($service_price)): ?>
-                <div class="single_services-block__text-price">Цена от <?= $service_price ?> ₽</div>
-                        <?php endif;?>
-                <div class="single_services-block__text"> <?php echo do_shortcode('[contact-form-7 id="2491" title="Контактная форма mini"]'); ?></div>
-                </div> 
-            </section>
             </section>                
 
             <!-- SchemaOrg -->
