@@ -22,6 +22,16 @@
                     </div>
                 </div>
             </section>
+            <section class="single-services-block">
+                <div class="single-services-block__price">
+                        <?php $service_price = get_field("service_price"); ?>
+                        <?php if (!empty($service_price)): ?>
+                        <div class="single_services-block__text-price">Цена от <?= $service_price ?> ₽</div>
+                        <?php endif;?>
+                        <div class="single_services-block__text"> <?php echo do_shortcode('[contact-form-7 id="2491" title="Контактная форма mini"]'); ?></div>
+                </div> 
+            </section>
+
 
             <!-- SchemaOrg  -->
             <meta itemprop="author" content="TopLand">
