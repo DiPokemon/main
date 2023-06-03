@@ -1006,8 +1006,10 @@
 } //
 @media(max-width:910x) {
     #wpcf7-f3248-p2692-o2 {
-        .wpcf7-submit {
-            width: 250px !important;
+        .contact_form {
+            .wpcf7-submit {
+                width: 250px !important;
+            }
         }
     }
 }
