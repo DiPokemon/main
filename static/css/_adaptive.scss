@@ -977,26 +977,20 @@
     }
 }
 
-@media(min-width:769px) {
+@media(max-width:769px) {
     .tarifs_mobile {
         display: none;
     }
 }
 
-@media(min-width:1255px) {
+@media(max-width:1255px) {
     #wpcf7-f3248-p2692-o2 .wpcf7-tel {
         width: 300px !important;
     }
 }
 
-@media(min-width:1145px) {
+@media(max-width:1145px) {
     .single_services-block__text-price {
         width: 300px !important;
-    }
-}
-
-@media(min-width:1025px) {
-    #wpcf7-f3248-p2692-o2 .wpcf7-tel {
-        width: 250px !important;
     }
 }
