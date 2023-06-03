@@ -984,8 +984,10 @@
 }
 
 @media(max-width:1255px) {
-    #wpcf7-f3248-p2692-o2 .wpcf7-tel {
-        width: 300px !important;
+    #wpcf7-f3248-p2692-o2 {
+        .wpcf7-tel {
+            width: 300px !important;
+        }
     }
 }
 
@@ -996,13 +998,17 @@
 }
 
 @media(max-width:1025px) {
-    #wpcf7-f3248-p2692-o2 .wpcf7-tel {
-        width: 200px !important;
+    #wpcf7-f3248-p2692-o2 {
+        .wpcf7-tel {
+            width: 200px !important;
+        }
     }
 } //
 @media(max-width:900x) {
-    #wpcf7-f3248-p2692-o2 .wpcf7-submit {
-        width: 250px !important;
+    #wpcf7-f3248-p2692-o2 {
+        .wpcf7-submit {
+            width: 250px !important;
+        }
     }
 }
 
