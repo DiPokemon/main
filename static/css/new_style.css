@@ -4053,6 +4053,16 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     width: 200px !important;
   }
 }
+@media (max-width: 900x) {
+  #wpcf7-f3248-p2692-o2 .wpcf7-submit {
+    width: 250px !important;
+  }
+}
+@media (max-width: 845x) {
+  .single_services-block__text {
+    display: block !important;
+  }
+}
 @-webkit-keyframes gradient {
   0% {
     background-position: 0% 50%;
