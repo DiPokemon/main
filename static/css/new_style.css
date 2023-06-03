@@ -2962,6 +2962,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 }
 
 #open_modal {
+  display: none;
   background: -webkit-gradient(linear, left top, right top, from(#ee7752), color-stop(#e73c7e), color-stop(#23a6d5), to(#23d5ab));
   background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
