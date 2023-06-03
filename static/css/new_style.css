@@ -4040,27 +4040,27 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 }
 @media (max-width: 1255px) {
   #wpcf7-f3248-p2692-o2 .wpcf7-tel {
-    width: 300px !important;
+    width: 300px;
   }
 }
 @media (max-width: 1145px) {
   .single_services-block__text-price {
-    width: 300px !important;
+    width: 300px;
   }
 }
 @media (max-width: 1025px) {
   #wpcf7-f3248-p2692-o2 .wpcf7-tel {
-    width: 200px !important;
+    width: 200px;
   }
 }
 @media (max-width: 910x) {
   #wpcf7-f3248-p2692-o2 .wpcf7-submit {
-    width: 250px !important;
+    width: 250px;
   }
 }
 @media (max-width: 845x) {
   .single_services-block__text {
-    display: block !important;
+    display: block;
   }
 }
 @-webkit-keyframes gradient {
