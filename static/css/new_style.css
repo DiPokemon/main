@@ -4093,5 +4093,11 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 }
 
 .single_services-block__text {
-  display: inline-block;
+  display: inline-block !important;
+}
+
+.single_services-block__text .contact_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=new_style.css.map */
