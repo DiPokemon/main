@@ -2777,6 +2777,41 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 }
 
 //Price on single service
+// .single-services-block__price {
+//     white-space: nowrap;
+// }
+// .single_services-block__text-price {
+//     display: inline-block;
+//     margin-right: 10px;
+//     font-size: 30px;
+//     width: 450px;
+// }
+// #wpcf7-f3248-p2692-o2 {
+//     .contact_form {
+//         display: inline-block !important;
+//     }
+// }
+// #wpcf7-f3248-p2692-o2 {
+//     .wpcf7-tel {
+//         width: 400px;
+//     }
+// }
+// #wpcf7-f3248-p2692-o2 {
+//     .wpcf7-submit {
+//         width: 310px;
+//     }
+// }
+// .single-services-block {
+//     padding: 0px 0 75px 0;
+// }
+// .single_services-block__text {
+//     display: inline-block !important;
+// }
+// .single_services-block__text {
+//     .contact_form {
+//         display: flex;
+//     }
+// }
 .single-services-block__price {
     white-space: nowrap;
 }
@@ -2785,22 +2820,23 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     display: inline-block;
     margin-right: 10px;
     font-size: 30px;
-    width: 450px;
+    width: 410px;
 }
 
-#wpcf7-f3248-p2692-o2 {
+#wpcf7-f2491-p2094-o1 {
     .contact_form {
         display: inline-block !important;
     }
 }
 
-#wpcf7-f3248-p2692-o2 {
+//
+#wpcf7-f2491-p2094-o1 {
     .wpcf7-tel {
         width: 400px;
     }
 }
 
-#wpcf7-f3248-p2692-o2 {
+#wpcf7-f2491-p2094-o1 {
     .wpcf7-submit {
         width: 310px;
     }
@@ -2811,11 +2847,5 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 }
 
 .single_services-block__text {
-    display: inline-block !important;
-}
-
-.single_services-block__text {
-    .contact_form {
-        display: flex;
-    }
+    display: inline-block;
 }
