@@ -4073,25 +4073,32 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   display: inline-block;
   margin-right: 10px;
   font-size: 30px;
-  width: 410px;
+  width: 450px;
 }
 
-#wpcf7-f2491-p2094-o1 .contact_form {
+#wpcf7-f3248-p2692-o2 .contact_form {
   display: inline-block !important;
 }
 
-#wpcf7-f2491-p2094-o1 .wpcf7-tel {
+#wpcf7-f3248-p2692-o2 .wpcf7-tel {
   width: 400px;
 }
 
-#wpcf7-f2491-p2094-o1 .wpcf7-submit {
+#wpcf7-f3248-p2692-o2 .wpcf7-submit {
   width: 310px;
 }
 
 .single-services-block {
   padding: 0px 0 75px 0;
+  display: none;
 }
 
 .single_services-block__text {
-  display: inline-block;
+  display: inline-block !important;
+}
+
+.single_services-block__text .contact_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=new_style.css.map */
