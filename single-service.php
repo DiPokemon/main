@@ -95,7 +95,7 @@ $cloud_tags = get_field("cloud_tags", $term);
                         </div>
                     </div>
         </section>
-        <section>
+        <>
                     <div class="cases-block__container">
                         <div class="cases-block__body">
                             <div class="cases-block__title">
@@ -146,7 +146,7 @@ $cloud_tags = get_field("cloud_tags", $term);
                         </div>                        
                     </div>    
                                               
-                </section>
+                                        </section>
         
 <?php endwhile; ?>
 
