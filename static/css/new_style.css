@@ -4039,6 +4039,11 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     display: none;
   }
 }
+@media (max-width: 805px) {
+  .single-services-block__price {
+    white-space: normal;
+  }
+}
 @-webkit-keyframes gradient {
   0% {
     background-position: 0% 50%;
