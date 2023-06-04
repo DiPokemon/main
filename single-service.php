@@ -93,8 +93,8 @@ $cloud_tags = get_field("cloud_tags", $term);
                                 <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_right.svg" alt="lightning right">
                             </div>                        
                         </div>
-
-                        <section class="page__service-offer categorry_test">                                      
+                    </div>
+                    <section class="page__service-offer categorry_test">                                      
                     <div class="cases-block__container">
                         <div class="cases-block__body">
                             <div class="cases-block__title">
@@ -146,8 +146,6 @@ $cloud_tags = get_field("cloud_tags", $term);
                     </div>    
                                               
         </section>
-
-                    </div>
         </section>
         
 
