@@ -95,7 +95,7 @@ $cloud_tags = get_field("cloud_tags", $term);
                         </div>
                     </div>
         </section>
-        <section class="page__service-offer categorry_test">                                      
+        <section >                                      
                     <div class="cases-block__container">
                         <div class="cases-block__body">
                             <div class="cases-block__title">
@@ -147,11 +147,7 @@ $cloud_tags = get_field("cloud_tags", $term);
                     </div>    
                                               
                 </section>
-                <section class="form_row">
-                    <div class="page_contacts-form contact_form-row">
-                        <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-                    </div>
-                </section>  
+                
         
 <?php endwhile; ?>
 
