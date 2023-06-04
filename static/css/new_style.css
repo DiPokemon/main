@@ -2207,7 +2207,7 @@ a.tags_item {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
-  margin-bottom: 48px;
+  margin-bottom: 10px;
 }
 
 .service-article_text {
@@ -4048,6 +4048,11 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   }
   .single_services-block__text {
     width: 100% !important;
+  }
+}
+@media (max-width: 530px) {
+  .single_services-block__text .contact_form {
+    display: grid !important;
   }
 }
 @-webkit-keyframes gradient {

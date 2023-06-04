@@ -995,3 +995,11 @@
         width: 100% !important;
     }
 }
+
+@media(max-width:530px) {
+    .single_services-block__text {
+        .contact_form {
+            display: grid !important;
+        }
+    }
+}
