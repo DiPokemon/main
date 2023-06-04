@@ -4055,7 +4055,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     display: grid !important;
   }
   .single-services-block {
-    padding: 0 0 20px;
+    padding: 0 0 20px !important;
   }
 }
 @-webkit-keyframes gradient {
