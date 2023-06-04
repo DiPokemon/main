@@ -985,7 +985,7 @@
 
 //Price on single service
 @media(max-width:805px) {
-    .single-services-block__price {
-        white-space: normal;
+    .single-services-block__text {
+        display: block !important;
     }
 }
