@@ -147,7 +147,7 @@ $cloud_tags = get_field("cloud_tags", $term);
                     </div>    
                                               
                 </section>
-
+        
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
