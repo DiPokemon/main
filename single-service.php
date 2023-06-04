@@ -95,7 +95,7 @@ $cloud_tags = get_field("cloud_tags", $term);
                         </div>
                     </div>
         </section>
-        <section >                                      
+        <section class="page__service-offer categorry_test">                                      
                     <div class="cases-block__container">
                         <div class="cases-block__body">
                             <div class="cases-block__title">
