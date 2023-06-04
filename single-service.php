@@ -151,6 +151,7 @@ $cloud_tags = get_field("cloud_tags", $term);
 
 
       
+ </div>
                 
         
 <?php endwhile; ?>
