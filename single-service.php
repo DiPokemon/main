@@ -70,32 +70,7 @@ $cloud_tags = get_field("cloud_tags", $term);
                         </div>
                     </section>
                 <?php endif;?> 
-
-        <section class="page__service-selection service-selection">
-                    <div class="service-selection__container _container">
-                        <div class="service-selection__body">                        
-                            <div class="service-selection__lightning_left">
-                                <img class="lightning_left" loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_left.svg" alt="lightning left">
-                            </div>
-                            <div class="service-selection__content">         
-                                <div class="service-selection__title">
-                                    <h2 class="_h2 service-selection__title_h2 section_title">Не знаете какую услугу выбрать?</h2>
-                                </div>
-                                <div class="service-selection__subtitle toplend">Напишите нам. Мы подскажем какая услуга принесет вашей компании больше прибыли</div>
-                                <div class="page_contacts-form contact_form-grid">
-                                    <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-                                </div>
-                                <!-- <div class="service-selection__button">
-                                    <a class="service-selection__href" href="https://wa.me/79934536307">Написать в What’sApp</a>
-                                </div> -->
-                            </div>
-                            <div class="service-selection__lightning_right">
-                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_right.svg" alt="lightning right">
-                            </div>                        
-                        </div>
-                    </div>
-        </section>
-        <section class="page__service-offer categorry_test">                                      
+                <section class="page__service-offer categorry_test">                                      
                     <div class="cases-block__container">
                         <div class="cases-block__body">
                             <div class="cases-block__title">
@@ -146,7 +121,32 @@ $cloud_tags = get_field("cloud_tags", $term);
                         </div>                        
                     </div>    
                                               
-                </section>
+        </section>
+        <section class="page__service-selection service-selection">
+                    <div class="service-selection__container _container">
+                        <div class="service-selection__body">                        
+                            <div class="service-selection__lightning_left">
+                                <img class="lightning_left" loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_left.svg" alt="lightning left">
+                            </div>
+                            <div class="service-selection__content">         
+                                <div class="service-selection__title">
+                                    <h2 class="_h2 service-selection__title_h2 section_title">Не знаете какую услугу выбрать?</h2>
+                                </div>
+                                <div class="service-selection__subtitle toplend">Напишите нам. Мы подскажем какая услуга принесет вашей компании больше прибыли</div>
+                                <div class="page_contacts-form contact_form-grid">
+                                    <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
+                                </div>
+                                <!-- <div class="service-selection__button">
+                                    <a class="service-selection__href" href="https://wa.me/79934536307">Написать в What’sApp</a>
+                                </div> -->
+                            </div>
+                            <div class="service-selection__lightning_right">
+                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_right.svg" alt="lightning right">
+                            </div>                        
+                        </div>
+                    </div>
+        </section>
+       
                 
         
 <?php endwhile; ?>
