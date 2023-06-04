@@ -4073,7 +4073,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   display: inline-block;
   margin-right: 10px;
   font-size: 30px;
-  width: 450px;
+  width: 40%;
 }
 
 #wpcf7-f3248-p2692-o2 .contact_form {
@@ -4094,6 +4094,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 
 .single_services-block__text {
   display: inline-block !important;
+  width: 65%;
 }
 
 .single_services-block__text .contact_form {
