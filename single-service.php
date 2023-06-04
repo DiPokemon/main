@@ -70,7 +70,7 @@ $cloud_tags = get_field("cloud_tags", $term);
                         </div>
                     </section>
                 <?php endif;?> 
-                <section class="page__service-offer categorry_test">                                      
+                                                   
                     <div class="cases-block__container">
                         <div class="cases-block__body">
                             <div class="cases-block__title">
@@ -121,7 +121,7 @@ $cloud_tags = get_field("cloud_tags", $term);
                         </div>                        
                     </div>    
                                               
-        </section>
+      
         <section class="page__service-selection service-selection">
                     <div class="service-selection__container _container">
                         <div class="service-selection__body">                        
