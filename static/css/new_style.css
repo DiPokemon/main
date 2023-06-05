@@ -4031,12 +4031,12 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     color: #f7f2ff;
   }
   .tarifs_desktop {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 769px) {
   .tarifs_mobile {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 805px) {

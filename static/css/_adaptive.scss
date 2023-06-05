@@ -973,13 +973,13 @@
         color: $main-white-color;
     }
     .tarifs_desktop {
-        display: none;
+        display: none !important;
     }
 }
 
 @media(max-width:769px) {
     .tarifs_mobile {
-        display: none;
+        display: none !important;
     }
 }
 
