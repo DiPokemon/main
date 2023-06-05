@@ -972,17 +972,16 @@
     .tab_body {
         color: $main-white-color;
     }
-    .tarifs_desktop {
-        display: none !important;
-    }
+    // .tarifs_desktop {
+    //     display: none !important;
+    // }
 }
 
-@media(max-width:769px) {
-    .tarifs_mobile {
-        display: none !important;
-    }
-}
-
+// @media(max-width:769px) {
+//     .tarifs_mobile {
+//         display: none !important;
+//     }
+// }
 //
 //Price on single service
 @media(max-width:805px) {

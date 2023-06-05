@@ -4030,14 +4030,6 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   .tab_body {
     color: #f7f2ff;
   }
-  .tarifs_desktop {
-    display: none !important;
-  }
-}
-@media (max-width: 769px) {
-  .tarifs_mobile {
-    display: none !important;
-  }
 }
 @media (max-width: 805px) {
   .single-services-block__text {
@@ -4124,4 +4116,8 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 
 ._container .cases-block__container {
   padding-bottom: 50px;
+}
+
+.tarifs_mobile {
+  display: none !important;
 }/*# sourceMappingURL=new_style.css.map */
