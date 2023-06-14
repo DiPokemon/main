@@ -983,29 +983,29 @@
     }
 }
 
-//Price on single service
-// @media(max-width:805px) {
-//     .single-services-block__text {
-//         display: block !important;
-//     }
-//     .single_services-block__text-price {
-//         display: block !important;
-//     }
-//     .single_services-block__text {
-//         width: 100% !important;
-//     }
-// }
-// @media(max-width:530px) {
-//     .single_services-block__text {
-//         .contact_form {
-//             display: grid !important;
-//         }
-//     }
-//     .single-services-block {
-//         padding: 0 0 20px !important;
-//     }
-//     .single_services-block__text-price {
-//         width: 100% !important;
-//         text-align: center !important;
-//     }
-// }
+Price on single service @media(max-width:805px) {
+    .single-services-block__text {
+        display: block !important;
+    }
+    .single_services-block__text-price {
+        display: block !important;
+    }
+    .single_services-block__text {
+        width: 100% !important;
+    }
+}
+
+@media(max-width:530px) {
+    .single_services-block__text {
+        .contact_form {
+            display: grid !important;
+        }
+    }
+    .single-services-block {
+        padding: 0 0 20px !important;
+    }
+    .single_services-block__text-price {
+        width: 100% !important;
+        text-align: center !important;
+    }
+}
