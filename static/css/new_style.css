@@ -2305,10 +2305,6 @@ a.tags_item {
   width: 100%;
 }
 
-.blog-block__grid .articles__img {
-  height: 200px;
-}
-
 .blog-block__grid .articles__img img {
   max-height: 200px;
   -o-object-fit: cover;
