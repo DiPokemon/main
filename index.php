@@ -16,7 +16,7 @@
                               <div class="main_subtext">Эффективные решения для вашего бизнеса</div>
                               <div class="main-subtitle">
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>SEO продвижение</div>                              
-                                <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>Создание сайтов</div>                              
+                                <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>Разработка сайтов</div>                              
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>Решения для бизнеса</div>
                               </div>
                               <a href="https://wa.me/79514976107" class="btn main-button_href" >Задайте вопрос в What’sApp</a>                              
