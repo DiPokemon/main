@@ -346,13 +346,7 @@
                 <br>
                 <a class="tabs_price_list" href="/prajs-list">Ознакомиться с полным перечнем цен</a>
               </div>
-              <section class="form_row">
-              <div class="_container">
-                <div class="page_contacts-form contact_form-row">
-                  <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-                </div>
-              </div>              
-            </section>
+              
 
             </section>
             <section class="tarifs_mobile" >
