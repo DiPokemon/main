@@ -635,6 +635,9 @@ ul.header_cities {
 
 .main-image__el {
     border-radius: 5px;
+    .img1 {
+        border-radius: 5px;
+    }
 }
 
 .main-image__el:nth-child(odd) {
@@ -642,7 +645,7 @@ ul.header_cities {
 }
 
 .main-image__el:first-child {
-    border: 1px solid #3F3354;
+    // border: 1px solid #3F3354;
     display: flex;
     font-family: "Open Sans";
     font-style: normal;
@@ -651,7 +654,7 @@ ul.header_cities {
     align-items: center;
     justify-content: center;
     min-height: 150px;
-    padding: 0 10px
+    // padding: 0 10px
 }
 
 .main-image__text_title {

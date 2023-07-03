@@ -693,6 +693,9 @@ ul.header_cities {
 .main-image__el {
   border-radius: 5px;
 }
+.main-image__el .img1 {
+  border-radius: 5px;
+}
 
 .main-image__el:nth-child(odd) {
   -webkit-transform: translateY(-50px);
@@ -700,7 +703,6 @@ ul.header_cities {
 }
 
 .main-image__el:first-child {
-  border: 1px solid #3F3354;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,7 +720,6 @@ ul.header_cities {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 150px;
-  padding: 0 10px;
 }
 
 .main-image__text_title {
