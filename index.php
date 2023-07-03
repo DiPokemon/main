@@ -12,7 +12,7 @@
                       <div class="main-block__body">
                           <div class="main-content">
                             <div class="main-content_wrapper">
-                              <h1 class="main-title">Комплексное SEO продвижение сайтов</h1>    
+                              <h1 class="main-title">Продвижение сайтов</h1>    
                               <div class="main_subtext">Эффективные решения для вашего бизнеса</div>
                               <div class="main-subtitle">
                                 <div class="main-subtitle__item"><span><img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Soft Star.svg" alt="img"></span>SEO продвижение</div>                              
@@ -25,7 +25,7 @@
                           <div class="main-image">
                             <div class="main-image_grid">
                               <div class="main-image__el">
-                                <div class="main-image__text_title">Для любой задачи есть решение!</div>
+                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/img1.png" alt="img">
                               </div>                            
                               <div class="main-image__el">
                                 <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/img2.png" alt="img">
@@ -109,7 +109,7 @@
             <section>
               <div class="_container">
                 <h3>Компания "TopLand"</h3>
-                <p>Занимаемся интернет-маркетингом и продвижением бизнеса в ТОП 10 поисковых систем с 2016 года. </p>
+                <p>Занимаемся интернет-маркетингом и продвижением сайтов в ТОП 10 поисковых систем с 2016 года. </p>
                 <p><b>Наши клиенты</b> – это представители  бизнеса, чья география деятельности выходит далеко за пределы Ростова и России в целом.  
                 Непрерывно внедряем и развиваем собственные инструменты для повышения эффективности рекламы,продвижения сайтов в разных поисковых системах, обхода конкурентов в ТОП  позиций. 
                 </p>
@@ -192,59 +192,7 @@
                 </div>
               </div>
             </section>   
-            
-            <section>
-              <div class="_container">
-                <div>
-                  <h2 class="_h2 section_title">Наши гарантии</h2>
-                </div>
-                <div class="slider_wrapper">
-                  <div class="guarantee_slider">
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-hand-holding-usd"></i></div>
-                      <div class="guarantee_text">Оплата за результат</div>
-                    </div>                    
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-clipboard-check"></i></div>
-                      <div class="guarantee_text">Заключение договора</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-users"></i></div>
-                      <div class="guarantee_text">Команда специалистов</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-thumbs-up"></i></div>
-                      <div class="guarantee_text">Белые методы продвижения</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-desktop"></i></div>
-                      <div class="guarantee_text">Улучшение юзабилити сайта</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-funnel-dollar"></i></div>
-                      <div class="guarantee_text">Повышение конверсии сайта</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-route"></i></div>
-                      <div class="guarantee_text">Четкая стратегия развития проекта</div>
-                    </div>                    
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="far fa-eye"></i></div>
-                      <div class="guarantee_text">Прозрачная отчетность</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-shield-alt"></i></div>
-                      <div class="guarantee_text">Безопасносность</div>
-                    </div>
-                    <div class="guarantee_item">
-                      <div class="guarantee_icon"><i class="fas fa-handshake"></i></div>
-                      <div class="guarantee_text">Индивидуальный подход</div>
-                    </div>
-                  </div>
-                </div>                
-              </div>
-            </section>
-
+        
             <section class="tarifs_desktop">
               <div class="_container">
                 <div class="tariffs_tabs__title">
@@ -306,7 +254,7 @@
                         <p>Перед началом работы мы проводим бесплатный полный аудит сайта, в результате 
                             которого составляем чек лист рекомендаций для улучшения эффективности сайта.</p>
                             <br>
-                        <p>Мы занимаемся seo продвижением сайтов как в Ростове на Дону, так и по всей стране. </p>
+                        <p>Мы занимаемся продвижением сайтов как в Ростове на Дону, так и по всей стране. </p>
                       </div>
                       <div class="tab_footer">
                         <div class="tab_btn">
@@ -533,6 +481,58 @@
               
             </section>  
 
+            <section>
+              <div class="_container">
+                <div>
+                  <h2 class="_h2 section_title">Наши гарантии</h2>
+                </div>
+                <div class="slider_wrapper">
+                  <div class="guarantee_slider">
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-hand-holding-usd"></i></div>
+                      <div class="guarantee_text">Оплата за результат</div>
+                    </div>                    
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-clipboard-check"></i></div>
+                      <div class="guarantee_text">Заключение договора</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-users"></i></div>
+                      <div class="guarantee_text">Команда специалистов</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-thumbs-up"></i></div>
+                      <div class="guarantee_text">Белые методы продвижения</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-desktop"></i></div>
+                      <div class="guarantee_text">Улучшение юзабилити сайта</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-funnel-dollar"></i></div>
+                      <div class="guarantee_text">Повышение конверсии сайта</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-route"></i></div>
+                      <div class="guarantee_text">Четкая стратегия развития проекта</div>
+                    </div>                    
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="far fa-eye"></i></div>
+                      <div class="guarantee_text">Прозрачная отчетность</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-shield-alt"></i></div>
+                      <div class="guarantee_text">Безопасносность</div>
+                    </div>
+                    <div class="guarantee_item">
+                      <div class="guarantee_icon"><i class="fas fa-handshake"></i></div>
+                      <div class="guarantee_text">Индивидуальный подход</div>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </section>
+
             <section class="page__cases-block cases">
               <div class="cases-block__container _container">
                 <div class="cases-block__body">
@@ -585,79 +585,6 @@
               </div>
             </section>
             
-          <section>
-            <div class="_container">
-              <div>
-                <h2 class="_h2 section_title">Наша команда</h2>
-              </div>
-              <div class="staff_wrapper">
-                
-                    <div class="staff_item">
-                      <h3 class="staff_name">Интернет-маркетолог</h3>
-                      <p class="staff_desc">Отвечает за консалтинг и общую стратегию развития проекта.</p>
-                    </div> 
-
-                    <div class="staff_item">
-                      <h3 class="staff_name">Контент-менеджер</h3>
-                      <p class="staff_desc">Разрабатывает контент-стратегию в социальных сетях, отвечает за создание и размещение контента.</p>
-                    </div> 
-
-                    <div class="staff_item">
-                      <h3 class="staff_name">SEO-специалист </h3>
-                      <p class="staff_desc">Проводит аудит сайта(технический и  информационный), анализирует конкурентов и на основе полученных 
-                        данных составляет стратегию продвижения. Работает над поведенческим фактором и ТЗ для ряда специалистов. 
-                      </p>
-                    </div> 
-
-                    <div class="staff_item">
-                      <h3 class="staff_name">UX-специалист</h3>
-                      <p class="staff_desc">Специалист, задача которого сделать продукт удобным, понятным и логичным для всех пользователей.</p>
-                    </div> 
-
-                    <div class="staff_item">
-                      <h3 class="staff_name">UI-специалист</h3>
-                      <p class="staff_desc">Занимается наполнением сайта: выбором цветов, построением визуальной композиции, оформлением кнопок и другими графическими элементами. </p>
-                    </div> 
-
-                    <div class="staff_item">
-                      <h3 class="staff_name">SMM-специалист</h3>
-                      <p class="staff_desc">Продвигает товары и услуги, развивает бренд, отвечает за ведение и наполнение аккаунтов в Одноклассниках, ВКонтакте, Facebook, Instagram и других социальных сетях.</p>
-                    </div> 
-
-                    <div class="staff_item">
-                      <h3 class="staff_name">Таргетолог</h3>
-                      <p class="staff_desc">Настраивает и следит за эффективностью рекламных кампаний.</p>
-                    </div>                 
-
-                    <div class="staff_item">
-                      <h3 class="staff_name">Аккаунт-менеджер</h3>
-                      <p class="staff_desc">Отвечает за документооборот, финансы, следит за выполнением всех сроков по проекту</p>
-                    </div> 
-
-                    <div class="staff_item">
-                      <h3 class="staff_name">SEO-копирайтер</h3>
-                      <p class="staff_desc">Написание текстов и подготовка контента по техническому заданию Seo - специалиста. </p>
-                    </div> 
-
-                    <div class="staff_item">
-                      <h3 class="staff_name">Веб-мастер</h3>
-                      <p class="staff_desc">Проверяет техническую сторону сайта на отсутствие ошибок и соответствие требованиям поисковых систем.</p>
-                    </div> 
-
-                    <div class="staff_item">
-                      <h3 class="staff_name">Аналитик</h3>
-                      <p class="staff_desc">Отвечает за качество аналитики, готовит отчеты, настройку интеграций рекламных кабинетов с системами сквозной аналитики.</p>
-                    </div> 
-
-                    <div class="staff_item">
-                      <h3 class="staff_name">Программист/разработчик</h3>
-                      <p class="staff_desc">Вносит изменения в HTML код согласно техническому заданию от SEO специалиста.</p>
-                    </div>                
-
-              </div>
-            </div>
-          </section>
-
             <section class="achievements_section">
               <div class="_container">
                 <div class="cases-block__title">
@@ -684,55 +611,6 @@
                 
               </div>
             </section>
-
-            <section>
-              <div class="_container">
-                <div>
-                  <h2 class="_h2 section_title">Этапы работы</h2>
-                </div>
-                <div class="accordion">
-
-                  <input type="checkbox" name="chacor" id="step_1" />
-                  <label for="step_1">Анализ сайта и погружение в бизнес клиента</label>
-                  <div class="acor-body">
-                    <p>Опираясь на десятки параметров оцениваем Ваш сайт. Учитываем такие аспекты как</p>
-                    <ul>
-                      <li>Техническое состояние;</li>
-                      <li>Аналитические данные;</li>
-                      <li>Поведенческий фактор.</li>
-                    </ul>
-                    <p>Анализируем  продукты/услуги Вашего бизнеса, а также  главных конкурентов. На основании собранной 
-                      информации формируем план по SEO продвижению и определяем перечень задач, которые предстоит решить.</p>
-                  </div>
-
-                  <input type="checkbox" name="chacor" id="step_2" />
-                  <label for="step_2">Разработка стратегии продвижения</label>
-                  <div class="acor-body">
-                    <p>Разрабатываем стратегию продвижения сайта для разных поисковых систем, а также подробное  техническое 
-                       задание для копирайтера, контент менеджера, дизайнера, верстальщика и разработчика на основе конкурентного анализа и данных аудита сайта.</p>                    
-                  </div>
-
-                  <input type="checkbox" name="chacor" id="step_3" />
-                  <label for="step_3">Оптимизация сайта и внедрение ключевых фраз </label>
-                  <div class="acor-body">
-                    <p>На основе технического задания подготавливаем уникальный  контент  для страниц сайта. 
-                      По согласованию вносим  корректировки в структуру ресурса  с целью оптимизации под алгоритмы разных поисковиков.</p>
-                    <p>Корректируем  компоновки страниц, дорабатываем  дизайн, внедряем дополнительный  функционал и продающие триггеры 
-                      с целью улучшения поведенческого фактора и конверсии страниц и сайта в целом. </p>
-                  </div>
-
-                  <input type="checkbox" name="chacor" id="step_4" />
-                  <label for="step_4">Постапдейтный аудит</label>
-                  <div class="acor-body">
-                    <p>После оптимизации сайта проводим  мониторинг позиций в поиске, оцениваем динамику 
-                      визитов пользователей. Исследуем показатели эффективности и корректируем  последующий план</p>                    
-                  </div>
-                </div>
-                          
-              </div>
-            </section>      
-
-            
 
             <section class="form_row">
               <div class="_container">
@@ -1126,6 +1004,99 @@
                 </div>
               </div>
             </section>
+          
+            <!-- <section>
+              <div class="_container">
+                <div class="spotlight_wrap"> -->
+                  <!-- <svg x="0px" y="0px" width="600px" height="300px" viewBox="0 0 600 300">
+                    <mask id="mask">     
+                      <rect width="100%" height="100%" x="0" y="0" fill="white" opacity="0.8" />
+                        <g transform="translate(0, 0)">                      
+                          <circle cx="30" cy="30" r="20" />                    
+                        </g>
+                    </mask>
+                  </svg> -->
+                  <!-- <div class="spotlight_text">
+                    <span class="spotlight_key">Seo специалист</span>
+                    <span class="spotlight_key">Seo анализ</span>
+                    <span class="spotlight_key">Отзывы</span>
+                    <span class="spotlight_key">Рейтинг</span>
+                    <span class="spotlight_key">Аудит</span>
+                    <span class="spotlight_key">Раскрутка сайта</span>
+                    <span class="spotlight_key">Продвижение</span>
+                    <span class="spotlight_key">Гарантии</span>
+                    <span class="spotlight_key">Решения для бизнеса</span>
+                    <span class="spotlight_key">ТОП - 10</span>
+                    <span class="spotlight_key">Интернет - маркетинг </span>
+                    <span class="spotlight_key">Интернет-магазин</span>
+                    <span class="spotlight_key">Ключи</span>
+                    <span class="spotlight_key">Поисковые системы</span>
+                    <span class="spotlight_key">Маркетплейсы</span>
+                    <span class="spotlight_key">Разработка</span>
+                    <span class="spotlight_key">Яндекс</span>
+                    <span class="spotlight_key">Кейсы</span>
+                    <span class="spotlight_key">Посещаемость</span>
+                    <span class="spotlight_key">Google</span>
+                    <span class="spotlight_key">Раскрутка</span>
+                    <span class="spotlight_key">Seo</span>
+                    <span class="spotlight_key">Преимущества </span>
+                    <span class="spotlight_key">Аналитика</span>
+                    <span class="spotlight_key">Лиды</span>
+                    <span class="spotlight_key">KPI</span>
+                    <span class="spotlight_key">Контекстная реклама</span>
+                    <span class="spotlight_key">Интернет - реклама </span>
+                    <span class="spotlight_key">Для бизнеса</span>
+                    <span class="spotlight_key">Трафик</span>
+                    <span class="spotlight_key">Marketing</span>
+                    <span class="spotlight_key">Цена продвижения</span>
+                    <span class="spotlight_key">Ключевые запросы</span>
+                    <span class="spotlight_key">Прибыль</span>
+                    <span class="spotlight_key">Конверсия</span>
+                    <span class="spotlight_key">Оптимизация</span>
+                    <span class="spotlight_key">Тематики</span>
+                    <span class="spotlight_key">Карточки товаров</span>
+                    <span class="spotlight_key">Блог</span>
+                    <span class="spotlight_key">Лендинг</span>
+                    <span class="spotlight_key">Продажи</span>
+                    <span class="spotlight_key">Веб-сайт</span>
+                    <span class="spotlight_key">Продвижение на картах</span>
+                    <span class="spotlight_key">Сайт под ключ</span>
+                    <span class="spotlight_key">Создание сайтов</span>
+                    <span class="spotlight_key">Техническая поддержка</span>
+                  </div>
+                  
+                  <img id="redux" src="<?php echo get_template_directory_uri()?>/static/img/spotlight_bg.jpg" alt="">
+                  
+                </div>
+              </div>
+            </section> -->
+
+            <section class="page__service-selection service-selection">
+                    <div class="service-selection__container _container">
+                        <div class="service-selection__body">                        
+                            <div class="service-selection__lightning_left">
+                                <img class="lightning_left" loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_left.svg" alt="lightning left">
+                            </div>
+                            <div class="service-selection__content">         
+                                <div class="service-selection__title">
+                                    <h2 class="_h2 service-selection__title_h2 section_title">Не знаете какую услугу выбрать?</h2>
+                                </div>
+                                <div class="service-selection__subtitle toplend">Напишите нам. Мы подскажем какая услуга принесет вашей компании больше прибыли</div>
+                                <div class="page_contacts-form contact_form-grid">
+                                    <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
+                                </div>
+                                <!-- <div class="service-selection__button">
+                                    <a class="service-selection__href" href="https://wa.me/79934536307">Написать в What’sApp</a>
+                                </div> -->
+                            </div>
+                            <div class="service-selection__lightning_right">
+                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_right.svg" alt="lightning right">
+                            </div>                        
+                        </div>
+                    </div>
+            </section>
+
+
             <section class="page__question question">
               <div class="question__container _container">
                 <div class="question__body">
@@ -1234,97 +1205,6 @@
               </div>
             </section>
 
-            
 
-            <!-- <section>
-              <div class="_container">
-                <div class="spotlight_wrap"> -->
-                  <!-- <svg x="0px" y="0px" width="600px" height="300px" viewBox="0 0 600 300">
-                    <mask id="mask">     
-                      <rect width="100%" height="100%" x="0" y="0" fill="white" opacity="0.8" />
-                        <g transform="translate(0, 0)">                      
-                          <circle cx="30" cy="30" r="20" />                    
-                        </g>
-                    </mask>
-                  </svg> -->
-                  <!-- <div class="spotlight_text">
-                    <span class="spotlight_key">Seo специалист</span>
-                    <span class="spotlight_key">Seo анализ</span>
-                    <span class="spotlight_key">Отзывы</span>
-                    <span class="spotlight_key">Рейтинг</span>
-                    <span class="spotlight_key">Аудит</span>
-                    <span class="spotlight_key">Раскрутка сайта</span>
-                    <span class="spotlight_key">Продвижение</span>
-                    <span class="spotlight_key">Гарантии</span>
-                    <span class="spotlight_key">Решения для бизнеса</span>
-                    <span class="spotlight_key">ТОП - 10</span>
-                    <span class="spotlight_key">Интернет - маркетинг </span>
-                    <span class="spotlight_key">Интернет-магазин</span>
-                    <span class="spotlight_key">Ключи</span>
-                    <span class="spotlight_key">Поисковые системы</span>
-                    <span class="spotlight_key">Маркетплейсы</span>
-                    <span class="spotlight_key">Разработка</span>
-                    <span class="spotlight_key">Яндекс</span>
-                    <span class="spotlight_key">Кейсы</span>
-                    <span class="spotlight_key">Посещаемость</span>
-                    <span class="spotlight_key">Google</span>
-                    <span class="spotlight_key">Раскрутка</span>
-                    <span class="spotlight_key">Seo</span>
-                    <span class="spotlight_key">Преимущества </span>
-                    <span class="spotlight_key">Аналитика</span>
-                    <span class="spotlight_key">Лиды</span>
-                    <span class="spotlight_key">KPI</span>
-                    <span class="spotlight_key">Контекстная реклама</span>
-                    <span class="spotlight_key">Интернет - реклама </span>
-                    <span class="spotlight_key">Для бизнеса</span>
-                    <span class="spotlight_key">Трафик</span>
-                    <span class="spotlight_key">Marketing</span>
-                    <span class="spotlight_key">Цена продвижения</span>
-                    <span class="spotlight_key">Ключевые запросы</span>
-                    <span class="spotlight_key">Прибыль</span>
-                    <span class="spotlight_key">Конверсия</span>
-                    <span class="spotlight_key">Оптимизация</span>
-                    <span class="spotlight_key">Тематики</span>
-                    <span class="spotlight_key">Карточки товаров</span>
-                    <span class="spotlight_key">Блог</span>
-                    <span class="spotlight_key">Лендинг</span>
-                    <span class="spotlight_key">Продажи</span>
-                    <span class="spotlight_key">Веб-сайт</span>
-                    <span class="spotlight_key">Продвижение на картах</span>
-                    <span class="spotlight_key">Сайт под ключ</span>
-                    <span class="spotlight_key">Создание сайтов</span>
-                    <span class="spotlight_key">Техническая поддержка</span>
-                  </div>
-                  
-                  <img id="redux" src="<?php echo get_template_directory_uri()?>/static/img/spotlight_bg.jpg" alt="">
-                  
-                </div>
-              </div>
-            </section> -->
-
-            <section class="page__service-selection service-selection">
-                    <div class="service-selection__container _container">
-                        <div class="service-selection__body">                        
-                            <div class="service-selection__lightning_left">
-                                <img class="lightning_left" loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_left.svg" alt="lightning left">
-                            </div>
-                            <div class="service-selection__content">         
-                                <div class="service-selection__title">
-                                    <h2 class="_h2 service-selection__title_h2 section_title">Не знаете какую услугу выбрать?</h2>
-                                </div>
-                                <div class="service-selection__subtitle toplend">Напишите нам. Мы подскажем какая услуга принесет вашей компании больше прибыли</div>
-                                <div class="page_contacts-form contact_form-grid">
-                                    <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-                                </div>
-                                <!-- <div class="service-selection__button">
-                                    <a class="service-selection__href" href="https://wa.me/79934536307">Написать в What’sApp</a>
-                                </div> -->
-                            </div>
-                            <div class="service-selection__lightning_right">
-                                <img loading="lazy" src="<?php echo get_template_directory_uri()?>/static/img/Light_right.svg" alt="lightning right">
-                            </div>                        
-                        </div>
-                    </div>
-            </section>
 
 <?php get_footer(); ?>
