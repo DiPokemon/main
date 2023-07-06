@@ -618,14 +618,7 @@
               </div>
             </section>
 
-            <section class="form_row">
-              <div class="_container">
-                <div class="page_contacts-form contact_form-row">
-                  <?php echo do_shortcode('[contact-form-7 id="1968" title="Контактная форма 1"]'); ?>
-                </div>
-              </div>              
-            </section>
-
+          
             <section>
               <div class="_container">
                 <div>
