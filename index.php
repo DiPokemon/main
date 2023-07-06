@@ -344,7 +344,11 @@
 
                 </div>  
                 <br>
-                <a class="tabs_price_list" href="/prajs-list">Ознакомиться с полным перечнем цен</a>
+                <div class="page_contacts-form contact_form-row">
+                <div class="tabs_price_list" href="/prajs-list">Ознакомиться с полным перечнем цен</div>
+                <?php echo do_shortcode('[contact-form-7 id="3248" title="Контактная форма mini"]'); ?>
+                </div>
+              </div>
               </div>
             </section>
 
@@ -475,8 +479,9 @@
                 </div>
                 <br>
                 <a class="tabs_price_list" href="/prajs-list">Ознакомиться с полным перечнем цен</a>
+                <?php echo do_shortcode('[contact-form-7 id="3248" title="Контактная форма mini"]'); ?>
                 </div>   
-                
+              
               </div>  
               </div>
               

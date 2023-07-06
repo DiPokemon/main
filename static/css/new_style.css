@@ -4125,4 +4125,23 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 
 ._container .cases-block__container {
   padding-bottom: 50px;
+}
+
+.tarifs_desktop .contact_form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.tarifs_desktop .contact_form-row .contact_form {
+  grid-template-columns: repeat(2, 1fr);
+}
+.tarifs_desktop .contact_form-row .tabs_price_list {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.tarifs_desktop .contact_form-row .wpcf7 {
+  width: 70%;
+  margin-top: -17px;
 }/*# sourceMappingURL=new_style.css.map */
