@@ -1002,10 +1002,18 @@
     </div>
   </div>
 </section>
+<script>
+var swiper = new Swiper('.useful-articles__slider', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 
-
-
+</script>
 
 
             <section id="reviews" class="page__reviews-block reviews">
