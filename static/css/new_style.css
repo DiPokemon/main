@@ -3655,6 +3655,9 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     min-height: 70px;
     padding: 10px 20px;
   }
+  .main-image__el .img1 {
+    display: none;
+  }
 }
 @media (max-width: 527px) {
   .main-subtitle__item {
@@ -4049,9 +4052,6 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   .directions,
   .our_garant,
   .about_topland {
-    display: none;
-  }
-  .main-image__el .img1 {
     display: none;
   }
   .footer__navigation {
