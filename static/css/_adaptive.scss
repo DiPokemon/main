@@ -543,6 +543,11 @@
         min-height: 70px;
         padding: 10px 20px
     }
+    .main-image__el {
+        .img1 {
+            display: none;
+        }
+    }
 }
 
 @media(max-width:527px) {
@@ -1014,11 +1019,6 @@
     .our_garant,
     .about_topland {
         display: none;
-    }
-    .main-image__el {
-        .img1 {
-            display: none;
-        }
     }
     .footer__navigation {
         display: none;
