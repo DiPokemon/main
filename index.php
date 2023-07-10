@@ -890,7 +890,7 @@
               </div>
             </section> -->
 
-            <section class="page__useful-articles useful-articles">
+            <!-- <section class="page__useful-articles useful-articles">
               <div class="useful-articles__container _container">
                 <div class="useful-articles__body">
                   <div class="useful-articles__title">
@@ -943,7 +943,71 @@
                   <div class="useful-articles__button"><a class="useful-articles__href" href="/category/blog">Все статьи</a></div>
                 </div>
               </div>
-            </section>
+            </section> -->
+
+            <section class="page__useful-articles useful-articles">
+  <div class="useful-articles__container _container">
+    <div class="useful-articles__body">
+      <div class="useful-articles__title">
+        <h2 class="_h2 useful-articles__title_h2 section_title">Полезные статьи</h2>
+      </div>
+      <div class="swiper-container useful-articles__slider">
+        <div class="swiper-wrapper useful-articles__columns articles">
+          <?php 
+            $length_articles = 0;                     
+            $args_articles = [
+                'posts_per_page' => 3,
+                'category_name'  => 'blog',
+                'offset'         => 0,
+            ];
+            $query_articles = new WP_Query( $args_articles );
+            while ($query_articles->have_posts()) :
+                $query_articles->the_post();
+                $length_articles++;
+                if (is_null(get_the_post_thumbnail_url()) || empty(get_the_post_thumbnail_url())){
+                  $post_thumbnail_url_articles = get_template_directory_uri().'/static/empty-banner.gif';
+                } else {
+                    $post_thumbnail_url_articles = get_the_post_thumbnail_url();
+                    $image_id_articles = get_post_thumbnail_id();
+                    $image_alt_articles = get_post_meta($image_id_articles, '_wp_attachment_image_alt', TRUE);
+                    $image_title_articles = get_the_title($image_id_articles);
+                }
+          ?>
+            <div class="swiper-slide articles__item">
+              <a href="<?php the_permalink() ?>">
+                <div class="articles__img"><img src="<?= $post_thumbnail_url_articles ?>" alt="<?php echo $image_alt_articles ?>" title="<?php echo $image_title_articles ?>"></div>
+                <div class="articles__title"><h3 class="articles__title_h3"><?php the_title() ?></h3></div>
+                <?php if (get_the_tag_list()) : ?>
+                  <div class="articles__tags">                            
+                    <?php
+                      $tags_articles = get_the_terms( $post->ID, 'post_tag'); 
+                      foreach ($tags_articles as $tag) {
+                        echo $tag->name.' '; 
+                      }
+                    ?>                            
+                  </div>
+                <?php endif; ?>
+                <div class="articles__text"><?php the_excerpt() ?></div>
+              </a>
+            </div>
+          <?php
+            endwhile;
+            wp_reset_query();
+          ?>  
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="useful-articles__button"><a class="useful-articles__href" href="/category/blog">Все статьи</a></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
             <section id="reviews" class="page__reviews-block reviews">
               <div class="reviews_gradient_bg-img"></div>
               <div class="reviews-block__container _container">                
