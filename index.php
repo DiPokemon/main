@@ -811,7 +811,7 @@
               </div>
             </section>            
 
-            <section>
+            <!-- <section>
               <div class="_container">
                 <div class="reviews-block__title">
                   <h2 class="_h2 section_title">Наши технологии и инструменты</h2>
@@ -836,7 +836,7 @@
                   </div>
                 </div>
               </div>
-            </section> 
+            </section>  -->
 
              <section class="page__cases-block cases">
               <div class="cases-block__container _container">
