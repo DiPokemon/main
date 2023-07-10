@@ -3934,20 +3934,6 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   .footer_right-side {
     padding-top: 10px;
   }
-  .footer_left-side {
-    padding-bottom: 600px;
-  }
-}
-@media (max-width: 390px) {
-  .footer_left-side {
-    padding-bottom: 680px;
-  }
-}
-@media (max-width: 550px) {
-  .footer_left-side,
-  .footer__navigation {
-    width: 50%;
-  }
 }
 @media (max-width: 460px) {
   .menu-footer__list {
@@ -4057,6 +4043,22 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
   .single_services-block__text-price {
     width: 100% !important;
     text-align: center !important;
+  }
+}
+@media (max-width: 768px) {
+  .directions,
+  .our_garant,
+  .about_topland {
+    display: none;
+  }
+  .main-image__el .img1 {
+    display: none;
+  }
+  .footer__navigation {
+    display: none;
+  }
+  .footer_left-side {
+    width: 100%;
   }
 }
 @-webkit-keyframes gradient {

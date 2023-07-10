@@ -106,7 +106,7 @@
               </div>
             </section> 
             
-            <section>
+            <section class="about_topland">
               <div class="_container">
                 <h3>Компания "TopLand"</h3>
                 <p>Занимаемся интернет-маркетингом и продвижением сайтов в ТОП 10 поисковых систем с 2016 года. </p>
@@ -487,7 +487,7 @@
               
             </section>  
 
-            <section>
+            <section class="our_garant">
               <div class="_container">
                 <div>
                   <h2 class="_h2 section_title">Наши гарантии</h2>
@@ -619,7 +619,7 @@
             </section>
 
           
-            <section>
+            <section class="directions">
               <div class="_container">
                 <div>
                   <h2 class="_h2 section_title">Сферы, с которыми мы работаем</h2>
