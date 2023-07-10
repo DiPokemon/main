@@ -889,15 +889,14 @@
                 </div>
               </div>
             </section> 
- 
-            <section class="page__useful-articles useful-articles">
+ <section class="page__useful-articles useful-articles">
               <div class="useful-articles__container _container">
                 <div class="useful-articles__body">
                   <div class="useful-articles__title">
                     <h2 class="_h2 useful-articles__title_h2 section_title">Полезные статьи</h2>
                   </div>
                   <div class="useful-articles__columns articles">
-                  <?php 
+                    <?php 
                         $length_articles = 0;                     
                         $args_articles = [
                             'posts_per_page' => 3,
@@ -944,9 +943,7 @@
                 </div>
               </div>
             </section>
-          
-
-</script>
+            
 
 
             <section id="reviews" class="page__reviews-block reviews">
